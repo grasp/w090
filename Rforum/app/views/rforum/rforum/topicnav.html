@@ -1,0 +1,38 @@
+
+<table class='table'>
+<tr><td><a href='rforum/topics#node'>node_topics</a></td><td>node_topics</td><td>/topics/node:id(.:format)</td><td>rforum/topics#node</td><td></td></tr>
+<tr><td><a href='rforum/topics#node_feed'>feed_node_topics</a></td><td>feed_node_topics</td><td>/topics/node:id/feed(.:format)</td><td>rforum/topics#node_feed</td><td></td></tr>
+<tr><td><a href='rforum/topics#recent'>recent_topics</a></td><td>recent_topics</td><td>/topics/last(.:format)</td><td>rforum/topics#recent</td><td></td></tr>
+<tr><td><a href='/rforum/topics/:id/reply'>reply_topic</a></td><td>reply_topic</td><td>POST</td><td>/topics/:id/reply(.:format)</td><td>rforum/topics#reply</td></tr>
+<tr><td><a href='/rforum/topics/search'>search_topics</a></td><td>search_topics</td><td>GET</td><td>/topics/search(.:format)</td><td>rforum/topics#search</td></tr>
+<tr><td><a href='/rforum/topics/feed'>feed_topics</a></td><td>feed_topics</td><td>GET</td><td>/topics/feed(.:format)</td><td>rforum/topics#feed</td></tr>
+<tr><td><a href='/rforum/topics/preview'>preview_topics</a></td><td>preview_topics</td><td>POST</td><td>/topics/preview(.:format)</td><td>rforum/topics#preview</td></tr>
+<tr><td><a href='/rforum/topics/:topic_id/replies'>topic_replies</a></td><td>topic_replies</td><td>GET</td><td>/topics/:topic_id/replies(.:format)</td><td>rforum/replies#index</td></tr>
+<tr><td><a href='rforum/replies#create'>POST</a></td><td>POST</td><td>/topics/:topic_id/replies(.:format)</td><td>rforum/replies#create</td><td></td></tr>
+<tr><td><a href='/rforum/topics/:topic_id/replies/new'>new_topic_reply</a></td><td>new_topic_reply</td><td>GET</td><td>/topics/:topic_id/replies/new(.:format)</td><td>rforum/replies#new</td></tr>
+<tr><td><a href='/rforum/topics/:topic_id/replies/:id/edit'>edit_topic_reply</a></td><td>edit_topic_reply</td><td>GET</td><td>/topics/:topic_id/replies/:id/edit(.:format)</td><td>rforum/replies#edit</td></tr>
+<tr><td><a href='/rforum/topics/:topic_id/replies/:id'>topic_reply</a></td><td>topic_reply</td><td>GET</td><td>/topics/:topic_id/replies/:id(.:format)</td><td>rforum/replies#show</td></tr>
+<tr><td><a href='rforum/replies#update'>PUT</a></td><td>PUT</td><td>/topics/:topic_id/replies/:id(.:format)</td><td>rforum/replies#update</td><td></td></tr>
+<tr><td><a href='rforum/replies#destroy'>DELETE</a></td><td>DELETE</td><td>/topics/:topic_id/replies/:id(.:format)</td><td>rforum/replies#destroy</td><td></td></tr>
+<tr><td><a href='/rforum/topics'>topics</a></td><td>topics</td><td>GET</td><td>/topics(.:format)</td><td>rforum/topics#index</td></tr>
+<tr><td><a href='rforum/topics#create'>POST</a></td><td>POST</td><td>/topics(.:format)</td><td>rforum/topics#create</td><td></td></tr>
+<tr><td><a href='/rforum/topics/new'>new_topic</a></td><td>new_topic</td><td>GET</td><td>/topics/new(.:format)</td><td>rforum/topics#new</td></tr>
+<tr><td><a href='/rforum/topics/:id/edit'>edit_topic</a></td><td>edit_topic</td><td>GET</td><td>/topics/:id/edit(.:format)</td><td>rforum/topics#edit</td></tr>
+<tr><td><a href='/rforum/topics/:id'>topic</a></td><td>topic</td><td>GET</td><td>/topics/:id(.:format)</td><td>rforum/topics#show</td></tr>
+<tr><td><a href='rforum/topics#update'>PUT</a></td><td>PUT</td><td>/topics/:id(.:format)</td><td>rforum/topics#update</td><td></td></tr>
+<tr><td><a href='rforum/topics#destroy'>DELETE</a></td><td>DELETE</td><td>/topics/:id(.:format)</td><td>rforum/topics#destroy</td><td></td></tr>
+<tr><td><a href='rforum/search#topics'>search_topics</a></td><td>search_topics</td><td>/search/topics(.:format)</td><td>rforum/search#topics</td><td></td></tr>
+<tr><td><a href='/rforum/cpanel/topics/:id/suggest'>suggest_cpanel_topic</a></td><td>suggest_cpanel_topic</td><td>POST</td><td>/cpanel/topics/:id/suggest(.:format)</td><td>rforum/cpanel/topics#suggest</td></tr>
+<tr><td><a href='/rforum/cpanel/topics/:id/unsuggest'>unsuggest_cpanel_topic</a></td><td>unsuggest_cpanel_topic</td><td>POST</td><td>/cpanel/topics/:id/unsuggest(.:format)</td><td>rforum/cpanel/topics#unsuggest</td></tr>
+<tr><td><a href='/rforum/cpanel/topics/:id/undestroy'>undestroy_cpanel_topic</a></td><td>undestroy_cpanel_topic</td><td>POST</td><td>/cpanel/topics/:id/undestroy(.:format)</td><td>rforum/cpanel/topics#undestroy</td></tr>
+<tr><td><a href='/rforum/cpanel/topics'>cpanel_topics</a></td><td>cpanel_topics</td><td>GET</td><td>/cpanel/topics(.:format)</td><td>rforum/cpanel/topics#index</td></tr>
+<tr><td><a href='rforum/cpanel/topics#create'>POST</a></td><td>POST</td><td>/cpanel/topics(.:format)</td><td>rforum/cpanel/topics#create</td><td></td></tr>
+<tr><td><a href='/rforum/cpanel/topics/new'>new_cpanel_topic</a></td><td>new_cpanel_topic</td><td>GET</td><td>/cpanel/topics/new(.:format)</td><td>rforum/cpanel/topics#new</td></tr>
+<tr><td><a href='/rforum/cpanel/topics/:id/edit'>edit_cpanel_topic</a></td><td>edit_cpanel_topic</td><td>GET</td><td>/cpanel/topics/:id/edit(.:format)</td><td>rforum/cpanel/topics#edit</td></tr>
+<tr><td><a href='/rforum/cpanel/topics/:id'>cpanel_topic</a></td><td>cpanel_topic</td><td>GET</td><td>/cpanel/topics/:id(.:format)</td><td>rforum/cpanel/topics#show</td></tr>
+<tr><td><a href='rforum/cpanel/topics#update'>PUT</a></td><td>PUT</td><td>/cpanel/topics/:id(.:format)</td><td>rforum/cpanel/topics#update</td><td></td></tr>
+<tr><td><a href='rforum/cpanel/topics#destroy'>DELETE</a></td><td>DELETE</td><td>/cpanel/topics/:id(.:format)</td><td>rforum/cpanel/topics#destroy</td><td></td></tr>
+
+  
+
+</table>

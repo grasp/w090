@@ -1,0 +1,5 @@
+<%#= render_cell :topics, :sidebar_for_new_topic_node, { :node => @node } %>
+<%= render "rforum/topics/cell/sidebar_for_new_topic_node" %>
+<%= raw Rforum::SiteConfig.topic_index_sidebar_html %>
+<%#= render_cell :topics, :sidebar_hot_nodes %>
+<%= render "rforum/topics/cell/sidebar_hot_nodes" %>

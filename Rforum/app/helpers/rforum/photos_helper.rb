@@ -1,0 +1,2 @@
+module Rforum::PhotosHelper
+end

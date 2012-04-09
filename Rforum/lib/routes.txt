@@ -1,0 +1,197 @@
+
+Mongoid config not found. Create a config file at: config/mongoid.yml
+to generate one run: rails generate mongoid:config
+
+rforum  /rforum Rforum::Engine
+
+Routes for Rforum::Engine:
+                          root        /                                                    rforum/rforum#routenav
+                         sites GET    /sites(.:format)                                     rforum/sites#index
+                               POST   /sites(.:format)                                     rforum/sites#create
+                      new_site GET    /sites/new(.:format)                                 rforum/sites#new
+                     edit_site GET    /sites/:id/edit(.:format)                            rforum/sites#edit
+                          site GET    /sites/:id(.:format)                                 rforum/sites#show
+                               PUT    /sites/:id(.:format)                                 rforum/sites#update
+                               DELETE /sites/:id(.:format)                                 rforum/sites#destroy
+                         posts GET    /posts(.:format)                                     rforum/posts#index
+                               POST   /posts(.:format)                                     rforum/posts#create
+                      new_post GET    /posts/new(.:format)                                 rforum/posts#new
+                     edit_post GET    /posts/:id/edit(.:format)                            rforum/posts#edit
+                          post GET    /posts/:id(.:format)                                 rforum/posts#show
+                               PUT    /posts/:id(.:format)                                 rforum/posts#update
+                               DELETE /posts/:id(.:format)                                 rforum/posts#destroy
+                  recent_pages GET    /wiki/recent(.:format)                               rforum/pages#recent
+                         pages GET    /wiki(.:format)                                      rforum/pages#index
+                               POST   /wiki(.:format)                                      rforum/pages#create
+                      new_page GET    /wiki/new(.:format)                                  rforum/pages#new
+                     edit_page GET    /wiki/:id/edit(.:format)                             rforum/pages#edit
+                          page GET    /wiki/:id(.:format)                                  rforum/pages#show
+                               PUT    /wiki/:id(.:format)                                  rforum/pages#update
+                               DELETE /wiki/:id(.:format)                                  rforum/pages#destroy
+                      comments GET    /comments(.:format)                                  rforum/comments#index
+                               POST   /comments(.:format)                                  rforum/comments#create
+                   new_comment GET    /comments/new(.:format)                              rforum/comments#new
+                  edit_comment GET    /comments/:id/edit(.:format)                         rforum/comments#edit
+                       comment GET    /comments/:id(.:format)                              rforum/comments#show
+                               PUT    /comments/:id(.:format)                              rforum/comments#update
+                               DELETE /comments/:id(.:format)                              rforum/comments#destroy
+                         notes GET    /notes(.:format)                                     rforum/notes#index
+                               POST   /notes(.:format)                                     rforum/notes#create
+                      new_note GET    /notes/new(.:format)                                 rforum/notes#new
+                     edit_note GET    /notes/:id/edit(.:format)                            rforum/notes#edit
+                          note GET    /notes/:id(.:format)                                 rforum/notes#show
+                               PUT    /notes/:id(.:format)                                 rforum/notes#update
+                               DELETE /notes/:id(.:format)                                 rforum/notes#destroy
+                                      /uploads/*path(.:format)                             rforum/gridfs#serve
+mark_all_as_read_notifications PUT    /notifications/mark_all_as_read(.:format)            rforum/notifications#mark_all_as_read
+                 notifications GET    /notifications(.:format)                             rforum/notifications#index
+                  notification DELETE /notifications/:id(.:format)                         rforum/notifications#destroy
+                         nodes GET    /nodes(.:format)                                     rforum/nodes#index
+                               POST   /nodes(.:format)                                     rforum/nodes#create
+                      new_node GET    /nodes/new(.:format)                                 rforum/nodes#new
+                     edit_node GET    /nodes/:id/edit(.:format)                            rforum/nodes#edit
+                          node GET    /nodes/:id(.:format)                                 rforum/nodes#show
+                               PUT    /nodes/:id(.:format)                                 rforum/nodes#update
+                               DELETE /nodes/:id(.:format)                                 rforum/nodes#destroy
+                   node_topics        /topics/node:id(.:format)                            rforum/topics#node
+              feed_node_topics        /topics/node:id/feed(.:format)                       rforum/topics#node_feed
+                 recent_topics        /topics/last(.:format)                               rforum/topics#recent
+                   reply_topic POST   /topics/:id/reply(.:format)                          rforum/topics#reply
+                 search_topics GET    /topics/search(.:format)                             rforum/topics#search
+                   feed_topics GET    /topics/feed(.:format)                               rforum/topics#feed
+                preview_topics POST   /topics/preview(.:format)                            rforum/topics#preview
+                 topic_replies GET    /topics/:topic_id/replies(.:format)                  rforum/replies#index
+                               POST   /topics/:topic_id/replies(.:format)                  rforum/replies#create
+               new_topic_reply GET    /topics/:topic_id/replies/new(.:format)              rforum/replies#new
+              edit_topic_reply GET    /topics/:topic_id/replies/:id/edit(.:format)         rforum/replies#edit
+                   topic_reply GET    /topics/:topic_id/replies/:id(.:format)              rforum/replies#show
+                               PUT    /topics/:topic_id/replies/:id(.:format)              rforum/replies#update
+                               DELETE /topics/:topic_id/replies/:id(.:format)              rforum/replies#destroy
+                        topics GET    /topics(.:format)                                    rforum/topics#index
+                               POST   /topics(.:format)                                    rforum/topics#create
+                     new_topic GET    /topics/new(.:format)                                rforum/topics#new
+                    edit_topic GET    /topics/:id/edit(.:format)                           rforum/topics#edit
+                         topic GET    /topics/:id(.:format)                                rforum/topics#show
+                               PUT    /topics/:id(.:format)                                rforum/topics#update
+                               DELETE /topics/:id(.:format)                                rforum/topics#destroy
+               tiny_new_photos GET    /photos/tiny_new(.:format)                           rforum/photos#tiny_new
+                        photos GET    /photos(.:format)                                    rforum/photos#index
+                               POST   /photos(.:format)                                    rforum/photos#create
+                     new_photo GET    /photos/new(.:format)                                rforum/photos#new
+                    edit_photo GET    /photos/:id/edit(.:format)                           rforum/photos#edit
+                         photo GET    /photos/:id(.:format)                                rforum/photos#show
+                               PUT    /photos/:id(.:format)                                rforum/photos#update
+                               DELETE /photos/:id(.:format)                                rforum/photos#destroy
+                         likes GET    /likes(.:format)                                     rforum/likes#index
+                               POST   /likes(.:format)                                     rforum/likes#create
+                      new_like GET    /likes/new(.:format)                                 rforum/likes#new
+                     edit_like GET    /likes/:id/edit(.:format)                            rforum/likes#edit
+                          like GET    /likes/:id(.:format)                                 rforum/likes#show
+                               PUT    /likes/:id(.:format)                                 rforum/likes#update
+                               DELETE /likes/:id(.:format)                                 rforum/likes#destroy
+                        search        /search(.:format)                                    rforum/search#index
+                 search_topics        /search/topics(.:format)                             rforum/search#topics
+                   search_wiki        /search/wiki(.:format)                               rforum/search#wiki
+                   cpanel_root        /cpanel(.:format)                                    rforum/cpanel/home#index
+           cpanel_site_configs GET    /cpanel/site_configs(.:format)                       rforum/cpanel/site_configs#index
+                               POST   /cpanel/site_configs(.:format)                       rforum/cpanel/site_configs#create
+        new_cpanel_site_config GET    /cpanel/site_configs/new(.:format)                   rforum/cpanel/site_configs#new
+       edit_cpanel_site_config GET    /cpanel/site_configs/:id/edit(.:format)              rforum/cpanel/site_configs#edit
+            cpanel_site_config GET    /cpanel/site_configs/:id(.:format)                   rforum/cpanel/site_configs#show
+                               PUT    /cpanel/site_configs/:id(.:format)                   rforum/cpanel/site_configs#update
+                               DELETE /cpanel/site_configs/:id(.:format)                   rforum/cpanel/site_configs#destroy
+                cpanel_replies GET    /cpanel/replies(.:format)                            rforum/cpanel/replies#index
+                               POST   /cpanel/replies(.:format)                            rforum/cpanel/replies#create
+              new_cpanel_reply GET    /cpanel/replies/new(.:format)                        rforum/cpanel/replies#new
+             edit_cpanel_reply GET    /cpanel/replies/:id/edit(.:format)                   rforum/cpanel/replies#edit
+                  cpanel_reply GET    /cpanel/replies/:id(.:format)                        rforum/cpanel/replies#show
+                               PUT    /cpanel/replies/:id(.:format)                        rforum/cpanel/replies#update
+                               DELETE /cpanel/replies/:id(.:format)                        rforum/cpanel/replies#destroy
+          suggest_cpanel_topic POST   /cpanel/topics/:id/suggest(.:format)                 rforum/cpanel/topics#suggest
+        unsuggest_cpanel_topic POST   /cpanel/topics/:id/unsuggest(.:format)               rforum/cpanel/topics#unsuggest
+        undestroy_cpanel_topic POST   /cpanel/topics/:id/undestroy(.:format)               rforum/cpanel/topics#undestroy
+                 cpanel_topics GET    /cpanel/topics(.:format)                             rforum/cpanel/topics#index
+                               POST   /cpanel/topics(.:format)                             rforum/cpanel/topics#create
+              new_cpanel_topic GET    /cpanel/topics/new(.:format)                         rforum/cpanel/topics#new
+             edit_cpanel_topic GET    /cpanel/topics/:id/edit(.:format)                    rforum/cpanel/topics#edit
+                  cpanel_topic GET    /cpanel/topics/:id(.:format)                         rforum/cpanel/topics#show
+                               PUT    /cpanel/topics/:id(.:format)                         rforum/cpanel/topics#update
+                               DELETE /cpanel/topics/:id(.:format)                         rforum/cpanel/topics#destroy
+                  cpanel_nodes GET    /cpanel/nodes(.:format)                              rforum/cpanel/nodes#index
+                               POST   /cpanel/nodes(.:format)                              rforum/cpanel/nodes#create
+               new_cpanel_node GET    /cpanel/nodes/new(.:format)                          rforum/cpanel/nodes#new
+              edit_cpanel_node GET    /cpanel/nodes/:id/edit(.:format)                     rforum/cpanel/nodes#edit
+                   cpanel_node GET    /cpanel/nodes/:id(.:format)                          rforum/cpanel/nodes#show
+                               PUT    /cpanel/nodes/:id(.:format)                          rforum/cpanel/nodes#update
+                               DELETE /cpanel/nodes/:id(.:format)                          rforum/cpanel/nodes#destroy
+               cpanel_sections GET    /cpanel/sections(.:format)                           rforum/cpanel/sections#index
+                               POST   /cpanel/sections(.:format)                           rforum/cpanel/sections#create
+            new_cpanel_section GET    /cpanel/sections/new(.:format)                       rforum/cpanel/sections#new
+           edit_cpanel_section GET    /cpanel/sections/:id/edit(.:format)                  rforum/cpanel/sections#edit
+                cpanel_section GET    /cpanel/sections/:id(.:format)                       rforum/cpanel/sections#show
+                               PUT    /cpanel/sections/:id(.:format)                       rforum/cpanel/sections#update
+                               DELETE /cpanel/sections/:id(.:format)                       rforum/cpanel/sections#destroy
+                  cpanel_users GET    /cpanel/users(.:format)                              rforum/cpanel/users#index
+                               POST   /cpanel/users(.:format)                              rforum/cpanel/users#create
+               new_cpanel_user GET    /cpanel/users/new(.:format)                          rforum/cpanel/users#new
+              edit_cpanel_user GET    /cpanel/users/:id/edit(.:format)                     rforum/cpanel/users#edit
+                   cpanel_user GET    /cpanel/users/:id(.:format)                          rforum/cpanel/users#show
+                               PUT    /cpanel/users/:id(.:format)                          rforum/cpanel/users#update
+                               DELETE /cpanel/users/:id(.:format)                          rforum/cpanel/users#destroy
+                 cpanel_photos GET    /cpanel/photos(.:format)                             rforum/cpanel/photos#index
+                               POST   /cpanel/photos(.:format)                             rforum/cpanel/photos#create
+              new_cpanel_photo GET    /cpanel/photos/new(.:format)                         rforum/cpanel/photos#new
+             edit_cpanel_photo GET    /cpanel/photos/:id/edit(.:format)                    rforum/cpanel/photos#edit
+                  cpanel_photo GET    /cpanel/photos/:id(.:format)                         rforum/cpanel/photos#show
+                               PUT    /cpanel/photos/:id(.:format)                         rforum/cpanel/photos#update
+                               DELETE /cpanel/photos/:id(.:format)                         rforum/cpanel/photos#destroy
+                  cpanel_posts GET    /cpanel/posts(.:format)                              rforum/cpanel/posts#index
+                               POST   /cpanel/posts(.:format)                              rforum/cpanel/posts#create
+               new_cpanel_post GET    /cpanel/posts/new(.:format)                          rforum/cpanel/posts#new
+              edit_cpanel_post GET    /cpanel/posts/:id/edit(.:format)                     rforum/cpanel/posts#edit
+                   cpanel_post GET    /cpanel/posts/:id(.:format)                          rforum/cpanel/posts#show
+                               PUT    /cpanel/posts/:id(.:format)                          rforum/cpanel/posts#update
+                               DELETE /cpanel/posts/:id(.:format)                          rforum/cpanel/posts#destroy
+    revert_cpanel_page_version POST   /cpanel/pages/:page_id/versions/:id/revert(.:format) rforum/cpanel/page_versions#revert
+          cpanel_page_versions GET    /cpanel/pages/:page_id/versions(.:format)            rforum/cpanel/page_versions#index
+                               POST   /cpanel/pages/:page_id/versions(.:format)            rforum/cpanel/page_versions#create
+       new_cpanel_page_version GET    /cpanel/pages/:page_id/versions/new(.:format)        rforum/cpanel/page_versions#new
+      edit_cpanel_page_version GET    /cpanel/pages/:page_id/versions/:id/edit(.:format)   rforum/cpanel/page_versions#edit
+           cpanel_page_version GET    /cpanel/pages/:page_id/versions/:id(.:format)        rforum/cpanel/page_versions#show
+                               PUT    /cpanel/pages/:page_id/versions/:id(.:format)        rforum/cpanel/page_versions#update
+                               DELETE /cpanel/pages/:page_id/versions/:id(.:format)        rforum/cpanel/page_versions#destroy
+                  cpanel_pages GET    /cpanel/pages(.:format)                              rforum/cpanel/pages#index
+                               POST   /cpanel/pages(.:format)                              rforum/cpanel/pages#create
+               new_cpanel_page GET    /cpanel/pages/new(.:format)                          rforum/cpanel/pages#new
+              edit_cpanel_page GET    /cpanel/pages/:id/edit(.:format)                     rforum/cpanel/pages#edit
+                   cpanel_page GET    /cpanel/pages/:id(.:format)                          rforum/cpanel/pages#show
+                               PUT    /cpanel/pages/:id(.:format)                          rforum/cpanel/pages#update
+                               DELETE /cpanel/pages/:id(.:format)                          rforum/cpanel/pages#destroy
+               cpanel_comments GET    /cpanel/comments(.:format)                           rforum/cpanel/comments#index
+                               POST   /cpanel/comments(.:format)                           rforum/cpanel/comments#create
+            new_cpanel_comment GET    /cpanel/comments/new(.:format)                       rforum/cpanel/comments#new
+           edit_cpanel_comment GET    /cpanel/comments/:id/edit(.:format)                  rforum/cpanel/comments#edit
+                cpanel_comment GET    /cpanel/comments/:id(.:format)                       rforum/cpanel/comments#show
+                               PUT    /cpanel/comments/:id(.:format)                       rforum/cpanel/comments#update
+                               DELETE /cpanel/comments/:id(.:format)                       rforum/cpanel/comments#destroy
+             cpanel_site_nodes GET    /cpanel/site_nodes(.:format)                         rforum/cpanel/site_nodes#index
+                               POST   /cpanel/site_nodes(.:format)                         rforum/cpanel/site_nodes#create
+          new_cpanel_site_node GET    /cpanel/site_nodes/new(.:format)                     rforum/cpanel/site_nodes#new
+         edit_cpanel_site_node GET    /cpanel/site_nodes/:id/edit(.:format)                rforum/cpanel/site_nodes#edit
+              cpanel_site_node GET    /cpanel/site_nodes/:id(.:format)                     rforum/cpanel/site_nodes#show
+                               PUT    /cpanel/site_nodes/:id(.:format)                     rforum/cpanel/site_nodes#update
+                               DELETE /cpanel/site_nodes/:id(.:format)                     rforum/cpanel/site_nodes#destroy
+                  cpanel_sites GET    /cpanel/sites(.:format)                              rforum/cpanel/sites#index
+                               POST   /cpanel/sites(.:format)                              rforum/cpanel/sites#create
+               new_cpanel_site GET    /cpanel/sites/new(.:format)                          rforum/cpanel/sites#new
+              edit_cpanel_site GET    /cpanel/sites/:id/edit(.:format)                     rforum/cpanel/sites#edit
+                   cpanel_site GET    /cpanel/sites/:id(.:format)                          rforum/cpanel/sites#show
+                               PUT    /cpanel/sites/:id(.:format)                          rforum/cpanel/sites#update
+                               DELETE /cpanel/sites/:id(.:format)                          rforum/cpanel/sites#destroy
+              cpanel_locations GET    /cpanel/locations(.:format)                          rforum/cpanel/locations#index
+                               POST   /cpanel/locations(.:format)                          rforum/cpanel/locations#create
+           new_cpanel_location GET    /cpanel/locations/new(.:format)                      rforum/cpanel/locations#new
+          edit_cpanel_location GET    /cpanel/locations/:id/edit(.:format)                 rforum/cpanel/locations#edit
+               cpanel_location GET    /cpanel/locations/:id(.:format)                      rforum/cpanel/locations#show
+                               PUT    /cpanel/locations/:id(.:format)                      rforum/cpanel/locations#update
+                               DELETE /cpanel/locations/:id(.:format)                      rforum/cpanel/locations#destroy
