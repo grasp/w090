@@ -49,7 +49,7 @@ module ApplicationHelper
   end
 
   def facebook_enable
-    Setting.facebook_enable
+    Ruser::Setting.facebook_enable
   end
   
 MOBILE_USER_AGENTS =  'palm|blackberry|nokia|phone|midp|mobi|symbian|chtml|ericsson|minimo|' +

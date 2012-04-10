@@ -21,12 +21,12 @@ class Ruser::SiteConfig
   rescue NoMethodError
     if method_name =~ /=$/
       var_name = method_name.gsub('=', '')
-      value = args.first.to_s
+      value = args.first.to_s 
       # save
       if item = find_by_key(var_name)
         item.update_attribute(:value, value)
       else
-        SiteConfig.create(:key => var_name, :value => value)
+        Ruser::SiteConfig.create(:key => var_name, :value => value)
       end
     else
       Rails.cache.fetch("site_config:#{method}") do

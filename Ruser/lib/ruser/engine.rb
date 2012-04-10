@@ -20,6 +20,8 @@ require 'mini_magick'#,'3.3'
 # Mongoid 辅助插件
 require "mongoid"#, "2.4.3"
 #require "bson_ext"#, "1.5.2"
+
+require "bson_ext/cbson"
 require 'mongo-rails-instrumentation'#,'0.2.4'
 require 'mongoid_auto_increment_id'#, "0.4.0"
 require 'mongoid_rails_migrations'#, '~> 0.0.14'

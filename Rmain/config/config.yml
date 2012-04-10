@@ -3,7 +3,7 @@ defaults: &defaults
   foot_html: "&copy; Ruby China Group."
   domain: "127.0.0.1:3000"    
   admin_emails: 
-    - "hunter.wxhu@gmail.com"
+    - "admin@admin.com"
   google_analytics_key: ""
   upload_url: "http://ruby-china-files-dev.b0.upaiyun.com"
   upyun_username: "test"
@@ -23,7 +23,6 @@ defaults: &defaults
   external_feed_url: "http://ruby-taiwan.org/topics/feed"
   external_feed_name: "Ruby Taiwan Group"
   twitter_id: "ruby_china"
-  gravatar_proxy: "http://gravatar.com"
 
 development:
   <<: *defaults
