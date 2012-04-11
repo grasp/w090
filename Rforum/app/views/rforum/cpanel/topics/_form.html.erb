@@ -1,7 +1,7 @@
 <%= form_for([:cpanel,@topic]) do |f| %>
 <fieldset>
   <legend></legend>
-  <%= render 'shared/error_messages', :target => @topic %>
+  <%= render 'rforum/shared/error_messages', :target => @topic %>
 
   <div class="clearfix">
     <%= f.label :title %>

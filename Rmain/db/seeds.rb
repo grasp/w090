@@ -6,11 +6,11 @@
 # Rforum::SiteConfig.index_html
 Rforum::SiteConfig.save_default("index_html",<<-eos
 <div class="box" style="text-align:center;">
-  <p><img alt="Big_logo" src="/assets/big_logo.png"></p>
+  <p><img alt="Big_logo" src="/assets/rtheme/big_logo.png"></p>
   <p></p>
-  <p>Ruby China Group， 致力于构建完善的 Ruby 中文社区。</p>
+  <p>物流零距离， 致力于打造畅通无阻的物流信息世界。</p>
   <p>功能正在完善中，欢迎 <a href="http://github.com/huacnlee/ruby-china">贡献代码</a> 。</p>
-  <p>诚邀有激情的活跃 Ruby 爱好者参与维护社区，联系 <b style="color:#c00;">lgn21st@gmail.com</b></p>
+  <p>诚邀有意向的物流公司参与维护社区，联系 <b style="color:#c00;">mark.xiansheng@gmail.com</b></p>
 </div>
 eos
 )

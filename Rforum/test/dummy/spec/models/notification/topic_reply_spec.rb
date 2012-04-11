@@ -1,4 +1,4 @@
 require 'spec_helper'
 
-describe Notification::TopicReply do
+describe  Ruser::Notification::TopicReply do
 end

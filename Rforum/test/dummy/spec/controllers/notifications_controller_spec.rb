@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Rforum::NotificationsController do
+describe Ruser::NotificationsController do
   let(:user) { FactoryGirl.create:user }
   describe "#index" do
     it "should show notifications" do

@@ -1,4 +1,9 @@
 Rmain::Application.configure do
+  
+  #config auto load path for those engine
+         config.autoload_paths += %W(#{config.root.parent}/Ruser/lib/*.*)
+     config.autoload_paths += %W(#{config.root.parent}/Rforum/lib/*.*)
+     config.autoload_paths += %W(#{config.root.parent}/Rtheme/lib/*.*)
   # Settings specified here will take precedence over those in config/application.rb
 
   # The test environment is used exclusively to run your application's

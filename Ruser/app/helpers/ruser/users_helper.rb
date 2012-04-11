@@ -44,7 +44,8 @@ module Ruser::UsersHelper
       img_src = "http://gravatar.com/avatar/#{hash}.png?s=#{width}"
       img = image_tag(img_src, :style => "width:#{width}px;height:#{width}px;")
     else
-      img = image_tag(user.avatar.url(size), :style => "width:#{width}px;height:#{width}px;")
+       img = image_tag(img_src, :style => "width:#{width}px;height:#{width}px;")
+  #   img = image_tag(user.avatar.url(size), :style => "width:#{width}px;height:#{width}px;") #TOBE chagned
     end
 
     if link

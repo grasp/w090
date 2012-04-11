@@ -40,4 +40,7 @@
     password: "密码"
     password_current: "当前密码"
     password_confirm: "密码确认"
+    website: "我的网站"
+    tagline: "签名"
+    bio: "自我介绍"
 

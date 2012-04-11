@@ -51,7 +51,13 @@
     </div>
   </footer>
   <% end %>
-  <%#= render :partial => "ruser/common/google_analytics"%>
+
+  <%= javascript_include_tag "rtheme/app" %>
+  <% if mobile? %>
+    <script type="text/javascript">app_mobile = true;</script>
+  <% end %>
+  <%= yield :scripts %>
+  <%= render :partial => "ruser/common/google_analytics"%>
   
 </body>
 </html>

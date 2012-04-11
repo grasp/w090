@@ -58,7 +58,7 @@ describe Rforum::Reply do
       # Don't duplicate notifiation with mention
       lambda do
         FactoryGirl.create :reply, :topic => topic, :mentioned_user_ids => [user.id]
-      end.should_not change(user.notifications.unread.where(:_type => 'Notification::TopicReply'), :count)
+      end.should_not change(user.notifications.unread.where(:_type => 'Ruser::Notification::TopicReply'), :count)
     end
 
     it "should update Topic updated_at on Reply updated" do

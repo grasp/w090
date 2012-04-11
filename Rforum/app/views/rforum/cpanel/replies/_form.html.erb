@@ -1,7 +1,7 @@
 <%= form_for(@reply, :url => (@reply.id.blank? ? cpanel_replies_path : cpanel_reply_path(@reply.id))) do |f| %>
 <fieldset>
    <legend></legend>
-   <%= render 'shared/error_messages', :target => @reply %>
+   <%= render 'rforum/shared/error_messages', :target => @reply %>
 
   <div class="clearfix">
     <%= f.label :body %>

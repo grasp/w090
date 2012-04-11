@@ -56,7 +56,7 @@ class Ruser::User
   has_many :notes,:class_name=>"Rforum::Note"
   has_many :replies, :dependent => :destroy,:class_name=>"Rforum::Reply"
   has_many :posts,:class_name=>"Rforum::Post"
-  has_many :notifications, :class_name => 'Notification::Base', :dependent => :delete
+  has_many :notifications, :class_name => 'Ruser::Notification::Base', :dependent => :delete
   has_many :photos,:class_name=>"Rforum::Photo"
   has_many :likes,:class_name=>"Rforum::Like"
 
@@ -68,7 +68,7 @@ class Ruser::User
   def read_notifications(notifications)
     unread_ids = notifications.find_all{|notification| !notification.read?}.map(&:_id) #need
     if unread_ids.any?
-      Notification::Base.where({
+      Ruser::Notification::Base.where({
         :user_id => id,
         :_id.in  => unread_ids,
         :read    => false

@@ -17,11 +17,16 @@ Ruser::Engine.routes.draw do
   
     resources :users
        
-    #  resources :users do
-    #   member do
-    #     get :topics
-    #     get :likes
-    #   end
-    #end
-  
+      resources :users do
+       member do
+        get :topics
+         get :likes
+       end
+    end
+    
+    resources :notifications, :only => [:index, :destroy] do
+    collection do
+      put :mark_all_as_read
+    end
+  end
   end

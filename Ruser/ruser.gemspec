@@ -36,8 +36,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'mini_magick','3.3'
 
 # Mongoid 辅助插件
-  s.add_dependency "mongoid", "2.4.3"
-  s.add_dependency "bson_ext", "1.5.2"
+  s.add_dependency "mongoid", "~>2.4.8"
+  s.add_dependency "bson_ext", "~>1.5.2"
   s.add_dependency 'mongo-rails-instrumentation','0.2.4'
   s.add_dependency 'mongoid_auto_increment_id', "0.4.0"
   s.add_dependency 'mongoid_rails_migrations', '~> 0.0.14'

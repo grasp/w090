@@ -17,18 +17,13 @@ Rforum::Engine.routes.draw do
   
   match "/uploads/*path" => "gridfs#serve"
   
-  #  resources :users do
-  #  member do
-  #   get :topics
-  #  get :likes
-  #  end
-  # end
-  
-  resources :notifications, :only => [:index, :destroy] do
-    collection do
-      put :mark_all_as_read
+  #is this correct?
+    resources :users do
+    member do
+     get :topics
+    get :likes
     end
-  end
+   end
 
   resources :nodes
 

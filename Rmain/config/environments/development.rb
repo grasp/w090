@@ -1,4 +1,13 @@
 Rmain::Application.configure do
+  
+       #config.autoload_paths += %W(#{config.root.parent}/Ruser/lib/ruser/*.*)
+          # config.autoload_paths += %W(#{config.root.parent}/Ruser/app/helpers/ruser/*.*)
+           
+   #  config.autoload_paths += %W(#{config.root.parent}/Rforum/lib/rforum/*.*)
+  #   config.autoload_paths += %W(#{config.root.parent}/Rtheme/lib/rtheme/*.*)
+    #   config.autoload_paths += Dir["~/vob/w090/Ruser/app/helpers/ruser"]
+       config.autoload_paths += %W(#{config.root}/../Ruser/lib)
+       ActiveSupport::Dependencies.explicitly_unloadable_constants << 'Ruser'
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on
@@ -29,3 +38,5 @@ Rmain::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 end
+
+#ActiveSupport::Dependencies.autoload_paths << "~/vob/w090/Ruser/lib/ruser"

@@ -31,6 +31,7 @@
               <span class="help-block"><%= t("users.please_use_chinese_city")%></span>
             </div>
           </div>
+        <!--
           <div class="clearfix">
             <%= f.label :github %>
             <div class="input">
@@ -40,20 +41,21 @@
               </div>
             </div>
           </div>
+        -->
           <div class="clearfix">
-              <%= f.label :website %>
+              <%= f.label t("users.website") %>
               <div class="input">
                 <%= f.text_field :website, :class => "xxlarge", :placeholder => "http://" %>
             </div>
           </div>
           <div class="clearfix">
-              <%= f.label :tagline %>
+              <%= f.label t("users.tagline") %>
               <div class="input">
                 <%= f.text_field :tagline, :class => "xxlarge" %>
             </div>
           </div>
           <div class="clearfix">
-              <%= f.label :bio %>
+              <%= f.label t("users.bio") %>
               <div class="input">
                 <%= f.text_area :bio, :class => "xxlarge", :rows => "6" %>
             </div>
@@ -138,7 +140,7 @@
   <script type="text/javascript">
     $(document).ready(function(){
       $("#update_private_token").click(function(){
-        $.get("<%= update_private_token_account_path %>",function(re){
+        $.get("<%= ruser.update_private_token_account_path %>",function(re){
           $("#private_token").val(re);
         });
         return false;

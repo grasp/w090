@@ -61,6 +61,8 @@ require "omniauth-twitter"#, "~> 0.0.7"
 
 module Ruser
   class Engine < ::Rails::Engine
+    config.autoload_paths << File.expand_path("#{config.root}/app/helpers/ruser", __FILE__)
+   
     #load all helper, otherwise will cover by parent app with same name
     initializer 'Ruser::Application.helper,Ruser::User.helper,Ruser::ApplicationController' do |app|
       ActionView::Base.send :include, Ruser::ApplicationHelper,Ruser::UsersHelper

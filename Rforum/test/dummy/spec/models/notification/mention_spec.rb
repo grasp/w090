@@ -1,4 +1,4 @@
 require 'spec_helper'
 
-describe Notification::Mention do
+describe Ruser::Notification::Mention do
 end

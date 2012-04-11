@@ -17,10 +17,10 @@ class Rforum::Reply
   belongs_to :user, :inverse_of => :replies,:class_name=>"Ruser::User"
   belongs_to :topic, :inverse_of => :replies,:class_name=>"Rforum::Topic"
  # has_many :notifications, :class_name => 'Notification::Base', :dependent => :delete
- has_many :notifications, :class_name => 'Notification::Base', :dependent => :delete
-
-  counter_cache :name => :user, :inverse_of => :replies,:class_name=>"Ruser::User"
-  counter_cache :name => :topic, :inverse_of => :replies,:class_name=>"Rforum::Topic"
+ #has_many :notifications, :class_name => 'Notification::Base', :dependent => :delete
+has_many :notifications, :class_name => 'Ruser::Notification::TopicReply', :dependent => :delete
+  counter_cache :name => :user, :inverse_of => :replies#,:class_name=>"Ruser::User"
+  counter_cache :name => :topic, :inverse_of => :replies#,:class_name=>"Rforum::Topic"
 
   index :user_id
   index :topic_id
@@ -61,14 +61,14 @@ class Rforum::Reply
   after_create :send_mention_notification, :send_topic_reply_notification
   def send_mention_notification
     self.mentioned_user_ids.each do |user_id|
-      Notification::Mention.create :user_id => user_id, :reply => self
+      Ruser::Notification::Mention.create :user_id => user_id, :reply => self
     end
   end
 
   def send_topic_reply_notification
     if self.user != topic.user && !mentioned_user_ids.include?(topic.user_id)
       puts "topicid=#{topic.id}"
-      Notification::TopicReply.create :user => topic.user, :reply => self
+      Ruser::Notification::TopicReply.create :user_id => topic.user.id, :reply => self
     end
   end
 
