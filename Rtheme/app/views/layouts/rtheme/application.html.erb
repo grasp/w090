@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rtheme</title>
-  <%= stylesheet_link_tag    "rtheme/front", :media => "all" %>
-  <%= javascript_include_tag "rtheme/application" %>
-  <%= csrf_meta_tags %>
+  <%= render_page_title %>
+  <%= stylesheet_link_tag "rtheme/front" %>
+  <%= yield :styles %>
+  <% if mobile? %>
+    <%= stylesheet_link_tag "rtheme/mobile" %>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content='True' name='HandheldFriendly' />
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+  <% end %>
+  <meta name="keywords" content="<%= @meta_keywords %>" />
+  <meta name="description" content="<%= @meta_description %>" />
+  <meta charset='utf-8'>
+  <link rel="shortcut icon" href="<%= asset_path("rtheme/big_logo.png") %>" /> 
+  <%= csrf_meta_tag %>
+  <%= auto_discovery_link_tag(:rss,rforum.feed_topics_url,:title => '订阅最新帖') %>
+  <%= yield :node_feed_link %>
 </head>
-<body>
+<%= render_body_tag %>
+  <div class="topbar" data-dropdown="dropdown">
+    <div class="topbar-inner">
+      <div class="container">
+        <h3>
+          <a href="/"><%= Setting.app_name %></a>
+        </h3>
+         <%= render_list :class => "nav" do |li|
+           li << link_to(t("menu.topics"), rforum.topics_path)
+           li << link_to(t("menu.wiki"), rforum.pages_path )
+           li << link_to(t("menu.sites"), rforum.sites_path )
+           li << link_to(t("menu.users"), ruser.users_path)
+         end %>
+        <%= render "rforum/common/search_form" %>
+        <%= render "ruser/common/user_nav" %>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <%= render_breadcrumb %>
+    <%= render "rforum/common/feeds" %>
 
-<%= yield %>
-
+    <%= notice_message %>
+    <div id="main" class="container-fluid">
+      <%= yield %>
+    </div>    
+  </div>
+  
+  <% if not mobile? %>
+  <a class="go_top" href="#"><i class="icon icons_go_top"></i></a>
+  <footer class="footer">
+    <div class="container">
+      <%= raw SiteConfig.footer_html %>
+    </div>
+  </footer>
+  <% end %>
+  
+  <%= javascript_include_tag "rtheme/app" %>
+  <% if mobile? %>
+    <script type="text/javascript">app_mobile = true;</script>
+  <% end %>
+  <%= yield :scripts %>
+  <%= render :partial => "rforum/common/google_analytics"%>
+  
 </body>
 </html>

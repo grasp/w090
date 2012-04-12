@@ -78,6 +78,9 @@
   sites:
     create: 提交网站
   menu:
+    cargos: "货物"
+    trucks: "车辆"
+    companies: "黄页"
     topics: "社区"
     wiki: "Wiki"
     posts: "文章"

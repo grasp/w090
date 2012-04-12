@@ -1,4 +1,6 @@
-source "http://rubygems.org"
+source "http://ruby.taobao.org"
+
+gem 'bundler'
 
 # Declare your gem's dependencies in rcity.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
@@ -15,3 +17,33 @@ gem "jquery-rails"
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+ gem 'mongoid' , "  ~> 2.4.8"
+ 
+
+#for development
+group :assets do
+  gem 'sass-rails', "  ~> 3.2.3"
+  gem 'coffee-rails', "~> 3.2.1"
+  gem 'uglifier', '>= 1.0.3'
+end
+
+#copy from Rforum ,remove some not needed
+group :development, :test do
+  gem 'capistrano', '2.9.0'
+  gem 'chunky_png', "1.2.5"
+  gem "memcache-client", "1.8.5"
+  gem 'progress_bar'
+  gem 'rspec-rails', '~> 2.8.1'
+  gem 'factory_girl_rails' , '~> 3.0.0'
+  gem 'thin'
+  gem "simplecov", :require => false
+  gem "rspec-cells"
+  gem "capybara"
+#  gem "sunspot-rails-tester"
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'libnotify'
+   gem 'spork-rails'   
+   gem 'guard-spork'
+   gem 'launchy'
+end

@@ -23,10 +23,18 @@ Rforum::SiteConfig.save_default("wiki_index_html",<<-eos
 eos
 )
 
+# Rmain Footer HTML
+SiteConfig.save_default("footer_html",<<-eos
+<p class="copyright">
+ &copy; 物流零距离.
+</p>
+eos
+)
+
 # Footer HTML
 Rforum::SiteConfig.save_default("footer_html",<<-eos
 <p class="copyright">
- &copy; w090.
+ &copy; 物流零距离社区.
 </p>
 eos
 )

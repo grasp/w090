@@ -1,6 +1,6 @@
 # coding: utf-8
 module Ruser
 class RsessionsController < Devise::SessionsController
-   layout "ruser"
+     layout "rtheme/ruser"
 end
 end

@@ -1,7 +1,7 @@
 # coding: utf-8
 module Ruser
 class RuserController < ApplicationController
-   layout "ruser"
+   layout "rtheme/ruser"
  protect_from_forgery
 
   def render_404

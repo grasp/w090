@@ -1,0 +1,35 @@
+<h1>Listing countries</h1>
+
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Name</th>
+    <th>Lat</th>
+    <th>Lng</th>
+    <th>Coordinates</th>
+    <th>Loc</th>
+    <th>Address</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @countries.each do |country| %>
+  <tr>
+    <td><%= country.code %></td>
+    <td><%= country.name %></td>
+    <td><%= country.lat %></td>
+    <td><%= country.lng %></td>
+    <td><%= country.coordinates %></td>
+    <td><%= country.loc %></td>
+    <td><%= country.address %></td>
+    <td><%= link_to 'Show', country %></td>
+    <td><%= link_to 'Edit', edit_country_path(country) %></td>
+    <td><%= link_to 'Destroy', country, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Country', new_country_path %>

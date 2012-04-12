@@ -3,7 +3,7 @@ class Rforum::TopicsController <Rforum::RforumController
   include Rforum::CellHelper
   include Rforum::NotesHelper
      include Rforum::Engine.routes.url_helpers
-  layout "rtheme/rforum"
+
   load_and_authorize_resource  :only => [:new,:edit,:create,:update,:destroy],:class=>"Rforum::Topic"
 
   before_filter :set_menu_active

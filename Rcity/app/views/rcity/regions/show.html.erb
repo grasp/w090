@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Code:</b>
+  <%= @region.code %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @region.name %>
+</p>
+
+<p>
+  <b>Lat:</b>
+  <%= @region.lat %>
+</p>
+
+<p>
+  <b>Lng:</b>
+  <%= @region.lng %>
+</p>
+
+<p>
+  <b>Coordinates:</b>
+  <%= @region.coordinates %>
+</p>
+
+<p>
+  <b>Loc:</b>
+  <%= @region.loc %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @region.address %>
+</p>
+
+
+<%= link_to 'Edit', edit_region_path(@region) %> |
+<%= link_to 'Back', regions_path %>

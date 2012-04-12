@@ -1,4 +1,5 @@
 require 'rubygems'
+gem  'bundler'
 gemfile = File.expand_path('../../../../Gemfile', __FILE__)
 
 if File.exist?(gemfile)

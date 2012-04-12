@@ -7,7 +7,6 @@ class UsersController < Ruser::RuserController
   before_filter :init_base_breadcrumb
   before_filter :set_menu_active
   before_filter :find_user, :only => [:show, :topics, :likes]
-   layout "ruser"
   def index
     @total_user_count = Ruser::User.count
      @active_users = Ruser::User.hot.limit(20)

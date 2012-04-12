@@ -1,4 +1,5 @@
 class Rforum::Setting < Settingslogic
-  source "#{Rails.root}/config/config.yml"
-  namespace Rails.env
+  source "#{Rforum::Engine.root}/config/rforum.yml"
+  namespace Rails.env# is this correct?
+
 end

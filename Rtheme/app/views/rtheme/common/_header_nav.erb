@@ -1,0 +1,14 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+         <%= render_list :class => "nav" do |li|
+            li << link_to(t("menu.cargos"), rforum.topics_path)
+               li << link_to(t("menu.trucks"), rforum.topics_path)
+                li << link_to(t("menu.companies"), rforum.topics_path)
+           li << link_to(t("menu.topics"), rforum.topics_path)
+           li << link_to(t("menu.wiki"), rforum.pages_path )
+           li << link_to(t("menu.sites"), rforum.sites_path )
+           li << link_to(t("menu.users"), ruser.users_path)
+         end %>

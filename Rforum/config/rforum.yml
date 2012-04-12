@@ -1,0 +1,35 @@
+defaults: &defaults
+  app_name: "物流零距离"
+  foot_html: "&copy; 物流零距离社区."
+  domain: "127.0.0.1:3000"    
+  admin_emails: 
+    - "hunter.wxhu@gmail.com"
+  google_analytics_key: ""
+  upload_url: "http://w090-dev.b0.upaiyun.com"
+  upyun_username: "test"
+  upyun_password: "123123"
+  upyun_bucket: "w090-files-dev"
+  google_group_email: "w090.master@w090.com"
+  email_sender: 'w090.master@w090.com'
+  aws_access_key_id: ''
+  aws_secret_access_key: ''
+  twitter_token: ""
+  twitter_secret: ""
+  github_token: ""
+  github_secret: ""
+  douban_token: ""
+  douban_secret: ""
+  google_js_api_key: ""
+  external_feed_url: "http://ruby-taiwan.org/topics/feed"
+  external_feed_name: "Ruby Taiwan Group"
+  twitter_id: "ruby_china"
+  gravatar_proxy: "http://gravatar.com"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

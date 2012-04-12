@@ -1,0 +1,2 @@
+module Rcity::CitystatisticsHelper
+end

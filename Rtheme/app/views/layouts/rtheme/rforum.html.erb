@@ -25,11 +25,9 @@
     <div class="topbar-inner">
       <div class="container">
         <h3>
-          <a href="/"><%= Ruser::Setting.app_name %></a>
+          <a href="/"><%= Rforum::Setting.app_name %></a>
         </h3>
-         <%= render_list :class => "nav" do |li|
-                  li << link_to(t("menu.users"), ruser.users_path)
-         end %>
+       <%= render "rtheme/common/header_nav" %>
         <%= render "ruser/common/search_form" %>
         <%= render "ruser/common/user_nav" %>
       </div>
@@ -47,7 +45,7 @@
   <% if not mobile? %>
   <footer class="footer">
     <div class="container">
-      <%= raw Ruser::SiteConfig.footer_html %>
+      <%= raw Rforum::SiteConfig.footer_html %>
     </div>
   </footer>
   <% end %>

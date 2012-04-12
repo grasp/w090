@@ -7,16 +7,18 @@ require "rcity/version"
 Gem::Specification.new do |s|
   s.name        = "rcity"
   s.version     = Rcity::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Rcity."
-  s.description = "TODO: Description of Rcity."
+  s.authors     = ["hunter"]
+  s.email       = ["Your email"]
+  s.homepage    = "http://github"
+  s.summary     = "Summary of Rcity."
+  s.description = "Description of Rcity."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.3"
   # s.add_dependency "jquery-rails"
 
-  s.add_development_dependency "sqlite3"
+ # s.add_development_dependency "sqlite3"
+    s.add_development_dependency "mongoid"
 end

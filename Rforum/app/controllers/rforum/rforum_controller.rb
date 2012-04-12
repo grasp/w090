@@ -3,7 +3,7 @@ module Rforum
   class RforumController < ApplicationController
       include Bootstrap::Breadcrumb 
       include Rforum::Engine.routes.url_helpers
-      layout "rforum/rforumdebug"
+      layout "rtheme/rforum"
     def routenav      
     end
     
