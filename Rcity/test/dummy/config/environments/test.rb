@@ -6,7 +6,7 @@ Dummy::Application.configure do
   # your test database is "scratch space" for the test suite and is wiped
   # and recreated between test runs. Don't rely on the data there!
   config.cache_classes = true
-
+ config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   # Configure static asset server for tests with Cache-Control for performance
   config.serve_static_assets = true
   config.static_cache_control = "public, max-age=3600"
@@ -14,7 +14,7 @@ Dummy::Application.configure do
   # Log error messages when you accidentally call methods on nil
   config.whiny_nils = true
 
-  # Show full error reports and disable caching
+  # Show full error reports and disable caching 
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
 

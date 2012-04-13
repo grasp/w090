@@ -1,4 +1,5 @@
-<%= form_for(@country) do |f| %>
+<%= form_for(@country,:url=>rcity.new_country_path) do |f| %>
+<%#= form_for(@country) do |f| %>
   <% if @country.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@country.errors.count, "error") %> prohibited this country from being saved:</h2>

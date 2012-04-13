@@ -3,7 +3,7 @@ module Rcity
     # GET /countries
     # GET /countries.json
     def index
-      @countries = Country.all
+      @countries = Rcity::Country.all
   
       respond_to do |format|
         format.html # index.html.erb
@@ -14,7 +14,7 @@ module Rcity
     # GET /countries/1
     # GET /countries/1.json
     def show
-      @country = Country.find(params[:id])
+      @country = Rcity::Country.find(params[:id])
   
       respond_to do |format|
         format.html # show.html.erb
@@ -25,7 +25,7 @@ module Rcity
     # GET /countries/new
     # GET /countries/new.json
     def new
-      @country = Country.new
+      @country = Rcity::Country.new
   
       respond_to do |format|
         format.html # new.html.erb
@@ -35,13 +35,13 @@ module Rcity
   
     # GET /countries/1/edit
     def edit
-      @country = Country.find(params[:id])
+      @country = Rcity::Country.find(params[:id])
     end
   
     # POST /countries
     # POST /countries.json
     def create
-      @country = Country.new(params[:country])
+      @country = Rcity::Country.new(params[:country])
   
       respond_to do |format|
         if @country.save
@@ -57,7 +57,7 @@ module Rcity
     # PUT /countries/1
     # PUT /countries/1.json
     def update
-      @country = Country.find(params[:id])
+      @country = Rcity::Country.find(params[:id])
   
       respond_to do |format|
         if @country.update_attributes(params[:country])
@@ -73,7 +73,7 @@ module Rcity
     # DELETE /countries/1
     # DELETE /countries/1.json
     def destroy
-      @country = Country.find(params[:id])
+      @country = Rcity::Country.find(params[:id])
       @country.destroy
   
       respond_to do |format|
