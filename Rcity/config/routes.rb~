@@ -1,5 +1,5 @@
 Rcity::Engine.routes.draw do
-
+  
   #get "home/root"
   root :to => "home#root"
 
@@ -14,6 +14,7 @@ Rcity::Engine.routes.draw do
   match '/cities/modal/show(/:code)/line/:fcode/:tcode'=>'cities#modal',:as=>:citiesmodal
   match '/cities/map/show/city/:code'=>'cities#mapcity',:as=>:citiesmapcity
   match '/cities/map/show/line/:fcode/:tcode'=>'cities#mapline',:as=>:citiesmapline
+   ＃"非常不错，继续使用"
   resources :cities
 
 end

@@ -7,5 +7,4 @@ class Rcity::Province
   field :coordinates, :type => Array
   field :loc, :type => Array
   field :address, :type => String
-  belongs_to :country,:class_name=>"Rcity::Country"
 end

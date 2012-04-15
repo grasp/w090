@@ -5,7 +5,7 @@ gem 'bundler'
 # Declare your gem's dependencies in rcity.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
-gemspec
+#gemspec
 
 # jquery-rails is used by the dummy application
 gem "jquery-rails"
@@ -17,7 +17,7 @@ gem "jquery-rails"
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
- gem 'mongoid' , "  ~> 2.4.8"
+ gem 'mongoid'
 
 
 #for development
@@ -27,7 +27,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-#copy from Rforum ,remove some not needed
+#copy from Rforum
 group :development, :test do
   gem 'capistrano', '2.9.0'
   gem 'chunky_png', "1.2.5"
@@ -39,14 +39,13 @@ group :development, :test do
   gem "simplecov", :require => false
   gem "rspec-cells"
   gem "capybara"
- #gem "sunspot-rails-tester"
-  gem 'quiet_assets', :path=>"~/vob/github/quiet_assets" #to disable those annoy assets log
+  #gem "sunspot-rails-tester"
   gem 'guard'
   gem 'guard-rspec'
   gem 'libnotify'
   gem 'spork-rails'
   gem 'guard-spork'
-  gem 'guard-livereload'
-  gem 'yajl-ruby'
   gem 'launchy'
+  gem 'guard-livereload'
+  gem 'mongoid-rspec'
 end

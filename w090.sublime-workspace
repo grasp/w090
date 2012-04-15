@@ -1,0 +1,189 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "#coding:utf-8\n\nrequire File.join(File.Dir(_FILE_),\"load_country.rb\")\n\n\ndef load_province_into_db\n\n    @current_country=Rcity::Country.where(:code=>\"086\").first\n    raise unless @current_country\n\n\n    #first write into all province name\n    filename=File.dirname(__FILE__)+File::SEPARATOR+\"code3.txt\"\n    open(filename).each do |line|\n      line=Iconv.conv(\"utf-8//IGNORE\",\"GB2312\",line)\n      name= line.split(',')\n      name[1]=name[1].chomp!\n      if name[0].match(/\\d\\d0000000000$/) # is a province id\n        province=@current_country.provinces.build(:code=>name[0],:name=>name[1])\n        province.save!\n     #   $province_region[name[0]]=name[1]  #insert name hash at first when found a province\n     #   $citytree[name[0]]={}\n     #   $province_tree[name[0]]=Array.new\n\n      elsif name[0].match(/\\d\\d\\d\\d00000000$/)  and (not name[0].match(/\\d\\d0000000000$/))  # is a region\n        # $province_region[name[0]]=name[1]  #insert name hash at first when found a region\n        # province_code=name[0].slice(0,2)+\"0000000000\"\n        #$citytree[province_code][name[0]]={}\n        #$province_tree[province_code]=$province_tree[province_code]<< name[0]\n        #$all_region_hash[name[1]]=name[0]\n        #$region_code[name[0]]=[]\n\n      elsif (not name[0].match(/\\d\\d\\d\\d00000000$/)) and (not name[0].match(/\\d\\d0000000000$/))# is a city\n        #province_code=name[0].slice(0,2)+\"0000000000\"\n        #region_code=name[0].slice(0,4)+\"00000000\"\n        #$citytree[province_code][region_code][name[0]]=name[1]\n        #$region_code[region_code]<< name[0]\n\n      else\n        puts \"非法城市数据\"\n      end\n    end\n  end\nRcity::Province.delete_all\nload_province_into_db\n###\n",
+			"file": "Rcity/config/initializers/load_city_to_db.rb",
+			"file_size": 1675,
+			"file_write_time": 1334478159000000,
+			"settings":
+			{
+				"buffer_size": 1667,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/hunter/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/hunter/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/hunter/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/hunter/vob/w090/Rcity/config/initializers/city_load.rb",
+		"/home/hunter/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/hunter/vob/w090/w090.sublime-workspace",
+		"/home/hunter/vob/w090/Rcity/config/initializers/load_country.rb",
+		"/home/hunter/vob/w090/Rcity/config/initializers/load_country.rb~",
+		"/home/hunter/vob/w090/Rcity/spec/dummy/script/rails"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ctrl+space",
+			"$/)",
+			"__file__"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Rcity/config/initializers/load_city_to_db.rb",
+					"settings":
+					{
+						"buffer_size": 1667,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1667,
+								1667
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"w090.sublime-workspace"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 208.0,
+	"status_bar_visible": true
+}

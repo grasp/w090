@@ -24,7 +24,6 @@
     <td><%= province.coordinates %></td>
     <td><%= province.loc %></td>
     <td><%= province.address %></td>
- <td><%= province.country_id %></td>
     <td><%= link_to 'Show', province %></td>
     <td><%= link_to 'Edit', edit_province_path(province) %></td>
     <td><%= link_to 'Destroy', province, confirm: 'Are you sure?', method: :delete %></td>

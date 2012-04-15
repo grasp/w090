@@ -6,13 +6,13 @@ class Rcity::CitiesController < Rcity::RcityController
  # include CompaniesHelper
   caches_page :index
   #   expire_page :action => :index
-  layout :choose_layout
-
+  layout :choose_layout 
+  
   def choose_layout
     return "cargo"  if action_name =='mapcity'   ||    action_name =='mapline'
-    return nil
+    return nil     
   end
-
+  
   def index
     #  puts "city action index happen dir=#{params[:dir]}"
     #get the original value
@@ -20,14 +20,14 @@ class Rcity::CitiesController < Rcity::RcityController
       code=params[:code] ||( params[:search][:fcity_code] unless params[:search].nil?)
     elsif  params[:dir]=="to"
       code=params[:code] || (params[:search][:tcity_code] unless params[:search].nil?)
-    end
-
+    end       
+    
     if code.nil? || code=="100000000000"
       code="330100000000" #default open ZheJiang Province
       # puts "code is nil !!!"
-    end
+    end    
     @code=code
-    @selected_city_code=code
+    @selected_city_code=code  
 
     respond_to do |format|
       format.html # index.html.erb
@@ -84,14 +84,14 @@ class Rcity::CitiesController < Rcity::RcityController
     end
   end
 
-
+  
   def modal
     @city_code=params[:code]
     @fcity_code=params[:fcode]
     @tcity_code=params[:tcode]
-    @companies= get_search_companies(params[:code])
+    @companies= get_search_companies(params[:code])    
   end
-
+  
   def mapcity
     @city_code=params[:code]
     city=City.where(:code=> @city_code).first
@@ -103,9 +103,9 @@ class Rcity::CitiesController < Rcity::RcityController
              {'description': 'Hi', 'title': 'test', 'sidebar': '', 'lng': #{@lng}, 'lat': #{@lat}, 'picture': '', 'width': '940', 'height': '800'},
              {'lng': #{@lng}, 'lat': #{@lat} }
             ]"
-    end
+    end  
   end
-
+  
   def mapline
     @fcity_code=params[:fcode]
     @tcity_code=params[:tcode]
@@ -114,9 +114,9 @@ class Rcity::CitiesController < Rcity::RcityController
     @fcity_full_name=get_city_full_name(params[:fcode])
     @tcity_full_name=get_city_full_name(params[:tcode])
   end
-
-
-
+  
+ 
+  
   # DELETE /cities/1
   # DELETE /cities/1.xml
   def destroy
