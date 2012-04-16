@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "rcity/countries/new" do
   before(:each) do
-    assign(:country, stub_model(Rcity::Country).as_new_record)
+    assign(:country, stub_model(Rcity::Country,:code=>"086",:name=>"china").as_new_record)
   end
 
   it "renders new country form" do

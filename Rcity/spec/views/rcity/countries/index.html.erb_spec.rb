@@ -3,8 +3,8 @@ require 'spec_helper'
 describe "rcity/countries/index" do
   before(:each) do
     assign(:countries, [
-      stub_model(Rcity::Country),
-      stub_model(Rcity::Country)
+      stub_model(Rcity::Country,:code=>"086",:name=>"china"),
+      stub_model(Rcity::Country,:code=>"087",:name=>"china2")
     ])
   end
 

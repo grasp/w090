@@ -1,14 +1,11 @@
 #coding:utf-8
 
-require File.join(File.Dir(_FILE_),"load_country.rb")
+require File.join(File.dirname(__FILE__),"load_country.rb")
 
 
 def load_province_into_db
-
     @current_country=Rcity::Country.where(:code=>"086").first
     raise unless @current_country
-
-
     #first write into all province name
     filename=File.dirname(__FILE__)+File::SEPARATOR+"code3.txt"
     open(filename).each do |line|
@@ -18,9 +15,9 @@ def load_province_into_db
       if name[0].match(/\d\d0000000000$/) # is a province id
         province=@current_country.provinces.build(:code=>name[0],:name=>name[1])
         province.save!
-     #   $province_region[name[0]]=name[1]  #insert name hash at first when found a province
-     #   $citytree[name[0]]={}
-     #   $province_tree[name[0]]=Array.new
+        #   $province_region[name[0]]=name[1]  #insert name hash at first when found a province
+        #   $citytree[name[0]]={}
+        #   $province_tree[name[0]]=Array.new
 
       elsif name[0].match(/\d\d\d\d00000000$/)  and (not name[0].match(/\d\d0000000000$/))  # is a region
         # $province_region[name[0]]=name[1]  #insert name hash at first when found a region

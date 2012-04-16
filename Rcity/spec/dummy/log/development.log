@@ -1795,3 +1795,302 @@ MONGODB [DEBUG] Logging level is currently :debug which could negatively impact 
 MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
 MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
 MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB (0ms) dummy_development['system.namespaces'].find({})
+MONGODB (16ms) dummy_development['$cmd'].find({:create=>"rcity_countries"}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_countries'].find({:code=>"086"}).limit(-1).sort([[:_id, :asc]])
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB (0ms) dummy_development['system.namespaces'].find({})
+MONGODB (0ms) dummy_development['rcity_countries'].find({:code=>"086"}).limit(-1).sort([[:_id, :asc]])
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB (0ms) dummy_development['system.namespaces'].find({})
+MONGODB (0ms) dummy_development['rcity_countries'].find({:code=>"086"}).limit(-1).sort([[:_id, :asc]])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_countries", "query"=>{:code=>"086"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_countries'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001'), "code"=>"086", "name"=>"中国"}])
+MONGODB (0ms) dummy_development['system.namespaces'].find({})
+MONGODB (0ms) dummy_development['$cmd'].find({:create=>"rcity_provinces"}).limit(-1)
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].remove({})
+MONGODB (0ms) dummy_development['rcity_countries'].find({:code=>"086"}).limit(-1).sort([[:_id, :asc]])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"110000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000002'), "code"=>"110000000000", "name"=>"北京", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"120000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000003'), "code"=>"120000000000", "name"=>"天津", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"130000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000004'), "code"=>"130000000000", "name"=>"河北", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"140000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000005'), "code"=>"140000000000", "name"=>"山西", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"150000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000006'), "code"=>"150000000000", "name"=>"内蒙古", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"210000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000007'), "code"=>"210000000000", "name"=>"辽宁", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"220000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000008'), "code"=>"220000000000", "name"=>"吉林", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"230000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000009'), "code"=>"230000000000", "name"=>"黑龙江", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"310000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f00000a'), "code"=>"310000000000", "name"=>"上海", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"320000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f00000b'), "code"=>"320000000000", "name"=>"江苏", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"330000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f00000c'), "code"=>"330000000000", "name"=>"浙江", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"340000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f00000d'), "code"=>"340000000000", "name"=>"安徽", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"350000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f00000e'), "code"=>"350000000000", "name"=>"福建", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"360000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f00000f'), "code"=>"360000000000", "name"=>"江西", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"370000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000010'), "code"=>"370000000000", "name"=>"山东", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"410000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000011'), "code"=>"410000000000", "name"=>"河南", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"420000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000012'), "code"=>"420000000000", "name"=>"湖北", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"430000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000013'), "code"=>"430000000000", "name"=>"湖南", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"440000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000014'), "code"=>"440000000000", "name"=>"广东", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"450000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000015'), "code"=>"450000000000", "name"=>"广西", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"460000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000016'), "code"=>"460000000000", "name"=>"海南", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"500000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000017'), "code"=>"500000000000", "name"=>"重庆市", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"510000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000018'), "code"=>"510000000000", "name"=>"四川", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"520000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000019'), "code"=>"520000000000", "name"=>"贵州", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"530000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f00001a'), "code"=>"530000000000", "name"=>"云南", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"540000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f00001b'), "code"=>"540000000000", "name"=>"西藏", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"610000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f00001c'), "code"=>"610000000000", "name"=>"陕西", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"620000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f00001d'), "code"=>"620000000000", "name"=>"甘肃", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"630000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f00001e'), "code"=>"630000000000", "name"=>"青海", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"640000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f00001f'), "code"=>"640000000000", "name"=>"宁夏", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"650000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000020'), "code"=>"650000000000", "name"=>"新疆", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['rcity_countries'].find({:code=>"086"}).limit(-1).sort([[:_id, :asc]])
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-16 16:25:17 +0800
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  thin (1.3.1) lib/thin/connection.rb:80:in `block in pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.1) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.3) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.3) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.3) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.3) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (48.5ms)
+
+
+Started GET "/rcity" for 127.0.0.1 at 2012-04-16 16:25:20 +0800
+Processing by Rcity::HomeController#root as HTML
+  Rendered /home/hunter/vob/w090/Rcity/app/views/rcity/home/root.html.erb within layouts/application (72.2ms)
+Compiled application.js  (4ms)  (pid 10799)
+Completed 200 OK in 89ms (Views: 88.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-16 16:25:21 +0800
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffold.css?body=1" for 127.0.0.1 at 2012-04-16 16:25:21 +0800
+Served asset /scaffold.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-16 16:25:21 +0800
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-16 16:25:21 +0800
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-16 16:25:21 +0800
+Served asset /application.js - 200 OK (5ms)
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB (0ms) dummy_development['system.namespaces'].find({})
+MONGODB (0ms) dummy_development['rcity_countries'].find({:code=>"086"}).limit(-1).sort([[:_id, :asc]])
+MONGODB (0ms) dummy_development['system.namespaces'].find({})
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].remove({})
+MONGODB (0ms) dummy_development['rcity_countries'].find({:code=>"086"}).limit(-1).sort([[:_id, :asc]])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"110000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a000001'), "code"=>"110000000000", "name"=>"北京", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"120000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a000002'), "code"=>"120000000000", "name"=>"天津", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"130000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a000003'), "code"=>"130000000000", "name"=>"河北", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"140000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a000004'), "code"=>"140000000000", "name"=>"山西", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"150000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a000005'), "code"=>"150000000000", "name"=>"内蒙古", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"210000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a000006'), "code"=>"210000000000", "name"=>"辽宁", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"220000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a000007'), "code"=>"220000000000", "name"=>"吉林", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"230000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a000008'), "code"=>"230000000000", "name"=>"黑龙江", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"310000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a000009'), "code"=>"310000000000", "name"=>"上海", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"320000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a00000a'), "code"=>"320000000000", "name"=>"江苏", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"330000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a00000b'), "code"=>"330000000000", "name"=>"浙江", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"340000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a00000c'), "code"=>"340000000000", "name"=>"安徽", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"350000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a00000d'), "code"=>"350000000000", "name"=>"福建", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"360000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a00000e'), "code"=>"360000000000", "name"=>"江西", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"370000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a00000f'), "code"=>"370000000000", "name"=>"山东", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"410000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a000010'), "code"=>"410000000000", "name"=>"河南", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"420000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a000011'), "code"=>"420000000000", "name"=>"湖北", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"430000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a000012'), "code"=>"430000000000", "name"=>"湖南", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"440000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a000013'), "code"=>"440000000000", "name"=>"广东", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"450000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a000014'), "code"=>"450000000000", "name"=>"广西", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"460000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a000015'), "code"=>"460000000000", "name"=>"海南", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"500000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a000016'), "code"=>"500000000000", "name"=>"重庆市", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"510000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a000017'), "code"=>"510000000000", "name"=>"四川", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"520000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a000018'), "code"=>"520000000000", "name"=>"贵州", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"530000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a000019'), "code"=>"530000000000", "name"=>"云南", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"540000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a00001a'), "code"=>"540000000000", "name"=>"西藏", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"610000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a00001b'), "code"=>"610000000000", "name"=>"陕西", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"620000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a00001c'), "code"=>"620000000000", "name"=>"甘肃", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"630000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a00001d'), "code"=>"630000000000", "name"=>"青海", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"640000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a00001e'), "code"=>"640000000000", "name"=>"宁夏", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"650000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8bd82ad1ad1f2a8a00001f'), "code"=>"650000000000", "name"=>"新疆", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['rcity_countries'].find({:code=>"086"}).limit(-1).sort([[:_id, :asc]])
+MONGODB [DEBUG] Logging level is currently :debug which could negatively impact client-side performance. You should set your logging level no lower than :info in production.
+MONGODB (0ms) admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB (0ms) dummy_development['system.namespaces'].find({})
+MONGODB (0ms) dummy_development['rcity_countries'].find({:code=>"086"}).limit(-1).sort([[:_id, :asc]])
+MONGODB (0ms) dummy_development['system.namespaces'].find({})
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].remove({})
+MONGODB (0ms) dummy_development['rcity_countries'].find({:code=>"086"}).limit(-1).sort([[:_id, :asc]])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"110000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b91000001'), "code"=>"110000000000", "name"=>"北京", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"120000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b91000002'), "code"=>"120000000000", "name"=>"天津", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"130000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b91000003'), "code"=>"130000000000", "name"=>"河北", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"140000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b91000004'), "code"=>"140000000000", "name"=>"山西", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"150000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b91000005'), "code"=>"150000000000", "name"=>"内蒙古", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"210000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b91000006'), "code"=>"210000000000", "name"=>"辽宁", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"220000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b91000007'), "code"=>"220000000000", "name"=>"吉林", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"230000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b91000008'), "code"=>"230000000000", "name"=>"黑龙江", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"310000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b91000009'), "code"=>"310000000000", "name"=>"上海", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"320000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b9100000a'), "code"=>"320000000000", "name"=>"江苏", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"330000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b9100000b'), "code"=>"330000000000", "name"=>"浙江", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"340000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b9100000c'), "code"=>"340000000000", "name"=>"安徽", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"350000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b9100000d'), "code"=>"350000000000", "name"=>"福建", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"360000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b9100000e'), "code"=>"360000000000", "name"=>"江西", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"370000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b9100000f'), "code"=>"370000000000", "name"=>"山东", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"410000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b91000010'), "code"=>"410000000000", "name"=>"河南", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"420000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b91000011'), "code"=>"420000000000", "name"=>"湖北", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"430000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b91000012'), "code"=>"430000000000", "name"=>"湖南", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"440000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b91000013'), "code"=>"440000000000", "name"=>"广东", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"450000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b91000014'), "code"=>"450000000000", "name"=>"广西", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"460000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b91000015'), "code"=>"460000000000", "name"=>"海南", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"500000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b91000016'), "code"=>"500000000000", "name"=>"重庆市", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"510000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b91000017'), "code"=>"510000000000", "name"=>"四川", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"520000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b91000018'), "code"=>"520000000000", "name"=>"贵州", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"530000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b91000019'), "code"=>"530000000000", "name"=>"云南", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"540000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b9100001a'), "code"=>"540000000000", "name"=>"西藏", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"610000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b9100001b'), "code"=>"610000000000", "name"=>"陕西", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"620000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b9100001c'), "code"=>"620000000000", "name"=>"甘肃", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"630000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b9100001d'), "code"=>"630000000000", "name"=>"青海", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"640000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b9100001e'), "code"=>"640000000000", "name"=>"宁夏", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['$cmd'].find({"count"=>"rcity_provinces", "query"=>{:code=>"650000000000"}, "fields"=>nil}).limit(-1)
+MONGODB (0ms) dummy_development['rcity_provinces'].insert([{"_id"=>BSON::ObjectId('4f8be668d1ad1f3b9100001f'), "code"=>"650000000000", "name"=>"新疆", "country_id"=>BSON::ObjectId('4f8bd728d1ad1f2a2f000001')}])
+MONGODB (0ms) dummy_development['rcity_countries'].find({:code=>"086"}).limit(-1).sort([[:_id, :asc]])

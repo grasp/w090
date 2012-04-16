@@ -7,4 +7,13 @@ class Rcity::Region
   field :coordinates, :type => Array
   field :loc, :type => Array
   field :address, :type => String
+ 
+  #belong to 
+  belongs_to :province,:class_name=>"Rcity::Province"
+
+  #has many
+  has_many :cities,:class_name=>"Rcity::City"
+  #validator
+  validates_presence_of :code,:name
+  validates_uniqueness_of :code
 end

@@ -2,7 +2,8 @@ require 'spec_helper'
 
 describe "rcity/countries/edit" do
   before(:each) do
-    @country = assign(:country, stub_model(Rcity::Country))
+    @country = assign(:country, stub_model(Rcity::Country,:code=>"086",:name=>"china"))
+ #@country = assign(:country, let(:country){FactoryGirl(:country)})
   end
 
   it "renders the edit country form" do

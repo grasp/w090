@@ -24,14 +24,18 @@ describe Rcity::CountriesController do ###
   # Country. As you add validations to Country, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {}
+    {
+      :code=>"086",:name=>"china"
+    }
   end
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
   # CountriesController. Be sure to keep this updated too.
   def valid_session
-    {}
+    {
+      
+    }
   end
 
   describe "GET index" do
