@@ -1,0 +1,18 @@
+<div>
+
+<%@provinces.each_index do |index|%> 
+
+    <%if index%2==0%>
+      <span><%= link_to @provinces[index].name, rcity.province_nav_path(@provinces[index].code) %></span>
+    <%end%> 
+
+<%end%>
+</div>
+ <div>
+
+<%@provinces.each_index do |index|%> 
+    <%if index%2==1%>
+      <span><%= link_to @provinces[index].name, rcity.province_nav_path(@provinces[index].code)%></span>
+    <%end%>
+ <%end%>
+ </div>

@@ -81,5 +81,12 @@ module Rcity
         format.json { head :no_content }
       end
     end
+    def nav
+        @country=Country.where(:code=>"086").first#hard code
+        @provinces=@country.provinces.asc(:code).to_a    
+        @province=Province.where(:code=>params[:region_id].slice(0,2)+"0000000000").first
+        @regions=@province.regions 
+      #  puts "hihiihi , i am region" 
+    end
   end
 end

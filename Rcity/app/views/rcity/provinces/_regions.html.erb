@@ -1,0 +1,10 @@
+<%@regions.each do |region|%>
+
+<div>
+  <span><%= link_to region.name, region_nav_path(region.code) %></span>
+  <%region.chengs.each do |city|%>
+  <td><%= link_to city.name, cheng_nav_path(city.code) %></td>
+  <%end%>
+</div>
+<%end%>
+

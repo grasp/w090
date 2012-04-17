@@ -1,0 +1,41 @@
+<h1>Listing chengs</h1>
+
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Name</th>
+    <th>Lat</th>
+    <th>Lng</th>
+    <th>Coordinates</th>
+    <th>Loc</th>
+    <th>Address</th>
+    <th>Province</th>
+     <th>country</th>
+     <th>cheng nav</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @chengs.each do |cheng| %>
+  <tr>
+      <td><%= cheng.code %></td>
+    <td><%= cheng.name %></td>
+    <td><%= cheng.lat %></td>
+    <td><%= cheng.lng %></td>
+    <td><%= cheng.coordinates %></td>
+    <td><%= cheng.loc %></td>
+    <td><%= cheng.address %></td>
+    <td><%= cheng.region.name %></td>
+    <td><%= cheng.region.province.name %></td>
+    <td><%= link_to 'chengnav', cheng_nav_path(cheng.code) %></td>
+    <td><%= link_to 'Show', cheng %></td>
+    <td><%= link_to 'Edit', edit_cheng_path(cheng) %></td>
+    <td><%= link_to 'Destroy', cheng, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cheng', new_cheng_path %>

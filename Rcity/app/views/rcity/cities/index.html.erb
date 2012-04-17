@@ -1,66 +1,41 @@
+<h1>Listing cities</h1>
 
-<%#coding:utf-8%>
- 
-<%get_city_array(@code)%>
+<table>
 
-<div class="city_selector" style="display:inline">
- <div class="citytitle">
-<%if params[:dir]=="from"%>
-<p style="display: inline"> 出发城市:<b id="selected_city" > <%=@selected_city_name%></b></p>
-<%end%>
-
-<%if params[:dir]=="to"%>
-<p style="display: inline;">到达城市:<b id="selected_city" ><%=@selected_city_name%></b></p>
-<%end%>
-
-<input id="selected_city_name" name="selected_city_name" value="<%=@selected_city_name%>" type="hidden"> </input>
-<input id="selected_city_code" name="selected_city_code" value="<%=@selected_city_code%>" type="hidden"> </input>
-</div>
-
-<div class="province" style="margin-left: 0px;" >
- <div>
-  <%$raw_province_array.each do |one_row|%>
-   <div>
-    <%one_row.each do |city_key|%> 
-    <%if city_key.to_s==@province_code%>
-     <a class="selected_province city_province"  href=<%="/cities/#{params[:dir]}/#{city_key}"%>><%=$province_region[city_key.to_s]%></a>
-    <%else%>
-     <a  class="city_province" href=<%="/cities/#{params[:dir]}/#{city_key}"%>><%=$province_region[city_key.to_s]%></a>
-     <%end%> 
-    
-    <%end%>
-      </div>
-
-   
-  <%end%>
-     </div>
-  </div>
-
-<div class="region ">
-  <div style="margin-top: 10px">
-    <%@region.each do |region_code,region|%>
-
-      <div class="city_line">
-         <%if region_code==@region_code%>
-         <a class ="selected_region city_region" href=<%="/cities/#{params[:dir]}/#{region_code}"%>><%=$province_region[region_code]%></a> 
-        <%else%>
-        <a class ="city_region" href=<%="/cities/#{params[:dir]}/#{region_code}"%>><%=$province_region[region_code]%></a>   
-        <%end%>
-       <%region.each do |city_code,city_name|%>
-        <%if city_code==@city_code%>
-         <a class="selected_city city" href=<%="/cities/#{params[:dir]}/#{city_code}"%>><%=city_name%></a>
-        <%else%>
-          <a class="city" href=<%="/cities/#{params[:dir]}/#{city_code}"%>><%=city_name%></a>
-          <%end%>
-       <%end%>
-      </div>
-
-    <%end%>
-</div>
-  </div>
+  <tr>
+    <th>Code</th>
+    <th>Name</th>
+    <th>Lat</th>
+    <th>Lng</th>
+    <th>Coordinates</th>
+    <th>Loc</th>
+    <th>Address</th>
+    <th>region</th>
+    <th>nav</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
 
 
+<% @cities.each do |city| %>
+  <tr>
+    <td><%= city.code %></td>
+    <td><%= city.name %></td>
+    <td><%= city.lat %></td>
+    <td><%= city.lng %></td>
+    <td><%= city.coordinates %></td>
+    <td><%= city.loc %></td>
+    <td><%= city.address %></td>
+ <td><%= city.region.name %></td>
+ <td><%= link_to 'city_nav', city_nav_path(city.code) %></td>
+    <td><%= link_to 'Show', city %></td>
+    <td><%= link_to 'Edit', edit_city_path(city) %></td>
+    <td><%= link_to 'Destroy', city, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
 
-</div>
+<br />
 
-
+<%= link_to 'New City', new_city_path %>

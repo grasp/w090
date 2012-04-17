@@ -9,6 +9,7 @@
     <th>Coordinates</th>
     <th>Loc</th>
     <th>Address</th>
+    <th>nav</th>
     <th></th>
     <th></th>
     <th></th>
@@ -23,6 +24,7 @@
     <td><%= country.coordinates %></td>
     <td><%= country.loc %></td>
     <td><%= country.address %></td>
+     <td><%= link_to 'province nav', rcity.country_nav_path(country.code) %></td>
     <td><%= link_to 'Show', rcity.country_path(country) %></td>
     <td><%= link_to 'Edit', rcity.edit_country_path(country) %></td>
     <td><%= link_to 'Destroy', rcity.country_path(country), confirm: 'Are you sure?', method: :delete %></td>

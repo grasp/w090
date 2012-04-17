@@ -12,8 +12,9 @@ class Rcity::Region
   belongs_to :province,:class_name=>"Rcity::Province"
 
   #has many
-  has_many :cities,:class_name=>"Rcity::City"
+  has_many :chengs,:class_name=>"Rcity::Cheng"
   #validator
   validates_presence_of :code,:name
   validates_uniqueness_of :code
+ # cache
 end

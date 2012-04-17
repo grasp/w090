@@ -66,6 +66,7 @@ Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
 RSpec.configure do |config|
   config.include Rcity::Engine.routes.url_helpers
+  config.before(:each) { Mongoid::IdentityMap.clear }
 
   config.before(:suite) do
     DatabaseCleaner.strategy = :truncation

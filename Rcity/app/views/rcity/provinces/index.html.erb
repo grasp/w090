@@ -9,7 +9,8 @@
     <th>Coordinates</th>
     <th>Loc</th>
     <th>Address</th>
-    <th>ID</th>
+    <th>Country</th>
+    <th>nav</th>
     <th></th>
     <th></th>
     <th></th>
@@ -24,7 +25,8 @@
     <td><%= province.coordinates %></td>
     <td><%= province.loc %></td>
     <td><%= province.address %></td>
- <td><%= province.country_id %></td>
+ <td><%= province.country.name %></td>
+ <td><%= link_to 'province_nav', province_nav_path(province.code) %></td>
     <td><%= link_to 'Show', province %></td>
     <td><%= link_to 'Edit', edit_province_path(province) %></td>
     <td><%= link_to 'Destroy', province, confirm: 'Are you sure?', method: :delete %></td>

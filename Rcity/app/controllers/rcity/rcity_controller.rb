@@ -1,4 +1,4 @@
 #coding: utf-8
-class Rcity::RcityController < ActionController::Base
+class Rcity::RcityController < ApplicationController
   
 end

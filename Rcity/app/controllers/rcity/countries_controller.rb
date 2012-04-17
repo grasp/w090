@@ -81,5 +81,9 @@ module Rcity
         format.json { head :no_content }
       end
     end
+    def nav
+      @country=Country.where(:code=>params[:country_id]).first
+      @provinces=@country.provinces.asc(:code).to_a      
+    end
   end
 end

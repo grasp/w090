@@ -3,40 +3,67 @@
 require File.join(File.dirname(__FILE__),"load_country.rb")
 
 
-def load_province_into_db
-    @current_country=Rcity::Country.where(:code=>"086").first
-    raise unless @current_country
-    #first write into all province name
-    filename=File.dirname(__FILE__)+File::SEPARATOR+"code3.txt"
-    open(filename).each do |line|
+def get_current_object_by_code(class_name,code)
+   current_object=class_name.where(:code=>"#{code}").first
+   current_object.nil? ? (raise unless current_object):current_object
+end
+
+def get_city_code_file_full_path(filename)
+  filename=File.dirname(__FILE__)+File::SEPARATOR+"#{filename}"
+end
+
+
+def scan_code_name_for_cn
+    current_country= get_current_object_by_code(Rcity::Country,"086")   
+    open(get_city_code_file_full_path("code3.txt")).each do |line|
       line=Iconv.conv("utf-8//IGNORE","GB2312",line)
       name= line.split(',')
-      name[1]=name[1].chomp!
-      if name[0].match(/\d\d0000000000$/) # is a province id
-        province=@current_country.provinces.build(:code=>name[0],:name=>name[1])
-        province.save!
-        #   $province_region[name[0]]=name[1]  #insert name hash at first when found a province
-        #   $citytree[name[0]]={}
-        #   $province_tree[name[0]]=Array.new
+      city_code=name[0]
+      city_name=name[1].chomp!
+      yield current_country,city_code,city_name
+    end
+end
 
-      elsif name[0].match(/\d\d\d\d00000000$/)  and (not name[0].match(/\d\d0000000000$/))  # is a region
-        # $province_region[name[0]]=name[1]  #insert name hash at first when found a region
-        # province_code=name[0].slice(0,2)+"0000000000"
-        #$citytree[province_code][name[0]]={}
-        #$province_tree[province_code]=$province_tree[province_code]<< name[0]
-        #$all_region_hash[name[1]]=name[0]
-        #$region_code[name[0]]=[]
-
-      elsif (not name[0].match(/\d\d\d\d00000000$/)) and (not name[0].match(/\d\d0000000000$/))# is a city
-        #province_code=name[0].slice(0,2)+"0000000000"
-        #region_code=name[0].slice(0,4)+"00000000"
-        #$citytree[province_code][region_code][name[0]]=name[1]
-        #$region_code[region_code]<< name[0]
-
-      else
-        puts "非法城市数据"
+def load_province_into_db_for_cn
+    scan_code_name_for_cn  do |current_country,city_code,city_name|
+      if city_code.match(/\d\d0000000000$/)  # is a province id
+        current_country.provinces.create!(:code=>city_code,:name=>city_name)
       end
     end
-  end
+end
+
+def load_regions_into_db_for_cn
+    scan_code_name_for_cn  do |current_country,city_code,city_name|
+      if city_code.match(/\d\d\d\d00000000$/) and !city_code.match(/\d\d0000000000$/)   # is a region id
+        begin
+        current_province= get_current_object_by_code(Rcity::Province,city_code.slice(0,2)+"0000000000")
+        rescue
+          puts "call load_province_into_db_for_cn at first!!!"
+        end
+        current_province.regions.create!(:code=>city_code,:name=>city_name)
+      end
+    end
+end
+
+def load_cities_into_db_for_cn
+    scan_code_name_for_cn  do |current_country,city_code,city_name|
+      if city_code.match(/\d\d\d\d\d\d000000$/) and not city_code.match(/\d\d\d\d00000000$/) and not city_code.match(/\d\d0000000000$/)   # is a region id
+        begin
+        #diff country city must have diff code,otherwise will fail,validate unique make this
+        current_region= get_current_object_by_code(Rcity::Region,city_code.slice(0,4)+"00000000") 
+        rescue
+          puts "call load_regions_into_db_for_cn at first!!!"
+        end
+        current_region.cities.create!(:code=>city_code,:name=>city_name)
+      end
+    end
+end
+
+
 Rcity::Province.delete_all
-load_province_into_db
+Rcity::Region.delete_all
+Rcity::Cheng.delete_all
+load_province_into_db_for_cn if Rcity::Province.count==0
+load_regions_into_db_for_cn  if Rcity::Region.count==0
+load_cities_into_db_for_cn   if Rcity::Cheng.count==0
+

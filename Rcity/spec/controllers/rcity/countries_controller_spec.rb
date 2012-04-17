@@ -117,7 +117,8 @@ describe Rcity::CountriesController do ###
         # specifies that the Country created on the previous line
         # receives the :update_attributes message with whatever params are
         # submitted in the request.
-         Rcity::Country.any_instance.should_receive(:update_attributes).with({'these' => 'params'})
+         Rcity::Country.any_instance.should_receive(:update_attributes)
+         .with({'these' => 'params'})
         put :update, {:id => country.to_param, :country => {'these' => 'params'}}, valid_session
       end
 

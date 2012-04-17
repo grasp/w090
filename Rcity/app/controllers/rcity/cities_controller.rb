@@ -1,131 +1,93 @@
-#coding: utf-8
-class Rcity::CitiesController < Rcity::RcityController
-  # GET /cities
-  # GET /cities.xml
-  include Rcity::CitiesHelper
- # include CompaniesHelper
-  caches_page :index
-  #   expire_page :action => :index
-  layout :choose_layout
-
-  def choose_layout
-    return "cargo"  if action_name =='mapcity'   ||    action_name =='mapline'
-    return nil
-  end
-
-  def index
-    #  puts "city action index happen dir=#{params[:dir]}"
-    #get the original value
-    if params[:dir]=="from"
-      code=params[:code] ||( params[:search][:fcity_code] unless params[:search].nil?)
-    elsif  params[:dir]=="to"
-      code=params[:code] || (params[:search][:tcity_code] unless params[:search].nil?)
+module Rcity
+  class CitiesController < ApplicationController
+    # GET /cities
+    # GET /cities.json
+    def index
+      @cities = City.all
+  
+      respond_to do |format|
+        format.html # index.html.erb
+        format.json { render json: @cities }
+      end
     end
-
-    if code.nil? || code=="100000000000"
-      code="330100000000" #default open ZheJiang Province
-      # puts "code is nil !!!"
+  
+    # GET /cities/1
+    # GET /cities/1.json
+    def show
+      @city = City.find(params[:id])
+  
+      respond_to do |format|
+        format.html # show.html.erb
+        format.json { render json: @city }
+      end
     end
-    @code=code
-    @selected_city_code=code
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @cities }
+  
+    # GET /cities/new
+    # GET /cities/new.json
+    def new
+      @city = City.new
+  
+      respond_to do |format|
+        format.html # new.html.erb
+        format.json { render json: @city }
+      end
     end
-    #  puts "finish city action index happen for dir=#{params[:dir]}"
-  end
-
-  def show
-    @city = City.find(params[:id])
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @city }
+  
+    # GET /cities/1/edit
+    def edit
+      @city = City.find(params[:id])
     end
-  end
-
-  def new
-    @city = City.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @city }
+  
+    # POST /cities
+    # POST /cities.json
+    def create
+      @city = City.new(params[:city])
+  
+      respond_to do |format|
+        if @city.save
+          format.html { redirect_to @city, notice: 'City was successfully created.' }
+          format.json { render json: @city, status: :created, location: @city }
+        else
+          format.html { render action: "new" }
+          format.json { render json: @city.errors, status: :unprocessable_entity }
+        end
+      end
     end
-  end
-
-  def edit
-    @city = City.find(params[:id])
-  end
-
-  def create
-    @city = City.new(params[:city])
-    respond_to do |format|
-      if @city.save
-        format.html { redirect_to(@city, :notice => 'City was successfully created.') }
-        format.xml  { render :xml => @city, :status => :created, :location => @city }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @city.errors, :status => :unprocessable_entity }
+  
+    # PUT /cities/1
+    # PUT /cities/1.json
+    def update
+      @city = City.find(params[:id])
+  
+      respond_to do |format|
+        if @city.update_attributes(params[:city])
+          format.html { redirect_to @city, notice: 'City was successfully updated.' }
+          format.json { head :no_content }
+        else
+          format.html { render action: "edit" }
+          format.json { render json: @city.errors, status: :unprocessable_entity }
+        end
+      end
+    end
+  
+    # DELETE /cities/1
+    # DELETE /cities/1.json
+    def destroy
+      @city = City.find(params[:id])
+      @city.destroy
+  
+      respond_to do |format|
+        format.html { redirect_to cities_url }
+        format.json { head :no_content }
       end
     end
   end
 
-  def update
-    @city = City.find(params[:id])
-
-    respond_to do |format|
-      if @city.update_attributes(params[:city])
-        format.html { redirect_to(@city, :notice => 'City was successfully updated.') }
-        format.xml  { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @city.errors, :status => :unprocessable_entity }
-      end
-    end
-  end
-
-
-  def modal
-    @city_code=params[:code]
-    @fcity_code=params[:fcode]
-    @tcity_code=params[:tcode]
-    @companies= get_search_companies(params[:code])
-  end
-
-  def mapcity
-    @city_code=params[:code]
-    city=City.where(:code=> @city_code).first
-    @city_name=city.name
-    unless city.nil?
-      @lng=city.loc[0]
-      @lat=city.loc[1]
-      @markers = "[
-             {'description': 'Hi', 'title': 'test', 'sidebar': '', 'lng': #{@lng}, 'lat': #{@lat}, 'picture': '', 'width': '940', 'height': '800'},
-             {'lng': #{@lng}, 'lat': #{@lat} }
-            ]"
-    end
-  end
-
-  def mapline
-    @fcity_code=params[:fcode]
-    @tcity_code=params[:tcode]
-    @fcity=City.where(:code=> @fcity_code).first
-    @tcity=City.where(:code=> @tcity_code).first
-    @fcity_full_name=get_city_full_name(params[:fcode])
-    @tcity_full_name=get_city_full_name(params[:tcode])
-  end
-
-
-
-  # DELETE /cities/1
-  # DELETE /cities/1.xml
-  def destroy
-    @city = City.find(params[:id])
-    @city.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(cities_url) }
-      format.xml  { head :ok }
-    end
+  def nav
+        @country=Country.where(:code=>"086").first#hard code
+        @provinces=@country.provinces.asc(:code).to_a    
+        @province=Province.where(:code=>params[:city_id].slice(0,2)+"0000000000").first
+        @regions=@province.regions 
+        $hi="shit"
   end
 end

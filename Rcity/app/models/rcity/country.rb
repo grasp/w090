@@ -11,4 +11,5 @@ class Rcity::Country
   has_many :provinces,:class_name=>"Rcity::Province"
   validates_presence_of :code,:name
   validates_uniqueness_of :code
+ # cache
 end

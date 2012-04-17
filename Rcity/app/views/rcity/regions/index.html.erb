@@ -9,6 +9,9 @@
     <th>Coordinates</th>
     <th>Loc</th>
     <th>Address</th>
+    <th>Province</th>
+     <th>country</th>
+     <th>region nav</th>
     <th></th>
     <th></th>
     <th></th>
@@ -23,6 +26,9 @@
     <td><%= region.coordinates %></td>
     <td><%= region.loc %></td>
     <td><%= region.address %></td>
+    <td><%= region.province.name %></td>
+    <td><%= region.province.country.name %></td>
+    <td><%= link_to 'regionnav', region_nav_path(region.code) %></td>
     <td><%= link_to 'Show', region %></td>
     <td><%= link_to 'Edit', edit_region_path(region) %></td>
     <td><%= link_to 'Destroy', region, confirm: 'Are you sure?', method: :delete %></td>
