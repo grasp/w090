@@ -7,209 +7,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "Rcity/app/models/rcity/country.rb",
-			"settings":
-			{
-				"buffer_size": 404,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcity/app/models/rcity/province.rb",
-			"settings":
-			{
-				"buffer_size": 497,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcity/app/models/rcity/city.rb",
-			"settings":
-			{
-				"buffer_size": 433,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcity/app/controllers/rcity/cities_controller.rb",
-			"settings":
-			{
-				"buffer_size": 2333,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcity/app/controllers/rcity/provinces_controller.rb",
-			"settings":
-			{
-				"buffer_size": 2309,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcity/config/initializers/load_city_to_db.rb",
-			"settings":
-			{
-				"buffer_size": 2401,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcity/app/controllers/rcity/countries_controller.rb",
-			"settings":
-			{
-				"buffer_size": 2379,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcity/app/views/rcity/countries/nav.html.erb",
-			"settings":
-			{
-				"buffer_size": 34,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcity/app/controllers/rcity/regions_controller.rb",
-			"settings":
-			{
-				"buffer_size": 2431,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcity/app/views/rcity/cities/nav.html.erb",
-			"settings":
-			{
-				"buffer_size": 94,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Rcity/app/views/rcity/provinces/_regions.html.erb",
-			"settings":
-			{
-				"buffer_size": 233,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcity/app/views/rcity/regions/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 998,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcity/app/controllers/rcity/rcity_controller.rb",
-			"settings":
-			{
-				"buffer_size": 75,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Rcity/app/views/rcity/cities/navcity.html.erb",
-			"settings":
-			{
-				"buffer_size": 86,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Rcity/app/helpers/rcity/cities_helper.rb",
-			"settings":
-			{
-				"buffer_size": 45,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcity/app/views/rcity/cities/_form.html.erb",
-			"settings":
-			{
-				"buffer_size": 400,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcity/app/views/rcity/cities/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 874,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcity/app/controllers/rcity/chengs_controller.rb",
-			"settings":
-			{
-				"buffer_size": 2347,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcity/app/views/rcity/chengs/nav.html.erb",
-			"settings":
-			{
-				"buffer_size": 83,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcity/app/models/rcity/cheng.rb",
-			"settings":
-			{
-				"buffer_size": 433,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcity/app/models/rcity/region.rb",
-			"settings":
-			{
-				"buffer_size": 492,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcity/config/routes.rb",
-			"settings":
-			{
-				"buffer_size": 656,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<h1>Home#root</h1>\n<p>Find me in app/views/rcity/home/root.html.erb</p>\n\n<h2>Home</h2>\n<%=link_to \"rcity home\",rcity.root_path%>\n\n<h2>Country</h2>\n<%=link_to \"contries\",rcity.countries_path%>\n<%=link_to \"new_contry\",rcity.new_country_path%>\n\n<h2>Province</h2>\n<%=link_to \"Provinces\",rcity.provinces_path%>\n<%=link_to \"new_pronvce\",rcity.new_province_path%>\n\n<h2>Regions</h2>\n<%=link_to \"regions\",rcity.regions_path%>\n<%=link_to \"new_region\",rcity.new_region_path%>\n\n<h2>Cities</h2>\n<%=link_to \"Chengs\",rcity.chengs_path%>\n<%=link_to \"new_city\",rcity.new_cheng_path%>\n\n<h2>Cities Other</h2>\n  citiesindex        /cities/:dir(/:code)(.:format)                          rcity/cities#index\n  citiesmodal        /cities/modal/show(/:code)/line/:fcode/:tcode(.:format) rcity/cities#modal\ncitiesmapcity        /cities/map/show/city/:code(.:format)                   rcity/cities#mapcity\ncitiesmapline        /cities/map/show/line/:fcode/:tcode(.:format)           rcity/cities#mapline\n",
-			"file": "Rcity/app/views/rcity/home/root.html.erb~",
-			"file_size": 978,
-			"file_write_time": 1334653231000000,
-			"settings":
-			{
-				"buffer_size": 978,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcity/app/views/rcity/home/root.html.erb",
-			"settings":
-			{
-				"buffer_size": 978,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcity/app/views/rcity/chengs/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 975,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -255,25 +52,71 @@
 	},
 	"file_history":
 	[
-		"/home/hunter/vob/w090/Rcity/config/routes.rb",
+		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/rcity/application.css",
+		"/home/hunter/vob/w090/Rcity/Gemfile",
+		"/home/hunter/vob/w090/Rmain/config/routes.rb",
+		"/home/hunter/vob/w090/Rmain/Gemfile",
+		"/home/hunter/vob/github/g00/app/controllers/concerncargos_controller.rb",
+		"/home/hunter/vob/w090/Rtheme/vendor/assets/stylesheets/bootstrap202/bootstrap.less",
+		"/home/hunter/vob/w090/Rtheme/Gemfile",
+		"/home/hunter/vob/w090/Rtheme/rtheme.gemspec",
+		"/home/hunter/vob/w090/Rtheme/vendor/assets/javascripts/jquery.timeago.settings.js.erb",
+		"/home/hunter/vob/w090/Rcity/spec/spec_helper.rb",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/chengs/_form.html.erb",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/chengs/edit.html.erb",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/chengs/new.html.erb",
+		"/home/hunter/vob/w090/Rcity/spec/views/rcity/chengs/index.html.erb_spec.rb",
+		"/home/hunter/vob/w090/Rcity/spec/views/rcity/chengs/edit.html.erb_spec.rb",
+		"/home/hunter/vob/w090/Rcity/app/controllers/rcity/rcity_controller.rb",
+		"/home/hunter/vob/w090/Rcity/app/controllers/rcity/chengs_controller.rb",
+		"/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/rcity.html.erb",
+		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/application.scss",
+		"/home/hunter/vob/w090/Rtheme/lib/rtheme/engine.rb",
+		"/home/hunter/vob/w090/Rcity/Gemfile.lock",
+		"/home/hunter/vob/w090/Rcity/spec/controllers/chengs_controller_spec.rb",
+		"/home/hunter/vob/w090/Rcity/spec/models/rcity/cheng_spec.rb",
+		"/home/hunter/vob/w090/Rcity/app/controllers/rcity/regions_controller.rb",
+		"/home/hunter/vob/w090/Rcity/app/controllers/rcity/provinces_controller.rb",
+		"/home/hunter/vob/w090/Rcity/app/controllers/rcity/home_controller.rb",
+		"/home/hunter/vob/w090/Rcity/spec/views/rcity/chengs/new.html.erb_spec.rb",
+		"/home/hunter/vob/w090/Rcity/spec/views/rcity/chengs/show.html.erb_spec.rb",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/chengs/show.html.erb",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/chengs/index.html.erb",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/provinces/_form.html.erb",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/regions/_form.html.erb",
+		"/home/hunter/vob/w090/Rcity/app/controllers/rcity/countries_controller.rb",
+		"/home/hunter/vob/w090/Rcity/spec/routing/rcity/chengs_routing_spec.rb",
+		"/home/hunter/vob/w090/Rcity/spec/helpers/rcity/chengs_helper_spec.rb",
+		"/home/hunter/vob/w090/Rcity/spec/controllers/rcity/chengs_controller_spec.rb",
+		"/home/hunter/vob/w090/Rcity/spec/requests/rcity/rcity_chengs_spec.rb",
+		"/home/hunter/vob/w090/Rcity/app/models/rcity/region.rb",
+		"/home/hunter/vob/w090/Rcity/config/initializers/load_city_to_db.rb",
+		"/home/hunter/vob/w090/Rcity/app/helpers/rcity/cities_helper.rb",
+		"/home/hunter/vob/w090/Rcity/app/models/rcity/country.rb",
+		"/home/hunter/vob/w090/Rcity/app/models/rcity/province.rb",
+		"/home/hunter/vob/w090/Rcity/app/models/rcity/city.rb",
+		"/home/hunter/vob/w090/Rcity/app/controllers/rcity/cities_controller.rb",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/countries/nav.html.erb",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/cities/nav.html.erb",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/provinces/_regions.html.erb",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/regions/index.html.erb",
 		"/home/hunter/vob/w090/Rcity/app/views/rcity/cities/navcity.html.erb",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/cities/_form.html.erb",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/cities/index.html.erb",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/chengs/nav.html.erb",
+		"/home/hunter/vob/w090/Rcity/app/models/rcity/cheng.rb",
+		"/home/hunter/vob/w090/Rcity/config/routes.rb",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/home/root.html.erb~",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/home/root.html.erb",
 		"/home/hunter/vob/w090/Rcity/app/views/rcity/provinces/nav.html.erb",
 		"/home/hunter/vob/w090/Rcity/app/views/rcity/regions/nav.html.erb",
 		"/home/hunter/vob/w090/Rcity/spec/dummy/log/development.log",
 		"/home/hunter/vob/w090/Rcity/app/views/rcity/countries/_nav.html.erb",
 		"/home/hunter/vob/w090/Rcity/app/views/rcity/provinces/index.html.erb",
 		"/home/hunter/vob/w090/Rcity/app/views/rcity/countries/index.html.erb",
-		"/home/hunter/vob/w090/Rcity/app/models/rcity/region.rb",
-		"/home/hunter/vob/w090/Rcity/app/controllers/rcity/provinces_controller.rb",
-		"/home/hunter/vob/w090/Rcity/config/initializers/load_city_to_db.rb",
 		"/home/hunter/vob/w090/Rcity/spec/factories/countries.rb",
-		"/home/hunter/vob/w090/Rcity/app/views/rcity/regions/index.html.erb",
-		"/home/hunter/vob/w090/Rcity/app/controllers/rcity/cities_controller.rb",
-		"/home/hunter/vob/w090/Rcity/app/models/rcity/city.rb",
-		"/home/hunter/vob/w090/Rcity/app/views/rcity/cities/index.html.erb",
 		"/home/hunter/vob/w090/Rcity/spec/dummy/config/mongoid.yml",
 		"/home/hunter/vob/w090/Rcity/config/initializers/city_load.rb",
-		"/home/hunter/vob/w090/Rcity/spec/spec_helper.rb",
 		"/home/hunter/vob/w090/Rcity/Guardfile",
 		"/home/hunter/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
 		"/home/hunter/vob/w090/Rcity/app/views/rcity/provinces/index.html.erb~",
@@ -288,9 +131,6 @@
 		"/home/hunter/vob/w090/Rcity/spec/views/rcity/countries/new.html.erb_spec.rb",
 		"/home/hunter/vob/w090/Rcity/spec/views/rcity/countries/index.html.erb_spec.rb",
 		"/home/hunter/vob/w090/Rcity/spec/views/rcity/countries/show.html.erb_spec.rb",
-		"/home/hunter/vob/w090/Rcity/app/models/rcity/country.rb",
-		"/home/hunter/vob/w090/Rcity/app/models/rcity/province.rb",
-		"/home/hunter/vob/w090/Rcity/Gemfile",
 		"/home/hunter/vob/w090/Rcity/spec/dummy/Gemfile.lock",
 		"/home/hunter/vob/w090/Rcity/spec/dummy/spec/views/countries/edit.html.erb_spec.rb",
 		"/home/hunter/vob/w090/Rcity/spec/dummy/Guardfile~",
@@ -299,7 +139,6 @@
 		"/home/hunter/vob/w090/Rcity/spec/factories/regions.rb",
 		"/home/hunter/vob/w090/Rforum/test/dummy/spec/spec_helper.rb",
 		"/home/hunter/vob/w090/Rcity/spec/dummy/Gemfile",
-		"/home/hunter/vob/w090/Rcity/app/controllers/rcity/rcity_controller.rb",
 		"/home/hunter/.config/sublime-text-2/Packages/Alignment/Base File.sublime-settings",
 		"/home/hunter/.config/sublime-text-2/Packages/Alignment/Default (Linux).sublime-keymap",
 		"/home/hunter/桌面/mount_netmon.sh",
@@ -328,6 +167,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"@import \"bootstrap/",
+			"@import \"./",
+			"@import \"rtheme/bootstrap202/",
+			"202//",
+			"@import \"bootstrap202",
+			"@import \"",
+			"bootstrap-rails",
+			"url_helpers",
+			"= Cheng",
+			"rcity",
+			"cheng_url",
+			"path",
+			" = Cheng",
 			"region",
 			"Rcity::City",
 			"province",
@@ -347,6 +199,13 @@
 		"regex": false,
 		"replace_history":
 		[
+			"@import \"",
+			"@import \"bootstrap/",
+			"@import \"./",
+			"202/",
+			"@import \"rtheme/bootstrap202/",
+			"@import \"bootstrap202/",
+			"=Rcity::Cheng",
 			"cheng",
 			"Rcity::Cheng",
 			"city"
@@ -360,695 +219,8 @@
 	"groups":
 	[
 		{
-			"selected": 20,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "Rcity/app/models/rcity/country.rb",
-					"settings":
-					{
-						"buffer_size": 404,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								322,
-								322
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Rcity/app/models/rcity/province.rb",
-					"settings":
-					{
-						"buffer_size": 497,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								497,
-								497
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Rcity/app/models/rcity/city.rb",
-					"settings":
-					{
-						"buffer_size": 433,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								18,
-								18
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Rcity/app/controllers/rcity/cities_controller.rb",
-					"settings":
-					{
-						"buffer_size": 2333,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2139,
-								2139
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 663.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Rcity/app/controllers/rcity/provinces_controller.rb",
-					"settings":
-					{
-						"buffer_size": 2309,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2289,
-								2289
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Rcity/config/initializers/load_city_to_db.rb",
-					"settings":
-					{
-						"buffer_size": 2401,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2399,
-								2399
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 255.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "Rcity/app/controllers/rcity/countries_controller.rb",
-					"settings":
-					{
-						"buffer_size": 2379,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2374,
-								2374
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "Rcity/app/views/rcity/countries/nav.html.erb",
-					"settings":
-					{
-						"buffer_size": 34,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								18,
-								18
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "Rcity/app/controllers/rcity/regions_controller.rb",
-					"settings":
-					{
-						"buffer_size": 2431,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2129,
-								2129
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 816.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "Rcity/app/views/rcity/cities/nav.html.erb",
-					"settings":
-					{
-						"buffer_size": 94,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								94,
-								94
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "Rcity/app/views/rcity/provinces/_regions.html.erb",
-					"settings":
-					{
-						"buffer_size": 233,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								233,
-								233
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "Rcity/app/views/rcity/regions/index.html.erb",
-					"settings":
-					{
-						"buffer_size": 998,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								333,
-								333
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "Rcity/app/controllers/rcity/rcity_controller.rb",
-					"settings":
-					{
-						"buffer_size": 75,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								67,
-								67
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "Rcity/app/views/rcity/cities/navcity.html.erb",
-					"settings":
-					{
-						"buffer_size": 86,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								83,
-								83
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "Rcity/app/helpers/rcity/cities_helper.rb",
-					"settings":
-					{
-						"buffer_size": 45,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "Rcity/app/views/rcity/cities/_form.html.erb",
-					"settings":
-					{
-						"buffer_size": 400,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "Rcity/app/views/rcity/cities/index.html.erb",
-					"settings":
-					{
-						"buffer_size": 874,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								814,
-								814
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "Rcity/app/controllers/rcity/chengs_controller.rb",
-					"settings":
-					{
-						"buffer_size": 2347,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2257,
-								2257
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 867.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "Rcity/app/views/rcity/chengs/nav.html.erb",
-					"settings":
-					{
-						"buffer_size": 83,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								82,
-								82
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "Rcity/app/models/rcity/cheng.rb",
-					"settings":
-					{
-						"buffer_size": 433,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								47,
-								47
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "Rcity/app/models/rcity/region.rb",
-					"settings":
-					{
-						"buffer_size": 492,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								492,
-								492
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": "Rcity/config/routes.rb",
-					"settings":
-					{
-						"buffer_size": 656,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								601,
-								601
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 22,
-					"file": "Rcity/app/views/rcity/home/root.html.erb~",
-					"settings":
-					{
-						"buffer_size": 978,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								978,
-								978
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 23,
-					"file": "Rcity/app/views/rcity/home/root.html.erb",
-					"settings":
-					{
-						"buffer_size": 978,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								514,
-								514
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 24,
-					"file": "Rcity/app/views/rcity/chengs/index.html.erb",
-					"settings":
-					{
-						"buffer_size": 975,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								626,
-								626
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1144,6 +316,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 288.0,
+	"side_bar_width": 378.0,
 	"status_bar_visible": true
 }

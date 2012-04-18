@@ -1,5 +1,5 @@
 module Rcity
-  class ProvincesController < ApplicationController
+  class ProvincesController < Rcity::RcityController
     # GET /provinces
     # GET /provinces.json
     def index

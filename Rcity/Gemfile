@@ -25,6 +25,7 @@ group :assets do
   gem 'sass-rails', "  ~> 3.2.3"
   gem 'coffee-rails', "~> 3.2.1"
   gem 'uglifier', '>= 1.0.3'
+  gem "less" # do not miss this one
 end
 
 #copy from Rforum ,remove some not needed
@@ -51,3 +52,11 @@ group :development, :test do
   gem 'launchy'
   gem 'database_cleaner'
 end
+
+require 'pathname'
+pn = Pathname.new(File.dirname(__FILE__))
+vob_path=pn.parent #do we have one line solution?
+gem "rtheme" ,:path=>File.join(vob_path,"Rtheme")
+
+#this is ugly
+gem 'bootstrap-rails', :require => 'bootstrap-rails',:path=>"~/vob/github/bootstrap-rails"

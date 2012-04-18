@@ -54,15 +54,15 @@ def load_cities_into_db_for_cn
         rescue
           puts "call load_regions_into_db_for_cn at first!!!"
         end
-        current_region.cities.create!(:code=>city_code,:name=>city_name)
+        current_region.chengs.create!(:code=>city_code,:name=>city_name)
       end
     end
 end
 
 
-Rcity::Province.delete_all
-Rcity::Region.delete_all
-Rcity::Cheng.delete_all
+#Rcity::Province.delete_all
+#Rcity::Region.delete_all
+#Rcity::Cheng.delete_all
 load_province_into_db_for_cn if Rcity::Province.count==0
 load_regions_into_db_for_cn  if Rcity::Region.count==0
 load_cities_into_db_for_cn   if Rcity::Cheng.count==0

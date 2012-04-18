@@ -43,6 +43,7 @@ vob_path=pn.parent.parent#do we have one line solution?
 gem "rforum" ,:path=>File.join(w090_path,"Rforum") 
 gem "rtheme" ,:path=>File.join(w090_path,"Rtheme")
 gem "ruser" ,:path=>File.join(w090_path,"Ruser")
+gem "rcity" ,:path=>File.join(w090_path,"Rcity")
 
 #include some special gem in github
 gem 'bootstrap-rails', :require => 'bootstrap-rails', :path => '~/vob/github/bootstrap-rails'
@@ -51,7 +52,7 @@ gem 'quiet_assets', :path => '~/vob/github/quiet_assets'
 gem 'simple_form', :path => '~/vob/github/simple_form'
 gem 'grape',  :path => '~/vob/github/grape'
 
-# why dependency not work ,add here as workaround
+# why add dependency not work ,add here as workaround
 gem 'bson_ext'
 
 

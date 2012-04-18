@@ -1,4 +1,4 @@
-<%= form_for(@region) do |f| %>
+<%= form_for(@region,:url=>rcity.new_region_path) do |f| %>
   <% if @region.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@region.errors.count, "error") %> prohibited this region from being saved:</h2>

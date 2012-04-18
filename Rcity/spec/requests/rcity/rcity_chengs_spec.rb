@@ -1,10 +1,10 @@
 require 'spec_helper'
 
 describe "Chengs" do
-  describe "GET /rcity_chengs" do
+  describe "GET /rcity/chengs" do
     it "works! (now write some real specs)" do
       # Run the generator again with the --webrat flag if you want to use webrat methods/matchers
-      get rcity_chengs_path
+      get chengs_path
       response.status.should be(200)
     end
   end

@@ -1,0 +1,31 @@
+<%#coding:utf-8%>
+
+<%cache("provincecargo") do %>
+  <h4 class="nav-header">今日共<%=h Cargo.where(:status=>"正在配车").count%></h4>
+
+  <%(0.upto($sequnced_province.size)).select{|x| x % 2==0}.each do |i|%>
+    <%province1=$sequnced_province[i]%>
+    <%if  province1%>
+      <ul>
+        <li>
+          <span> <a  class="<%="p#{province1}"%>" href="/cargos/city/<%=province1%>"> <%=$city_code_name[province1.to_s]%></a>(<%=get_province_cargo_from_count(province1)%><span class="hidden-phone">-<%=get_province_cargo_to_count(province1)%></span>)
+        </li>   
+        <li>
+          <%if i!=$sequnced_province.size && !$sequnced_province[i+1].blank?%>
+            <%province2=$sequnced_province[i+1]%>
+          <a  class="<%="p#{province2}"%>" href="/cargos/city/<%=province2%>"> <%=$city_code_name[province2.to_s]%></a>(<%=get_province_cargo_from_count(province2)%><span class="hidden-phone">-<%=get_province_cargo_to_count(province2)%></span>)
+          <%end%>
+        </li>
+      </ul>
+    <%end%>
+  <%end%>
+
+
+  <h4>历史<%=ExpiredCargo.count+Cargo.count%></h4>
+
+<%end%>
+  
+        <div>
+        <p>公告:加入物流零距离QQ交流群158576320</p>
+<p>手机访问和电脑访问效果一样!</p>
+      </div>

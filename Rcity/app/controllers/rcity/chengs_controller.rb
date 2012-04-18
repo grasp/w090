@@ -1,9 +1,9 @@
 module Rcity
-  class ChengsController < ApplicationController
+  class ChengsController < Rcity::RcityController
     # GET /chengs
     # GET /chengs.json
     def index
-      @chengs = Cheng.all
+      @chengs =Rcity::Cheng.all
   
       respond_to do |format|
         format.html # index.html.erb
@@ -14,7 +14,7 @@ module Rcity
     # GET /chengs/1
     # GET /chengs/1.json
     def show
-      @cheng = Cheng.find(params[:id])
+      @cheng =Rcity::Cheng.find(params[:id])
   
       respond_to do |format|
         format.html # show.html.erb
@@ -25,7 +25,7 @@ module Rcity
     # GET /chengs/new
     # GET /chengs/new.json
     def new
-      @cheng = Cheng.new
+      @cheng =Rcity::Cheng.new
   
       respond_to do |format|
         format.html # new.html.erb
@@ -35,13 +35,13 @@ module Rcity
   
     # GET /chengs/1/edit
     def edit
-      @cheng = Cheng.find(params[:id])
+      @cheng =Rcity::Cheng.find(params[:id])
     end
   
     # POST /chengs
     # POST /chengs.json
     def create
-      @cheng = Cheng.new(params[:cheng])
+      @cheng =Rcity::Cheng.new(params[:cheng])
   
       respond_to do |format|
         if @cheng.save
@@ -57,7 +57,7 @@ module Rcity
     # PUT /chengs/1
     # PUT /chengs/1.json
     def update
-      @cheng = Cheng.find(params[:id])
+      @cheng =Rcity::Cheng.find(params[:id])
   
       respond_to do |format|
         if @cheng.update_attributes(params[:cheng])
@@ -73,7 +73,7 @@ module Rcity
     # DELETE /chengs/1
     # DELETE /chengs/1.json
     def destroy
-      @cheng = Cheng.find(params[:id])
+      @cheng =Rcity::Cheng.find(params[:id])
       @cheng.destroy
   
       respond_to do |format|

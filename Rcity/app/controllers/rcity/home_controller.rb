@@ -1,5 +1,5 @@
 module Rcity
-  class HomeController < ApplicationController
+  class HomeController < Rcity::RcityController
     def root
     end
   end

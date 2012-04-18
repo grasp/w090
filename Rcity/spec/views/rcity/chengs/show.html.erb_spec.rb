@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe "chengs/show" do
+describe "rcity/chengs/show" do
   before(:each) do
-    @cheng = assign(:cheng, stub_model(Cheng))
+    @cheng = assign(:cheng, stub_model(Rcity::Cheng))
   end
 
   it "renders attributes in <p>" do

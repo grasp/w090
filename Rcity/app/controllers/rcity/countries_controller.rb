@@ -1,5 +1,5 @@
 module Rcity
-  class CountriesController < ApplicationController
+  class CountriesController < Rcity::RcityController
     # GET /countries
     # GET /countries.json
     def index

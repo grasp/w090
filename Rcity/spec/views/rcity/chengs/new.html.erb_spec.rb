@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe "chengs/new" do
+describe "rcity/chengs/new" do
   before(:each) do
-    assign(:cheng, stub_model(Cheng).as_new_record)
+    assign(:cheng, stub_model(Rcity::Cheng).as_new_record)
   end
 
   it "renders new cheng form" do

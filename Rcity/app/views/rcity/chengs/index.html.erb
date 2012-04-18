@@ -28,9 +28,9 @@
     <td><%= cheng.address %></td>
     <td><%= cheng.region.name %></td>
     <td><%= cheng.region.province.name %></td>
-    <td><%= link_to 'chengnav', cheng_nav_path(cheng.code) %></td>
+    <td><%= link_to 'chengnav', rcity.cheng_nav_path(cheng.code) %></td>
     <td><%= link_to 'Show', cheng %></td>
-    <td><%= link_to 'Edit', edit_cheng_path(cheng) %></td>
+    <td><%= link_to 'Edit', rcity.edit_cheng_path(cheng) %></td>
     <td><%= link_to 'Destroy', cheng, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
@@ -38,4 +38,4 @@
 
 <br />
 
-<%= link_to 'New Cheng', new_cheng_path %>
+<%= link_to 'New Cheng', rcity.new_cheng_path %>
