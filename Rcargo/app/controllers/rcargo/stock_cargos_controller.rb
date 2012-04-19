@@ -4,7 +4,7 @@ class StockCargosController < Rcargo::ApplicationController
   # GET /stock_cargos
   # GET /stock_cargos.xml
   include StockCargosHelper
-  before_filter:authorize
+  before_filter:require_user
   protect_from_forgery :except => [:tip,:login]
   #layout 'public' ,:except => [:show]
   layout :choose_layout

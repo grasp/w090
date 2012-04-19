@@ -56,7 +56,7 @@ require "omniauth-twitter"#, "~> 0.0.7"
 #gem "omniauth-douban", :git => "git://github.com/ballantyne/omniauth-douban.git"
 #require "omniauth-douban"
 
-
+require 'social-share-button'
 
 
 module Ruser

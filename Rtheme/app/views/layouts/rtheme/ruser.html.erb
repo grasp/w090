@@ -2,7 +2,7 @@
 <html>
 <head>
   <%= render_page_title %>
-  <%= stylesheet_link_tag "rtheme/application" %>
+  <%= stylesheet_link_tag "rtheme/ruser/application" %>
   <%= yield :styles %>
   <%= csrf_meta_tag %>
 <% if mobile? %>
@@ -16,7 +16,7 @@
   <meta charset='utf-8'>
   <link rel="shortcut icon" href="<%= asset_path("rtheme/big_logo.png") %>" /> 
   <%= csrf_meta_tag %>
-  <%= auto_discovery_link_tag(:rss,rforum.feed_topics_url,:title => '订阅最新贴') %>
+  <%#= auto_discovery_link_tag(:rss,rforum.feed_topics_url,:title => '订阅最新贴') %>
   <%= yield :node_feed_link %>
 </head>
 
@@ -25,9 +25,9 @@
     <div class="topbar-inner">
       <div class="container">
         <h3>
-          <a href="/"><%= Setting.app_name %></a>
+          <a href="/"><%= Ruser::Setting.app_name %></a>
         </h3>
-        <%= render "rtheme/common/header_nav" %>
+        <%#= render "rtheme/common/header_nav" %>
         <%= render "ruser/common/search_form" %>
         <%= render "ruser/common/user_nav" %>
       </div>

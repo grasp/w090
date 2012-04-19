@@ -1,6 +1,9 @@
 Rcargo::Engine.routes.draw do
 
-	resources :cargos
+  get "home/root"
+ root :to => "home#root"
+    resources :cargos
 	resources :stock_cargos
     resources :cargo_categories
+    
 end

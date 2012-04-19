@@ -1,3 +1,3 @@
  # coding: utf-8
-module CargoCategoriesHelper
+module Rcargo::CargoCategoriesHelper
 end

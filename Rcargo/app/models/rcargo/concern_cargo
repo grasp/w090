@@ -1,0 +1,13 @@
+#for each user, he has intested on those 
+#when click a cargo, record his behavior , so we can know he like which citie, which cargos ,which cities
+# and one cargo was concern by many user
+# and one city was concerned by many user
+# and one lines was concerned by many user
+
+class Rcargo::ConcernCargo
+  include Mongoid::Document
+  belongs_to :user,:class_name=>"Ruser::User"
+  belongs_to :cargos,:class_name=>"Rcargo::Cargo"
+  belongs_to :cities,:class_name=>"RCity::Chengs"
+  belongs_to :lines ,:class_name=>"RCity::lines"
+end

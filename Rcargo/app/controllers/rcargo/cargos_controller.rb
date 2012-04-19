@@ -1,10 +1,10 @@
 # coding: utf-8
 module Rcargo
-class CargosController < ApplicationController
+class CargosController < Rcargo::ApplicationController
   # include Soku
   # GET /cargos
   # GET /cargos.xml
-  include CargosHelper
+  include Rcargo::CargosHelper
   #before_filter:authorize, :except => [:search,:show,:baojiacargo]
   before_filter:authorize, :only => [:new,:create,:update,:destroy,:edit,:quoteinquery,:request_chenjiao,:cargo_to_friend,:send_cargo_myself]
   # before_filter:authorize_public, :only => [:search]
@@ -14,15 +14,15 @@ class CargosController < ApplicationController
   # layout 'cargo' ,:except => [:show,:search]
   #layout 'cargo' ,:except => [:show]
   #
-  layout :choose_layout   
+ # layout :choose_layout   
   
-  def choose_layout
-    return nil  if action_name =='post_cargo'     
-    return 'usercenter'  if action_name =='index'      
-    return  nil if  action_name=="show" ||action_name=="send_cargo_myself"||action_name=="cargo_to_friend"
-    return "usercenter" if action_name=="new"
-    return 'cargo'
-  end
+ # def choose_layout
+  #  return nil  if action_name =='post_cargo'     
+  #  return 'usercenter'  if action_name =='index'      
+  #  return  nil if  action_name=="show" ||action_name=="send_cargo_myself"||action_name=="cargo_to_friend"
+  #  return "usercenter" if action_name=="new"
+  #  return 'cargo'
+  #end
   
   def quickfabu
     fabu_helper    

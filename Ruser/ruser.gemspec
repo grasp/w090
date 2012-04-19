@@ -20,8 +20,7 @@ Gem::Specification.new do |s|
   
   # s.add_dependency "jquery-rails"
   
-  
-    s.add_dependency "rails", "~> 3.2.3"
+s.add_dependency "social-share-button", "~> 0.0.3"
     
     s.add_dependency "settingslogic", "~> 2.0.6"
 
@@ -70,6 +69,13 @@ Gem::Specification.new do |s|
  # s.add_dependency "omniauth-douban"#, :git => "http://github.com/ballantyne/omniauth-douban.git"
 
   s.add_dependency "watir-webdriver"
+
+  s.add_dependency "rails-i18n","~>0.1.8"
+  s.add_dependency "rails_autolink","~>1.0.4"
+
+  s.add_dependency "jquery-rails"#, "~>1.0.16"
+  s.add_dependency "jquery-atwho-rails", "~>0.1.3"
+  
 
   s.add_development_dependency "sqlite3"
 end
