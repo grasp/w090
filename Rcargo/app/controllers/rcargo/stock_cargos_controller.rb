@@ -7,7 +7,7 @@ class StockCargosController < Rcargo::ApplicationController
   before_filter:require_user
   protect_from_forgery :except => [:tip,:login]
   #layout 'public' ,:except => [:show]
-  layout :choose_layout
+ # layout :choose_layout
   def choose_layout
     return nil if action_name=='show'
     return 'usercenter' if action_name=='index' || action_name=='new'

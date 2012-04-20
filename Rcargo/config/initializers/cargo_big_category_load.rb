@@ -15,8 +15,20 @@ def load_cargo_big_category
       end
   end
 
-load_cargo_big_category
+def load_cargo_big_category_into_db
+     filename=File.dirname(__FILE__)+File::SEPARATOR+"cargo_big_category.txt"
+      open(filename).each do |line|
+        if line.size >0
+          user=line.force_encoding("utf-8").split(/\s/)
+          $cargo_big_category[user[0]]=user[1].force_encoding("utf-8")
+          Rcargo::CargoBigCategory.create!(:code=>user[0],:name=>user[1].force_encoding("utf-8"))
+        end
+    end
+end
 
+load_cargo_big_category
+#Rcargo::CargoBigCategory.delete_all
+#load_cargo_big_category_into_db if Rcargo::CargoBigCategory.count==0
 #$cargo_big_category.each do |key,value|
   
  # puts "cargo_big_category：#{key}=#{value}"

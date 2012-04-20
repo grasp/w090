@@ -345,6 +345,9 @@ GEM
       multi_json (~> 1.0)
       rubyzip
     settingslogic (2.0.8)
+    simple_form (2.0.1)
+      actionpack (~> 3.0)
+      activemodel (~> 3.0)
     simplecov (0.6.1)
       multi_json (~> 1.0)
       simplecov-html (~> 0.5.3)
@@ -422,6 +425,7 @@ DEPENDENCIES
   rtheme!
   ruser!
   sass-rails (~> 3.2.3)
+  simple_form
   simplecov
   spork-rails
   sqlite3

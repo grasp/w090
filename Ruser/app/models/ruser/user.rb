@@ -50,8 +50,8 @@ class Ruser::User
   index :location
   index :private_token, :sparse => true
 
-    embeds_many "authorizations"
-
+ embeds_many "authorizations"
+ has_many :notifications, :class_name => 'Ruser::Notification::Base', :dependent => :delete
  has_and_belongs_to_many :following, :class_name => 'Ruser::User', :inverse_of => :followers
  has_and_belongs_to_many :followers, :class_name => 'Ruser::User', :inverse_of => :following
  

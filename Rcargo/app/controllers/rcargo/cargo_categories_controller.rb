@@ -93,5 +93,11 @@ class CargoCategoriesController < Rcargo::ApplicationController
       format.xml  { head :ok }
     end
   end
+  def nav
+    big_code=params[:cargo_category_id].slice(0,2)+"0000"
+    @big_category=Rcargo::CargoBigCategory.where(:code=>big_code).first
+    @big_categories=Rcargo::CargoBigCategory.all
+    @cargo_categories=@big_category.categories
+  end
 end
 end

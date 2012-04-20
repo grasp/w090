@@ -7,116 +7,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "Rcargo/app/helpers/rcargo/stock_cargos_helper.rb",
-			"settings":
-			{
-				"buffer_size": 677,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Rcargo/app/helpers/rcargo/cargos_helper.rb",
-			"settings":
-			{
-				"buffer_size": 18182,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "Searching 1 file for \"render_body_tag\"\n\nUnable to open /home/hunter/github\n0 matches across 0 files\n\n\nSearching 2153 files for \"render_body_tag\"\n\n/home/hunter/vob/github/bootstrap-rails/lib/bootstrap-rails/helper.rb:\n   15:     def render_body_tag\n\n/home/hunter/vob/github/ruby-china/app/views/layouts/application.html.erb:\n   21: <%= render_body_tag %>\n\n2 matches across 2 files\n\n\nSearching 2153 files for \"render_body_tag\"\n\n/home/hunter/vob/github/bootstrap-rails/lib/bootstrap-rails/helper.rb:\n   15:     def render_body_tag\n\n/home/hunter/vob/github/ruby-china/app/views/layouts/application.html.erb:\n   21: <%= render_body_tag %>\n\n2 matches across 2 files\n\n\nSearching 1635 files for \"Breadcrumb\"\n\n/home/hunter/vob/w090/Rforum/app/controllers/rforum/cpanel/posts_controller.rb:\n   11:     drop_breadcrumb(\"文章\",:use_route => :rforum)\n   17:     drop_breadcrumb(\"文章\",:use_route => :rforum)\n   18:     drop_breadcrumb(\"创建\",:use_route => :rforum)\n\n/home/hunter/vob/w090/Rforum/app/controllers/rforum/notes_controller.rb:\n    6:   before_filter :init_base_breadcrumb\n    8:   def init_base_breadcrumb\n    9:     drop_breadcrumb(t(\"menu.notes\"), rforum.notes_path)\n   15:     drop_breadcrumb(\"列表\",:use_route => :rforum)\n   21:     drop_breadcrumb(\"查看\",:use_route => :rforum)\n   27:     drop_breadcrumb(t(\"common.create\"),:use_route => :rforum)\n   33:     drop_breadcrumb(\"修改\",:use_route => :rforum)\n\n/home/hunter/vob/w090/Rforum/app/controllers/rforum/pages_controller.rb:\n    6:   before_filter :init_base_breadcrumb\n   11:     drop_breadcrumb(\"索引\",:use_route => :rforum)\n   17:     drop_breadcrumb(t(\"common.index\"),:use_route => :rforum)\n   30:       drop_breadcrumb(\"查看 #{@page.title}\",:use_route => :rforum)\n   38:     drop_breadcrumb(t(\"pages.new_wiki_page\"),:use_route => :rforum)\n   48:     drop_breadcrumb(t(\"common.edit\"),:use_route => :rforum)\n   81:   def init_base_breadcrumb\n   82:     drop_breadcrumb(\"Wiki\", rforum.pages_path)\n\n/home/hunter/vob/w090/Rforum/app/controllers/rforum/posts_controller.rb:\n   15:     drop_breadcrumb(\"文章\",:use_route => :rforum)\n   17:       drop_breadcrumb(params[:tag],:use_route => :rforum)\n   19:       drop_breadcrumb(t(\"posts.recent_publish_post\"),:use_route => :rforum)\n   27:     drop_breadcrumb(\"文章\",:use_route => :rforum)\n   28:     drop_breadcrumb(t(\"common.read\"),:use_route => :rforum)\n   38:     drop_breadcrumb(\"文章\",:use_route => :rforum)\n   39:     drop_breadcrumb(t(\"common.edit\"),:use_route => :rforum)\n\n/home/hunter/vob/w090/Rforum/app/controllers/rforum/replies_controller.rb:\n   21:     drop_breadcrumb(t(\"menu.topics\"), rforum.topics_path)\n   22:     drop_breadcrumb t(\"reply.edit_reply\",:use_route => :rforum)\n\n/home/hunter/vob/w090/Rforum/app/controllers/rforum/rforum_controller.rb:\n    4:       include Bootstrap::Breadcrumb \n\n/home/hunter/vob/w090/Rforum/app/controllers/rforum/search_controller.rb:\n   12:     drop_breadcrumb(\"#{t(\"common.search\")}: #{params[:q]}\",:use_route => :rforum)\n   23:     drop_breadcrumb(\"WIKI#{t(\"common.search\")}: #{params[:q]}\",:use_route => :rforum)\n\n/home/hunter/vob/w090/Rforum/app/controllers/rforum/sites_controller.rb:\n    7:     drop_breadcrumb(t(\"menu.sites\"),:use_route => :rforum)\n   13:     drop_breadcrumb(t(\"menu.sites\"), rforum.sites_path)\n   14:     drop_breadcrumb(t(\"common.create\"),:use_route => :rforum)\n   23:       drop_breadcrumb(t(\"menu.sites\"), rforum.sites_path)\n   24:       drop_breadcrumb(t(\"common.create\"),:use_route => :rforum )\n\n/home/hunter/vob/w090/Rforum/app/controllers/rforum/topics_controller.rb:\n   11:   before_filter :init_base_breadcrumb\n   19:     drop_breadcrumb(t(\"topics.hot_topic\"),:use_route => :rforum)\n   33:     drop_breadcrumb(\"#{@node.name}\",:use_route => :rforum)\n   47:     drop_breadcrumb(t(\"topics.topic_list\"),:use_route => :rforum)\n   56:     drop_breadcrumb(\"#{t(\"common.search\")} #{params[:key]}\",:use_route => :rforum)\n   71:     drop_breadcrumb(\"#{@node.name}\", rforum.node_topics_path(@node.id))\n   72:     drop_breadcrumb(t(\"topics.read_topic\"),:use_route => :rforum)\n   84:       drop_breadcrumb(\"#{@node.name}\", rforum.node_topics_path(@node.id))\n   86:     drop_breadcrumb(t(\"topics.post_topic\"),:use_route => :rforum)\n   93:     drop_breadcrumb(\"#{@node.name}\", rforum.node_topics_path(@node.id))\n   94:     drop_breadcrumb(t(\"topics.edit_topic\"),:use_route => :rforum)\n  145:   def init_base_breadcrumb\n  146:     drop_breadcrumb(t(\"menu.topics\"), rforum.topics_path)\n\n/home/hunter/vob/w090/Rforum/test/dummy/config/application.rb:\n    2: require \"bootstrap-rails/breadcrumb\"\n\n/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/application.scss:\n   22: .breadcrumb { color:#999;}\n\n/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/mobile.scss:\n   41: .breadcrumb { \n\n/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/application-rubychina.html.erb:\n   41:     <%= render_breadcrumb %>\n\n/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/cpanel.html.erb:\n   44:     <div class=\"breadcrumb\">\n\n/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/rcargo.html.erb:\n   38:     <%= render_breadcrumb %>\n\n/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/rforum.html.erb:\n   38:     <%= render_breadcrumb %>\n\n/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/rmain.html.erb:\n   36:     <%= render_breadcrumb %>\n\n/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/ruser.html.erb:\n   38:     <%#= render_breadcrumb %>\n\n/home/hunter/vob/w090/Rtheme/lib/breadcrumb.rb:\n    2:   module Breadcrumb\n    7:       receiver.send :before_filter, :set_breadcrumbs\n   17:       def set_breadcrumbs\n   18:         @breadcrumbs = [\"<a href='/'>Home</a>\".html_safe]\n   21:       def drop_breadcrumb(title=nil, url=nil)\n   25:           @breadcrumbs.push(\"<a href=\\\"#{url}\\\">#{title}</a>\".html_safe)\n   34:       def no_breadcrumbs\n   35:         @breadcrumbs = []\n   41:       def render_breadcrumb\n   42:         return \"\" if @breadcrumbs.size <= 0\n   46:         @breadcrumbs.each_with_index do |c, i|\n   47:           breadcrumb_class = []\n   48:           breadcrumb_class << \"first\" if i == 0\n   49:           breadcrumb_class << \"last active\" if i == (@breadcrumbs.length - 1)\n   51:           if i == (@breadcrumbs.length - 1)\n   52:             breadcrumb_content = c\n   54:             breadcrumb_content = c + content_tag(:span, \"/\", :class => \"divider\")\n   57:           crumb += content_tag(:li, breadcrumb_content ,:class => breadcrumb_class )\n   59:         return prefix + content_tag(:ul, crumb, :class => \"breadcrumb menu clearfix\")\n\n/home/hunter/vob/w090/Rtheme/lib/rtheme/engine.rb:\n    6: require \"breadcrumb\"  #as Rtheme is common , so put breadcrumb into rtheme lib ,so all app can use\n\n/home/hunter/vob/w090/Rtheme/vendor/assets/stylesheets/bootstrap202/bootstrap.css:\n  559: .breadcrumb{padding:7px 14px;margin:0 0 18px;list-style:none;background-color:#fbfbfb;background-image:-moz-linear-gradient(top, #ffffff, #f5f5f5);background-image:-ms-linear-gradient(top, #ffffff, #f5f5f5);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f5f5f5));background-image:-webkit-linear-gradient(top, #ffffff, #f5f5f5);background-image:-o-linear-gradient(top, #ffffff, #f5f5f5);background-image:linear-gradient(top, #ffffff, #f5f5f5);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f5f5f5', GradientType=0);border:1px solid #ddd;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-webkit-box-shadow:inset 0 1px 0 #ffffff;-moz-box-shadow:inset 0 1px 0 #ffffff;box-shadow:inset 0 1px 0 #ffffff;}.breadcrumb li{display:inline-block;*display:inline;*zoom:1;text-shadow:0 1px 0 #ffffff;}\n  560: .breadcrumb .divider{padding:0 5px;color:#999999;}\n  561: .breadcrumb .active a{color:#333333;}\n\n/home/hunter/vob/w090/Rtheme/vendor/assets/stylesheets/bootstrap202/bootstrap.less:\n   44: @import \"breadcrumbs.less\";\n\n/home/hunter/vob/w090/Rtheme/vendor/assets/stylesheets/bootstrap202/breadcrumbs.less:\n    1: // BREADCRUMBS\n    4: .breadcrumb {\n\n/home/hunter/vob/w090/Ruser/app/controllers/ruser/users_controller.rb:\n    7:   before_filter :init_base_breadcrumb\n   14:     drop_breadcrumb t(\"common.index\"),:use_route=>\"ruser\"\n   21:     drop_breadcrumb(@user.login,:use_route=>\"ruser\")\n   26:     drop_breadcrumb(@user.login, ruser.user_path(@user.login))\n   27:     drop_breadcrumb(t(\"topics.title\"),:use_route=>\"ruser\")\n   32:     drop_breadcrumb(@user.login, ruser.user_path(@user.login))\n   33:     drop_breadcrumb(t(\"users.menu.like\"),:use_route=>\"ruser\")\n   61:     drop_breadcrumb(@location.name,:use_route=>\"ruser\")\n   74:   def init_base_breadcrumb\n   75:     drop_breadcrumb( t(\"menu.users\"), ruser.users_path)\n\n/home/hunter/vob/w090/Ruser/app/helpers/ruser/application_helper.rb:\n    5:    include Bootstrap::Breadcrumb::Helpers\n\n/home/hunter/vob/w090/Ruser/app/views/layouts/application.html.erb:\n   40:     <%#= render_breadcrumb %>\n\n/home/hunter/vob/w090/Ruser/app/views/layouts/ruser.html.erb:\n   40:     <%#= render_breadcrumb %>\n\n/home/hunter/vob/w090/Ruser/lib/ruser/engine.rb:\n   69:       ActionView::Base.send :include, Bootstrap::Breadcrumb::Helpers\n\n/home/hunter/vob/w090/w090.sublime-workspace:\n   81: 		\"/home/hunter/vob/w090/Rtheme/app/helpers/rtheme/breadcrumb.rb\",\n  203: 			\"Breadcrumb\",\n\n103 matches across 29 files\n",
-			"settings":
-			{
-				"buffer_size": 9337,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "Ruser/lib/ruser/engine.rb",
-			"settings":
-			{
-				"buffer_size": 2902,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/hunter/vob/github/bootstrap-rails/lib/bootstrap-rails/helper.rb",
-			"settings":
-			{
-				"buffer_size": 4662,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcargo/app/models/cargo.rb",
-			"settings":
-			{
-				"buffer_size": 3516,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/home/hunter/vob/github/g00/app/helpers/cities_helper.rb",
-			"settings":
-			{
-				"buffer_size": 7213,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Rcity/app/helpers/rcity/chengs_helper.rb",
-			"settings":
-			{
-				"buffer_size": 7236,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcargo/app/views/rcargo/home/root.html.erb",
-			"settings":
-			{
-				"buffer_size": 485,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rtheme/lib/rtheme/engine.rb",
-			"settings":
-			{
-				"buffer_size": 1234,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rtheme/app/views/layouts/rtheme/rcargo.html.erb",
-			"settings":
-			{
-				"buffer_size": 1792,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rtheme/lib/breadcrumb.rb",
-			"settings":
-			{
-				"buffer_size": 1580,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "",
-			"file": "Rtheme/app/assets/javascripts/rtheme/rcargo/application.coffee",
-			"file_size": 348,
-			"file_write_time": 1334820029000000,
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix",
-				"name": "#= require jquery"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -162,33 +52,71 @@
 	},
 	"file_history":
 	[
-		"/home/hunter/vob/w090/Rcargo/spec/dummy/config/application.rb",
-		"/home/hunter/vob/github/bootstrap-rails/lib/bootstrap-rails/engine.rb",
-		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/home/root.html.erb",
-		"/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/rcargo.html.erb",
-		"/home/hunter/vob/w090/Rcargo/app/controllers/rcargo/application_controller.rb",
-		"/home/hunter/vob/w090/Rcargo/app/controllers/rcargo/cargos_controller.rb",
-		"/home/hunter/vob/w090/Rcargo/app/controllers/rcargo/home_controller.rb",
 		"/home/hunter/vob/w090/Rcargo/config/routes.rb",
-		"/home/hunter/vob/w090/Rcargo/app/helpers/rcargo/home_helper.rb",
-		"/home/hunter/vob/w090/Rcargo/app/helpers/rcargo/cargo_categories_helper.rb",
+		"/home/hunter/vob/w090/Rcargo/app/controllers/rcargo/cpanel/cargo_big_categories_controller.rb",
+		"/home/hunter/vob/w090/Rcargo/app/models/rcargo/cargo_big_category.rb",
+		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/cpanel/cargo_big_categories/_form.html.erb",
+		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/cpanel/cargo_big_categories/edit.html.erb",
+		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/cpanel/cargo_big_categories/new.html.erb",
+		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/cpanel/cargo_big_categories/index.html.erb",
+		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/home/root.html.erb",
+		"/home/hunter/vob/w090/Rcargo/config/initializers/cargo_category_load.rb",
+		"/home/hunter/vob/w090/Rcargo/config/initializers/cargo_category.txt",
+		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/cargo_categories/new.html.erb",
+		"/home/hunter/vob/github/ruby-china/app/views/sites/_form.html.erb",
+		"/home/hunter/vob/w090/Ruser/app/models/ruser/user.rb",
+		"/home/hunter/vob/w090/Rforum/lib/rforum/engine.rb",
+		"/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/rcargo.html.erb",
+		"/home/hunter/vob/w090/Rcargo/spec/dummy/config/initializers/quiets_assets.rb",
+		"/home/hunter/vob/w090/Rcargo/Gemfile",
+		"/home/hunter/vob/w090/Rcargo/app/controllers/rcargo/stock_cargos_controller.rb",
+		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/cpanel/cargo_big_categories/show.html.erb",
+		"/home/hunter/vob/github/ruby-china/config/routes.rb",
+		"/home/hunter/vob/w090/Rcargo/config/initializers/cargo_big_category_load.rb",
+		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/cargos/index.html.erb",
+		"/home/hunter/vob/github/ruby-china/config/initializers/simple_form.rb",
+		"/home/hunter/vob/w090/Rcargo/app/models/rcargo/cargo.rb",
+		"/home/hunter/vob/w090/Rcargo/app/controllers/rcargo/application_controller.rb",
+		"/home/hunter/vob/w090/Rtheme/lib/rtheme/engine.rb",
+		"/home/hunter/vob/w090/Rtheme/lib/application_controller_common.rb",
+		"/home/hunter/vob/w090/Ruser/app/controllers/ruser/ruser_controller.rb",
+		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/ruser/application.scss",
+		"/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/ruser.html.erb",
+		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/application.scss",
+		"/home/hunter/vob/w090/Ruser/app/views/layouts/ruser.html.erb",
+		"/home/hunter/vob/w090/Ruser/lib/ruser/engine.rb",
+		"/home/hunter/vob/w090/Ruser/ruser.gemspec",
+		"/home/hunter/vob/github/ruby-china/Gemfile",
+		"/home/hunter/vob/github/ruby-china/app/controllers/application_controller.rb",
+		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rcargo/application.coffee",
+		"/home/hunter/vob/w090/Rcargo/app/controllers/rcargo/cargos_controller.rb",
+		"/home/hunter/桌面/mount_netmon.sh",
+		"/home/hunter/vob/w090/Ruser/config/ruser.yml",
+		"/home/hunter/vob/w090/Rcity/app/helpers/rcity/chengs_helper.rb",
+		"/home/hunter/vob/github/g00/app/helpers/cities_helper.rb",
+		"/home/hunter/vob/w090/Rcargo/app/models/cargo.rb",
+		"/home/hunter/vob/github/bootstrap-rails/lib/bootstrap-rails/helper.rb",
 		"/home/hunter/vob/w090/Rcargo/app/helpers/rcargo/cargos_helper.rb",
 		"/home/hunter/vob/w090/Rcargo/app/helpers/rcargo/stock_cargos_helper.rb",
+		"/home/hunter/vob/w090/Rforum/app/views/rforum/common/_google_analytics.html.erb",
+		"/home/hunter/vob/w090/Rtheme/lib/breadcrumb.rb",
+		"/home/hunter/vob/w090/Rtheme/app/views/rtheme/common/_google_analytics.html.erb",
+		"/home/hunter/vob/w090/Rcargo/spec/dummy/config/application.rb",
+		"/home/hunter/vob/github/bootstrap-rails/lib/bootstrap-rails/engine.rb",
+		"/home/hunter/vob/w090/Rcargo/app/controllers/rcargo/home_controller.rb",
+		"/home/hunter/vob/w090/Rcargo/app/helpers/rcargo/home_helper.rb",
+		"/home/hunter/vob/w090/Rcargo/app/helpers/rcargo/cargo_categories_helper.rb",
 		"/home/hunter/vob/w090/Rcargo/app/models/cargo_statistic.rb",
 		"/home/hunter/vob/w090/Rcity/app/models/rcity/line.rb",
 		"/home/hunter/vob/w090/Rcargo/app/models/stock_cargo.rb",
 		"/home/hunter/vob/w090/Rcargo/app/models/jubao.rb",
 		"/home/hunter/vob/w090/Rcargo/app/models/concern_cargo",
 		"/home/hunter/vob/w090/Rcargo/app/models/cargo_big_category.rb",
-		"/home/hunter/vob/w090/Rcargo/app/models/cargo.rb",
 		"/home/hunter/vob/w090/Rcargo/lib/rcargo/engine.rb",
 		"/home/hunter/vob/w090/Rcargo/spec/dummy/config/routes.rb",
 		"/home/hunter/vob/w090/Ruser/Gemfile",
-		"/home/hunter/vob/w090/Ruser/ruser.gemspec",
-		"/home/hunter/vob/w090/Rcargo/Gemfile",
 		"/home/hunter/vob/w090/Rtruck/Gemfile",
 		"/home/hunter/vob/w090/Ruser/config/initializers/redis.rb",
-		"/home/hunter/vob/w090/Rtheme/lib/rtheme/engine.rb",
 		"/home/hunter/vob/w090/Rtheme/Gemfile.lock",
 		"/home/hunter/vob/w090/Rtheme/app/helpers/rtheme/breadcrumb.rb",
 		"/home/hunter/vob/w090/Rcargo/.rspec",
@@ -197,7 +125,6 @@
 		"/home/hunter/vob/w090/Rcity/Gemfile",
 		"/home/hunter/vob/w090/Rcargo/app/models/cargo_category.rb",
 		"/home/hunter/vob/w090/Rcargo/app/controllers/rcargo/cargo_categories_controller.rb",
-		"/home/hunter/vob/w090/Rcargo/app/controllers/rcargo/stock_cargos_controller.rb",
 		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/rcity/application.css",
 		"/home/hunter/vob/w090/Rmain/config/routes.rb",
 		"/home/hunter/vob/w090/Rmain/Gemfile",
@@ -215,7 +142,6 @@
 		"/home/hunter/vob/w090/Rcity/app/controllers/rcity/rcity_controller.rb",
 		"/home/hunter/vob/w090/Rcity/app/controllers/rcity/chengs_controller.rb",
 		"/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/rcity.html.erb",
-		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/application.scss",
 		"/home/hunter/vob/w090/Rcity/Gemfile.lock",
 		"/home/hunter/vob/w090/Rcity/spec/controllers/chengs_controller_spec.rb",
 		"/home/hunter/vob/w090/Rcity/spec/models/rcity/cheng_spec.rb",
@@ -253,43 +179,7 @@
 		"/home/hunter/vob/w090/Rcity/app/views/rcity/home/root.html.erb~",
 		"/home/hunter/vob/w090/Rcity/app/views/rcity/home/root.html.erb",
 		"/home/hunter/vob/w090/Rcity/app/views/rcity/provinces/nav.html.erb",
-		"/home/hunter/vob/w090/Rcity/app/views/rcity/regions/nav.html.erb",
-		"/home/hunter/vob/w090/Rcity/spec/dummy/log/development.log",
-		"/home/hunter/vob/w090/Rcity/app/views/rcity/countries/_nav.html.erb",
-		"/home/hunter/vob/w090/Rcity/app/views/rcity/provinces/index.html.erb",
-		"/home/hunter/vob/w090/Rcity/app/views/rcity/countries/index.html.erb",
-		"/home/hunter/vob/w090/Rcity/spec/factories/countries.rb",
-		"/home/hunter/vob/w090/Rcity/spec/dummy/config/mongoid.yml",
-		"/home/hunter/vob/w090/Rcity/config/initializers/city_load.rb",
-		"/home/hunter/vob/w090/Rcity/Guardfile",
-		"/home/hunter/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
-		"/home/hunter/vob/w090/Rcity/app/views/rcity/provinces/index.html.erb~",
-		"/home/hunter/vob/w090/Rcity/spec/views/rcity/countries/edit.html.erb_spec.rb",
-		"/home/hunter/vob/w090/Rcity/spec/factories/cities.rb",
-		"/home/hunter/vob/w090/Rcity/spec/controllers/rcity/home_controller_spec.rb",
-		"/home/hunter/vob/w090/Rcity/spec/controllers/rcity/countries_controller_spec.rb",
-		"/home/hunter/vob/w090/Rcity/Guardfile~",
-		"/home/hunter/vob/w090/Rcity/lib/rcity/engine.rb",
-		"/home/hunter/vob/w090/Rcity/spec/helpers/rcity/countries_helper_spec.rb",
-		"/home/hunter/vob/w090/Rcity/spec/helpers/rcity/home_helper_spec.rb",
-		"/home/hunter/vob/w090/Rcity/spec/views/rcity/countries/new.html.erb_spec.rb",
-		"/home/hunter/vob/w090/Rcity/spec/views/rcity/countries/index.html.erb_spec.rb",
-		"/home/hunter/vob/w090/Rcity/spec/views/rcity/countries/show.html.erb_spec.rb",
-		"/home/hunter/vob/w090/Rcity/spec/dummy/Gemfile.lock",
-		"/home/hunter/vob/w090/Rcity/spec/dummy/spec/views/countries/edit.html.erb_spec.rb",
-		"/home/hunter/vob/w090/Rcity/spec/dummy/Guardfile~",
-		"/home/hunter/vob/w090/Rforum/test/dummy/spec/controllers/likes_controller_spec.rb",
-		"/home/hunter/vob/w090/Rcity/spec/factories/provinces.rb",
-		"/home/hunter/vob/w090/Rcity/spec/factories/regions.rb",
-		"/home/hunter/vob/w090/Rforum/test/dummy/spec/spec_helper.rb",
-		"/home/hunter/vob/w090/Rcity/spec/dummy/Gemfile",
-		"/home/hunter/.config/sublime-text-2/Packages/Alignment/Base File.sublime-settings",
-		"/home/hunter/.config/sublime-text-2/Packages/Alignment/Default (Linux).sublime-keymap",
-		"/home/hunter/桌面/mount_netmon.sh",
-		"/home/hunter/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
-		"/home/hunter/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
-		"/home/hunter/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
-		"/home/hunter/vob/w090/w090.sublime-workspace"
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/regions/nav.html.erb"
 	],
 	"find":
 	{
@@ -297,9 +187,11 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 102.0,
 		"where_history":
 		[
+			"/home/hunter/vob",
+			"/home/hunter/vob/w090/Ruser",
 			"/home/hunter/vob/w090",
 			"/home/hunter/vob/github",
 			"/home/hunter/github",
@@ -316,6 +208,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"simple_form_for",
+			"link_to 'New ",
+			"simple_form",
+			"simple_form_fo",
+			"quiet_assets.rb",
+			"cpanel_cargo_big_categories",
+			"Cpanel::CargoBigCategory",
+			"notifications",
+			"CitiesHelper",
+			"Cargo::CitiesHelper",
+			"require_user",
+			"social-share-button",
+			"({",
+			"Rforum",
 			"Breadcrumb",
 			"render_body_tag",
 			"CitiesHelper",
@@ -355,6 +261,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"Rcargo::CargoBigCategory",
 			"/spec/dummy",
 			"@import \"",
 			"@import \"bootstrap/",
@@ -376,805 +283,8 @@
 	"groups":
 	[
 		{
-			"selected": 12,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "Rcargo/app/helpers/rcargo/stock_cargos_helper.rb",
-					"settings":
-					{
-						"buffer_size": 677,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								668,
-								668
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Rcargo/app/helpers/rcargo/cargos_helper.rb",
-					"settings":
-					{
-						"buffer_size": 18182,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								106,
-								106
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"settings":
-					{
-						"buffer_size": 9337,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										232,
-										247
-									],
-									[
-										335,
-										350
-									],
-									[
-										512,
-										527
-									],
-									[
-										615,
-										630
-									],
-									[
-										797,
-										807
-									],
-									[
-										852,
-										862
-									],
-									[
-										907,
-										917
-									],
-									[
-										1054,
-										1064
-									],
-									[
-										1088,
-										1098
-									],
-									[
-										1115,
-										1125
-									],
-									[
-										1178,
-										1188
-									],
-									[
-										1233,
-										1243
-									],
-									[
-										1288,
-										1298
-									],
-									[
-										1357,
-										1367
-									],
-									[
-										1504,
-										1514
-									],
-									[
-										1531,
-										1541
-									],
-									[
-										1586,
-										1596
-									],
-									[
-										1656,
-										1666
-									],
-									[
-										1726,
-										1736
-									],
-									[
-										1801,
-										1811
-									],
-									[
-										1875,
-										1885
-									],
-									[
-										1902,
-										1912
-									],
-									[
-										2030,
-										2040
-									],
-									[
-										2087,
-										2097
-									],
-									[
-										2152,
-										2162
-									],
-									[
-										2233,
-										2243
-									],
-									[
-										2288,
-										2298
-									],
-									[
-										2355,
-										2365
-									],
-									[
-										2410,
-										2420
-									],
-									[
-										2553,
-										2563
-									],
-									[
-										2618,
-										2628
-									],
-									[
-										2780,
-										2790
-									],
-									[
-										2883,
-										2893
-									],
-									[
-										2972,
-										2982
-									],
-									[
-										3139,
-										3149
-									],
-									[
-										3205,
-										3215
-									],
-									[
-										3268,
-										3278
-									],
-									[
-										3339,
-										3349
-									],
-									[
-										3404,
-										3414
-									],
-									[
-										3567,
-										3577
-									],
-									[
-										3594,
-										3604
-									],
-									[
-										3666,
-										3676
-									],
-									[
-										3732,
-										3742
-									],
-									[
-										3805,
-										3815
-									],
-									[
-										3895,
-										3905
-									],
-									[
-										3974,
-										3984
-									],
-									[
-										4049,
-										4059
-									],
-									[
-										4128,
-										4138
-									],
-									[
-										4201,
-										4211
-									],
-									[
-										4280,
-										4290
-									],
-									[
-										4360,
-										4370
-									],
-									[
-										4387,
-										4397
-									],
-									[
-										4532,
-										4542
-									],
-									[
-										4630,
-										4640
-									],
-									[
-										4737,
-										4747
-									],
-									[
-										4860,
-										4870
-									],
-									[
-										4969,
-										4979
-									],
-									[
-										5076,
-										5086
-									],
-									[
-										5184,
-										5194
-									],
-									[
-										5291,
-										5301
-									],
-									[
-										5399,
-										5409
-									],
-									[
-										5478,
-										5488
-									],
-									[
-										5537,
-										5547
-									],
-									[
-										5570,
-										5580
-									],
-									[
-										5598,
-										5608
-									],
-									[
-										5669,
-										5679
-									],
-									[
-										5718,
-										5728
-									],
-									[
-										5800,
-										5810
-									],
-									[
-										5828,
-										5838
-									],
-									[
-										5869,
-										5879
-									],
-									[
-										5909,
-										5919
-									],
-									[
-										5947,
-										5957
-									],
-									[
-										6002,
-										6012
-									],
-									[
-										6041,
-										6051
-									],
-									[
-										6096,
-										6106
-									],
-									[
-										6140,
-										6150
-									],
-									[
-										6191,
-										6201
-									],
-									[
-										6234,
-										6244
-									],
-									[
-										6276,
-										6286
-									],
-									[
-										6389,
-										6399
-									],
-									[
-										6419,
-										6429
-									],
-									[
-										6504,
-										6514
-									],
-									[
-										6599,
-										6609
-									],
-									[
-										6642,
-										6652
-									],
-									[
-										6781,
-										6791
-									],
-									[
-										7593,
-										7603
-									],
-									[
-										7690,
-										7700
-									],
-									[
-										7748,
-										7758
-									],
-									[
-										7886,
-										7896
-									],
-									[
-										8002,
-										8012
-									],
-									[
-										8022,
-										8032
-									],
-									[
-										8141,
-										8151
-									],
-									[
-										8168,
-										8178
-									],
-									[
-										8233,
-										8243
-									],
-									[
-										8293,
-										8303
-									],
-									[
-										8363,
-										8373
-									],
-									[
-										8429,
-										8439
-									],
-									[
-										8499,
-										8509
-									],
-									[
-										8568,
-										8578
-									],
-									[
-										8638,
-										8648
-									],
-									[
-										8665,
-										8675
-									],
-									[
-										8811,
-										8821
-									],
-									[
-										8923,
-										8933
-									],
-									[
-										9023,
-										9033
-									],
-									[
-										9143,
-										9153
-									],
-									[
-										9268,
-										9278
-									],
-									[
-										9295,
-										9305
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								9130,
-								9130
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"output_tag": 4,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2592.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Ruser/lib/ruser/engine.rb",
-					"settings":
-					{
-						"buffer_size": 2902,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1784,
-								1784
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 733.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/home/hunter/vob/github/bootstrap-rails/lib/bootstrap-rails/helper.rb",
-					"settings":
-					{
-						"buffer_size": 4662,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								337,
-								337
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2106.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Rcargo/app/models/cargo.rb",
-					"settings":
-					{
-						"buffer_size": 3516,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								118,
-								118
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/home/hunter/vob/github/g00/app/helpers/cities_helper.rb",
-					"settings":
-					{
-						"buffer_size": 7213,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7213,
-								7213
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3024.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "Rcity/app/helpers/rcity/chengs_helper.rb",
-					"settings":
-					{
-						"buffer_size": 7236,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								16,
-								16
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "Rcargo/app/views/rcargo/home/root.html.erb",
-					"settings":
-					{
-						"buffer_size": 485,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								385,
-								385
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "Rtheme/lib/rtheme/engine.rb",
-					"settings":
-					{
-						"buffer_size": 1234,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								644,
-								644
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "Rtheme/app/views/layouts/rtheme/rcargo.html.erb",
-					"settings":
-					{
-						"buffer_size": 1792,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1592,
-								1592
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 648.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "Rtheme/lib/breadcrumb.rb",
-					"settings":
-					{
-						"buffer_size": 1580,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								802,
-								802
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 216.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "Rtheme/app/assets/javascripts/rtheme/rcargo/application.coffee",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_name": "#= require jquery",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1219,6 +329,18 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"ruser.htm",
+				"w090/Rtheme/app/views/layouts/rtheme/ruser.html.erb"
+			],
+			[
+				"ruser.h",
+				"w090/Ruser/app/views/layouts/ruser.html.erb"
+			],
+			[
+				"ruser",
+				"w090/Ruser/config/ruser.yml"
+			],
 			[
 				"route",
 				"Rcity/config/routes.rb"

@@ -107,7 +107,7 @@ module Rforum
         has_many :notes,:class_name=>"Rforum::Note"
         has_many :replies, :dependent => :destroy,:class_name=>"Rforum::Reply"
         has_many :posts,:class_name=>"Rforum::Post"
-        has_many :notifications, :class_name => 'Ruser::Notification::Base', :dependent => :delete
+
         has_many :photos,:class_name=>"Rforum::Photo"
         has_many :likes,:class_name=>"Rforum::Like"        
         has_and_belongs_to_many :following_nodes, :class_name => 'Rforum::Node', :inverse_of => :followers #this will not work without forum

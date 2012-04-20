@@ -1,0 +1,27 @@
+<h1>Listing cpanel_cargo_big_categories</h1>
+
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Name</th>
+        <th>nav</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cpanel_cargo_big_categories.each do |cpanel_cargo_big_category| %>
+  <tr>
+    <td><%= cpanel_cargo_big_category.code %></td>
+    <td><%= cpanel_cargo_big_category.name %></td>
+     <td><%= link_to 'nav', cargo_category_nav_path(cpanel_cargo_big_category.code) %></td>
+    <td><%= link_to 'Show', cpanel_cargo_big_category_path(cpanel_cargo_big_category) %></td>
+    <td><%= link_to 'Edit', edit_cpanel_cargo_big_category_path(cpanel_cargo_big_category) %></td>
+    <td><%= link_to 'Destroy', cpanel_cargo_big_category_path(cpanel_cargo_big_category), confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cargo big category', new_cpanel_cargo_big_category_path%>
