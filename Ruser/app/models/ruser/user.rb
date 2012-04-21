@@ -35,7 +35,7 @@ class Ruser::User
   field :reset_password_sent_at#,:type => Integer, :default => 6
   field :reset_password_token#add by hunter
   #tracable
-      field :sign_in_count   #   - Increased every time a sign in is made (by form, openid, oauth)
+   field :sign_in_count   #   - Increased every time a sign in is made (by form, openid, oauth)
     field :current_sign_in_at  # - A timestamp updated when the user signs in
    field :last_sign_in_at     # - Holds the timestamp of the previous sign in
     field :current_sign_in_ip  # - The remote ip updated when the user sign in

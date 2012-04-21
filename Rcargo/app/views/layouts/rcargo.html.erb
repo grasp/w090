@@ -2,7 +2,7 @@
 <html>
 <head>
   <%= render_page_title %>
-  <%= stylesheet_link_tag "rtheme/rcity/application" %>
+  <%= stylesheet_link_tag "rtheme/rcargo/application" %>
   <%= yield :styles %>
   <%= csrf_meta_tag %>
 <% if mobile? %>
@@ -16,8 +16,6 @@
   <meta charset='utf-8'>
   <link rel="shortcut icon" href="<%= asset_path("big_logo.png") %>" /> 
   <%= csrf_meta_tag %>
-  <%#= auto_discovery_link_tag(:rss,feed_topics_url,:title => '订阅最新贴') %>
-  <%#= yield :node_feed_link %>
 </head>
 
 <%= render_body_tag %>
@@ -35,9 +33,9 @@
   </div>
 
   <div class="container">
-  	<%=render "rcity/home/rcitynav"%>
-    <%= render_breadcrumb %>
-
+    <%= render "/rcity/home/rcitynav" %>
+    <%= render "/rcargo/home/rcargo_nav" %>
+        <%= render_breadcrumb %>
     <%= notice_message %>
     <div id="main" class="container-fluid">
       <%= yield %>
@@ -51,7 +49,7 @@
   </footer>
   <% end %>
 
-  <%= javascript_include_tag "rtheme/rcity/application" %>
+  <%= javascript_include_tag "rtheme/rcargo/application" %>
   <% if mobile? %>
     <script type="text/javascript">app_mobile = true;</script>
   <% end %>

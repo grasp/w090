@@ -1,0 +1,36 @@
+"zh-CN":
+  rcargocommon:
+    edit: "编辑"
+    destroy: "删除"
+    confirmdelete: "确认删除吗？"
+  category:
+    BigcargoCategory: '货物大类'
+    CargoCategory: '货物小类'
+  stock_cargo:
+    StockCargos: '库存货物'
+    all_stock_cargos: '全部库存货物'
+    new_stock_cargo: '添加新的库存货物'
+    edit_stock_cargo: '编辑库存货物'
+    stock_cargo_idle: "目前没有配车"
+    stock_cargo_for_truck: "正在配车"
+    stock_cargo_history_truck: "历史配车"
+    hints_for_empty_stock_cargo: '你没有任何库存的货物.'
+    status: "货物状态"
+    total_sented: "总计发布"
+    unit: "计量单位"
+  cargo:
+    all_cargo_info: '全网货源'
+    cargo_name: '货物名称'
+    cargos: '货源信息'
+    new_cargo: '发布货源信息'
+    new_cargo_without_login: '免登录发布货源信息'
+    cargo_for_truck: "正在配车"
+    cargo_has_truck: "历史配车"
+    concern_cargo: "关注货源"
+    concern_user: "关注货主"
+  package:
+    package: '货物包装'
+  helpers:
+    labels:
+      stock_cargo:
+        Big cate: '货物大类'

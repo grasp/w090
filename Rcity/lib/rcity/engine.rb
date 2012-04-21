@@ -7,8 +7,11 @@ module Rcity
       g.integration_tool :rspec
     end
     
-   initializer 'Rforum::Application.helper' do |app|
-    #  ActionView::Base.send :include, Rcity::Engine.routes.url_helpers  # some path in dummy env did not recoginize,but have issue
-    end
+
+    config.time_zone = 'Beijing'
+    config.i18n.default_locale = "zh-CN"
+    #config.i18n.load_path += Dir[config.root.join('my', 'locales', '*.{rb,yml}').to_s]
+    config.i18n.load_path += Dir[config.root.join('locales', '*.{rb,yml}').to_s]
+    config.encoding = "utf-8"
   end
 end

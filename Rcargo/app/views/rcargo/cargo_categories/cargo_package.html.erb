@@ -1,0 +1,9 @@
+<table>
+<%=@cargo_package.each do |package|%>
+	<tr>
+		<td><%=package.code%></td>
+		<td><%=package.name%></td>
+	</tr>
+	<%end%>
+
+</table>

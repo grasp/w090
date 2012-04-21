@@ -16,6 +16,8 @@ module Rtheme
     initializer 'Rtheme::ApplicationController' do |app|
       ActionView::Base.send :include, Bootstrap::Breadcrumb::Helpers
       ActionView::Base.send :include, Bootstrap::Helper
+      
+       
       #  ActionController::Base .send :include,  ApplicationHelper,UsersHelper
     app.config.assets.paths += ["#{config.root}/vendor/assets/stylesheets/bootstrap202"]
     app.config.assets.paths += ["#{config.root}/vendor/assets/javascripts/bootstrap202"]

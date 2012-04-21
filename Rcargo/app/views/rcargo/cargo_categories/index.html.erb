@@ -18,8 +18,6 @@
     <td><%= cargo_category.name %></td>
     <td><%= cargo_category.cargo_big_category.name %></td>
  <td><%= link_to 'cargo category nav', cargo_category_nav_path(cargo_category.code) %></td>
-
-    cargo_category_nav
     <td><%= link_to 'Show', cargo_category %></td>
     <td><%= link_to 'Edit', edit_cargo_category_path(cargo_category) %></td>
     <td><%= link_to 'Destroy', cargo_category, :confirm => 'Are you sure?', :method => :delete %></td>

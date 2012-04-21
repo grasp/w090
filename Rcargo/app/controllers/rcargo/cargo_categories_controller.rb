@@ -3,7 +3,7 @@
 class CargoCategoriesController < Rcargo::ApplicationController
   # GET /cargo_categories
   # GET /cargo_categories.xml
-  layout :nil
+ # layout :nil
   def index
     @cargo_categories = CargoCategory.all
     respond_to do |format|
@@ -98,6 +98,10 @@ class CargoCategoriesController < Rcargo::ApplicationController
     @big_category=Rcargo::CargoBigCategory.where(:code=>big_code).first
     @big_categories=Rcargo::CargoBigCategory.all
     @cargo_categories=@big_category.categories
+  end
+
+  def cargo_package
+    @cargo_package=Rcargo::CargoPackage.all
   end
 end
 end

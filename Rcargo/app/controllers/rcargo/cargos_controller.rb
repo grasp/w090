@@ -5,8 +5,9 @@ class CargosController < Rcargo::ApplicationController
   # GET /cargos
   # GET /cargos.xml
   include Rcargo::CargosHelper
+   before_filter:require_user
   #before_filter:authorize, :except => [:search,:show,:baojiacargo]
-  before_filter:authorize, :only => [:new,:create,:update,:destroy,:edit,:quoteinquery,:request_chenjiao,:cargo_to_friend,:send_cargo_myself]
+ # before_filter:authorize, :only => [:new,:create,:update,:destroy,:edit,:quoteinquery,:request_chenjiao,:cargo_to_friend,:send_cargo_myself]
   # before_filter:authorize_public, :only => [:search]
   # caches_page :search,:show
   caches_page :controller => "cargos_controller", :action => "city"
@@ -172,27 +173,21 @@ class CargosController < Rcargo::ApplicationController
   # GET /cargos/new.xml
   def new
     #check conact first
-    @cargo = Cargo.new
-    @stock_cargo=StockCargo.find(BSON::ObjectId(params[:id]))
-    @cargo .stock_cargo_id=@stock_cargo.id
-    @user=User.find(session[:user_id])
-
-    @cargo.user_id=@user.id
-    @cargo.status="正在配车"
-    @cargo.stock_cargo_id=@stock_cargo.id
-    if false
-      if @user.user_contact_id.blank?
-        flash[:notice]="填写更多的联系信息，可以增加成交机会"
-      end
-      if @user.company_id.blank?
-        if flash[:notice].blank?
-          flash[:notice]="填写公司信息能够增加成交机会"
-        else
-          flash[:notice]<<";填写公司信息能够增加成交机会"
-        end
-
-      end
+   drop_breadcrumb(t("cargo.cargos"),cargos_path)
+    drop_breadcrumb(t("cargo.new_cargo"))
+    if params[:stock_cargo_id]
+      @stock_cargo=Rcargo::StockCargo.find(params[:stock_cargo_id])
+      @cargo = @stock_cargo.cargos.new
+      @cargo.name=@stock_cargo.name
+      @cargo.packagen=@stock_cargo.packagen
+      @cargo.big_cate=@stock_cargo.big_cate
+      @cargo.unit=@stock_cargo.unit
+    else
+      @cargo=Cargo.new
     end
+
+    @cargo.status="正在配车"
+
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @cargo }
@@ -214,81 +209,81 @@ class CargosController < Rcargo::ApplicationController
   # POST /cargos
   # POST /cargos.xml
   def create
-    params[:cargo][:from_site]="local"
-    params[:cargo][:priority]=100
 
-    params[:cargo][:stock_cargo_id]=BSON::ObjectId(params[:cargo][:stock_cargo_id])
-    @user=User.find(session[:user_id])
+    params[:cargo][:fsite]="local"
+    params[:cargo][:priority]=100
+   # params[:cargo][:mphone]=current_user.contact.mphone
+
+    @cargo=current_user.cargos.build(params[:cargo])
    
-    #update cargo phone information for concerncargo
-    params[:cargo][:mobilephone]=@user.mobilephone        
-    user_contact=UserContact.find(@user.user_contact_id) unless @user.user_contact_id .nil?
+   #update cargo phone information for concerncargo         
+   # user_contact=UserContact.find(@user.user_contact_id) unless @user.user_contact_id .nil?    
+   # unless user_contact.blank?
+   #   params[:cargo][:user_contact_id]= user_contact.id 
+   #   params[:cargo][:fixphone]=user_contact.quhao+"-"+user_contact.fixphone
+   # end
     
-    unless user_contact.blank?
-      params[:cargo][:user_contact_id]= user_contact.id 
-      params[:cargo][:fixphone]=user_contact.quhao+"-"+user_contact.fixphone
-    end
-    
-    @cargo=Cargo.new(params[:cargo])
-    @cargo.company_id=Company.find(@user.company_id) unless @user.company_id .nil?
-    @cargo.user_id=@user.id
-    @cargo.line=@cargo.fcity_code+"#"+@cargo.tcity_code
+    #if contact information is empty, then redirect to contact update page
+
+   # @cargo=Cargo.new(params[:cargo])
+   # @cargo.company_id=Company.find(@user.company_id) unless @user.company_id .nil?
+   # @cargo.user_id=@user.id
+    #@cargo.line=@cargo.fcity_code+"#"+@cargo.tcity_code
 
 
     respond_to do |format|
       if @cargo.save
         flash[:notice] = '创建货源成功！'
 
-        @cargo.update_attributes(:total_baojia=>0,:total_xunjia=>0,:total_match=>0,
-          :total_click=>0,:user_id=>session[:user_id],:cargo_id=>@cargo.id);
+       # @cargo.update_attributes(:total_baojia=>0,:total_xunjia=>0,:total_match=>0,
+        #  :total_click=>0,:user_id=>session[:user_id],:cargo_id=>@cargo.id);
         #update statistic for cargo
         #update need use mongo way to avoid use model method
         #be carefull when use foreign object_id,otherwise ,will not update !!!!
         #  Ustatistic.collection.update({:user_id => BSON::ObjectId(session[:user_id].to_s)}, {'$set' => {:status=>"正在配车"}})
         # Ustatistic.collection.update({:user_id => BSON::ObjectId(session[:user_id].to_s)},{'$inc' => {:total_cargo =>1,:valid_cargo=>1}})
-        begin
-          ustatistic= Ustatistic.find(  @user.ustatistic_id)
-        rescue
-        end
-        unless ustatistic.blank?
-          logger.info  "inc cargo ustatisc"
-          ustatistic.update_attributes(:status=>"正在配车")
-          ustatistic.inc(:total_cargo,1)
-          ustatistic.inc(:valid_cargo,1)
-        else
-          Ustatistic.create("user_id"=>session[:user_id],:status=>"正在配车",:total_cargo =>1,:valid_cargo=>1)
-          logger.info  "create ustatisc for cargo create"
-        end
+        #begin
+        #  ustatistic= Ustatistic.find(  @user.ustatistic_id)
+        #rescue
+        #end
+        #unless ustatistic.blank?
+        #  logger.info  "inc cargo ustatisc"
+         # ustatistic.update_attributes(:status=>"正在配车")
+         # ustatistic.inc(:total_cargo,1)
+          #ustatistic.inc(:valid_cargo,1)
+        #else
+         # Ustatistic.create("user_id"=>session[:user_id],:status=>"正在配车",:total_cargo =>1,:valid_cargo=>1)
+         # logger.info  "create ustatisc for cargo create"
+        #end
         # Lstatistic.collection.update({:line=>@cargo.line},{'$set' =>{:status=>"正在配车"}});
         # Lstatistic.collection.update({:line=>@cargo.line},{'$inc' => {:total_cargo =>1,:valid_cargo=>1}})
-        @lstatistic=Lstatistic.where(:line=>@cargo.line).first
-        unless @lstatistic.nil?
-          @lstatistic.inc(:total_cargo,1)
-          @lstatistic.inc(:valid_cargo,1)
-        else
-          Lstatistic.create(:line=>@cargo.line,:total_cargo =>1,:valid_cargo=>1)
-        end
+       # @lstatistic=Lstatistic.where(:line=>@cargo.line).first
+        #unless @lstatistic.nil?
+        #  @lstatistic.inc(:total_cargo,1)
+        #  @lstatistic.inc(:valid_cargo,1)
+        #else
+        #  Lstatistic.create(:line=>@cargo.line,:total_cargo =>1,:valid_cargo=>1)
+        #end
       
         
         #$inc and $set could not be used together !!!!!!!???
         # $db[:stock_cargos].update({'_id' => @cargo.stock_cargo_id},{'$inc' =>{"valid_cargo" =>1},'$set' =>{"status"=>"正在配车"}})
         # StockCargo.collection.update({:_id => @cargo.stock_cargo_id},{'$set' =>{:status=>"正在配车"}})
-        @stock_cargo=StockCargo.find(@cargo.stock_cargo_id)
-        @stock_cargo.update_attributes(:status=>"正在配车")
-        @stock_cargo.inc(:valid_cargo,1)
-        @stock_cargo.inc(:total_cargo,1)
-        @stock_cargo.inc(:sent_weight,@cargo.cargo_weight.to_f)
-        @stock_cargo.inc(:sent_bulk,@cargo.cargo_bulk.to_f)
-       
-        # StockCargo.collection.update({:_id => @cargo.stock_cargo_id},
-        #  {'$inc'=>{:valid_cargo=>1,:total_cargo=>1,:sent_weight=>@cargo.cargo_weight.to_f,:sent_bulk=>@cargo.cargo_bulk.to_f}},{:upsert =>true})
-      
+        #@stock_cargo=StockCargo.find(@cargo.stock_cargo_id)
+        #@stock_cargo.update_attributes(:status=>"正在配车")
+        #@stock_cargo.inc(:valid_cargo,1)
+        #@stock_cargo.inc(:total_cargo,1)
+        if params[:stock_cargo_id]
+          @cargo.stock_cargo.inc(:weight,@cargo.weight.to_f)  
+          @cargo.stock_cargo.update_attribute(:status,t("cargo.cargo_for_truck"))
+        end
+ 
         format.html { redirect_to :action => "index"}
         #  format.xml  { render :xml => @cargo, :status => :created, :location => @cargo }
       else
         flash[:notice] = '创建货源失败,重复发布货源'
         # @stock_cargo=StockCargo.find(@cargo.stock_cargo_id)
-        format.html { render :template=>"/cargos/repeat_error" }
+        format.html { render :action => "new" }
         format.xml  { render :xml => @cargo.errors, :status => :unprocessable_entity }
       end
     end

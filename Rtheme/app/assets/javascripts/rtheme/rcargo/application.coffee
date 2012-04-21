@@ -16,4 +16,5 @@
 #= require jquery.chosen
 #= require jquery.autogrow-textarea
 #= require jquery.atwho
+#= require rtheme/rcargo/rcargo.js
 #= require_self

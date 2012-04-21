@@ -7,45 +7,35 @@ class  Rcargo::Cargo
   # cattr_reader :per_page
   # @@per_page = 20      
   # cargo self info
+  field :name
   field :weight, :type=>String
+  field :unit, :type=>String 
+
   field :zuhuo, :type=>String
-  field :bulk, :type=>String
   field :expire, :type=>String
   field :comments, :type=>String
   field :status, :type=>String
   field :isself,:type=>String #what is the source of cargo
+
   field :price, :type=>String
   field :punit, :type=>String 
 
   #for not go back to find stock_cargo
+
+  field :packagen, :type=>String
+  field :big_cate, :type=>String
   field :cate, :type=>String
-  field :packag, :type=>String
-  field :bigcate, :type=>String
 
   # important line info
   field :line, :type=>String
   field :fcityn, :type=>String
   field :tcityn, :type=>String
   field :fcityc, :type=>String
-  field :tcityc, :type=>String   
-
-
+  field :tcityc, :type=>String  
 
   #below is for phone concern, we need add this two field when we create cargo
   field :mphone, :type=>String
   field :fphone, :type=>String
-  
-  belongs_to :user,:class_name=>"Ruser::User"
-  belongs_to :company,:class_name=>"Rcompany::Company"
-
-  #is contact information should be inside Ruser, right?
-  #field :contact, :type=>String
-  #field :user_contact_id
-  
-  field :company
-  #field :company_id
-  
-  
   
   # from site
   field :fsite, :type=>String
@@ -57,7 +47,18 @@ class  Rcargo::Cargo
   field :zaddr, :type=>String
   field :ztime, :type=>String
   field :xieaddr, :type=>String
-      
+
+  belongs_to :user,:class_name=>"Ruser::User"
+  belongs_to :stock_cargo,:class_name=>"Rcargo::StockCargo"
+  
+    #is contact information should be inside Ruser, right?
+  #field :contact, :type=>String
+  #field :user_contact_id
+  
+ # field :company
+  #field :company_id
+  
+  
   # statistic
   #field :total_baojia, :type=>Integer
   #field :total_xunjia, :type=>Integer
@@ -65,33 +66,31 @@ class  Rcargo::Cargo
   #field :total_click, :type=>Integer
   #field :tousu, :type=>Integer
 
-  has_one :cargostatistic,:class_name=>"Rcargo::CargoStatistic"
-      
+ # has_one :cargostatistic,:class_name=>"Rcargo::CargoStatistic"
+  # belongs_to :company,:class_name=>"Rcompany::Company"
+
  # field :cj_truck_id
  # field :cj_quote_id
  # field :cj_user_id
  #field :cj_company_id
       
-  belongs_to :stock_cargo,:class_name=>"Rcargo::StockCargo"
+
   #field :stock_cargo_id
   
-  validates_presence_of :fcity_code,:tcity_code   #remove cate_name, could be empty from grasp
+  validates_presence_of :fcityc,:tcityc   #remove cate_name, could be empty from grasp
 
-  index ([[:from_site,Mongo::ASCENDING],[:updated_at,Mongo::ASCENDING],[:status,Mongo::ASCENDING],[:fcity_code,Mongo::ASCENDING],[:tcity_code,Mongo::ASCENDING]])
+  index ([[:fite,Mongo::ASCENDING],[:updated_at,Mongo::ASCENDING],[:status,Mongo::ASCENDING],[:fcityc,Mongo::ASCENDING],[:tcityc,Mongo::ASCENDING]])
   
  
   before_create:check_unique
 
   after_create:notify,:expire
   def check_unique
-     repeated=Cargo.where(:cate_name=>self.cate_name,:line=>self.line,:user_id=>self.user_id,:status=>"正在配车",
-     :contact=>self.contact,:from_site=>self.from_site ,:mobilephone=>self.mobilephone,:fixphone=>self.fixphone).count 
-      puts "repeated=#{repeated}"
-  if  repeated > 0
-      return false
-  end
-      return true
-  end
+     repeated=Cargo.where(:name=>self.name,:line=>self.line,:user_id=>self.user_id,:status=>t("cargo.cargo_for_truck"),
+     :fsite=>self.fsite).count 
+     # puts "repeated=#{repeated}"
+     repeated > 0 ? (eturn false):(return true)
+end
 
   def expire
     begin
@@ -99,11 +98,11 @@ class  Rcargo::Cargo
       ActionController::Base.new.expire_fragment("cargos_allcity_1")
       ActionController::Base.new.expire_fragment("provincecargo")
       ActionController::Base.new.expire_fragment("users_center_#{self.user_id}")    
-      city_level(self.fcity_code)[1].each do |city|
+      city_level(self.fcityc)[1].each do |city|
         ActionController::Base.new.expire_fragment("cargo_city_#{city}_")
         ActionController::Base.new.expire_fragment("cargo_city_#{city}_city")
       end
-      city_level(self.tcity_code)[1].each do |city|
+      city_level(self.tcityc)[1].each do |city|
         ActionController::Base.new.expire_fragment("cargo_city_#{city}_")
         ActionController::Base.new.expire_fragment("cargo_city_#{city}_city")#this is for region code is same as city code issue
       end

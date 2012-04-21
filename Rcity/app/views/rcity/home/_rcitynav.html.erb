@@ -1,0 +1,9 @@
+<ul class="nav nav-tabs">
+  <li><a href="/rcity" data-toggle="tab"><%=t("rcitycommon.rcity_home")%></a></li>
+  <li><%=link_to t("rcitycommon.rcity_countries"),rcity.countries_path,:html=>{"data-toggle"=>"tab"}%></li>
+  <li><%=link_to t("rcitycommon.rcity_provinces"),rcity.provinces_path,:html=>{"data-toggle"=>"tab"}%></li>
+  <li><%=link_to t("rcitycommon.rcity_regions"),rcity.regions_path,:html=>{"data-toggle"=>"tab"}%></li>
+  <li><%=link_to t("rcitycommon.rcity_chengs"),rcity.chengs_path,:html=>{"data-toggle"=>"tab"}%></li> 
+  <li><%=link_to t("rcitycommon.rcity_chengnav"),rcity.cheng_nav_path(Rcity::Cheng.first.code),:html=>{"data-toggle"=>"tab"}%></li>    
+</ul>
+

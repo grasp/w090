@@ -46,6 +46,8 @@ def load_cargo_category_to_hash
 end
 
 
+
+
 def load_cargo_category_into_db
 filename=File.dirname(__FILE__)+File::SEPARATOR+"cargo_category2.txt"
   open(filename).each do |line|
@@ -67,7 +69,7 @@ filename=File.dirname(__FILE__)+File::SEPARATOR+"cargo_category2.txt"
   else
     big_category=Rcargo::CargoBigCategory.where(:code=>code.slice(0,2)+"0000").first
 
-        puts code 
+    #    puts code 
   raise  if big_category.nil?
     puts
     #if  big_category.nil?
@@ -80,11 +82,16 @@ filename=File.dirname(__FILE__)+File::SEPARATOR+"cargo_category2.txt"
 end
 end
 
+def load_big_category_into_hash_from_db 
+  $big_cate_hash=Hash.new
+   Rcargo::CargoBigCategory.all.each do |big_cate|
+    $big_cate_hash[big_cate.code]=big_cate.name
+   end
+end
+
 load_cargo_category_to_hash
 
-Rcargo::CargoBigCategory.delete_all
-Rcargo::CargoCategory.delete_all
+#Rcargo::CargoBigCategory.delete_all
+#Rcargo::CargoCategory.delete_all
 load_cargo_category_into_db if Rcargo::CargoCategory.count==0
-
-$catetree.freeze
-$catename.freeze
+load_big_category_into_hash_from_db 

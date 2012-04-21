@@ -1,13 +1,14 @@
 <h1>Home#root</h1>
 <p>Find me in app/views/rcargo/home/root.html.erb</p>
 
+<%#=render "/rcargo/home/rcargo_nav"%>
 <h4>Home</h4>
 
 <p><%=link_to "Home",home_root_path%></p>
 
 <h4>BigCategory</h4>
 
-<p><%=link_to "BigcargoCategory",cpanel_cargo_big_categories_path%></p>
+<p><%=link_to t("tab.BigcargoCategory2"),cpanel_cargo_big_categories_path%></p>
 <p><%= link_to 'New Cargo big category', new_cpanel_cargo_big_category_path%></p>
 
 <h4>cargoCategory</h4>
@@ -21,3 +22,6 @@
 <h4>Cargos</h4>
 <p><%=link_to "Cargos ",cargos_path%></p>
 <p><%=link_to "new",new_cargo_path%></p>
+
+<h4>all package</h4>
+<p><%=link_to "Cargos package ",cargo_categories_cargo_package_path%></p>
