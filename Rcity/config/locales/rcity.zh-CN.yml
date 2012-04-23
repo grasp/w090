@@ -9,3 +9,4 @@
     rcity_lineselect: "线路选择"
     rcity_from: "出发城市"
     rcity_to: "到达城市"
+    rcity_init: "杭州"

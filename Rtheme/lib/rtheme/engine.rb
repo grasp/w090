@@ -21,6 +21,7 @@ module Rtheme
       #  ActionController::Base .send :include,  ApplicationHelper,UsersHelper
     app.config.assets.paths += ["#{config.root}/vendor/assets/stylesheets/bootstrap202"]
     app.config.assets.paths += ["#{config.root}/vendor/assets/javascripts/bootstrap202"]
+    app.config.assets.paths += ["#{config.root}/vendor/assets/javascripts/jquery172"]
     app.config.assets.paths += ["#{config.root}/vendor/assets/images/bootstrap202"]
     end
     

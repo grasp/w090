@@ -84,15 +84,16 @@ class  Rcargo::Cargo
  
   before_create:check_unique
 
-  after_create:notify,:expire
+#  after_create:notify,:expire
+#after_create :expire
   def check_unique
-     repeated=Cargo.where(:name=>self.name,:line=>self.line,:user_id=>self.user_id,:status=>t("cargo.cargo_for_truck"),
+     repeated=Rcargo::Cargo.where(:name=>self.name,:fcityc=>self.fcityc,:tcityc=>self.tcityc,:user_id=>self.user_id,:status=>"正在配车",
      :fsite=>self.fsite).count 
      # puts "repeated=#{repeated}"
-     repeated > 0 ? (eturn false):(return true)
+     repeated > 0 ? (return false):(return true)
 end
 
-  def expire
+  def expie222
     begin
       ActionController::Base.new.expire_fragment("cargos_allcity_1")
       ActionController::Base.new.expire_fragment("cargos_allcity_1")

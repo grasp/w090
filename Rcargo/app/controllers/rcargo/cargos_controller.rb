@@ -66,21 +66,21 @@ class CargosController < Rcargo::ApplicationController
   
   def index
 
-    unless params[:stock_cargo_id].blank?
-      @cargos=Cargo.where({:user_id =>session[:user_id], :stock_cargo_id =>params[:stock_cargo_id]}).desc(:created_at).paginate(:page=>params[:page]||1,:per_page=>25)
-    else
-      if params[:status]=="peiche"
-        @cargos = Cargo.where(:user_id =>session[:user_id],:status =>"正在配车").desc(:created_at).paginate(:page=>params[:page]||1,:per_page=>25)
-      elsif params[:status]=="ischenjiao"
-        @cargos = Cargo.where(:user_id =>session[:user_id],:status =>"正在成交").desc(:created_at).paginate(:page=>params[:page]||1,:per_page=>25)
-      elsif params[:status]=="chenjiao"
-        @cargos = Cargo.where(:user_id =>session[:user_id],:status =>"已成交").desc(:created_at).paginate(:page=>params[:page]||1,:per_page=>25)
-      else
+    #unless params[:stock_cargo_id].blank?
+    #  @cargos=Cargo.where({:user_id =>session[:user_id], :stock_cargo_id =>params[:stock_cargo_id]}).desc(:created_at).paginate(:page=>params[:page]||1,:per_page=>25)
+   # else
+    #  if params[:status]=="peiche"
+    #    @cargos = Cargo.where(:user_id =>session[:user_id],:status =>"正在配车").desc(:created_at).paginate(:page=>params[:page]||1,:per_page=>25)
+    #  elsif params[:status]=="ischenjiao"
+    #    @cargos = Cargo.where(:user_id =>session[:user_id],:status =>"正在成交").desc(:created_at).paginate(:page=>params[:page]||1,:per_page=>25)
+    #  elsif params[:status]=="chenjiao"
+    #    @cargos = Cargo.where(:user_id =>session[:user_id],:status =>"已成交").desc(:created_at).paginate(:page=>params[:page]||1,:per_page=>25)
+     # else
         #@cargos = Cargo.where("user_id = ?",session[:user_id]).order("updated_at desc").paginate(:page=>params[:page]||1,:per_page=>25)
-        @cargos = Cargo.where(:user_id =>session[:user_id]).desc(:created_at).paginate(:page=>params[:page]||1,:per_page=>25)
-      end
-    end
-    
+     #   @cargos = Cargo.where(:user_id =>session[:user_id]).desc(:created_at).paginate(:page=>params[:page]||1,:per_page=>25)
+    #  end
+   # end
+    @cargos=current_user.cargos
     
     respond_to do |format|
       format.html # show.html.erb
@@ -173,7 +173,17 @@ class CargosController < Rcargo::ApplicationController
   # GET /cargos/new.xml
   def new
     #check conact first
-   drop_breadcrumb(t("cargo.cargos"),cargos_path)
+        params[:cheng_id]="330100000000" if params[:cheng_id].nil?
+        @country=Rcity::Country.where(:code=>"086").first#hard code
+        @provinces=@country.provinces.asc(:code).to_a    
+        @province=Rcity::Province.where(:code=>params[:cheng_id].slice(0,2)+"0000000000").first
+        @regions=@province.regions 
+        @match_province=params[:cheng_id].slice(0,2)+"0000000000"
+        @match_region=params[:cheng_id].slice(0,4)+"00000000"
+        @match_cheng=params[:cheng_id].slice(0,6)+"000000"  
+
+    ##
+    drop_breadcrumb(t("cargo.cargos"),cargos_path)
     drop_breadcrumb(t("cargo.new_cargo"))
     if params[:stock_cargo_id]
       @stock_cargo=Rcargo::StockCargo.find(params[:stock_cargo_id])
@@ -215,7 +225,9 @@ class CargosController < Rcargo::ApplicationController
    # params[:cargo][:mphone]=current_user.contact.mphone
 
     @cargo=current_user.cargos.build(params[:cargo])
-   
+
+    puts params[:cargo]
+
    #update cargo phone information for concerncargo         
    # user_contact=UserContact.find(@user.user_contact_id) unless @user.user_contact_id .nil?    
    # unless user_contact.blank?
@@ -234,7 +246,8 @@ class CargosController < Rcargo::ApplicationController
     respond_to do |format|
       if @cargo.save
         flash[:notice] = '创建货源成功！'
-
+        puts @cargo.to_s
+   raise
        # @cargo.update_attributes(:total_baojia=>0,:total_xunjia=>0,:total_match=>0,
         #  :total_click=>0,:user_id=>session[:user_id],:cargo_id=>@cargo.id);
         #update statistic for cargo
@@ -278,12 +291,14 @@ class CargosController < Rcargo::ApplicationController
           @cargo.stock_cargo.update_attribute(:status,t("cargo.cargo_for_truck"))
         end
  
-        format.html { redirect_to :action => "index"}
+         format.html{ redirect_to :action => "index"}
         #  format.xml  { render :xml => @cargo, :status => :created, :location => @cargo }
       else
         flash[:notice] = '创建货源失败,重复发布货源'
         # @stock_cargo=StockCargo.find(@cargo.stock_cargo_id)
-        format.html { render :action => "new" }
+       # format.html { render :action => "new" }
+
+       format.html{redirect_to :action => "new"}
         format.xml  { render :xml => @cargo.errors, :status => :unprocessable_entity }
       end
     end

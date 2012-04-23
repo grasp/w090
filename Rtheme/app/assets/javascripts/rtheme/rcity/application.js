@@ -10,7 +10,7 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require jquery
+//= require jquery172/jquery-1.7.2.min.js
 //= require jquery_ujs
 //= require bootstrap202/bootstrap-transition.js
 //= require bootstrap202/bootstrap-alert.js

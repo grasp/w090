@@ -2,22 +2,31 @@
 
 
 function ajax_load_link_to_modal(){
-	$(".lineselect").live("click",function(){
-		$(".modal-body").load(this.href);
-		//2alert("you click the city link!")
+	$("#fcheng .lineselect").live("click",function(){
+		$("#fcheng .fcheng").load(this.href);
+		$(".fname").text(this.text);
+		$(".fcityname").val(this.text);
+		$(".fcitycode").val($(this).attr("href").match(/\d+/));
+		return false;
+	});
+
+		$("#tcheng .lineselect").live("click",function(){
+		$("#tcheng .tcheng").load(this.href);
+		$(".tname").text(this.text);
+		$(".tcityname").val(this.text);
+		$(".tcitycode").val($(this).attr("href").match(/\d+/));
 		return false;
 	})
 }
 
 
-function load_modal_for_line_select(){
+function rcity_chengs_load_modal_for_line_select(){
 	//alert("cheng is loaded!");
    $('#myModal').modal({ keyboard: true, backdrop: true, show: false});
-   $('#mytab').tab('show')
+   $('#tab').tab('show')
 
    $('#myModal').on('show', function () {
    	ajax_load_link_to_modal();
-
     })
-
+  return false;
 }

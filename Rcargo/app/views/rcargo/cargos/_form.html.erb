@@ -12,34 +12,18 @@
     </div>
   <% end %>
 
-  <a class="btn" data-toggle="modal" href="#myModal" >Launch Modal</a>
-    <div class="modal" id="myModal">
-  <div class="modal-header">
-    <a class="close" data-dismiss="modal">×</a>
-    <h3>Modal header</h3>
-  </div>
-  <div class="modal-body">
-    <p>One fine body…</p>
-  </div>
-  <div class="modal-footer">
-    <a href="#" class="btn">Close</a>
-    <a href="#" class="btn btn-primary">Save changes</a>
-  </div>
-</div>
-  <span class="lineselector">
-     
-  <!-- do not change below  format -->
+    <div class="control-group">
+     <div class="control-label"> <strong class="fname"><%=t("rcitycommon.rcity_init")%></strong>--><strong class="tname"><%=t("rcitycommon.rcity_init")%></strong> </div>
 
-      <a id="from_data_load" style="display:inline-block;padding: 5px;" href="/cities/from"><%=(@cargo.fcityn.nil?||@cargo.fcityn.empty?) ?"请选择出发地":@cargo.fcityn%></a>
-      <%= f.hidden_field(:fcityc, { :class => 'fcitycode' }) %>
-      <%= f.hidden_field(:fcityn,{ :class => 'fcityname' }) %>
+     <div class="controls"> 
+       <%=render "rcargo/cargos/cargo_line"%>
+       <%=render "rcity/chengs/line_modal"%>
+  </div>
+  </div>
 
-     <a id="to_data_load" style="display:inline-block;padding: 5px;" href="/cities/to" ><%=(@cargo.tcityn.nil?||@cargo.tcityn.empty?) ?"请选择到达地":@cargo.tcityn%></a>
-      <%= f.hidden_field(:tcityc, { :class => 'tcitycode' }) %>
-      <%= f.hidden_field(:tcityn,{ :class => 'tcityname' }) %>
-   
-  <!-- do not change this format -->
-</span>
+
+
+
   <div class="control-group">
      <%= f.label t("cargo.cargo_name"),:html=>{:class=>"control-label"}%>
      <div class="controls"> <%= f.text_field(:name)%>  </div>
@@ -68,7 +52,10 @@
      
   <div class="control-group">
      <label  class="control-label">有效天数*</label>
-    <div class="controls">  <%= f.select(:expire,options_for_select([["一天","1"],["当天","0"],["二天","2"],["15天","15"],["一个月","30"],["三个月","90"]],@cargo.expire) )%>   </div>
+     <!--
+    <div class="controls">  <%= f.select(:expire,options_for_select([["一天","1"],["当天","0"],["二天","2"],["15天","15"],["一个月","30"],["三个月","90"]],@cargo.expire) )%>   </div>-->
+
+       <div class="controls">  <%= f.select(:expire,options_for_select(["0","1","2","15","30","60"],@cargo.expire) )%>  </div>
    </div>
     
    

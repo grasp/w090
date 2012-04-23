@@ -37,6 +37,9 @@ class StockCargosController < Rcargo::ApplicationController
   # GET /stock_cargos/new
   # GET /stock_cargos/new.xml
   def new
+
+    #init for line search
+    
      drop_breadcrumb(t("stock_cargo.StockCargos"),stock_cargos_path)
     drop_breadcrumb(t("stock_cargo.new_stock_cargo"))
     @stock_cargo=current_user.stock_cargos.new

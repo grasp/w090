@@ -30,11 +30,11 @@
 
 <div>
    <%highlight1="btn btn-info btn-mini" if region.code==@match_region%>
-  <span><%= link_to region.name+"->", cheng_lineselect_path(region.code) ,
+  <span><%= link_to region.name+"->", rcity.cheng_lineselect_path(region.code) ,
   :class=>"lineselect #{highlight1}" %></span>
   <%region.chengs.each do |city|%>
    <%highlight2="btn btn-info btn-mini" if city.code==@match_cheng%>
-  <td><%= link_to city.name, cheng_lineselect_path(city.code),
+  <td><%= link_to city.name, rcity.cheng_lineselect_path(city.code),
   :class=>"lineselect #{highlight2}"%></td>
   <%end%>
 </div>

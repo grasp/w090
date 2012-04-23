@@ -1,12 +1,16 @@
-#= require jquery
+#= require jquery172/jquery-1.7.2.min.js
 #= require jquery_ujs
-#= require bootstrap202/bootstrap-alert
-#= require bootstrap202/bootstrap-dropdown
-#= require bootstrap202/bootstrap-tab
-
-#= require bootstrap202/bootstrap-button
-#= require bootstrap202/bootstrap-popover
-#= require bootstrap202/bootstrap-modal
+#= require bootstrap202/bootstrap-transition.js
+#= require bootstrap202/bootstrap-alert.js
+#= require bootstrap202/bootstrap-button.js
+#= require bootstrap202/bootstrap-collapse.js
+#= require bootstrap202/bootstrap-dropdown.js
+#= require bootstrap202/bootstrap-modal.js
+#= require bootstrap202/bootstrap-tab.js
+#= require bootstrap202/bootstrap-scrollspy.js
+#= require bootstrap202/bootstrap-tooltip.js
+#= require bootstrap202/bootstrap-popover.js
+#= require bootstrap202/bootstrap-typeahead.js
 
 #= require rtheme/will_paginate
 #= require jquery.jdialog
@@ -17,4 +21,5 @@
 #= require jquery.autogrow-textarea
 #= require jquery.atwho
 #= require rtheme/rcargo/rcargo.js
+#= require rtheme/rcity/chengs.js
 #= require_self
