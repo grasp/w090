@@ -1,0 +1,41 @@
+ 
+
+<div>
+
+<%@provinces.each_index do |index|%> 
+
+    <%if index%2==0%>
+      <span>
+        <%highlight="btn btn-info btn-mini" if @provinces[index].code==@match_province%>
+        <%= link_to @provinces[index].name, rcity.cheng_lineselect_path(@provinces[index].code),
+        :class=>"lineselect #{highlight}"%>
+      </span>
+    <%end%> 
+
+<%end%>
+</div>
+ <div>
+
+<%@provinces.each_index do |index|%> 
+    <%if index%2==1%>
+      <%highlight="btn btn-info btn-mini" if @provinces[index].code==@match_province%>
+      <span><%= link_to @provinces[index].name, rcity.cheng_lineselect_path(@provinces[index].code) ,
+      :class=>"lineselect #{highlight}"%></span>
+    <%end%>
+ <%end%>
+ </div>
+
+<hr style="margin:2px 0px 4px 0px;"></hr>
+<%@regions.each do |region|%>
+
+<div>
+   <%highlight1="btn btn-info btn-mini" if region.code==@match_region%>
+  <span><%= link_to region.name+"->", cheng_lineselect_path(region.code) ,
+  :class=>"lineselect #{highlight1}" %></span>
+  <%region.chengs.each do |city|%>
+   <%highlight2="btn btn-info btn-mini" if city.code==@match_cheng%>
+  <td><%= link_to city.name, cheng_lineselect_path(city.code),
+  :class=>"lineselect #{highlight2}"%></td>
+  <%end%>
+</div>
+<%end%>

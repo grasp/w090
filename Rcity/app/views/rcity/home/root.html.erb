@@ -20,6 +20,34 @@
 <%=link_to "Cities",rcity.chengs_path%>
 <%=link_to "new_city",rcity.new_cheng_path%>
 
+<h2>LineSelect </h2>
+
+<a class="btn" data-toggle="modal" href="#myModal">Launch Line Select</a>
+
+<div class="modal" id="myModal" style="display:none">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>Line Select</h3>
+
+  </div>
+  <div id="mytab">
+      <ul class="nav nav-tabs" style="margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;">
+   <li class="active"><%=link_to t("rcitycommon.rcity_from"),rcity.cheng_lineselect_path(params[:cheng_id]),:"data-toggle"=>"tab",:class=>"lineselect fline"%>
+   <li><%=link_to t("rcitycommon.rcity_to"),rcity.cheng_lineselect_path(params[:cheng_id]),:"data-toggle"=>"tab" ,:class=>"lineselect tline"%></li>
+  </ul> 
+</div>
+  <div class="modal-body" style="margin-top:0px;padding-top:0px;">
+   <%=render "rcity/chengs/line_select" %>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn">Close</a>
+    <a href="#" class="btn btn-primary">Save changes</a>
+  </div>
+</div>
+
+ 
+
+
 <h2>Cities Other</h2>
   citiesindex        /cities/:dir(/:code)(.:format)                          rcity/cities#index
   citiesmodal        /cities/modal/show(/:code)/line/:fcode/:tcode(.:format) rcity/cities#modal

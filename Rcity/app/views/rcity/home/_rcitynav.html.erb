@@ -4,6 +4,7 @@
   <li><%=link_to t("rcitycommon.rcity_provinces"),rcity.provinces_path,:html=>{"data-toggle"=>"tab"}%></li>
   <li><%=link_to t("rcitycommon.rcity_regions"),rcity.regions_path,:html=>{"data-toggle"=>"tab"}%></li>
   <li><%=link_to t("rcitycommon.rcity_chengs"),rcity.chengs_path,:html=>{"data-toggle"=>"tab"}%></li> 
-  <li><%=link_to t("rcitycommon.rcity_chengnav"),rcity.cheng_nav_path(Rcity::Cheng.first.code),:html=>{"data-toggle"=>"tab"}%></li>    
+  <li><%=link_to t("rcitycommon.rcity_chengnav"),rcity.cheng_nav_path(Rcity::Cheng.first.code),:html=>{"data-toggle"=>"tab"}%></li>
+  <li><%=link_to t("rcitycommon.rcity_lineselect"),rcity.cheng_lineselect_path("330100000000"),:html=>{"data-toggle"=>"tab"}%></li>    
 </ul>
 

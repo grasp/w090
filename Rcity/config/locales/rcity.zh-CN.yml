@@ -6,3 +6,6 @@
     rcity_regions: "全部地区"
     rcity_chengs: "全部城市"
     rcity_chengnav: "城市导航"
+    rcity_lineselect: "线路选择"
+    rcity_from: "出发城市"
+    rcity_to: "到达城市"

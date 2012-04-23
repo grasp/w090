@@ -29,8 +29,9 @@ Rcity::Engine.routes.draw do
     get "nav"
   end
 
-    resources :chengs do 
+   resources :chengs do 
     get "nav"
+    get "lineselect"
   end
 
 
