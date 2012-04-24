@@ -3,6 +3,8 @@
     edit: "编辑"
     destroy: "删除"
     confirmdelete: "确认删除吗？"
+    created_at: "创建于"
+    updated_at: "更新于"
   category:
     BigcargoCategory: '货物大类'
     CargoCategory: '货物小类'
@@ -29,6 +31,7 @@
     concern_cargo: "关注货源"
     concern_user: "关注货主"
     comments: "备注"
+
   package:
     package: '货物包装'
   helpers:

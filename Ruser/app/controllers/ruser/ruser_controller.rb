@@ -4,7 +4,6 @@ class RuserController < ApplicationController
    layout "rtheme/ruser"
  protect_from_forgery
 
-include ApplicationControllerCommon
 
 end
 end

@@ -12,7 +12,9 @@
     <% end %>
   <% end %>
   <li class="dropdown">
-    <%= link_to(current_user.login,ruser.user_path(current_user.login), :class => "dropdown-toggle",:"data-toggle"=>"dropdown")%>
+<!--
+    <%= link_to(current_user.login,ruser.user_path(current_user.login), :class => "dropdown-toggle",:"data-toggle"=>"dropdown")%>-->
+       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Hunter <b class="caret"></b></a>
     <%= render_list :class => "dropdown-menu" do |li|
       li << link_to(t("menu.my_home_page"), ruser.user_path(current_user.login) )
       unless params[:controller].match(/cpanel/)
@@ -25,7 +27,8 @@
     end %>
   </li>
   <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown 3 <b class="caret"></b></a>
+            <!--  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown 3 <b class="caret"></b></a>-->
+                  <%= link_to(current_user.login,ruser.user_path(current_user.login), :class => "dropdown-toggle",:"data-toggle"=>"dropdown")%>
               <ul id="menu3" class="dropdown-menu">
                 <li><a href="#">Action</a></li>
                 <li><a href="#">Another action</a></li>

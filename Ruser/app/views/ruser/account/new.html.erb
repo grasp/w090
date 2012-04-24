@@ -4,36 +4,36 @@
 
 <div class="content">
     <div class="box">
-    <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+    <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name),:html => {:class => "form-horizontal"}) do |f| %>
       <fieldset>
         <legend><%= t("users.register_user")%></legend>
         <%= render "ruser/shared/error_messages", :target => resource %> 
-        <div class="clearfix">
+        <div class="control-group">
           <%#= f.label :login %>
-           <%= f.label t("users.username") %>
-          <div class="input">
+           <%= f.label t("users.username") ,:class=>"control-label"%>
+          <div class="controls">
             <%= f.text_field :login %><br />
             <span class="help-block"><%= t("users.suggest_using_twitter_id")%></span>
           </div>
         </div>
-        <div class="clearfix">
-          <%= f.label t("users.nickname") %>
-          <div class="input"><%= f.text_field :name %></div>
+        <div class="control-group">
+          <%= f.label t("users.nickname"),:class=>"control-label" %>
+          <div class="controls"><%= f.text_field :name %></div>
         </div>
-        <div class="clearfix">
-           <%= f.label t("users.email") %>
-          <div class="input"><%= f.text_field :email, :placeholder => "foo@bar.com" %></div>
+        <div class="control-group">
+           <%= f.label t("users.email"),:class=>"control-label" %>
+          <div class="controls"><%= f.text_field :email, :placeholder => "foo@bar.com" %></div>
         </div>
-        <div class="clearfix"> <%= f.label t("users.password") %>
-          <div class="input"><%= f.password_field :password %></div>
+        <div class="control-group"> <%= f.label t("users.password"),:class=>"control-label" %>
+          <div class="controls"><%= f.password_field :password %></div>
         </div>
-        <div class="clearfix"><%= f.label t("users.password_confirm") %>
-          <div class="input"><%= f.password_field :password_confirmation %></div>
+        <div class="control-group"><%= f.label t("users.password_confirm") ,:class=>"control-label"%>
+          <div class="controls"><%= f.password_field :password_confirmation %></div>
         </div>
         
-        <div class="actions">
+        <div class="form-actions">
           <%#= f.submit "提交注册信息", :class => "btn primary", :disable_with => t("common.submitting") %>
-            <%= f.submit("确 定",:class=>"btn primary") %>
+            <%= f.submit("确 定",:class=>"btn btn-primary") %>
         </div>
         
       </fieldset>
