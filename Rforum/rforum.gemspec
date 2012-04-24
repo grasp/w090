@@ -20,8 +20,9 @@ Gem::Specification.new do |s|
   # s.add_dependency "jquery-rails"
 
   #s.add_development_dependency "sqlite3"
-  
-    s.add_dependency "rails-i18n","0.1.8"
+
+   s.add_dependency "execjs"
+   s.add_dependency "rails-i18n","0.1.8"
   s.add_dependency "jquery-rails", "1.0.16"
   s.add_dependency "rails_autolink", ">= 1.0.4"
   s.add_dependency "jquery-atwho-rails", "0.1.3"
@@ -54,7 +55,7 @@ Gem::Specification.new do |s|
 # 分页
   s.add_dependency  'will_paginate', '3.0.2'
   s.add_dependency  'will_paginate_mongoid', '~> 1.0.2'
-  s.add_dependency  'bootstrap-will_paginate', '0.0.3'
+  s.add_dependency  'bootstrap-will_paginate', '~>0.0.7'
 
 
 # permission

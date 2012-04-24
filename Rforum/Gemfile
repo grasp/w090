@@ -20,7 +20,7 @@ end
 
 #this is for init_breadcrume....
 #gem 'bootstrap-rails', :require => 'bootstrap-rails', :git => 'git://github.com/xdite/bootstrap-rails.git'
-gem 'bootstrap-rails', :require => 'bootstrap-rails', :path => '~/vob/github/bootstrap-rails'
+#gem 'bootstrap-rails', :require => 'bootstrap-rails', :path => '~/vob/github/bootstrap-rails'
 # 上传组件
 gem 'carrierwave', '0.5.7'
 gem 'carrierwave-mongoid', '0.1.2', :require => 'carrierwave/mongoid'

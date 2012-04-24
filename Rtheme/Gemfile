@@ -17,7 +17,7 @@ gem "jquery-rails"
 # gem 'ruby-debug19', :require => 'ruby-debug'
 #gem 'bootstrap-rails', :require => 'bootstrap-rails', :git => 'https://github.com/xdite/bootstrap-rails.git'
 #gem 'bootstrap-rails', :require => 'bootstrap-rails', :path => '~/vob/bootstrap-rails'
-gem 'bootstrap-rails', :require => 'bootstrap-rails',:path=>"~/vob/github/bootstrap-rails"
+#gem 'bootstrap-rails', :require => 'bootstrap-rails',:path=>"~/vob/github/bootstrap-rails"
 gem "social-share-button", "~> 0.0.3"
 
 # 分页

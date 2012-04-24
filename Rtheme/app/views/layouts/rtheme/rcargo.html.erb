@@ -16,27 +16,15 @@
   <meta charset='utf-8'>
   <link rel="shortcut icon" href="<%= asset_path("big_logo.png") %>" /> 
   <%= csrf_meta_tag %>
-  <%#= auto_discovery_link_tag(:rss,feed_topics_url,:title => '订阅最新贴') %>
-  <%#= yield :node_feed_link %>
 </head>
 
 <%= render_body_tag %>
-  <div class="topbar" data-dropdown="dropdown">
-    <div class="topbar-inner">
-      <div class="container">
-        <h3>
-          <a href="/"><%= Ruser::Setting.app_name %></a>
-        </h3>
-       <%#= render "rtheme/common/header_nav" %>
-        <%= render "ruser/common/search_form" %>
-
-      </div>
-    </div>
-  </div>
+    <%= render "rtheme/common/navbar" %>
 
   <div class="container">
-    <%= render_breadcrumb %>
-
+    <%= render "/rcity/home/rcitynav" %>
+    <%= render "/rcargo/home/rcargo_nav" %>
+        <%= render_breadcrumb %>
     <%= notice_message %>
     <div id="main" class="container-fluid">
       <%= yield %>

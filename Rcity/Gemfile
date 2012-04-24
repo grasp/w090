@@ -59,4 +59,4 @@ vob_path=pn.parent #do we have one line solution?
 gem "rtheme" ,:path=>File.join(vob_path,"Rtheme")
 
 #this is ugly
-gem 'bootstrap-rails', :require => 'bootstrap-rails',:path=>"~/vob/github/bootstrap-rails"
+#gem 'bootstrap-rails', :require => 'bootstrap-rails',:path=>"~/vob/github/bootstrap-rails"

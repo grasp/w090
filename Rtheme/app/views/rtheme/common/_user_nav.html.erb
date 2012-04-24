@@ -7,27 +7,37 @@
     notification_class << "active" if ["notifications"].index(params[:controller])
   %>
   <%= content_tag 'li', :class => notification_class do %>
-    <%= content_tag 'a', :href => notifications_path do %>
+    <%= content_tag 'a', :href => ruser.notifications_path do %>
       <span class="count"><%= unread_count %></span>
     <% end %>
   <% end %>
-  <li>
-    <%= link_to(current_user.login,user_path(current_user.login), :class => "dropdown-toggle")%>
+  <li class="dropdown">
+    <%= link_to(current_user.login,ruser.user_path(current_user.login), :class => "dropdown-toggle",:"data-toggle"=>"dropdown")%>
     <%= render_list :class => "dropdown-menu" do |li|
-      li << link_to(t("menu.my_home_page"), user_path(current_user.login) )
+      li << link_to(t("menu.my_home_page"), ruser.user_path(current_user.login) )
       unless params[:controller].match(/cpanel/)
-        li << link_to(t("menu.edit_account_path"),edit_user_registration_path)
-        li << link_to(t("menu.notes"), notes_path )
-        li << link_to(t("menu.likes"),likes_user_path(current_user.login))
+        li << link_to(t("menu.edit_account_path"),ruser.edit_user_registration_path)
+        li << link_to(t("menu.notes"), rforum.notes_path )
+        li << link_to(t("menu.likes"),ruser.likes_user_path(current_user.login))
         li << link_to(t("menu.cpanel"), "/cpanel") if admin?
       end
-      li << link_to(t("common.logout"), destroy_user_session_path )
+      li << link_to(t("common.logout"), ruser.destroy_user_session_path )
     end %>
   </li>
+  <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown 3 <b class="caret"></b></a>
+              <ul id="menu3" class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
 </ul>
 <% else %>
   <%= render_list :class => "nav secondary-nav", :id => "userbar" do |li|
-    li << link_to( t("common.register"),new_user_registration_path)
-    li << link_to( t("common.login"), new_user_session_path )
+    li << link_to( t("common.register"),ruser.new_user_registration_path)
+    li << link_to( t("common.login"), ruser.new_user_session_path )
   end %>
 <% end %>

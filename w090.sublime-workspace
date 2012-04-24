@@ -7,57 +7,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "Rcargo/app/views/rcargo/cargos/_line_select.html.erb",
-			"settings":
-			{
-				"buffer_size": 11,
-				"line_ending": "Unix",
-				"name": "line_select"
-			}
-		},
-		{
-			"file": "Rcargo/app/controllers/rcargo/cargos_controller.rb",
-			"settings":
-			{
-				"buffer_size": 17833,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Rcity/app/controllers/rcity/chengs_controller.rb",
-			"settings":
-			{
-				"buffer_size": 2729,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcity/app/views/rcity/chengs/_line_select.html.erb",
-			"settings":
-			{
-				"buffer_size": 638,
-				"line_ending": "Unix",
-				"name": "_line_select.html.erb"
-			}
-		},
-		{
-			"file": "Rcity/app/views/rcity/chengs/lineselect.html.erb",
-			"settings":
-			{
-				"buffer_size": 10,
-				"line_ending": "Unix",
-				"name": "lineselect"
-			}
-		},
-		{
-			"file": "Rcity/config/routes.rb",
-			"settings":
-			{
-				"buffer_size": 676,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -103,6 +52,26 @@
 	},
 	"file_history":
 	[
+		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/stock_cargos/_form.html.erb",
+		"/home/hunter/vob/w090/Rcity/config/locales/rcity.zh-CN.yml",
+		"/home/hunter/vob/w090/Rcargo/app/controllers/rcargo/stock_cargos_controller.rb",
+		"/home/hunter/vob/w090/Rcargo/app/controllers/rcargo/cargos_controller.rb",
+		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/cargos/_cargo_line.html.erb",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/chengs/_line_modal.html.erb",
+		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rcity/chengs.js",
+		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/cargos/_line_select.html.erb",
+		"/home/hunter/vob/w090/Rcity/app/controllers/rcity/chengs_controller.rb",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/chengs/_line_select.html.erb",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/chengs/lineselect.html.erb",
+		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rcity/rcity_main.js",
+		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rcity/application.js",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/home/root.html.erb",
+		"/home/hunter/vob/w090/Rcity/app/controllers/rcity/home_controller.rb",
+		"/home/hunter/vob/w090/Rcity/app/controllers/rcity/rcity_controller.rb",
+		"/home/hunter/vob/w090/Rtheme/vendor/assets/javascripts/bootstrap202/bootstrap-alert.js",
+		"/home/hunter/vob/w090/Rcity/app/assets/javascripts/rcity/chengs.js",
+		"/home/hunter/vob/w090/Rcity/config/routes.rb",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/home/_rcitynav.html.erb",
 		"/home/hunter/vob/w090/Rcargo/app/controllers/rcargo/cargo_categories_controller.rb",
 		"/home/hunter/vob/w090/Rcargo/app/models/rcargo/cargo_category.rb",
 		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/cargo_categories/index.html.erb",
@@ -125,7 +94,6 @@
 		"/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/rcargo.html.erb",
 		"/home/hunter/vob/w090/Rcargo/spec/dummy/config/initializers/quiets_assets.rb",
 		"/home/hunter/vob/w090/Rcargo/Gemfile",
-		"/home/hunter/vob/w090/Rcargo/app/controllers/rcargo/stock_cargos_controller.rb",
 		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/cpanel/cargo_big_categories/show.html.erb",
 		"/home/hunter/vob/github/ruby-china/config/routes.rb",
 		"/home/hunter/vob/w090/Rcargo/config/initializers/cargo_big_category_load.rb",
@@ -145,7 +113,6 @@
 		"/home/hunter/vob/github/ruby-china/Gemfile",
 		"/home/hunter/vob/github/ruby-china/app/controllers/application_controller.rb",
 		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rcargo/application.coffee",
-		"/home/hunter/vob/w090/Rcargo/app/controllers/rcargo/cargos_controller.rb",
 		"/home/hunter/桌面/mount_netmon.sh",
 		"/home/hunter/vob/w090/Ruser/config/ruser.yml",
 		"/home/hunter/vob/w090/Rcity/app/helpers/rcity/chengs_helper.rb",
@@ -194,15 +161,12 @@
 		"/home/hunter/vob/w090/Rcity/app/views/rcity/chengs/new.html.erb",
 		"/home/hunter/vob/w090/Rcity/spec/views/rcity/chengs/index.html.erb_spec.rb",
 		"/home/hunter/vob/w090/Rcity/spec/views/rcity/chengs/edit.html.erb_spec.rb",
-		"/home/hunter/vob/w090/Rcity/app/controllers/rcity/rcity_controller.rb",
-		"/home/hunter/vob/w090/Rcity/app/controllers/rcity/chengs_controller.rb",
 		"/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/rcity.html.erb",
 		"/home/hunter/vob/w090/Rcity/Gemfile.lock",
 		"/home/hunter/vob/w090/Rcity/spec/controllers/chengs_controller_spec.rb",
 		"/home/hunter/vob/w090/Rcity/spec/models/rcity/cheng_spec.rb",
 		"/home/hunter/vob/w090/Rcity/app/controllers/rcity/regions_controller.rb",
 		"/home/hunter/vob/w090/Rcity/app/controllers/rcity/provinces_controller.rb",
-		"/home/hunter/vob/w090/Rcity/app/controllers/rcity/home_controller.rb",
 		"/home/hunter/vob/w090/Rcity/spec/views/rcity/chengs/new.html.erb_spec.rb",
 		"/home/hunter/vob/w090/Rcity/spec/views/rcity/chengs/show.html.erb_spec.rb",
 		"/home/hunter/vob/w090/Rcity/app/views/rcity/chengs/show.html.erb",
@@ -215,22 +179,7 @@
 		"/home/hunter/vob/w090/Rcity/spec/controllers/rcity/chengs_controller_spec.rb",
 		"/home/hunter/vob/w090/Rcity/spec/requests/rcity/rcity_chengs_spec.rb",
 		"/home/hunter/vob/w090/Rcity/app/models/rcity/region.rb",
-		"/home/hunter/vob/w090/Rcity/config/initializers/load_city_to_db.rb",
-		"/home/hunter/vob/w090/Rcity/app/helpers/rcity/cities_helper.rb",
-		"/home/hunter/vob/w090/Rcity/app/models/rcity/country.rb",
-		"/home/hunter/vob/w090/Rcity/app/models/rcity/province.rb",
-		"/home/hunter/vob/w090/Rcity/app/models/rcity/city.rb",
-		"/home/hunter/vob/w090/Rcity/app/controllers/rcity/cities_controller.rb",
-		"/home/hunter/vob/w090/Rcity/app/views/rcity/countries/nav.html.erb",
-		"/home/hunter/vob/w090/Rcity/app/views/rcity/cities/nav.html.erb",
-		"/home/hunter/vob/w090/Rcity/app/views/rcity/provinces/_regions.html.erb",
-		"/home/hunter/vob/w090/Rcity/app/views/rcity/regions/index.html.erb",
-		"/home/hunter/vob/w090/Rcity/app/views/rcity/cities/navcity.html.erb",
-		"/home/hunter/vob/w090/Rcity/app/views/rcity/cities/_form.html.erb",
-		"/home/hunter/vob/w090/Rcity/app/views/rcity/cities/index.html.erb",
-		"/home/hunter/vob/w090/Rcity/app/views/rcity/chengs/nav.html.erb",
-		"/home/hunter/vob/w090/Rcity/app/models/rcity/cheng.rb",
-		"/home/hunter/vob/w090/Rcity/config/routes.rb"
+		"/home/hunter/vob/w090/Rcity/config/initializers/load_city_to_db.rb"
 	],
 	"find":
 	{
@@ -337,173 +286,6 @@
 		{
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "Rcargo/app/views/rcargo/cargos/_line_select.html.erb",
-					"settings":
-					{
-						"buffer_size": 11,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								11,
-								11
-							]
-						],
-						"settings":
-						{
-							"auto_name": "line_select",
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Rcargo/app/controllers/rcargo/cargos_controller.rb",
-					"settings":
-					{
-						"buffer_size": 17833,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								17558,
-								17558
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 9823.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Rcity/app/controllers/rcity/chengs_controller.rb",
-					"settings":
-					{
-						"buffer_size": 2729,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2379,
-								2379
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1320.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Rcity/app/views/rcity/chengs/_line_select.html.erb",
-					"settings":
-					{
-						"buffer_size": 638,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								580,
-								594
-							]
-						],
-						"settings":
-						{
-							"auto_name": "_line_select.html.erb",
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Rcity/app/views/rcity/chengs/lineselect.html.erb",
-					"settings":
-					{
-						"buffer_size": 10,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10,
-								10
-							]
-						],
-						"settings":
-						{
-							"auto_name": "lineselect",
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Rcity/config/routes.rb",
-					"settings":
-					{
-						"buffer_size": 676,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								662,
-								662
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],

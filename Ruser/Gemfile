@@ -32,7 +32,7 @@ end
 #this is for init_breadcrume....
 #gem 'bootstrap-rails', :require => 'bootstrap-rails', :git => 'https://github.com/xdite/bootstrap-rails.git'
 #gem 'bootstrap-rails', :require => 'bootstrap-rails', :path => '~/vob/bootstrap-rails'
-gem 'bootstrap-rails',:path=>"~/vob/github/bootstrap-rails"
+#gem 'bootstrap-rails',:path=>"~/vob/github/bootstrap-rails"
 # YAML 配置信息
 gem "settingslogic", "~> 2.0.6"
 

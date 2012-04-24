@@ -75,7 +75,7 @@ s.add_dependency "social-share-button", "~> 0.0.3"
 
   s.add_dependency "jquery-rails"#, "~>1.0.16"
   s.add_dependency "jquery-atwho-rails", "~>0.1.3"
-  
-
   s.add_development_dependency "sqlite3"
+  s.add_dependency "rtheme"
+
 end

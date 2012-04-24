@@ -7,11 +7,11 @@ require "rcargo/version"
 Gem::Specification.new do |s|
   s.name        = "rcargo"
   s.version     = Rcargo::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Rcargo."
-  s.description = "TODO: Description of Rcargo."
+  s.authors     = ["hunter"]
+  s.email       = ["hunter.wxhu@gmail.com"]
+  s.homepage    = "http://github.com"
+  s.summary     = " Summary of Rcargo."
+  s.description = " Description of Rcargo."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 

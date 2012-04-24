@@ -246,8 +246,6 @@ class CargosController < Rcargo::ApplicationController
     respond_to do |format|
       if @cargo.save
         flash[:notice] = '创建货源成功！'
-        puts @cargo.to_s
-   raise
        # @cargo.update_attributes(:total_baojia=>0,:total_xunjia=>0,:total_match=>0,
         #  :total_click=>0,:user_id=>session[:user_id],:cargo_id=>@cargo.id);
         #update statistic for cargo
@@ -294,7 +292,7 @@ class CargosController < Rcargo::ApplicationController
          format.html{ redirect_to :action => "index"}
         #  format.xml  { render :xml => @cargo, :status => :created, :location => @cargo }
       else
-        flash[:notice] = '创建货源失败,重复发布货源'
+        flash[:error] = '创建货源失败,重复发布货源'
         # @stock_cargo=StockCargo.find(@cargo.stock_cargo_id)
        # format.html { render :action => "new" }
 

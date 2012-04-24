@@ -1,15 +1,28 @@
 PATH
-  remote: /home/netmon/vob/w090/Rforum
+  remote: /home/hunter/vob/w090/Rcargo
+  specs:
+    rcargo (0.0.1)
+      rails (~> 3.2.3)
+
+PATH
+  remote: /home/hunter/vob/w090/Rcity
+  specs:
+    rcity (0.0.1)
+      rails (~> 3.2.3)
+
+PATH
+  remote: /home/hunter/vob/w090/Rforum
   specs:
     rforum (0.0.1)
       aws-ses (~> 0.4.3)
-      bootstrap-will_paginate (= 0.0.3)
+      bootstrap-will_paginate (~> 0.0.7)
       bson_ext (~> 1.5.2)
       cancan (~> 1.6.7)
       carrierwave (= 0.5.7)
       carrierwave-mongoid (= 0.1.2)
       carrierwave-upyun (= 0.1.3)
       daemon-spawn
+      execjs
       hpricot (~> 0.8.5)
       jquery-atwho-rails (= 0.1.3)
       jquery-rails (= 1.0.16)
@@ -38,13 +51,18 @@ PATH
       will_paginate_mongoid (~> 1.0.2)
 
 PATH
-  remote: /home/netmon/vob/w090/Rtheme
+  remote: /home/hunter/vob/w090/Rtheme
   specs:
     rtheme (0.0.1)
+      bootstrap-will_paginate (~> 0.0.7)
+      execjs
       rails (~> 3.2.2)
+      social-share-button (~> 0.0.3)
+      will_paginate (~> 3.0.2)
+      will_paginate_mongoid (~> 1.0.2)
 
 PATH
-  remote: /home/netmon/vob/w090/Ruser
+  remote: /home/hunter/vob/w090/Ruser
   specs:
     ruser (0.0.1)
       bson_ext (~> 1.5.2)
@@ -54,6 +72,8 @@ PATH
       carrierwave-upyun (= 0.1.3)
       cells (= 3.8.3)
       devise (~> 2.0.4)
+      jquery-atwho-rails (~> 0.1.3)
+      jquery-rails
       mail_view
       mini_magick (= 3.3)
       mongo-rails-instrumentation (= 0.2.4)
@@ -65,21 +85,17 @@ PATH
       omniauth-openid (~> 1.0.1)
       omniauth-twitter (~> 0.0.7)
       rails (~> 3.2.3)
-      rails (~> 3.2.3)
+      rails-i18n (~> 0.1.8)
+      rails_autolink (~> 1.0.4)
       redis-namespace (~> 1.0.2)
       redis-objects (= 0.5.2)
       resque (~> 1.20.0)
       resque_mailer (= 2.0.2)
+      rtheme
       ruby-github
       settingslogic (~> 2.0.6)
+      social-share-button (~> 0.0.3)
       watir-webdriver
-
-PATH
-  remote: ~/vob/github/bootstrap-rails
-  specs:
-    bootstrap-rails (0.1.4)
-      railties (~> 3.0)
-      thor (~> 0.14)
 
 PATH
   remote: ~/vob/github/grape
@@ -148,7 +164,7 @@ GEM
       xml-simple
     bcrypt-ruby (3.0.1)
     blankslate (2.1.2.4)
-    bootstrap-will_paginate (0.0.3)
+    bootstrap-will_paginate (0.0.7)
       will_paginate
     bson (1.5.2)
     bson_ext (1.5.2)
@@ -166,7 +182,7 @@ GEM
     cells (3.8.3)
       actionpack (~> 3.0)
       railties (~> 3.0)
-    childprocess (0.3.1)
+    childprocess (0.3.2)
       ffi (~> 1.0.6)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -185,16 +201,15 @@ GEM
     escape (0.0.4)
     execjs (1.3.0)
       multi_json (~> 1.0)
-    faraday (0.7.6)
-      addressable (~> 2.2)
+    faraday (0.8.0)
       multipart-post (~> 1.1)
-      rack (~> 1.1)
     ffi (1.0.11)
     hashie (1.2.0)
     hike (1.2.1)
     hoe (3.0.3)
       rake (~> 0.8)
     hpricot (0.8.6)
+    httpauth (0.1)
     i18n (0.6.0)
     journey (1.0.3)
     jquery-atwho-rails (0.1.3)
@@ -203,6 +218,8 @@ GEM
       thor (~> 0.14)
     json (1.6.6)
     kgio (2.7.4)
+    libwebsocket (0.1.3)
+      addressable
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -229,9 +246,10 @@ GEM
     multi_xml (0.4.2)
     multipart-post (1.1.5)
     nokogiri (1.5.2)
-    oauth (0.4.5)
-    oauth2 (0.5.2)
+    oauth (0.4.6)
+    oauth2 (0.6.0)
       faraday (~> 0.7)
+      httpauth (~> 0.1)
       multi_json (~> 1.0)
     omniauth (1.0.3)
       hashie (~> 1.2)
@@ -242,8 +260,8 @@ GEM
     omniauth-oauth (1.0.1)
       oauth
       omniauth (~> 1.0)
-    omniauth-oauth2 (1.0.0)
-      oauth2 (~> 0.5.0)
+    omniauth-oauth2 (1.0.1)
+      oauth2 (~> 0.6.0)
       omniauth (~> 1.0)
     omniauth-openid (1.0.1)
       omniauth (~> 1.0)
@@ -307,7 +325,7 @@ GEM
       resque (>= 1.2.3)
     rest-client (1.6.7)
       mime-types (>= 1.16)
-    rsolr (1.0.7)
+    rsolr (1.0.8)
       builder (>= 2.1.2)
     ruby-github (0.0.3)
       hoe (>= 1.5.1)
@@ -323,9 +341,10 @@ GEM
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
-    selenium-webdriver (2.20.0)
+    selenium-webdriver (2.21.2)
       childprocess (>= 0.2.5)
       ffi (~> 1.0)
+      libwebsocket (~> 0.1.3)
       multi_json (~> 1.0)
       rubyzip
     settingslogic (2.0.8)
@@ -362,11 +381,10 @@ GEM
       rack (>= 1.0.0)
     warden (1.1.1)
       rack (>= 1.0)
-    watir-webdriver (0.5.4)
+    watir-webdriver (0.5.5)
       selenium-webdriver (>= 2.18.0)
     will_paginate (3.0.2)
-    will_paginate_mongoid (1.0.4)
-      bson_ext (~> 1.5)
+    will_paginate_mongoid (1.0.5)
       mongoid (~> 2.4)
       will_paginate (~> 3.0.2)
     xml-simple (1.1.1)
@@ -375,7 +393,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-rails!
   bson_ext
   coffee-rails (~> 3.2.1)
   grape!
@@ -383,6 +400,8 @@ DEPENDENCIES
   mail_view!
   quiet_assets!
   rails (= 3.2.3)
+  rcargo!
+  rcity!
   rforum!
   rtheme!
   ruser!

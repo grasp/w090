@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'bootstrap-rails' #, :require => 'bootstrap-rails', :git => 'http://github.com/xdite/bootstrap-rails.git'
+#require 'bootstrap-rails' #, :require => 'bootstrap-rails', :git => 'http://github.com/xdite/bootstrap-rails.git'
 require "rails-i18n"#,"0.1.8"
 require "jquery-rails"#, "1.0.16"
 require "rails_autolink"#, ">= 1.0.4"
@@ -58,6 +58,8 @@ require "omniauth-twitter"#, "~> 0.0.7"
 
 require 'social-share-button'
 
+require 'rtheme'
+
 
 module Ruser
   class Engine < ::Rails::Engine
@@ -65,9 +67,9 @@ module Ruser
    
     #load all helper, otherwise will cover by parent app with same name
     initializer 'Ruser::Application.helper,Ruser::User.helper,Ruser::ApplicationController' do |app|
-      ActionView::Base.send :include, Ruser::ApplicationHelper,Ruser::UsersHelper
-      ActionView::Base.send :include, Bootstrap::Breadcrumb::Helpers
-      #  ActionController::Base .send :include,  ApplicationHelper,UsersHelper
+      ActionView::Base.send :include,Ruser::UsersHelper
+     # ActionView::Base.send :include, Bootstrap::Breadcrumb::Helpers
+        ActionController::Base .send :include,  ApplicationHelper,UsersHelper
     end
 
     

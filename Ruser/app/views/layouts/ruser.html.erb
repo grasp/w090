@@ -2,7 +2,7 @@
 <html>
 <head>
   <%= render_page_title %>
-  <%= stylesheet_link_tag "ruser/application" %>
+  <%= stylesheet_link_tag "rtheme/ruser/application" %>
   <%= yield :styles %>
   <%= csrf_meta_tag %>
 <% if mobile? %>
@@ -52,7 +52,7 @@
   </footer>
   <% end %>
 
-  <%= javascript_include_tag "rtheme/app" %>
+  <%= javascript_include_tag "rtheme/ruser/application" %>
   <% if mobile? %>
     <script type="text/javascript">app_mobile = true;</script>
   <% end %>

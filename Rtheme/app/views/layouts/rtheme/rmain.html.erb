@@ -2,7 +2,7 @@
 <html>
 <head>
   <%= render_page_title %>
-  <%= stylesheet_link_tag "rtheme/front" %>
+  <%= stylesheet_link_tag "rtheme/rmain/application" %>
   <%= yield :styles %>
   <% if mobile? %>
     <%= stylesheet_link_tag "rtheme/mobile" %>
@@ -19,19 +19,8 @@
   <%= yield :node_feed_link %>
 </head>
 <%= render_body_tag %>
-  <div class="topbar" data-dropdown="dropdown">
-    <div class="topbar-inner">
-      <div class="container">
-        <h3>
-          <a href="/"><%= Setting.app_name %></a>
-        </h3>
-  <%= render "rtheme/common/header_nav" %>
-        <%= render "rforum/common/search_form" %>
-        <%= render "ruser/common/user_nav" %>
-      </div>
-    </div>
-  </div>
-  
+
+    <%= render "rtheme/common/navbar" %>
   <div class="container">
     <%= render_breadcrumb %>
     <%= render "rforum/common/feeds" %>
@@ -51,7 +40,7 @@
   </footer>
   <% end %>
   
-  <%= javascript_include_tag "rtheme/app" %>
+  <%= javascript_include_tag "rtheme/rmain/application" %>
   <% if mobile? %>
     <script type="text/javascript">app_mobile = true;</script>
   <% end %>

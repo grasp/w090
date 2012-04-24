@@ -5,6 +5,5 @@
 end %>
 
 <%= render_list :class => "tabs" do |li|
-  li << link_to(t("users.menu.profile"), user_path(@user.login))
-
+  li << link_to(t("users.menu.profile"), ruser.user_path(@user.login))
 end %>

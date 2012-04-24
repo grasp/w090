@@ -72,7 +72,7 @@ module Rforum
 
    
    config.to_prepare do
-      Rforum.customize_user
+      Rforum::Engine.customize_user
     end
 
     initializer 'Rforum::Application.helper' do |app|

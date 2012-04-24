@@ -9,11 +9,10 @@
     <th>到达</th>
     <th>重量体积</th>
     <th>有效</th>
-    <th>发布</th>
+    <th><%=t("cargo.comments")%></th>
+     <th><%=t("cargo.created_at")%></th>
     <th>货源状态</th>
-    <th>车主报价/货主询价</th>  
-    <th>车源速配</th>
-   
+
   </tr>
  
     <% @cargos.each do |cargo|  %>
@@ -24,7 +23,9 @@
         <td ><%=cargo.tcityn%></td>
         <td ><%=cargo.weight%><%= cargo.unit%></td>
         <td ><%=cargo.expire%>天</td>
-        <td ><%=cargo.created_at.to_s.slice(5,11) %></td>
+        <td ><%=cargo.comments%></td>
+        <td ><%= raw t("common.created_at", :time => timeago(cargo.created_at))%></td>
+
         <%if cargo.status!="正在配车"%>
           <td   style="color:red;" ><%= cargo.status %></td>
         <%else%>

@@ -23,7 +23,8 @@ function ajax_load_link_to_modal(){
 function rcity_chengs_load_modal_for_line_select(){
 	//alert("cheng is loaded!");
    $('#myModal').modal({ keyboard: true, backdrop: true, show: false});
-   $('#tab').tab('show')
+   //$('#tab').tab('show')
+   $('a[href=#fcheng]').tab('show');
 
    $('#myModal').on('show', function () {
    	ajax_load_link_to_modal();

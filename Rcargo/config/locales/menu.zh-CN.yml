@@ -28,6 +28,7 @@
     cargo_has_truck: "历史配车"
     concern_cargo: "关注货源"
     concern_user: "关注货主"
+    comments: "备注"
   package:
     package: '货物包装'
   helpers:

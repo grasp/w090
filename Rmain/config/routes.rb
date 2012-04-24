@@ -1,9 +1,10 @@
 Rmain::Application.routes.draw do
-  
-    mount Rforum::Engine => "/rforum",:as=>"rforum"
+      mount Rtheme::Engine => "/rtheme",:as=>"rtheme"
+
     mount Ruser::Engine => "/ruser",:as=>"ruser"
     mount Rcity::Engine => "/rcity",:as=>"rcity"
-    mount Rtheme::Engine => "/rtheme",:as=>"rtheme"
+    mount Rforum::Engine => "/rforum",:as=>"rforum"
+    mount Rcargo::Engine => "/rcargo",:as=>"rcargo"
   get "home/root"
 
   # The priority is based upon order of creation:

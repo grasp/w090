@@ -19,24 +19,24 @@
 
   <div class="field">
     <%= f.label t("category.BigcargoCategory")%>
-     <%= f.select(:big_cate,options_for_select($big_cate_hash.values,@cargo.big_cate) )%>
+     <%= f.select(:big_cate,options_for_select($big_cate_hash.values,@stock_cargo.big_cate) )%>
   </div>
 
   <div class="field">
     <%= f.label t("package.package")%>
-      <%= f.select(:packagen,options_for_select($cargo_package.values,@cargo.packagen) )%>
+      <%= f.select(:packagen,options_for_select($cargo_package.values,@stock_cargo.packagen) )%>
   </div>
 
     <div class="field">
     <%= f.label t("stock_cargo.unit")%>
-    <%= f.select(:unit,options_for_select(["吨","方","件","车","船","个"],@cargo.zuhuo) )%>
+    <%= f.select(:unit,options_for_select(["吨","方","件","车","船","个"],@stock_cargo.unit) )%>
   </div>
  
 
  <%= f.hidden_field(:status) %>
 
   <div class="form-actions">
-    <%= f.submit(:value=>"确定",:class=>"btn primary") %>
+    <%= f.submit(:value=>"确定",:class=>"btn btn-primary") %>
   </div>
 
 

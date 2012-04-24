@@ -1,21 +1,5 @@
-#= require jquery
-#= require jquery_ujs
-#= require bootstrap-alerts
-#= require bootstrap-dropdown
-#= require bootstrap-tabs
-#= require bootstrap-twipsy
-#= require bootstrap-buttons
-#= require bootstrap-popover
-#= require bootstrap-modal
-#= require rtheme/will_paginate
-#= require jquery.jdialog
-#= require jquery.timeago
-#= require jquery.timeago.settings
-#= require jquery.hotkeys
-#= require jquery.chosen
-#= require jquery.autogrow-textarea
-#= require social-share-button
-#= require jquery.atwho
+#= require ../common
+
 #= require_self
 window.App =
   loading : () ->
