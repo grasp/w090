@@ -32,11 +32,7 @@
              <%= cargo.tcityn %>
               </a>
             </td>
-            <td><a class ="show_float" href="/cargos/show/<%=cargo.id%>">
-                <%= cargo.big_cate ||"未知货物"%>
-              </a> 
-
-            </td>
+            <td>  <%=link_to cargo.name,cargo_path(cargo)%>    </td>
             <td><%= cargo.weight%><%= cargo.unit %></td>
             <td><%= cargo.expire %>天</td>
 

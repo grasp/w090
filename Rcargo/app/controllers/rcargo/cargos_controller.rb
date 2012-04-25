@@ -47,7 +47,7 @@ class CargosController < Rcargo::ApplicationController
       @region_list=@province.regions
       next_region=params[:region_id].to_i+100000000
       if params[:fcity_id]
-       @cargos = Cargo.where(:status=>"正在配车",:fcityc.gte=>params[:cheng_id].to_s,:fcityc.lt=> next_region.to_s).paginate(:page=>params[:page]||1,:per_page=>25)
+       @cargos = Cargo.where(:status=>"正在配车",:fcityc.gte=>params[:region_id].to_s,:fcityc.lt=> next_region.to_s).paginate(:page=>params[:page]||1,:per_page=>25)
       elsif params[:tcity_id]
        @cargos = Cargo.where(:status=>"正在配车",:tcityc.gte=>params[:region_id].to_s,:tcityc.lt=> next_region.to_s).paginate(:page=>params[:page]||1,:per_page=>25)
       else

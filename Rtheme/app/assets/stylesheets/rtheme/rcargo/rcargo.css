@@ -1,0 +1,9 @@
+.cargos-controller .region_navi{
+	margin-top: 10px;
+}
+.cargos-controller .province-nav a{
+display: inline-block;
+/*width:40px;*/
+ margin:0px 2px 2px 0px;
+
+}

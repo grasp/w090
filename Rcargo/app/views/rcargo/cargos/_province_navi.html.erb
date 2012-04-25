@@ -2,7 +2,7 @@
 
 <%cache("provincecargo") do %>
 
-<div>
+<div class="province-nav">
   <%@provinces=Rcity::Province.all.to_a%>
 
 <%@provinces.each_index do |index|%> 
@@ -14,7 +14,7 @@
 
 <%end%>
 </div>
- <div>
+ <div class="province-nav">
 
 <%@provinces.each_index do |index|%> 
 <%matched="btn-info btn-mini" if @province && @provinces[index].code==@province.code %>
