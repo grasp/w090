@@ -4,13 +4,14 @@ class CargosController < Rcargo::ApplicationController
   # include Soku
   # GET /cargos
   # GET /cargos.xml
-  include Rcargo::CargosHelper
-   before_filter:require_user
+  #include Rcargo::CargosHelper
+   include Rcargo::CargosHelper
+  before_filter:require_user,:except => [:search,:baojiacargo]
   #before_filter:authorize, :except => [:search,:show,:baojiacargo]
  # before_filter:authorize, :only => [:new,:create,:update,:destroy,:edit,:quoteinquery,:request_chenjiao,:cargo_to_friend,:send_cargo_myself]
   # before_filter:authorize_public, :only => [:search]
   # caches_page :search,:show
-  caches_page :controller => "cargos_controller", :action => "city"
+  #caches_page :controller => "cargos_controller", :action => "city"
   protect_from_forgery :except => [:tip,:login,:post_cargo,:quickfabu]
   # layout 'cargo' ,:except => [:show,:search]
   #layout 'cargo' ,:except => [:show]
@@ -24,6 +25,54 @@ class CargosController < Rcargo::ApplicationController
   #  return "usercenter" if action_name=="new"
   #  return 'cargo'
   #end
+
+  def search  
+    @cargos = Cargo.paginate(:page=>params[:page]||1,:per_page=>25)
+
+  end
+
+  def search_province
+      next_province=params[:province_id].to_i+10000000000
+      @cargos = Cargo.any_of([{:status=>"正在配车",:fcityc.gte=>params[:province_id].to_s,:fcityc.lt=> next_province.to_s},
+      {:status=>"正在配车",:tcityc.gte=>params[:province_id].to_s,:tcityc.lt=> next_province.to_s}]).desc(:created_at)
+      .paginate(:page=>params[:page]||1,:per_page=>25)      
+      @province=Rcity::Province.where(:code=>params[:province_id]).first      
+      @region_list=@province.regions
+  end
+
+  def search_region
+      @province=Rcity::Province.where(:code=>params[:region_id].slice(0,2)+"0000000000").first
+      @region=Rcity::Region.where(:code=>params[:region_id].slice(0,4)+"00000000").first
+      @city_list=@region.chengs
+      @region_list=@province.regions
+      next_region=params[:region_id].to_i+100000000
+      if params[:fcity_id]
+       @cargos = Cargo.where(:status=>"正在配车",:fcityc.gte=>params[:cheng_id].to_s,:fcityc.lt=> next_region.to_s).paginate(:page=>params[:page]||1,:per_page=>25)
+      elsif params[:tcity_id]
+       @cargos = Cargo.where(:status=>"正在配车",:tcityc.gte=>params[:region_id].to_s,:tcityc.lt=> next_region.to_s).paginate(:page=>params[:page]||1,:per_page=>25)
+      else
+      @cargos = Cargo.any_of([{:status=>"正在配车",:fcityc.gte=>params[:region_id].to_s,:fcityc.lt=> next_region.to_s},
+          {:status=>"正在配车",:tcityc.gte=>params[:region_id].to_s,:tcityc.lt=> next_region.to_s}]).desc(:created_at)
+      .paginate(:page=>params[:page]||1,:per_page=>25)
+    end
+  end
+
+  def search_cheng
+      @province=Rcity::Province.where(:code=>params[:cheng_id].slice(0,2)+"0000000000").first
+      @region=Rcity::Region.where(:code=>params[:cheng_id].slice(0,4)+"00000000").first
+      @cheng=Rcity::Cheng.where(:code=>params[:cheng_id]).first
+      @city_list=@region.chengs
+      @region_list=@province.regions  
+      if params[:fcity_id]
+       @cargos = Cargo.where(:status=>"正在配车",:fcityc=>params[:cheng_id].to_s).paginate(:page=>params[:page]||1,:per_page=>25)
+      elsif params[:tcity_id]
+       @cargos = Cargo.where(:status=>"正在配车",:tcityc=>params[:cheng_id].to_s).paginate(:page=>params[:page]||1,:per_page=>25)
+      else
+      @cargos = Cargo.any_of([{:status=>"正在配车",:fcityc=>params[:cheng_id].to_s},
+      {:status=>"正在配车",:tcityc=> params[:cheng_id].to_s}]).desc(:created_at)
+      .paginate(:page=>params[:page]||1,:per_page=>25)
+       end
+  end
   
   def quickfabu
     fabu_helper    
@@ -31,6 +80,7 @@ class CargosController < Rcargo::ApplicationController
       format.html {render :flash=>{:notice=>flash[:notice]}}
     end    
   end
+
   def public
     #if this is all    
     if params[:city_from].nil?
@@ -45,17 +95,15 @@ class CargosController < Rcargo::ApplicationController
       format.xml  { render :xml => @cargo }
     end
   end
+
   def baojiacargo
     @search=Search.new
     @search.fcity_code="100000000000"
-    @search.tcity_code="100000000000"
-    
+    @search.tcity_code="100000000000"    
     @cargos=Cargo.where(:from_site=>"local").desc(:created_at).asc(:priority).paginate(:page=>params[:page]||1,:per_page=>25)
- 
-  end
-  def search  
-    search_helper
-  end
+   end
+
+
 
   def quoteinquery
     # @cargo=Cargo.find(params[:cargo_id])
@@ -81,7 +129,7 @@ class CargosController < Rcargo::ApplicationController
     #  end
    # end
     @cargos=current_user.cargos
-    
+    drop_breadcrumb("我的货源信息")
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @cargos }
@@ -141,32 +189,32 @@ class CargosController < Rcargo::ApplicationController
     rescue
       @error=true
     end
-    if not @error
+   # if not @error
       #for jubao purpose
-      @user=User.find(session[:user_id]) if session[:user_id]
+      #@user=User.find(session[:user_id]) if session[:user_id]
       #update site statistic here
-      Sitedatum.first.inc(:cargoshow,1)
+      #Sitedatum.first.inc(:cargoshow,1)
      
-      @jubao=Jubao.new
-      @jubaotype="cargo"
-      @fromip=request.remote_ip
-      @belongid=params[:id]
-      @username=@user.name if  @user     
-      @wmail=Wmail.new
+      #@jubao=Jubao.new
+      #@jubaotype="cargo"
+      #@fromip=request.remote_ip
+      #@belongid=params[:id]
+      #@username=@user.name if  @user     
+      #@wmail=Wmail.new
  
-      @wmail.subject="物流零距离货源信息-#{@cargo.fcity_name}-#{@cargo.tcity_name}-#{@cargo.created_at.to_s.slice(0,19)}"
-      @wmail.mailtype="cargo_myself"
+      #@wmail.subject="物流零距离货源信息-#{@cargo.fcity_name}-#{@cargo.tcity_name}-#{@cargo.created_at.to_s.slice(0,19)}"
+     # @wmail.mailtype="cargo_myself"
     
       respond_to do |format|
         format.html # show.html.erb
         format.xml  { render :xml => @cargo }
       end
-    else
-      respond_to do |format|
-        format.html { render "cargos/showerror"} # show.html.erb
-        format.xml  { render :xml => @cargo }
-      end
-    end
+   # else
+   #   respond_to do |format|
+    #    format.html { render "cargos/showerror"} # show.html.erb
+    #    format.xml  { render :xml => @cargo }
+   #   end
+   # end
   end
 
   # GET /cargos/new
@@ -208,12 +256,15 @@ class CargosController < Rcargo::ApplicationController
   # GET /cargos/1/edit
   def edit
     @cargo = Cargo.find(params[:id])
-    if @cargo.nil?
-      puts "你编辑了一个空的"
-    end
-    # @stock_cargo=StockCargo.find(@cargo.stock_cargo_id)
-    @stock_cargo=@cargo.stock_cargo
-
+    @stock_cargo=@cargo.stock_cargo if @cargo.stock_cargo_id
+        params[:cheng_id]=@cargo.fcityc 
+        @country=Rcity::Country.where(:code=>"086").first#hard code
+        @provinces=@country.provinces.asc(:code).to_a    
+        @province=Rcity::Province.where(:code=>params[:cheng_id].slice(0,2)+"0000000000").first
+        @regions=@province.regions 
+        @match_province=params[:cheng_id].slice(0,2)+"0000000000"
+        @match_region=params[:cheng_id].slice(0,4)+"00000000"
+        @match_cheng=params[:cheng_id].slice(0,6)+"000000" 
   end
 
   # POST /cargos
@@ -226,7 +277,7 @@ class CargosController < Rcargo::ApplicationController
 
     @cargo=current_user.cargos.build(params[:cargo])
 
-    puts params[:cargo]
+   # puts params[:cargo]
 
    #update cargo phone information for concerncargo         
    # user_contact=UserContact.find(@user.user_contact_id) unless @user.user_contact_id .nil?    
@@ -284,7 +335,7 @@ class CargosController < Rcargo::ApplicationController
         #@stock_cargo.update_attributes(:status=>"正在配车")
         #@stock_cargo.inc(:valid_cargo,1)
         #@stock_cargo.inc(:total_cargo,1)
-        if params[:stock_cargo_id]
+        if params[:cargo][:stock_cargo_id]
           @cargo.stock_cargo.inc(:weight,@cargo.weight.to_f)  
           @cargo.stock_cargo.update_attribute(:status,t("cargo.cargo_for_truck"))
         end
@@ -307,18 +358,18 @@ class CargosController < Rcargo::ApplicationController
   def update
     
     @cargo = Cargo.find(params[:id])
-    @stock_cargo=StockTruck.find(@cargo.stock_cargo_id)
+   # @stock_cargo=StockTruck.find(@cargo.stock_cargo_id)
 
     #  @cargo =update_cargo_info_from_params(params)
-    expire_fragment "users_center_#{session[:user_id]}"
+   # expire_fragment "users_center_#{session[:user_id]}"
     respond_to do |format|
       #update may fail due to
-      if   @cargo.update_attributes( params[:cargo])
+      if   @cargo.update_attributes(params[:cargo])
         flash[:notice] = '货源更新成功'
         format.html { redirect_to(@cargo) }
         format.xml  { head :ok }
       else
-        format.html { render :action => "edit" }
+        format.html { redirect_to :action => "edit" }
         format.xml  { render :xml => @cargo.errors, :status => :unprocessable_entity }
       end
     end
@@ -362,25 +413,25 @@ class CargosController < Rcargo::ApplicationController
   # DELETE /cargos/1
   # DELETE /cargos/1.xml
   def destroy
-    cargo = Cargo.find(BSON::ObjectId(params[:id]))
+    cargo = Cargo.find(params[:id])
     cargo.delete if cargo
-
     #do we need update the statisitc?
     # url=request.url
-    @user=User.find(session[:user_id])
+   # @user=User.find(session[:user_id])
     respond_to do |format|
-      if @user.name=="admin"
-        format.html { redirect_to(admincargo_manage_path) }
-      else
-        format.html { redirect_to(root_path) }
-      end
+     # if @user.name=="admin"
+    #    format.html { redirect_to(admincargo_manage_path) }
+     # else
+        format.html { redirect_to(:action=>"index") }
+     # end
       format.xml  { head :ok }
     end
   end
 
 
   def allcity
-@quickfabu=Hash.new if @quickfabu.nil?
+    @quickfabu=Hash.new if @quickfabu.nil?
+
     if params[:from]=="mail"
       Sitedatum.first.inc(:from_mail,1)
       redirect_to(root_path)

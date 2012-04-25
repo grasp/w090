@@ -1,5 +1,6 @@
 <%#coding:utf-8%>
  <%unless @cargos.blank?%>
+
 <table class="table table-striped">
   
   <tr>
@@ -19,8 +20,7 @@
  
     <% @cargos.each do |cargo|  %>
       <tr>
-       <td > <a class ="show_float" href="/cargos/show/<%=cargo.id%>">
-        <%= cargo.name %></a> </td>  
+       <td > <%=link_to cargo.name,cargo_path(cargo)%> </td>  
         <td ><%=cargo.fcityn%></td>
         <td ><%=cargo.tcityn%></td>
         <td ><%=cargo.weight%><%= cargo.unit%></td>
@@ -28,10 +28,12 @@
         <td ><%= timeago(cargo.created_at)%></td>
 
         <%if cargo.status!="正在配车"%>
-          <td   style="color:red;" ><%= cargo.status %></td>
+          <%= content_tag(:td,:style=>"background-color:#f38b8b;"){cargo.status}%>
         <%else%>
-           <td > <%= cargo.status %></td>
+          <%= content_tag(:td,:style=>"background-color:#A9DB9A;"){cargo.status}%>
          <%end%>
+
+        
         
         <td > <%= link_to t("rcargocommon.edit"),rcargo.edit_cargo_path(cargo)%></td>
            <td ><%= link_to t("rcargocommon.destroy"),rcargo.cargo_path(cargo),

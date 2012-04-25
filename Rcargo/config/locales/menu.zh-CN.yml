@@ -10,6 +10,7 @@
     CargoCategory: '货物小类'
   stock_cargo:
     StockCargos: '库存货物'
+    stockcargoname: '库存名称'
     all_stock_cargos: '全部库存货物'
     new_stock_cargo: '添加新的库存货物'
     edit_stock_cargo: '编辑库存货物'
@@ -17,7 +18,7 @@
     stock_cargo_for_truck: "正在配车"
     stock_cargo_history_truck: "历史配车"
     hints_for_empty_stock_cargo: '你没有任何库存的货物.'
-    status: "货物状态"
+    status: "库存状态"
     total_sented: "总计发布"
     unit: "计量单位"
   cargo:
@@ -33,7 +34,7 @@
     comments: "备注"
 
   package:
-    package: '货物包装'
+    package: '包装'
   helpers:
     labels:
       stock_cargo:

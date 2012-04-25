@@ -89,9 +89,10 @@ def load_big_category_into_hash_from_db
    end
 end
 
-load_cargo_category_to_hash
+
 
 #Rcargo::CargoBigCategory.delete_all
 #Rcargo::CargoCategory.delete_all
 load_cargo_category_into_db if Rcargo::CargoCategory.count==0
 load_big_category_into_hash_from_db 
+load_cargo_category_to_hash

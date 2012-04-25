@@ -4,16 +4,16 @@
 function ajax_load_link_to_modal(){
 	$("#fcheng .lineselect").live("click",function(){
 		$("#fcheng .fcheng").load(this.href);
-		$(".fname").text(this.text);
-		$(".fcityname").val(this.text);
+		$(".fname").text(this.text.replace(/->/,''));
+		$(".fcityname").val(this.text.replace(/->/,''));
 		$(".fcitycode").val($(this).attr("href").match(/\d+/));
 		return false;
 	});
 
 		$("#tcheng .lineselect").live("click",function(){
 		$("#tcheng .tcheng").load(this.href);
-		$(".tname").text(this.text);
-		$(".tcityname").val(this.text);
+		$(".tname").text(this.text.replace(/->/,''));
+		$(".tcityname").val(this.text.replace(/->/,''));
 		$(".tcitycode").val($(this).attr("href").match(/\d+/));
 		return false;
 	})
