@@ -17,7 +17,7 @@ class StockCargosController < Rcargo::ApplicationController
   def index
  @stock_cargos = current_user.stock_cargos.paginate(:page=>params[:page]||1,:per_page=>20)
 
-  drop_breadcrumb(t("stock_cargo.StockCargos"))
+    drop_breadcrumb(t("stock_cargo.StockCargos"))
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @stock_cargos }

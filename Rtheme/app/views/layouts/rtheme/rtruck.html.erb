@@ -2,7 +2,7 @@
 <html>
 <head>
   <%= render_page_title %>
-  <%= stylesheet_link_tag "rtheme/rcargo/application" %>
+  <%= stylesheet_link_tag "rtheme/rtruck/application" %>
   <%= yield :styles %>
   <%= csrf_meta_tag %>
 <% if mobile? %>
@@ -14,7 +14,7 @@
   <meta name="keywords" content="<%= @meta_keywords %>" />
   <meta name="description" content="<%= @meta_description %>" />
   <meta charset='utf-8'>
-  <link rel="shortcut icon" href="<%= asset_path("big_logo.png") %>" /> 
+  <link rel="shortcut icon" href="<%= asset_path("rtheme/big_logo.png") %>" /> 
   <%= csrf_meta_tag %>
 </head>
 
@@ -23,7 +23,7 @@
 
   <div class="container">
     <%= render "/rcity/home/rcitynav" %>
-    <%= render "/rcargo/home/rcargo_nav" %>
+    <%= render "/rtruck/home/rtruck_nav" %>
         <%= render_breadcrumb %>
     <%= notice_message %>
     <div id="main" class="container-fluid">
@@ -38,7 +38,7 @@
   </footer>
   <% end %>
 
-  <%= javascript_include_tag "rtheme/rcargo/application" %>
+  <%= javascript_include_tag "rtheme/rtruck/application" %>
   <% if mobile? %>
     <script type="text/javascript">app_mobile = true;</script>
   <% end %>

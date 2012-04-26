@@ -11,6 +11,12 @@ PATH
       rails (~> 3.2.3)
 
 PATH
+  remote: /home/hunter/vob/w090/Rcompany
+  specs:
+    rcompany (0.0.1)
+      rails (~> 3.2.3)
+
+PATH
   remote: /home/hunter/vob/w090/Rforum
   specs:
     rforum (0.0.1)
@@ -60,6 +66,12 @@ PATH
       social-share-button (~> 0.0.3)
       will_paginate (~> 3.0.2)
       will_paginate_mongoid (~> 1.0.2)
+
+PATH
+  remote: /home/hunter/vob/w090/Rtruck
+  specs:
+    rtruck (0.0.1)
+      rails (~> 3.2.3)
 
 PATH
   remote: /home/hunter/vob/w090/Ruser
@@ -402,8 +414,10 @@ DEPENDENCIES
   rails (= 3.2.3)
   rcargo!
   rcity!
+  rcompany!
   rforum!
   rtheme!
+  rtruck!
   ruser!
   sass-rails (~> 3.2.3)
   simple_form!

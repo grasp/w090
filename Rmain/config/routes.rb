@@ -5,6 +5,8 @@ Rmain::Application.routes.draw do
     mount Rcity::Engine => "/rcity",:as=>"rcity"
     mount Rforum::Engine => "/rforum",:as=>"rforum"
     mount Rcargo::Engine => "/rcargo",:as=>"rcargo"
+    mount Rtruck::Engine => "/rtruck",:as=>"rtruck"
+    mount Rcompany::Engine => "/rcompany",:as=>"rcompany"
   get "home/root"
 
   # The priority is based upon order of creation:

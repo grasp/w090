@@ -45,6 +45,8 @@ gem "rtheme" ,:path=>File.join(w090_path,"Rtheme")
 gem "ruser" ,:path=>File.join(w090_path,"Ruser")
 gem "rcity" ,:path=>File.join(w090_path,"Rcity")
 gem "rcargo" ,:path=>File.join(w090_path,"Rcargo")
+gem "rtruck" ,:path=>File.join(w090_path,"Rtruck")
+gem "rcompany" ,:path=>File.join(w090_path,"Rcompany")
 #include some special gem in github
 #gem 'bootstrap-rails', :require => 'bootstrap-rails', :path => '~/vob/github/bootstrap-rails'
 gem 'mail_view', :path => "~/vob/github/mail_view"

@@ -1,11 +1,12 @@
 # coding: utf-8
 module Rcargo
 class CargosController < Rcargo::ApplicationController
+ # layout :nil,:only=>[:show]
   # include Soku
   # GET /cargos
   # GET /cargos.xml
   #include Rcargo::CargosHelper
-   include Rcargo::CargosHelper
+  include Rcargo::CargosHelper
   before_filter:require_user,:except => [:search,:baojiacargo]
   #before_filter:authorize, :except => [:search,:show,:baojiacargo]
  # before_filter:authorize, :only => [:new,:create,:update,:destroy,:edit,:quoteinquery,:request_chenjiao,:cargo_to_friend,:send_cargo_myself]
@@ -16,19 +17,17 @@ class CargosController < Rcargo::ApplicationController
   # layout 'cargo' ,:except => [:show,:search]
   #layout 'cargo' ,:except => [:show]
   #
- # layout :choose_layout   
+  layout :choose_layout   
   
- # def choose_layout
-  #  return nil  if action_name =='post_cargo'     
-  #  return 'usercenter'  if action_name =='index'      
-  #  return  nil if  action_name=="show" ||action_name=="send_cargo_myself"||action_name=="cargo_to_friend"
-  #  return "usercenter" if action_name=="new"
-  #  return 'cargo'
-  #end
+  def choose_layout
+    return nil  if action_name =='show'     
+    return 'rtheme/rcargo'
+  end
+  #layout :nil,:only=>[:show]
 
   def search  
     @cargos = Cargo.paginate(:page=>params[:page]||1,:per_page=>25)
-
+    drop_breadcrumb(t("cargo.all_cargo_info"))
   end
 
   def search_province
@@ -38,6 +37,7 @@ class CargosController < Rcargo::ApplicationController
       .paginate(:page=>params[:page]||1,:per_page=>25)      
       @province=Rcity::Province.where(:code=>params[:province_id]).first      
       @region_list=@province.regions
+       drop_breadcrumb(t("cargo.all_cargo_info"))
   end
 
   def search_region
@@ -54,6 +54,7 @@ class CargosController < Rcargo::ApplicationController
       @cargos = Cargo.any_of([{:status=>"正在配车",:fcityc.gte=>params[:region_id].to_s,:fcityc.lt=> next_region.to_s},
           {:status=>"正在配车",:tcityc.gte=>params[:region_id].to_s,:tcityc.lt=> next_region.to_s}]).desc(:created_at)
       .paginate(:page=>params[:page]||1,:per_page=>25)
+       drop_breadcrumb(t("cargo.all_cargo_info"))
     end
   end
 
@@ -72,6 +73,7 @@ class CargosController < Rcargo::ApplicationController
       {:status=>"正在配车",:tcityc=> params[:cheng_id].to_s}]).desc(:created_at)
       .paginate(:page=>params[:page]||1,:per_page=>25)
        end
+        drop_breadcrumb(t("cargo.all_cargo_info"))
   end
   
   def quickfabu
@@ -336,18 +338,19 @@ class CargosController < Rcargo::ApplicationController
         #@stock_cargo.inc(:valid_cargo,1)
         #@stock_cargo.inc(:total_cargo,1)
         if params[:cargo][:stock_cargo_id]
-          @cargo.stock_cargo.inc(:weight,@cargo.weight.to_f)  
+          @cargo.stock_cargo.inc(:totals,@cargo.weight.to_f)  
           @cargo.stock_cargo.update_attribute(:status,t("cargo.cargo_for_truck"))
+
         end
- 
-         format.html{ redirect_to :action => "index"}
+      format.html{redirect_to :action => "index"}
         #  format.xml  { render :xml => @cargo, :status => :created, :location => @cargo }
       else
         flash[:error] = '创建货源失败,重复发布货源'
         # @stock_cargo=StockCargo.find(@cargo.stock_cargo_id)
        # format.html { render :action => "new" }
 
-       format.html{redirect_to :action => "new"}
+        format.html{redirect_to :action => "new"}
+          format.html{ redirect_to stock_cargos_path}
         format.xml  { render :xml => @cargo.errors, :status => :unprocessable_entity }
       end
     end

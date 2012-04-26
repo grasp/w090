@@ -1,12 +1,15 @@
 <ul class="nav nav-tabs">
-  <li><a href="/rcargo" data-toggle="tab">Home</a></li>
+	 <%if  admin?%>
+  <li><a href="/rcargo" data-toggle="tab">RcargoHome</a></li>
+  <%end%>
   <li><%=link_to t("cargo.all_cargo_info"),cargossearch_path,:html=>{"data-toggle"=>"tab"}%></li>
 
   <li><%=link_to t("stock_cargo.StockCargos"),stock_cargos_path,:html=>{"data-toggle"=>"tab"}%></li>
   <li><%=link_to t("cargo.cargos"),cargos_path,:html=>{"data-toggle"=>"tab"}%></li>
-  <li><%=link_to t("cargo.concern_cargo"),cargos_path,:html=>{"data-toggle"=>"tab"}%></li>
-    
+  <%if  admin?%>
+  <li><%=link_to t("cargo.concern_cargo"),cargos_path,:html=>{"data-toggle"=>"tab"}%></li>    
   <li><%=link_to t("category.BigcargoCategory"),cpanel_cargo_big_categories_path,:html=>{"data-toggle"=>"tab"}%></li>
   <li><%=link_to t("category.CargoCategory"),cargo_categories_path ,:html=>{"data-toggle"=>"tab"}%></li>
+  <%end%>
 </ul>
 

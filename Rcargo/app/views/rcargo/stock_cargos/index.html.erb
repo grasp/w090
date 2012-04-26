@@ -20,13 +20,16 @@
             <td><%=h stock_cargo.name %></td>   
             <td><%=h stock_cargo.big_cate %></td> 
             <td><%=h stock_cargo.packagen %></td>  
-            <td><%=h stock_cargo.totals %><%=h stock_cargo.unit%></td>     
+            <td><%=h stock_cargo.totals %><%=h stock_cargo.unit%></td>    
          
-              <%if stock_cargo.status!="正在配车" %>
-            <td style="color:red;"><%=h stock_cargo.status%></td>  
-          <%else%>
-            <td><%=h stock_cargo.status%></td>     
+   
+
+    <%if stock_cargo.status!="正在配车"%>
+          <td><span class="badge badge-warning"> <%=stock_cargo.status%></span></td>
+        <%else%>
+          <td><span class="badge badge-success"> <%=stock_cargo.status%></span></td>
           <%end%>
+
              <td>
                  <%=link_to t("cargo.new_cargo") ,new_stock_cargo_cargo_path(stock_cargo) %>
           </td>
