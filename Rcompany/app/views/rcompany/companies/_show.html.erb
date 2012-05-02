@@ -1,0 +1,83 @@
+<%unless @company.name.blank?%>
+<div  class="lineshow">
+  <h3><%= @company.name %></h3>
+ </div>
+<hr></hr>
+  <div class="lineshow">
+    <div  class="span2">商家介绍:</div>  
+    <div class="offset2 about"><%=@company.about %></div>
+  </div>
+
+  <div class="lineshow">
+    <div  class="span2">商家类型:</div>  
+    <%if @company.ctype==nil %>
+    <%@company.update_attribute(:ctype,"国内陆运公司")%>
+    <%end%>
+    <div class="offset2 about"><%=(@company.ctype)%></div>
+  </div>
+
+  <div class="lineshow">
+  <div class="span2">商家联系人:</div>
+  <div class="offset2"> <%= @company.contact_name %></div>
+</div>
+
+  <div class="lineshow">
+  <div class="span2">所在城市:</div>
+  <div class="offset2"><%= @company.city_name %></div>
+</div>
+
+  <div class="lineshow">
+  <div class="span2">商家地址:</div>
+<div class="offset2"> <%= @company.address %></div>
+</div>
+
+  <div class="lineshow">
+  <div class="span2">固定电话:</div>
+<div class="offset2"> <%= @company.quhao+"-"+@company.fix_phone %></div>
+</div>
+
+  <div class="lineshow">
+  <div class="span2">移动电话:</div>
+<div class="offset2"> <%= @company.mobile_phone %></div>
+</div>
+
+  <div class="lineshow">
+  <div class="span2">商家邮件:</div>
+  <div class="offset2"> <%= @company.email %></div>
+</div>
+
+  <div class="lineshow">
+  <div class="span2">自有车辆:</div>
+<div class="offset2"> <%= @company.self_che %></div>
+</div>
+
+  <div class="lineshow">
+  <div class="span2">挂靠车辆:</div>
+<div class="offset2"> <%= @company.signed_che %></div>
+</div>
+
+  <div class="lineshow">
+
+ <div class="span2">员工数量:</div>
+<div class="offset2"> <%= @company.num_employ %></div>
+</div>
+
+
+<% if @company.user_id.to_s == session[:user_id].to_s %> 
+   <div class="lineshow">该信息由
+   <%if @company.created_at.to_s==@company.updated_at.to_s%>
+   <%= User.find(@company.user_id).name %> 创建于<%=@company.created_at.to_s%>
+   <%else%>
+   <%= User.find(@company.user_id).name %> 更新于<%=@company.updated_at.to_s%>
+   <%end%>
+  </div>
+  <%end%>
+  <%else%>
+     <div class="lineshow">
+      你还没有创建你的商家信息.
+      <a  class="btn btn-primary" href="/companies/new">马上创建</a>
+    </div>
+
+ <%end%>
+  
+

@@ -1,15 +1,28 @@
-
 <%#coding:utf-8%>
 <%#cache "#{@province}_region" do%>
+
  <%if @province%>
 
 <div class="region_navi">
   <%if  @region_list %>
-    <%@region_list.each do |regioncity|%>
-      <a class="<%="p#{regioncity[0]}"%>" href="/trucks/city/<%=regioncity[0]%>"><%=regioncity[1]%>(<%=regioncity[2]%>-<%=regioncity[3]%>)</a>
+  地区:
+    <%@region_list.each do |regioncity|%> <%matched="btn-info btn-mini" if @region && regioncity.code==@region.code %>
+
+         <%if @region && regioncity.code==@region.code%>
+      <span class="dropdown">
+              <a href="#" class="dropdown-toggle btn-info btn-mini" data-toggle="dropdown" ><%=regioncity.name%>(<%=get_region_count(regioncity.code)%>) <b class="caret"></b></a>              
+              <ul class="dropdown-menu">
+              	<a href="/rtruck/trucks/search/region/<%=regioncity.code%>/fcity/<%=regioncity.code%>"><%=regioncity.name+"出发"%></a>
+               <a href="/rtruck/trucks/search/region/<%=regioncity.code%>/tcity/<%=regioncity.code%>"><%=regioncity.name+"到达"%></a>
+
+              </ul>
+         </span>
+      <%else%>
+     <%=link_to regioncity.name,trucks_region_search_path(regioncity.code)%>(<%=get_region_count(regioncity.code)%>) <%end%>   
     <%end%>
   <%end%>
 </div>
  <%end%>
 <%#end%>
+
 

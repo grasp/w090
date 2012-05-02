@@ -26,8 +26,10 @@
       li << link_to(t("common.logout"), ruser.destroy_user_session_path )
     end %>
   </li>
+
+<!--
   <li class="dropdown">
-            <!--  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown 3 <b class="caret"></b></a>-->
+             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown 3 <b class="caret"></b></a>
                   <%= link_to(current_user.login,ruser.user_path(current_user.login), :class => "dropdown-toggle",:"data-toggle"=>"dropdown")%>
               <ul id="menu3" class="dropdown-menu">
                 <li><a href="#">Action</a></li>
@@ -37,6 +39,7 @@
                 <li><a href="#">Separated link</a></li>
               </ul>
             </li>
+          -->
 </ul>
 <% else %>
   <%= render_list :class => "nav secondary-nav", :id => "userbar" do |li|

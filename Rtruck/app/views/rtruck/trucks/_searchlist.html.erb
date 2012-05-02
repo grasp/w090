@@ -1,5 +1,12 @@
 
 
+
+
+
+<%=render 'rtruck/trucks/province_navi'%>
+<%=render 'rtruck/trucks/region_navi'%>
+<%=render 'rtruck/trucks/cheng_navi'%>
+
 <% unless @trucks.blank? %>
 <table class="truck table table-striped">  
 <tr>
@@ -12,56 +19,55 @@
  <th>有效</th>
  <th>发布时间</th>
  <th>状态</th>
- <th>货主操作</th>
 </tr>
 
 
    <% @trucks.each do |truck|%>
    <%unless truck.blank? %>
         <tr>
+           
+          <td >
+          <a class="show_float" href="/cities/modal/show/<%=truck.fcityc%>/line/<%=truck.fcityc%>/<%= truck.tcityc %>">
+          <%= truck.fcityn %>
+          </a>
+          </td>
+          <td >
+          <a class="show_float" href="/cities/modal/show/<%=truck.tcityc%>/line/<%=truck.fcityc%>/<%= truck.tcityc %>">
+          <%= truck.tcityn %>
+          </a>
+          </td>
 
-          <td >
-            <a class="show_float" href="/cities/modal/show/<%=truck.fcity_code%>/line/<%=truck.fcity_code%>/<%= truck.tcity_code %>">
-                           <%= truck.fcity_name %>
-              </a>
+            <td> <a data-toggle="modal" href="#TruckShowModal" data-link=<%=truckswhownol_path(truck)%> class="truckshow"><%=truck.paizhao%>,<%=truck.dunwei%>吨 <%=truck.length%>米 <%=$truck_shape[truck.shape]%></a> </td>
           </td>
-          <td >
-             <a class="show_float" href="/cities/modal/show/<%=truck.tcity_code%>/line/<%=truck.fcity_code%>/<%= truck.tcity_code %>">
-             <%= truck.tcity_name %>
-              </a>
-          </td>
-     
-            <td ><a class="show_float" href="/trucks/show/<%=truck.id%>">
-              <%=truck.paizhao%>,<%=truck.dunwei%>吨
-              <%=truck.length%>米 <%=$truck_shape[truck.shape]%>
-            </a>
-            </td>
+
           <td><%=$truck_huicheng[truck.huicheng]%></td>
-
-          <td><%= truck.send_date %>天</td>
-        <!--  <td><%= truck.updated_at.localtime.to_s.slice(0,19) %></td>-->
-      <td><%= truck.created_at.localtime.to_s.slice(0,19) %></td>
+          
+          <td><%= truck.expire %>天</td>
+          <td><%= timeago(truck.created_at) %></td>
           <td><%= truck.status %></td>
-          <td>
-             <%unless session[:user_id].nil?%>
-             <%if truck.user_id.to_s==session[:user_id].to_s%>
-            车主
-            <%elsif truck.from_site=="local"%>
-              <a class="btn btn-default baojia" href="/trucks/<%=truck.id%>/inqueries/new">询价</a>
-             <%else%>
-              其他
-              <%end%>
-              <%else%>
-              登录后询价
-              <%end%>
-          </td>
+    
 
         </tr>
       <% end %>
     <% end %>
      </table>
-  <%= will_paginate(@trucks,:previous_label=>"上一页",:next_label=>"下一页") %>
+
      <%else%>
         <p>没有找到对应车源</p>
      <% end %>
 
+ <%= will_paginate(@trucks,:previous_label=>"上一页",:next_label=>"下一页") %>
+
+<div id="TruckShowModal" class="modal hide fade" style="display: none; ">
+  <div class="modal-header">
+  <button class="close" data-dismiss="modal">×</button>
+  <h3>车源详细信息</h3>
+  </div>
+  <div class="modal-body">              
+  
+  </div>
+  <div class="modal-footer">
+  <a href="#" class="btn" data-dismiss="modal">OK</a>
+  <!--  <a href="#" class="btn btn-primary">Save changes</a>-->
+  </div>
+</div>

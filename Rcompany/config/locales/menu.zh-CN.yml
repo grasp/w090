@@ -1,0 +1,8 @@
+"zh-CN":
+  companycommon:
+    yellowpage: "黄页"
+  companies:
+    new: "新建公司"
+    edit: "编辑"
+    destroy: "删除"
+    mycompany: "我的公司"

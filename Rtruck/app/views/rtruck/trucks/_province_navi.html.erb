@@ -1,30 +1,29 @@
 <%#coding:utf-8%>
-<%cache("provincetruck") do %>
-  <h4>今日 出发-到达 共<%=h Truck.where(:status=>"正在配货").count%></h4>
 
-  <%(0.upto($sequnced_province.size)).select{|x| x % 2==0}.each do |i|%>
-    <%province1=$sequnced_province[i]%>
-  <%if  province1%>
-    <ul>
-      <li>
-      <a  class="<%="p#{province1}"%>" href="/trucks/city/<%=province1%>"> <%=$city_code_name[province1.to_s]%></a>(<%=get_province_truck_from_count(province1)%><span class="hidden-phone">-<%=get_province_cargo_to_count(province1)%></span>)
-    </li>
-    <li>
-      <%if i!=$sequnced_province.size && !$sequnced_province[i+1].blank?%>
-        <%province2=$sequnced_province[i+1]%>
-        <a  class="<%="p#{province2}"%>" href="/trucks/city/<%=province2%>"> <%=$city_code_name[province2.to_s]%></a>(<%=get_province_truck_from_count(province2)%><span class="hidden-phone">-<%=get_province_cargo_to_count(province2)%></span>)
-      <%end%>
-        </li>
-    </ul>
+<%#cache("provincecargo") do %>
+
+<div class="province-nav">
+<%@provinces=Rcity::Province.all.to_a%>
+
+<%@provinces.each_index do |index|%> 
+
+<%if index%2==0%>
+	<%matched="btn-info btn-mini" if @province && @provinces[index].code==@province.code %>
+	<span><%= link_to @provinces[index].name, rtruck.trucks_province_search_path(@provinces[index].code),:class=>matched%>(<%=get_province_count(@provinces[index].code.to_i)%>)
+	</span>
+<%end%> 
 <%end%>
-  <%end%>
+</div>
+<div class="province-nav">
 
-  <h3>历史车源<%=ExpiredTruck.count+Truck.count%></h3>
-
-
+<%@provinces.each_index do |index|%> 
+	<%matched="btn-info btn-mini" if @province && @provinces[index].code==@province.code %>
+	<%if index%2==1%>
+		<span><%= link_to @provinces[index].name, rtruck.trucks_province_search_path(@provinces[index].code),:class=>matched%>(<%=get_province_count(@provinces[index].code.to_i)%>)</span>
+	<%end%>
 <%end%>
+</div>
 
-        <div>
-        <p>公告:加入物流零距离QQ交流群158576320</p>
-<p>手机访问和电脑访问效果一样!</p>
-      </div>
+<%#end%>
+  
+

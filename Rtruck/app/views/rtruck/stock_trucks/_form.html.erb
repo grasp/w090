@@ -82,13 +82,14 @@
   <div class="controls"><%= f.select(:buyedat, options_for_select($year_hash_reverse.to_a,@stock_truck.buyedat)) %>   </div>
   </fieldset>
 
+<!--
 <div class="field"  style="display:inline">
-     <!-- <label class="line_from_label">常在城市*:</label>-->
         <%= f.label :常在城市 ,{:class=>"control-label"} %>    
      <div class="controls"> <a id="from_data_load"  class="company_city" href="/cities/from"><%=@stock_truck.favoc ||"选择"%></a></div>  
      
            <%= f.hidden_field(:favoc, { :class => 'fcitycode' }) %>
   </fieldset>
+-->
   <%#= f.hidden_field :user_id %>
   <%#= f.hidden_field :company_id %>
   <%= f.hidden_field :status%>

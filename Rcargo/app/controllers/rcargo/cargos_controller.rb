@@ -41,6 +41,7 @@ class CargosController < Rcargo::ApplicationController
   end
 
   def search_region
+      drop_breadcrumb(t("cargo.all_cargo_info"))
       @province=Rcity::Province.where(:code=>params[:region_id].slice(0,2)+"0000000000").first
       @region=Rcity::Region.where(:code=>params[:region_id].slice(0,4)+"00000000").first
       @city_list=@region.chengs
@@ -54,7 +55,7 @@ class CargosController < Rcargo::ApplicationController
       @cargos = Cargo.any_of([{:status=>"正在配车",:fcityc.gte=>params[:region_id].to_s,:fcityc.lt=> next_region.to_s},
           {:status=>"正在配车",:tcityc.gte=>params[:region_id].to_s,:tcityc.lt=> next_region.to_s}]).desc(:created_at)
       .paginate(:page=>params[:page]||1,:per_page=>25)
-       drop_breadcrumb(t("cargo.all_cargo_info"))
+      
     end
   end
 

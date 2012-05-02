@@ -1,5 +1,5 @@
 module Rcompany
-  class HomeController < ApplicationController
+  class HomeController < Rcompany::ApplicationController
     def root
     end
   end

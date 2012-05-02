@@ -3,8 +3,7 @@ function ajax_load_href(){
 	$(".cargoshow").live("click",function(){
 	  $('#CargoShowModal .modal-body').empty();
 	  $('#CargoShowModal .modal-body').load($(this).attr("data-link"));	  
-	})
- 
+	}) 
 }
 
 

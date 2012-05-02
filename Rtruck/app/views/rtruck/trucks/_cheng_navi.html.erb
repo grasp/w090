@@ -1,0 +1,22 @@
+<%#coding:utf-8%>
+
+<div class="city_navi">
+	
+  <%if @city_list %>
+  县市:
+    <%@city_list.each do |smallcity|%>
+    <%if @cheng && smallcity.code==@cheng.code%>
+      <span class="dropdown">
+              <a href="#" class="dropdown-toggle btn-info btn-mini" data-toggle="dropdown" ><%=smallcity.name%>(<%=get_cheng_count(smallcity.code)%>) <b class="caret"></b></a>              
+              <ul class="dropdown-menu">
+              	 	<a href="/rtruck/trucks/search/city/<%=smallcity.code%>/fcity/<%=smallcity.code%>"><%=smallcity.name+"出发"%></a>
+               <a href="/rtruck/trucks/search/city/<%=smallcity.code%>/tcity/<%=smallcity.code%>"><%=smallcity.name+"到达"%></a>
+              </ul>
+         </span>
+      <%else%>
+      <%=link_to smallcity.name,trucks_cheng_search_path(smallcity.code)%>(<%=get_cheng_count(smallcity.code)%>)
+       <%end%>
+    <%end%>
+  <%end%>
+</div>
+

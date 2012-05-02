@@ -13,6 +13,7 @@
   trucks:
     all_trucks: "全网车源"
     trucks: "车源信息"
+    update: "更新车源信息"
     new: "新增车源"
     new2: "发布车源信息"
     detail: "车源详细信息"

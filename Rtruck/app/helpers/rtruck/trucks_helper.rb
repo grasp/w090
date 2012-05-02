@@ -2,6 +2,9 @@
 
 module Rtruck::TrucksHelper
   include FileUtils
+      include Rcity::ChengsHelper
+
+      if false
   def get_truck_info_from_params(params)
 
     params[:truck][:user_id]=session[:user_id]
@@ -274,4 +277,35 @@ module Rtruck::TrucksHelper
     
     end
   end
+end
+
+def get_province_truck_from_count(province)
+      next_province=province+10000000000
+      return Rtruck::Truck.where(:status=>"正在配货",:fcityc.gte=>province.to_s,:fcityc.lt=> next_province.to_s).count
+    end
+
+    def get_province_truck_to_count(province)
+      next_province=province+10000000000
+      return Rtruck::Truck.where(:status=>"正在配货",:tcityc.gte=>province.to_s,:tcityc.lt=> next_province.to_s).count
+    end
+
+    def get_province_count(province)
+       from=get_province_truck_from_count(province)
+       to=get_province_truck_to_count(province)
+       return from+to
+    end
+
+    def get_region_count(region)
+       next_region=region.to_i+100000000
+       from=Rtruck::Truck.where(:status=>"正在配货",:fcityc.gte=>region.to_s,:fcityc.lt=> next_region.to_s).count
+       to=Rtruck::Truck.where(:status=>"正在配货",:tcityc.gte=>region.to_s,:tcityc.lt=> next_region.to_s).count
+       return from+to
+    end
+
+     def get_cheng_count(cheng)
+       next_cheng=cheng.to_i+1000000
+       from=Rtruck::Truck.where(:status=>"正在配货",:fcityc.gte=>cheng.to_s,:fcityc.lt=> next_cheng.to_s).count
+       to=Rtruck::Truck.where(:status=>"正在配货",:tcityc.gte=>cheng.to_s,:tcityc.lt=> next_cheng.to_s).count
+       return from+to
+    end
 end
