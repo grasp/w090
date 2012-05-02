@@ -1,0 +1,2 @@
+module Rtruck::TruckGroupsHelper
+end

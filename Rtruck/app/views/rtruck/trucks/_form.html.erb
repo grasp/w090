@@ -1,0 +1,59 @@
+<%unless @stock_truck.blank? %>
+ <h3>发布车源：<%=@stock_truck.paizhao%>,<%=$truck_pinpai[@stock_truck.pinpai]%>,<%=@stock_truck.xinghao%>,<%=@stock_truck.dunwei%>吨,<%=@stock_truck.length%>米</h3>
+
+<%= form_for(@truck,:as=>:truck,:html => {:class => "form-horizontal"}) do |f| %>
+  <fieldset>
+    <% if @truck.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@truck.errors.count, "错误") %> </h2>
+      <ul>
+      <% @truck.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+    <div class="control-group">
+     <div class="control-label"> <strong class="fname"><%=@truck.fcityn||t("rcitycommon.rcity_init")%></strong>--><strong class="tname"><%=@truck.tcityn||t("rcitycommon.rcity_init")%></strong> </div>
+
+     <div class="controls"> 
+       <%=render "rtruck/trucks/truck_line"%>
+       <%=render "rcity/chengs/line_modal"%>
+  </div>
+  </div>
+
+ <%=f.hidden_field(:stock_truck_id) %>
+ <%= f.hidden_field :paizhao%>
+ <%= f.hidden_field :dunwei%>
+ <%= f.hidden_field :length%>
+ <%= f.hidden_field :usage%>
+ <%= f.hidden_field :shape%>
+ <%= f.hidden_field :usage%>
+ <%= f.hidden_field :driver%>
+ <%= f.hidden_field :dphone%>
+ <%= f.hidden_field :cphone%>
+ <%= f.hidden_field :status%>
+
+ <div class="control-group">
+   <label class="control-label">有效天数*</label>
+   <div class="controls"> <%= f.select(:expire,options_for_select([["一天","1"],["二天","2"],["三天","3"],["15天","15"],["30天","30"],["90天","90"]],@truck.expire) )%> 
+   </div>
+ </div>
+
+ <div class="control-group">
+   <label class="control-label">回程或本地车*</label>
+   <div class="controls"> <%= f.select(:huicheng,options_for_select($truck_huicheng_reverse.to_a,@truck.huicheng) ) %>  
+   </div>
+</div>
+    
+<div class="control-group">
+    <label class="control-label">备注:</label>
+   <div class="controls"> <%= f.text_area :comments,:rows=>5 %>  </div>
+    </div>
+
+   <div class="form-actions">
+    <%= f.submit("确定",:class=>"btn btn-primary")%>
+ </div>
+  </fieldset>
+<% end %>
+<% end %>

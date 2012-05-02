@@ -1,1 +1,12 @@
-rtruck_nav
+
+<ul class="nav nav-tabs">
+  <li><%=link_to t("trucks.all_trucks"),truckssearch_path,:html=>{"data-toggle"=>"tab"}%></li>
+
+
+  <li><%=link_to t("stock_trucks.stock_trucks"),stock_trucks_path,:html=>{"data-toggle"=>"tab"}%></li>
+
+  <li><%=link_to t("trucks.trucks"),trucks_path,:html=>{"data-toggle"=>"tab"}%></li>
+  <li><%=link_to t("stock_trucks.concern_trucks"),stock_trucks_concern_path,:html=>{"data-toggle"=>"tab"}%></li>
+
+  
+</ul>

@@ -1,0 +1,52 @@
+<%#coding:utf-8%>
+ <% unless @trucks.blank? %>
+<table class="table table-striped">
+  <tr>
+    <th>车辆</th>
+    <th>出发</th>
+    <th>到达</th>
+    <th>有效天数</th>
+    <th>发布时间</th>
+    <th>车源状态</th>  
+    <th>匹配货源</th>
+    <th>编辑</th>
+    <th>删除</th>
+</tr>
+
+    <% @trucks.each do |truck|%>
+      <%unless truck.nil?%>
+        <tr>
+        <td>  <a  href="/rtruck/trucks/<%=truck.id%>">
+              <%=truck.paizhao%>,<%=truck.dunwei%>吨,
+              <%=truck.length%>米,<%=$truck_shape[truck.shape]%>
+            </a></td>
+
+          <td><%= truck.fcityn  %></td>
+          <td><%= truck.tcityn  %></td>
+          <td><%= truck.expire %>天</td>
+          <td><%= timeago(truck.created_at)%></td>
+
+          <%if truck.status!="正在配货"%>
+             <td><span class="badge badge-warning"> <%=truck.status%></span></td>
+          <%else%>
+          <td><span class="badge badge-success"> <%=truck.status%></span></td>
+          <%end%>
+                  
+         
+
+          <%if truck.status=="正在配货"%>
+            <td><a  class="btn btn-default" href="/cargos/search/<%=truck.fcityc%>/<%=truck.tcityc%>/1">货源速配</a></td>
+          <%else%>
+           <td><%=truck.status%></td>             
+          <%end%>
+         <td><%=link_to "编辑",edit_truck_path(truck)%></td>
+         <td><%=link_to "删除",truck_path(truck),:confirm => 'Are you sure?',:method=>"delete"%></td>
+    
+        </tr>
+      <% end %>
+    <% end %>
+        </table>
+    <%else%>
+<p>没有正在配货的车源，<a class="btn btn-primary" href="/users/stock_trucks"><b>马上创建车源</b></a></p>
+  <%end %>
+

@@ -1,0 +1,86 @@
+
+<span class="lineselector">
+      <a id="from_data_load"  href="/cities/from/<%=@search.fcity_code ||"100000000000"%>"><%=$city_code_name[@search.fcity_code] ||"出发地选择"%></a>
+      <input class="fcitycode" type="hidden" name="cargo[fcitycode]"></input>
+      <input class="fcityname" type="hidden" name="cargo[fcityname]"></input>
+      <a  id="to_data_load"  href="/cities/to/<%=@search.tcity_code||"100000000000"%>" ><%=$city_code_name[@search.tcity_code] ||"到达地选择"%></a>
+       <input class="tcitycode" type="hidden" name="cargo[tcitycode]"></input>
+      <input  class="tcityname" type="hidden" name="cargo[tcityname]"></input>
+   <input value="车源查询" style="width:80px;" class=" btn default truck_search" type="submit" name="asss"></input>
+<a  href="/trucks/baojiatruck/all">待报价(<%=Truck.where(:from_site=>"local").count%>)</a>
+<%if params[:city_id]%>
+<a  href="/trucks/cityfrom/<%=params[:city_id]%>"><%=$city_code_name[params[:city_id]] ||"全国"%>出发</a>
+<a  href="/trucks/cityto/<%=params[:city_id]%>"><%=$city_code_name[params[:city_id]] ||"全国"%>到达</a>
+<%end%>
+
+<a  style="margin-left:50px;" class="btn btn-primary"  href="/users/stock_trucks"><b>发布车源</b></a>
+ </span>
+    
+     <%=render "trucks/region_navi"%>
+     <%=render "trucks/city_navi"%>
+     <% unless @trucks.blank? %>
+<table class="truck table table-striped">  
+<tr>
+ 
+ <th>出发城市</th>
+ <th>到达城市</th>
+
+      <th>车辆</th>
+    <th>回程</th>
+    <!--  <th>公司</th>-->
+    <th>有效</th>
+    <th>发布时间</th>
+    <th>状态</th>
+    <th>货主操作</th>
+  </tr>
+
+
+   <% @trucks.each do |truck|%>
+   <%unless truck.blank? %>
+        <tr>
+
+          <td >
+            <a class="show_float" href="/cities/modal/show/<%=truck.fcity_code%>/line/<%=truck.fcity_code%>/<%= truck.tcity_code %>">
+                           <%= truck.fcity_name %>
+              </a>
+          </td>
+          <td >
+             <a class="show_float" href="/cities/modal/show/<%=truck.tcity_code%>/line/<%=truck.fcity_code%>/<%= truck.tcity_code %>">
+             <%= truck.tcity_name %>
+              </a>
+          </td>
+     
+            <td ><a class="show_float" href="/trucks/show/<%=truck.id%>">
+              <%=truck.paizhao%>,<%=truck.dunwei%>吨
+              <%=truck.length%>米 <%=$truck_shape[truck.shape]%>
+            </a>
+            </td>
+          <td><%=$truck_huicheng[truck.huicheng]%></td>
+
+          <td><%= truck.send_date %>天</td>
+        <!--  <td><%= truck.updated_at.localtime.to_s.slice(0,19) %></td>-->
+      <td><%= truck.created_at.localtime.to_s.slice(0,19) %></td>
+          <td><%= truck.status %></td>
+          <td>
+             <%unless session[:user_id].nil?%>
+             <%if truck.user_id.to_s==session[:user_id].to_s%>
+            车主
+            <%elsif truck.from_site=="local"%>
+              <a class="btn btn-default baojia" href="/trucks/<%=truck.id%>/inqueries/new">询价</a>
+             <%else%>
+              其他
+              <%end%>
+              <%else%>
+              登录后询价
+              <%end%>
+          </td>
+
+        </tr>
+      <% end %>
+    <% end %>
+     </table>
+  <%= will_paginate(@trucks,:previous_label=>"上一页",:next_label=>"下一页") %>
+     <%else%>
+        <p>没有找到对应车源</p>
+     <% end %>
+

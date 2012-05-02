@@ -3,6 +3,7 @@
 
 function ajax_load_link_to_modal(){
 	$("#fcheng .lineselect").live("click",function(){
+		//alert("line slect clicked!")
 		$("#fcheng .fcheng").load(this.href);
 		$(".fname").text(this.text.replace(/->/,''));
 		$(".fcityname").val(this.text.replace(/->/,''));

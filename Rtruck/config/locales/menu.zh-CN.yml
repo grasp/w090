@@ -1,0 +1,18 @@
+"zh-CN":
+  stock_trucks: 
+    stock_trucks: "库存车辆"
+    new: "新增车辆"
+    concern_trucks: "关注车辆"
+    basic_profile: "基本信息"
+    contact: "联系管理"
+    truck_picture: "车辆图片"
+    dingwei: "定位管理"
+    edit: "车辆管理"
+    detail: "详细信息"
+
+  trucks:
+    all_trucks: "全网车源"
+    trucks: "车源信息"
+    new: "新增车源"
+    new2: "发布车源信息"
+    detail: "车源详细信息"

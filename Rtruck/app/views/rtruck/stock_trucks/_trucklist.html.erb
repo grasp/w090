@@ -1,0 +1,57 @@
+
+<%#=render "rtruck/stock_trucks/stock_truck_nav"%>
+<%#coding=utf-8%>
+<div class="stock_trucklist">
+
+  <%unless @stock_trucks.blank?%>
+    <table class="table table-striped">
+
+      <tr>   
+        <th>详细信息</th>
+        <th>编辑</th>
+        <th>发布车源</th>         
+        <th>状态</th>
+
+        <th>删除</th>
+      </tr>
+      <% @stock_trucks.each do |stock_truck| %>
+        <tr>
+          <td> <a href="/rtruck/stock_trucks/<%=stock_truck.id%>"> <%= stock_truck.paizhao %>,<%= $truck_pinpai[stock_truck.pinpai] %>/<%= stock_truck.xinghao %>,<%=stock_truck.dunwei%>吨,
+              <%= stock_truck.length %>米,
+              <%= $truck_shape[stock_truck.shape] %></a>
+          </td>
+       <td><%= link_to t("stock_trucks.edit"), edit_stock_truck_path(stock_truck),:class=>"btn btn-info" %></td>
+
+          <%if stock_truck.bind==true%>
+            <td><a class="btn btn-default" target="_blank" href="/dingwei/weizhi/<%=stock_truck.id%>">当前位置</a></td>
+            <td><a class="btn btn-default" target="_blank" href="/dingwei/guiji/<%=stock_truck.id%>">行驶轨迹</a></td>
+          <%else%>
+
+          <%end%>
+ 
+          <td><%=link_to t("trucks.new"),new_truck_path,:class=>"btn btn-default"%> </td>
+
+          <%if stock_truck.status!="正在配货"%>
+          <td><span class="badge badge-warning"> <%=stock_truck.status%></span></td>
+          <%else%>
+                 <td><span class="badge badge-success"> <%=stock_truck.status%></span></td>
+          <%end%>
+
+    
+ <td><%= link_to "删除", stock_truck_path(stock_truck),:method=>"delete" %></td>
+        </tr>
+      <% end %>
+    </table>
+  <%else%>
+    <p>你还没有添加任何车辆.</p>
+  <%end%>
+
+<%#= will_paginate @stock_trucks ,:class=>"page_navi_link"%>
+  <br />
+
+
+  <p>
+    <%=link_to t("stock_trucks.new"),new_stock_truck_path,:class=>"btn btn-primary"%>
+  </p>
+
+</div>

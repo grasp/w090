@@ -1,0 +1,127 @@
+<h3>更新<%="#{@stock_truck.paizhao}"%></h3>
+<%= form_for(@stock_truck,:as=>:stocktruck,:html=>{:class=>"form-horizontal"}) do |f| %>
+  <% if @stock_truck.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@stock_truck.errors.count, "error") %> prohibited this stock_truck from being saved:</h2>
+
+      <ul>
+      <% @stock_truck.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <ul id="tab" class="nav nav-tabs">
+   <li><a href="#basic_info" data-toggle="tab"><%= t("stock_trucks.basic_profile")%></a>
+   </li>
+   <li><a href="#conact_manage" data-toggle="tab"><%= t("stock_trucks.contact")%></a>
+   </li>
+   <li ><a href="#picture_manage" data-toggle="tab"><%= t("stock_trucks.truck_picture")%></a>
+   </li>
+   <li ><a href="#dingwei_manage" data-toggle="tab"><%= t("stock_trucks.dingwei")%></a>
+   </li>
+
+  
+   </ul>
+
+
+   <div id="myTabContent" class="tab-content">
+   <div class="tab-pane fade in active" id="basic_info">
+    <div class="basic_info">  
+      <fieldset class="control-group">
+    <%= f.label :车辆牌照,{:class=>"control-label"} %>
+    <div class="controls"><%= f.text_field :paizhao %> </div>
+  </fieldset>
+     <fieldset class="control-group">
+     <label class="control-label">自有车辆</label>
+  <div class="controls">   <%= f.select(:isself,options_for_select([["自有车辆","自有车辆"],["协议车辆","协议车辆"],["其他车辆","其他车辆"]],@stock_truck.isself) )%></div>
+     </fieldset>
+  <fieldset class="control-group">
+    <%= f.label "核定载重(吨)",:class=>"control-label" %>
+   <div class="controls"> <%= f.text_field :dunwei %>  </div>
+  </fieldset>
+  <fieldset class="control-group">
+    <%= f.label "车厢长度(米)" ,{:class=>"control-label"}%>
+   <div class="controls">  <%= f.text_field :length %>  </div>
+   </fieldset>
+  <fieldset class="control-group">
+    <%= f.label :车厢结构 ,{:class=>"control-label"} %>
+   <div class="controls">  <%= f.select(:shape, options_for_select($truck_shape_reverse.to_a,@stock_truck.shape)) %></div>
+  </fieldset>
+  <fieldset class="control-group">
+    <%= f.label :用途 ,{:class=>"control-label"} %>
+   <div class="controls">  <%= f.select(:usage,options_for_select($truck_usage_reverse.to_a,@stock_truck.usage) ) %> </div>
+   </fieldset>
+
+    </div>
+   </div>
+
+    <div class="tab-pane fade" id="conact_manage">
+    <div class="conact_manage" >  
+    <fieldset class="control-group">
+    <%= f.label :叫车联系 ,{:class=>"control-label"}%>
+     <div class="controls"> <%= f.text_field :business %></div>
+          </fieldset>
+    <fieldset class="control-group">
+    <%= f.label :叫车电话 ,{:class=>"control-label"}%>
+   <div class="controls">  <%= f.text_field :bphone %></div>
+    </fieldset>
+   <fieldset class="control-group">
+    <%= f.label :司机姓名 ,{:class=>"control-label"}%>
+    <div class="controls">   <%= f.text_field :driver %></div>
+   </fieldset>
+  <fieldset class="control-group">
+    <%= f.label :司机电话 ,{:class=>"control-label"}%>
+  <div class="controls">  <%= f.text_field :dphone %></div>
+  </fieldset>
+  <fieldset class="control-group">
+    <%= f.label :车主姓名 ,{:class=>"control-label"}%>
+   <div class="controls"> <%= f.text_field :owner %></div>
+  </fieldset>
+  <fieldset class="control-group">
+    <%= f.label :车主电话 ,{:class=>"control-label"}%>
+  <div class="controls">  <%= f.text_field :ophone %></div>
+  </fieldset>
+              </div>
+            </div>
+
+   <div class="tab-pane fade" id="picture_manage">
+    <div class="picture_manage" >  正在开发中
+   </div>
+  </div>
+
+   <div class="tab-pane fade" id="dingwei_manage">
+    <div class="dingwei_manage">  
+
+        <fieldset class="control-group">
+    <%= f.label :绑定司机手机 ,{:class=>"control-label"}%>
+   <div class="controls">  <%= f.select(:bind, options_for_select([["定位绑定",true],["定位解除",false]],@stock_truck.bind)) %></div>
+  </fieldset>
+  <fieldset class="control-group">
+    <%= f.label :有无GPS ,{:class=>"control-label"}%>
+   <div class="controls">  <%= f.select(:gps, options_for_select([["有","有"],["无","无"]],@stock_truck.gps)) %></div>
+  </fieldset>
+  <fieldset class="control-group">
+    <%= f.label :lat ,{:class=>"control-label"}%>
+   <div class="controls"> <%= f.text_field :lat %></div>
+  </fieldset>
+  <fieldset class="control-group">
+    <%= f.label :lng ,{:class=>"control-label"}%>
+   <div class="controls"> <%= f.text_field :lng %></div>
+              </div>
+            </div>
+     
+     </div>
+
+
+ 
+  </fieldset>
+    <div class="form-actions">
+     <%= f.submit("确定",:class=>"btn btn-primary")%></div>
+  </fieldset>
+
+  <%= f.hidden_field :status%>
+
+<% end %>
+<p id="notice"><%= notice %></td>
