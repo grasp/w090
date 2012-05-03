@@ -23,7 +23,7 @@ module Rcompany
   def self.customize_user      
       Ruser::User.class_eval do
          has_one :company, :dependent => :destroy,:class_name=>"Rcompany::Company"
-         end
+      end
   end
 end
 end

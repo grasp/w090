@@ -1,14 +1,14 @@
 
 
-<div class="bottom_link">
 
-<% if @company.user_id.to_s == session[:user_id].to_s %>
+<ul class="nav nav-tabs">
+ <li> <%=link_to t("companycommon.yellowpage"),companiesneyellowpage_path,:html=>{"data-toggle"=>"tab"}%></li>
+ <%if current_user.company%>
+ <li> <%=link_to "我的公司",company_path(current_user.company),:html=>{"data-toggle"=>"tab"}%></li>
+ <li> <%=link_to "更新我的公司",edit_company_path(current_user.company),:html=>{"data-toggle"=>"tab"}%></li>
+ <%else%>
+ <li> <%=link_to " 创建我的公司",new_company_path(),:html=>{"data-toggle"=>"tab"}%></li>
+ <%end%>
+</ul>
 
-  <a class="page_navi_link" href="/companies/show/<%=@company.id%>">我的公司</a>
- <!-- <a class="page_navi_link" href="/companies/index/<%=@company.id%>/vendor">历史成交车源公司</a>
-  <a class="page_navi_link" href="/companies/index/<%=@company.id%>/custermer">历史成交货源公司</a>-->
-  <a  href="/companies/<%=@company.id%>/edit">更新我的公司</a>
-  <%end%>
 
-
-</div>

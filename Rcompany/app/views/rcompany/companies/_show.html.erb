@@ -16,68 +16,53 @@
     <div class="offset2 about"><%=(@company.ctype)%></div>
   </div>
 
-  <div class="lineshow">
-  <div class="span2">商家联系人:</div>
-  <div class="offset2"> <%= @company.contact_name %></div>
-</div>
 
   <div class="lineshow">
   <div class="span2">所在城市:</div>
-  <div class="offset2"><%= @company.city_name %></div>
+  <div class="offset2"><%= @company.cityn||"" %></div>
 </div>
 
-  <div class="lineshow">
+<div class="lineshow">
   <div class="span2">商家地址:</div>
-<div class="offset2"> <%= @company.address %></div>
+  <div class="offset2"> <%= @company.address||"" %></div>
 </div>
 
-  <div class="lineshow">
+<div class="lineshow">
   <div class="span2">固定电话:</div>
-<div class="offset2"> <%= @company.quhao+"-"+@company.fix_phone %></div>
+<div class="offset2"> <%= @company.quhao||""+"-"+@company.fphone||"" %></div>
 </div>
 
-  <div class="lineshow">
+<div class="lineshow">
   <div class="span2">移动电话:</div>
-<div class="offset2"> <%= @company.mobile_phone %></div>
+<div class="offset2"> <%= @company.mphone||"" %></div>
 </div>
 
-  <div class="lineshow">
+<div class="lineshow">
   <div class="span2">商家邮件:</div>
-  <div class="offset2"> <%= @company.email %></div>
+  <div class="offset2"> <%= @company.email||"" %></div>
 </div>
 
-  <div class="lineshow">
+<div class="lineshow">
   <div class="span2">自有车辆:</div>
-<div class="offset2"> <%= @company.self_che %></div>
+  <div class="offset2"> <%= @company.selfche||"" %></div>
 </div>
 
-  <div class="lineshow">
+<div class="lineshow">
   <div class="span2">挂靠车辆:</div>
-<div class="offset2"> <%= @company.signed_che %></div>
+  <div class="offset2"> <%= @company.signedche||"0" %></div>
 </div>
 
-  <div class="lineshow">
-
+<div class="lineshow">
  <div class="span2">员工数量:</div>
-<div class="offset2"> <%= @company.num_employ %></div>
+ <div class="offset2"> <%= @company.numemploy %></div>
 </div>
 
+<%else%>
+<div class="lineshow">
+    你还没有创建你的商家信息.
+    <a  class="btn btn-primary" href="/rcompany/companies/new">马上创建</a>
+</div>
 
-<% if @company.user_id.to_s == session[:user_id].to_s %> 
-   <div class="lineshow">该信息由
-   <%if @company.created_at.to_s==@company.updated_at.to_s%>
-   <%= User.find(@company.user_id).name %> 创建于<%=@company.created_at.to_s%>
-   <%else%>
-   <%= User.find(@company.user_id).name %> 更新于<%=@company.updated_at.to_s%>
-   <%end%>
-  </div>
-  <%end%>
-  <%else%>
-     <div class="lineshow">
-      你还没有创建你的商家信息.
-      <a  class="btn btn-primary" href="/companies/new">马上创建</a>
-    </div>
-
- <%end%>
+<%end%>
   
 

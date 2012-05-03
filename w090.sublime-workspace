@@ -46,6 +46,22 @@
 				"buffer_size": 168,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "/home/hunter/vob/smartlog/config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 38,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/hunter/vob/smartlog/README.rdoc",
+			"settings":
+			{
+				"buffer_size": 986,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -432,7 +448,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -479,7 +495,9 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -499,8 +517,8 @@
 						"selection":
 						[
 							[
-								661,
-								661
+								1116,
+								1116
 							]
 						],
 						"settings":
@@ -555,13 +573,65 @@
 						"selection":
 						[
 							[
-								154,
-								154
+								168,
+								168
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/hunter/vob/smartlog/config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 38,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								33,
+								33
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/home/hunter/vob/smartlog/README.rdoc",
+					"settings":
+					{
+						"buffer_size": 986,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								979,
+								979
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

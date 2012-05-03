@@ -1,5 +1,6 @@
  # coding: utf-8
-class Rcompany::Company 
+module Rcompany
+class Company 
    include Mongoid::Document
    include Mongoid::Timestamps
  
@@ -22,4 +23,5 @@ class Rcompany::Company
       
      validates_uniqueness_of :name ,:message=>"该公司名字已经被注册."
      validates_uniqueness_of :email ,:message=>"该Email所属公司已经被注册."
+end
 end

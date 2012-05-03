@@ -1,5 +1,6 @@
 # coding: utf-8
-class Rcompany::CompaniesController < Rcompany::ApplicationController
+module Rcompany
+class CompaniesController < Rcompany::ApplicationController
   # GET /companies
   # GET /companies.xml
  before_filter:require_user,:except => [:yellowpage,:show,:search]
@@ -26,8 +27,8 @@ class Rcompany::CompaniesController < Rcompany::ApplicationController
   end
   
   def yellowpage
-   # @company = Company.where(:user_id =>session[:user_id]).first #only one company actully
-   @companies = Company.desc(:created_at).paginate(:page=>params[:page]||1,:per_page=>25)
+   @companies = Company.desc(:created_at).limit(200).paginate(:page=>params[:page]||1,:per_page=>25)
+   @companies=@companies.to_a
   end
   
   def index
@@ -43,70 +44,65 @@ class Rcompany::CompaniesController < Rcompany::ApplicationController
   # GET /companies/1.xml
   def show
     @company = Company.find(params[:id])
-    @company_name=@company.name
-    
+  
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @company }
     end
-  end
-  
+  end  
   
 
   # GET /companies/new
   # GET /companies/new.xml
   def new
-
-    @company=current_user.company.new
-
+      
+    params[:cheng_id]="330100000000" if params[:cheng_id].nil?
+    @country=Rcity::Country.where(:code=>"086").first#hard code
+    @provinces=@country.provinces.asc(:code).to_a    
+    @province=Rcity::Province.where(:code=>params[:cheng_id].slice(0,2)+"0000000000").first
+    @regions=@province.regions 
+    @match_province=params[:cheng_id].slice(0,2)+"0000000000"
+    @match_region=params[:cheng_id].slice(0,4)+"00000000"
+    @match_cheng=params[:cheng_id].slice(0,6)+"000000"  
+    
+    #@company=current_user.company.new
+    @company=Company.new
+    
     respond_to do |format|
-        format.html # new.html.erb 
-      #  format.xml  { render :xml => @company }
+    format.html # new.html.erb 
+    #format.xml  { render :xml => @company }
     end
   end
 
   # GET /companies/1/edit
   def edit
-    if params[:id]
-    @company = Company.find(params[:id])   
-    elsif session[:user_id]
-  #  @company=Company.where(:user_name =>session[:user_name].to_s).first #only one company actull
-  @company=Company.where(:user_id =>session[:user_id].to_s).first #only one company actull
-    unless @company
-      redirect_to :action => "new"
-    end
-    end
-    
-    #  if @company.fix_phone.match(/-/)
-    # @company.quhao=@company.fix_phone.split(/-/)[0]
-    # @company.fix_phone=@company.fix_phone.split(/-/)[1]
-    # else
-    #   @company.quhao=""
-    #   @company.fix_phone=@company.fix_phone
-    #  end
+    params[:cheng_id]="330100000000" if params[:cheng_id].nil?
+    @country=Rcity::Country.where(:code=>"086").first#hard code
+    @provinces=@country.provinces.asc(:code).to_a    
+    @province=Rcity::Province.where(:code=>params[:cheng_id].slice(0,2)+"0000000000").first
+    @regions=@province.regions 
+    @match_province=params[:cheng_id].slice(0,2)+"0000000000"
+    @match_region=params[:cheng_id].slice(0,4)+"00000000"
+    @match_cheng=params[:cheng_id].slice(0,6)+"000000"
+
+    @company=Company.find(params[:id])
+
   end
 
   # POST /companies
   # POST /companies.xml
   def create
-    # params[:company][:fix_phone]=params[:quhao]+"-"+ params[:company][:fix_phone]
-    @company = Company.new(params[:company])  
+    @company = current_user.build_company(params[:company])
 
     respond_to do |format|
       if @company.save
-        @user=User.find(session[:user_id])
-        raise if @user.blank?
-        @user.update_attributes({:company_id=>@company.id})
-         expire_fragment "yellowpage"
-         expire_fragment "users_center_#{session[:user_id]}"
+        expire_fragment "yellowpage"
+        expire_fragment "users_center_#{session[:user_id]}"
         flash[:notice] = '公司成功创建，恭喜你创建完成了!'
-         session[:user_id]=@user.id
         format.html {  redirect_to :action=>"show",:id=>@company.id}
-        format.xml  { render :xml => @company, :status => :created, :location => @company }
       else
         flash[:notice] = '公司创建失败了,再次创建试试看？'
-        format.html {  render :action=>"new"}
-        format.xml  { render :xml => @company.errors, :status => :unprocessable_entity }
+        format.html {  redirect_to :action=>"new"}
       end
     end
   end
@@ -117,16 +113,16 @@ class Rcompany::CompaniesController < Rcompany::ApplicationController
     #params[:company][:fix_phone]=params[:quhao]+"-"+ params[:company][:fix_phone]
     @company= Company.find(params[:id])
     #company = update_company(params)
-    expire_fragment "users_center_#{session[:user_id]}"
+   # expire_fragment "users_center_#{session[:user_id]}"
     respond_to do |format|
       if @company.update_attributes(params[:company])
         flash[:notice] = "公司信息成功更新"
-        #  format.html { redirect_to(@company) }
-         format.html {  redirect_to :action=>"privatecenter"}
+         format.html { redirect_to(@company) }
+         #format.html {  redirect_to :action=>"privatecenter"}
         format.xml  { head :ok }
       else
         flash[:notice] << " 公司信息更新失败"
-        format.html { render :action => "edit" }
+        format.html { redirect_to :action => "edit" }
         format.xml  { render :xml => @company.errors, :status => :unprocessable_entity }
       end
     end
@@ -185,4 +181,5 @@ class Rcompany::CompaniesController < Rcompany::ApplicationController
       format.xml  { head :ok }
     end
   end
+end
 end
