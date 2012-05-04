@@ -21,7 +21,7 @@ Rforum::Engine.routes.draw do
     resources :users do
     member do
      get :topics
-    get :likes
+     get :likes
     end
    end
 

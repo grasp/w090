@@ -1,5 +1,6 @@
 # coding: utf-8
-module Rcompany::CompaniesHelper
+module Rcompany
+module CompaniesHelper
 
   if false
  #  include CitiesHelper
@@ -90,5 +91,24 @@ module Rcompany::CompaniesHelper
 @companies
  end
 
+
+end
+
+   def get_province_count(province)
+      next_province=province+10000000000
+      return Company.where(:cityc.gte=>province.to_s,:cityc.lt=> next_province.to_s).count
+    end
+
+    def get_region_count(region)
+       next_region=region.to_i+100000000
+       total=Company.where(:cityc.gte=>region.to_s,:cityc.lt=> next_region.to_s).count
+       return total
+    end
+
+     def get_cheng_count(cheng)
+       next_cheng=cheng.to_i+1000000
+       total=Company.where(:cityc.gte=>cheng.to_s,:cityc.lt=> next_cheng.to_s).count
+       return total
+    end
 end
 end

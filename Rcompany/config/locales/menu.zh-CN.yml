@@ -1,8 +1,15 @@
 "zh-CN":
   companycommon:
     yellowpage: "黄页"
+    shangjiapage: "商家黄页"
   companies:
     new: "新建公司"
     edit: "编辑"
     destroy: "删除"
     mycompany: "我的公司"
+  yellowpage:
+    name: "商家"
+    ctype: "类型"
+    intro: "介绍"
+    location: "所在城市"
+

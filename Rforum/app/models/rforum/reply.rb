@@ -18,7 +18,7 @@ class Rforum::Reply
   belongs_to :topic, :inverse_of => :replies,:class_name=>"Rforum::Topic"
  # has_many :notifications, :class_name => 'Notification::Base', :dependent => :delete
  #has_many :notifications, :class_name => 'Notification::Base', :dependent => :delete
-has_many :notifications, :class_name => 'Ruser::Notification::TopicReply', :dependent => :delete
+  has_many :notifications, :class_name => 'Ruser::Notification::TopicReply', :dependent => :delete
   counter_cache :name => :user, :inverse_of => :replies#,:class_name=>"Ruser::User"
   counter_cache :name => :topic, :inverse_of => :replies#,:class_name=>"Rforum::Topic"
 

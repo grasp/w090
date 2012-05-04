@@ -1,0 +1,25 @@
+<%#coding:utf-8%>
+<%#cache "#{@province}_region" do%>
+
+ <%if @province%>
+
+<div class="region_navi">
+  <%if  @region_list %>
+  地区:
+    <%@region_list.each do |regioncity|%> <%matched="btn-info btn-mini" if @region && regioncity.code==@region.code %>
+
+         <%if @region && regioncity.code==@region.code%>
+      <span class="dropdown">
+
+              <a href="#" class="btn-info btn-mini"  ><%=regioncity.name%>(<%=get_region_count(regioncity.code)%>) </a>            
+
+         </span>
+      <%else%>
+     <%=link_to regioncity.name,companies_region_search_path(regioncity.code)%>(<%=get_region_count(regioncity.code)%>) <%end%>   
+    <%end%>
+  <%end%>
+</div>
+ <%end%>
+<%#end%>
+
+

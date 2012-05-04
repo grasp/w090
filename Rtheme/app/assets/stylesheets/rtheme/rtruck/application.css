@@ -12,6 +12,7 @@
  *= require rtheme/rtruck/rtruck.css
  *= require_self
  *= require_tree .
+ *= require rtheme.css
 */
 
 /*

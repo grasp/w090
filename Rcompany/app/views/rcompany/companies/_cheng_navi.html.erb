@@ -1,0 +1,19 @@
+<%#coding:utf-8%>
+
+<div class="city_navi">
+	
+  <%if @city_list %>
+  县市:
+    <%@city_list.each do |smallcity|%>
+    <%if @cheng && smallcity.code==@cheng.code%>
+      <span class="dropdown">
+              <a href="#" class="btn-info btn-mini"  ><%=smallcity.name%>(<%=get_cheng_count(smallcity.code)%>) </a>              
+
+         </span>
+      <%else%>
+       <%=link_to smallcity.name,companies_cheng_search_path(smallcity.code)%>(<%=get_cheng_count(smallcity.code)%>)
+       <%end%>
+    <%end%>
+  <%end%>
+</div>
+

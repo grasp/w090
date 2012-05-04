@@ -1,0 +1,29 @@
+<%#coding:utf-8%>
+
+<%cache("provincecargo") do %>
+
+<div class="province-nav">
+  <%@provinces=Rcity::Province.all.to_a%>
+
+<%@provinces.each_index do |index|%> 
+
+    <%if index%2==0%>
+    <%matched="btn-info btn-mini" if @province && @provinces[index].code==@province.code %>
+      <span><%= link_to @provinces[index].name, rcompany.companies_province_search_path(@provinces[index].code),:class=>matched%>(<%=get_province_count(@provinces[index].code.to_i)%>)</span>
+    <%end%> 
+
+<%end%>
+</div>
+ <div class="province-nav">
+
+<%@provinces.each_index do |index|%> 
+<%matched="btn-info btn-mini" if @province && @provinces[index].code==@province.code %>
+    <%if index%2==1%>
+      <span><%= link_to @provinces[index].name, rcompany.companies_province_search_path(@provinces[index].code),:class=>matched%>(<%=get_province_count(@provinces[index].code.to_i)%>)</span>
+    <%end%>
+ <%end%>
+ </div>
+
+<%end%>
+  
+

@@ -1,9 +1,9 @@
 
-
+<div>
 
 <ul class="nav nav-tabs">
- <li> <%=link_to t("companycommon.yellowpage"),companiesneyellowpage_path,:html=>{"data-toggle"=>"tab"}%></li>
- <%if current_user.company%>
+ <li> <%=link_to t("companycommon.yellowpage"),companiessearch_path,:html=>{"data-toggle"=>"tab"}%></li>
+ <%if current_user && current_user.company%>
  <li> <%=link_to "我的公司",company_path(current_user.company),:html=>{"data-toggle"=>"tab"}%></li>
  <li> <%=link_to "更新我的公司",edit_company_path(current_user.company),:html=>{"data-toggle"=>"tab"}%></li>
  <%else%>
@@ -11,4 +11,4 @@
  <%end%>
 </ul>
 
-
+</div>

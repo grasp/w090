@@ -10,6 +10,7 @@
  *
  *= require bootstrap202/bootstrap.css
  *= require_self
+ *= require rtheme.css
  *= require_tree .
 */
 

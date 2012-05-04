@@ -1,0 +1,32 @@
+<%#coding: utf-8%>
+
+<%=render 'rcompany/companies/province_navi'%>
+<%=render 'rcompany/companies/region_navi'%>
+<%=render 'rcompany/companies/cheng_navi'%>
+
+<h4>站内企业</h3>
+<%if @companies%>
+<table class="table table-striped">
+
+	<th><%=t("yellowpage.name")%></th>
+	<th><%=t("yellowpage.ctype")%></th>
+	<th><%=t("yellowpage.intro")%></th>
+	<th><%=t("yellowpage.location")%></th>
+        <%@companies.each do |company|%>
+        <tr>
+        <td class="span2"><%=link_to company.name,company_path(company) %></td>
+        <td><%=company.ctype%></td>
+        <td><%=company.about.slice(0,50)%></td>
+         <td><%=company.cityn%></td>
+        </tr>
+        <%end%>
+</table>
+
+ <div class="pagination">
+    <%= will_paginate @companies ,:previous_label=>"上一页",:next_label=>"下一页"%>
+  </div>
+<%else%>
+<p>没有找到对应商家.</p>
+<%end%>
+
+

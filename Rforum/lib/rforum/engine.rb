@@ -69,14 +69,13 @@ require  'kgio'
 
 module Rforum
   class Engine < ::Rails::Engine   
-
    
    config.to_prepare do
       Rforum::Engine.customize_user
     end
 
     initializer 'Rforum::Application.helper' do |app|
-      ActionView::Base.send :include, Rforum::NotesHelper,Rforum::TopicsHelper,Rforum::LikesHelper
+      #ActionView::Base.send :include, Rforum::NotesHelper,Rforum::TopicsHelper,Rforum::LikesHelper
       #  ActionController::Base .send :include,  ApplicationHelper,UsersHelper
     end
     
@@ -86,8 +85,7 @@ module Rforum
     config.time_zone = 'Beijing'
 
     #   config.i18n.load_path += Dir[config.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    config.i18n.load_path += Dir[config.root.join('locales', '*.{rb,yml}').to_s]
- 
+    config.i18n.load_path += Dir[config.root.join('locales', '*.{rb,yml}').to_s] 
     config.encoding = "utf-8"
 
     config.generators do |g|
@@ -101,12 +99,10 @@ module Rforum
     def self.customize_user
       
       Ruser::User.class_eval do
-
         has_many :topics, :dependent => :destroy,:class_name=>"Rforum::Topic"
         has_many :notes,:class_name=>"Rforum::Note"
         has_many :replies, :dependent => :destroy,:class_name=>"Rforum::Reply"
         has_many :posts,:class_name=>"Rforum::Post"
-
         has_many :photos,:class_name=>"Rforum::Photo"
         has_many :likes,:class_name=>"Rforum::Like"        
         has_and_belongs_to_many :following_nodes, :class_name => 'Rforum::Node', :inverse_of => :followers #this will not work without forum

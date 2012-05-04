@@ -4,6 +4,7 @@ class CompaniesController < Rcompany::ApplicationController
   # GET /companies
   # GET /companies.xml
  before_filter:require_user,:except => [:yellowpage,:show,:search]
+ before_filter :init_base_breadcrumb
 
  # before_filter:admin_authorize,:only=>[:index] #for debug purpose
  # before_filter:authorize,:except => [:yellowpage,:show,:search]
@@ -26,12 +27,47 @@ class CompaniesController < Rcompany::ApplicationController
     @companies = Company.paginate(:page=>params[:page]||1,:per_page=>20)
   end
   
-  def yellowpage
-   @companies = Company.desc(:created_at).limit(200).paginate(:page=>params[:page]||1,:per_page=>25)
-   @companies=@companies.to_a
+  def search
+   drop_breadcrumb(t("companycommon.yellowpage"))
+   @companies = Company.desc(:created_at).paginate(:page=>params[:page]||1,:per_page=>25)
+  # @companies=@companies.to_a
   end
+
+   def search_province
+      next_province=params[:province_id].to_i+10000000000
+      @companies = Company.where(:cityc.gte=>params[:province_id].to_s,:cityc.lt=> next_province.to_s).desc(:created_at)
+      .paginate(:page=>params[:page]||1,:per_page=>25)      
+      @province=Rcity::Province.where(:code=>params[:province_id]).first      
+      @region_list=@province.regions
+      drop_breadcrumb(t("companycommon.yellowpage"))
+  end
+
+  def search_region
+      drop_breadcrumb(t("companycommon.yellowpage"))
+      @province=Rcity::Province.where(:code=>params[:region_id].slice(0,2)+"0000000000").first
+      @region=Rcity::Region.where(:code=>params[:region_id].slice(0,4)+"00000000").first
+      @city_list=@region.chengs
+      @region_list=@province.regions
+      next_region=params[:region_id].to_i+100000000 
+      @companies = Company.where(:cityc.gte=>params[:region_id].to_s,:cityc.lt=> next_region.to_s).desc(:created_at)
+      .paginate(:page=>params[:page]||1,:per_page=>25)
+  end
+
+  def search_cheng
+      @province=Rcity::Province.where(:code=>params[:cheng_id].slice(0,2)+"0000000000").first
+      @region=Rcity::Region.where(:code=>params[:cheng_id].slice(0,4)+"00000000").first
+      @cheng=Rcity::Cheng.where(:code=>params[:cheng_id]).first
+      @city_list=@region.chengs
+      @region_list=@province.regions  
+      @companies = Company.any_of(:cityc=>params[:cheng_id].to_s).desc(:created_at)
+      .paginate(:page=>params[:page]||1,:per_page=>25)
+      
+      drop_breadcrumb(t("companycommon.yellowpage"))
+  end
+
   
   def index
+   drop_breadcrumb(t("companies.mycompany"))
    @companies=current_user.company
 
     respond_to do |format|
@@ -44,7 +80,7 @@ class CompaniesController < Rcompany::ApplicationController
   # GET /companies/1.xml
   def show
     @company = Company.find(params[:id])
-  
+    drop_breadcrumb(t("companies.mycompany"))
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @company }
@@ -55,7 +91,11 @@ class CompaniesController < Rcompany::ApplicationController
   # GET /companies/new
   # GET /companies/new.xml
   def new
-      
+    if current_user.company
+    redirect_to edit_company_path(current_user.company) 
+    return
+   end
+
     params[:cheng_id]="330100000000" if params[:cheng_id].nil?
     @country=Rcity::Country.where(:code=>"086").first#hard code
     @provinces=@country.provinces.asc(:code).to_a    
@@ -84,16 +124,14 @@ class CompaniesController < Rcompany::ApplicationController
     @match_province=params[:cheng_id].slice(0,2)+"0000000000"
     @match_region=params[:cheng_id].slice(0,4)+"00000000"
     @match_cheng=params[:cheng_id].slice(0,6)+"000000"
-
     @company=Company.find(params[:id])
-
+    drop_breadcrumb(t("companies.edit"))
   end
 
   # POST /companies
   # POST /companies.xml
   def create
     @company = current_user.build_company(params[:company])
-
     respond_to do |format|
       if @company.save
         expire_fragment "yellowpage"
@@ -128,30 +166,6 @@ class CompaniesController < Rcompany::ApplicationController
     end
   end
 
-  def search    
-    puts params
-    puts "paramssearch#{params[:companysearch]}"
-    @company=Company.new
-    @company.city_code=params[:companysearch][:city_code]
-    @company.city_name=params[:companysearch][:city_name]
-    begin
-    @search_city=get_city_full_name(params[:companysearch][:city_code]) #city code is nil   
-    rescue
-      @search_city=nil
-    #  puts "search city code=#{params[:companysearch][:city_code]}"
-     #     respond_to do |format|
-     #        format.html { render :action=>"yellowpage" }
-    #      end
-     #     return
-    end
-    
-      @companies=get_search_companies(params[:companysearch][:city_code])
-   
-    respond_to do |format|
-      format.html 
-      format.xml 
-    end
-  end
 
   # DELETE /companies/1
   # DELETE /companies/1.xml
@@ -164,22 +178,11 @@ class CompaniesController < Rcompany::ApplicationController
     end
   end
   
-  def publiccenter
-    
-      @company=Company.find(params[:id]) #only one company actull
-  end
-  
-  def privatecenter  
-    #we have to use username 
-   @company=Company.where(:user_id =>session[:user_id].to_s).first #only one company actull
-   @company=Company.new if @company.blank?
-   
-     @search_city="city name is not blank" if @company.city_name.blank?
-   @search_city="请选择城市"
-    respond_to do |format|
-      format.html { render :action=>"show" }
-      format.xml  { head :ok }
-    end
+
+  protected
+
+  def init_base_breadcrumb
+    drop_breadcrumb(t("companycommon.shangjiapage"), rcompany.companiessearch_path)
   end
 end
 end

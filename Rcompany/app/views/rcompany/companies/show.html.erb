@@ -4,3 +4,9 @@
 <%=render "show"%>
 
 <%#=render 'companynavi'%>
+<% if current_user.company && current_user.company==@company%>
+<div class="span5" style="margin-top:30px;">
+<span class="span2"><%=link_to t("companies.edit"),edit_company_path(@company),:class=>"btn btn-primary"%></span>
+<span class="span2"><%=link_to t("companies.destroy"),company_path(@company),:confirm=>"are you sure?",:method=>"delete" ,:class=>"btn btn-danger"%></span>
+<div>
+<%end%>
