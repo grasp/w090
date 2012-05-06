@@ -42,7 +42,7 @@ module Rforum::TopicsHelper
                     :include_blank => true, :prompt => "选择节点"
   end
   #move from notes helper as partial template did no recognize notes_helper , strange!!
-   # def render_node_name(name, id)
-  #  link_to(name, node_topics_path(id))
- # end
+    def render_node_name(name, id)
+    link_to(name, node_topics_path(id))
+ end
 end

@@ -58,3 +58,30 @@ gem 'grape',  :path => '~/vob/github/grape'
 gem 'bson_ext'
 
 
+#copy from Rforum ,remove some not needed
+group :development, :test do
+  gem "thin"
+  gem 'capistrano', '2.9.0'
+  gem 'chunky_png', "1.2.5"
+  gem "memcache-client", "1.8.5"
+  gem 'progress_bar'
+  gem 'rspec-rails', '~> 2.8.1'
+  gem 'factory_girl_rails' , '~> 3.0.0'
+  gem 'thin'
+  gem "simplecov", :require => false
+  gem "rspec-cells"
+  gem "capybara"
+ #gem "sunspot-rails-tester"
+  gem 'quiet_assets', :path=>"~/vob/github/quiet_assets" #to disable those annoy assets log
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'libnotify'
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'guard-livereload'
+  gem 'yajl-ruby'
+  gem 'launchy'
+  gem 'database_cleaner'
+end
+
+

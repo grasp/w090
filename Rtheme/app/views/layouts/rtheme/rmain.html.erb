@@ -23,7 +23,7 @@
     <%= render "rtheme/common/navbar" %>
   <div class="container">
     <%= render_breadcrumb %>
-    <%= render "rforum/common/feeds" %>
+    <%= render "rtheme/common/feeds" %>
 
     <%= notice_message %>
     <div id="main" class="container-fluid">
@@ -45,7 +45,7 @@
     <script type="text/javascript">app_mobile = true;</script>
   <% end %>
   <%= yield :scripts %>
-  <%= render :partial => "rforum/common/google_analytics"%>
+  <%= render :partial => "rtheme/common/google_analytics"%>
   
 </body>
 </html>

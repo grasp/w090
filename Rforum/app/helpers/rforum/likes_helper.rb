@@ -1,5 +1,6 @@
 # coding: utf-8
-module Rforum::LikesHelper
+module Rforum
+module LikesHelper
   # 收藏功能
   def likeable_tag(likeable)
     return "" if likeable.blank?
@@ -18,4 +19,5 @@ module Rforum::LikesHelper
             'data-state' => state,'data-type' => likeable.class,'data-id' => likeable.id,
             :class => 'likeable', :onclick => "return App.likeable(this);")
   end
+end
 end

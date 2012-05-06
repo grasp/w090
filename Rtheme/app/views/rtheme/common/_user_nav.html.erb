@@ -14,14 +14,14 @@
   <li class="dropdown">
 <!--
     <%= link_to(current_user.login,ruser.user_path(current_user.login), :class => "dropdown-toggle",:"data-toggle"=>"dropdown")%>-->
-       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Hunter <b class="caret"></b></a>
+       <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%=current_user.login%> <b class="caret"></b></a>
     <%= render_list :class => "dropdown-menu" do |li|
       li << link_to(t("menu.my_home_page"), ruser.user_path(current_user.login) )
       unless params[:controller].match(/cpanel/)
         li << link_to(t("menu.edit_account_path"),ruser.edit_user_registration_path)
         li << link_to(t("menu.notes"), rforum.notes_path )
         li << link_to(t("menu.likes"),ruser.likes_user_path(current_user.login))
-        li << link_to(t("menu.cpanel"), "/cpanel") if admin?
+        li << link_to(t("menu.cpanel"), "/rforum/cpanel") if admin?
       end
       li << link_to(t("common.logout"), ruser.destroy_user_session_path )
     end %>

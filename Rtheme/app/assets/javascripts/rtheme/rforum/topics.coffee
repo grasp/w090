@@ -20,7 +20,7 @@ window.Topics =
       title:"插入图片"
       width: 350
       height: 145
-      content: '<iframe src="/photos/tiny_new" frameborder="0" style="width:330px; height:145px;"></iframe>',
+      content: '<iframe src="/rforum/photos/tiny_new" frameborder="0" style="width:330px; height:145px;"></iframe>',
       close_on_body_click : false
     
     $("#add_image").jDialog(opts)
@@ -143,4 +143,4 @@ $(document).ready ->
     if $.inArray(val.login,login_exists) < 0
       login_exists.push(val.login)
       logins.push(val)
-  App.at_replyable("textarea", logins)
+   App.at_replyable("textarea", logins)

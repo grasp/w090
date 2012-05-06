@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
    s.add_dependency "rails-i18n","0.1.8"
   s.add_dependency "jquery-rails", "1.0.16"
   s.add_dependency "rails_autolink", ">= 1.0.4"
-  s.add_dependency "jquery-atwho-rails", "0.1.3"
+  s.add_dependency "jquery-atwho-rails", "0.1.5"
 
 #group :assets do
  # gem 'sass-rails', "  ~> 3.2.3"

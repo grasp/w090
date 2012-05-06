@@ -2,7 +2,8 @@
 class Rforum::TopicsController <Rforum::RforumController
   include Rforum::CellHelper
   include Rforum::NotesHelper
-     include Rforum::Engine.routes.url_helpers
+  include Rforum::LikesHelper
+   #  include Rforum::Engine.routes.url_helpers
 
   load_and_authorize_resource  :only => [:new,:edit,:create,:update,:destroy],:class=>"Rforum::Topic"
 

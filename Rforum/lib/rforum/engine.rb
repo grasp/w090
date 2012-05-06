@@ -75,7 +75,7 @@ module Rforum
     end
 
     initializer 'Rforum::Application.helper' do |app|
-      #ActionView::Base.send :include, Rforum::NotesHelper,Rforum::TopicsHelper,Rforum::LikesHelper
+    ActionView::Base.send :include, Rforum::NotesHelper,Rforum::TopicsHelper,Rforum::LikesHelper,Rforum::NodesHelper#why not recognize helper???hunter
       #  ActionController::Base .send :include,  ApplicationHelper,UsersHelper
     end
     
@@ -96,8 +96,7 @@ module Rforum
     isolate_namespace Rforum
 
 
-    def self.customize_user
-      
+    def self.customize_user      
       Ruser::User.class_eval do
         has_many :topics, :dependent => :destroy,:class_name=>"Rforum::Topic"
         has_many :notes,:class_name=>"Rforum::Note"

@@ -2,6 +2,7 @@
  *= require bootstrap202/bootstrap.css
  *= require jquery/jquery.jdialog
  *= require rtheme/rforum/wikistyle
+ *= require rtheme/rforum/front
  *= require jquery/jquery.chosen
  *= require rtheme/rforum/highlight
  *= require social-share-button
@@ -10,11 +11,12 @@
  *= require_self
  *= require rtheme.css
 
+
  */
 html {
   width: 100%;
   height: 100%;
-  background:#eee image-url('bg.png') bottom left repeat;
+  background:#eee image-url('rtheme/bg.png') bottom left repeat;
 }
 body { background:none;}
 

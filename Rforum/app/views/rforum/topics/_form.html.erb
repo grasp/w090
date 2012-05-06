@@ -1,24 +1,31 @@
-<%= simple_form_for @topic, :wrapper => :inline do |f| %>
-  <fieldset>
+<%= simple_form_for @topic, :wrapper => :inline ,:html => {:class => "form-horizontal"} do |f| %>
+ 
     <legend><%= @topic.new_record? ? t("topics.create_topic") : t("topics.edit_topic") %></legend>
     <%= render "rforum/shared/error_messages", :target => @topic %>  
-    <%= f.input :title do %>
-      <span class="span3">
+
+    <%= f.input t("topics.labeltitle") do %>
+      <span class="span2">
         <%= render_topic_node_select_tag(@topic) %>
       </span>
-      <span class="span6">
+
+      <span class="span4">
         <%= f.text_field :title %>
       </span>
+
     <% end %>
     
-    <div class="edit_tools input">
+    <div class="control-group">
       <%= render "editor_toolbar" %>
-    </div>    
-    <%= f.input :body, :as => :text, :input_html => { :class => "topic_editor closewarning xxlarge", :style => "height:400px" }%>
+    </div>   
 
-    <div class="actions">
-      <%= f.submit t("common.save"), :class => "btn primary", :disable_with => t("common.saving") %>
-      <%= link_to(t("common.cancel"), @topic.id.blank? ? root_path : topic_path(@topic), :class => "btn")%>
+   <div class="control-group">
+    <label class="control-label"> <%=t("topics.labelbody")%>:</label>
+     <div class="controls"> <%=f.text_area :body,:class => "topic_editor closewarning xxlarge", :style => "height:400px"%>   </div>
     </div>
-  </fieldset>
+
+   <div class="form-actions">
+      <%= f.submit t("common.save"), :class => "btn btn-primary", :disable_with => t("common.saving") %>
+      <%= link_to(t("common.cancel"), @topic.id.blank? ? root_path : topic_path(@topic), :class => "btn btn-default")%>
+    </div>
+
 <% end %>

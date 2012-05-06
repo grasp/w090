@@ -39,3 +39,5 @@
     labels:
       stock_cargo:
         Big cate: '货物大类'
+  tab:
+    BigcargoCategory2: '货物小类'

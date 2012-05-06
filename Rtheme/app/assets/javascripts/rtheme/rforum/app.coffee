@@ -57,7 +57,7 @@ window.App =
       
   initForDesktopView : () ->
     return if typeof(app_mobile) != "undefined"
-    $("a[rel=twipsy]").twipsy({ live: true })
+   #$("a[rel=twipsy]").twipsy({ live: true })
     $("a[rel=popover]").popover
       live: true
       html: true
