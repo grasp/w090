@@ -1,14 +1,14 @@
 defaults: &defaults
-  app_name: "w090"
-  foot_html: "&copy; w090."
+  #app_name: "w090"
+  #foot_html: "&copy; w090."
   domain: "127.0.0.1:3000"    
   admin_emails: 
     - "hunter.wxhu@gmail.com"
-  google_analytics_key: ""
-  upload_url: "http://w090-dev.b0.upaiyun.com"
-  upyun_username: "test"
-  upyun_password: "123123"
-  upyun_bucket: "w090-files-dev"
+  google_analytics_key: "UA-30743125-1"
+  upload_url: "http://w090-image.b0.upaiyun.com"
+  upyun_username: "hunter"
+  upyun_password: "yiyinyiyang123#"
+  upyun_bucket: "w090-image"
   google_group_email: "w090.master@w090.com"
   email_sender: 'w090.master@w090.com'
   aws_access_key_id: ''

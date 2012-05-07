@@ -8,6 +8,7 @@ module Bootstrap
 
 
     def render_page_title
+      raise 
       title = @page_title ? "#{SITE_NAME} | #{@page_title}" : SITE_NAME rescue "SITE_NAME"
       content_tag("title", title, nil, false)
     end

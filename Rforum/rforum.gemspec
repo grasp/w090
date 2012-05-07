@@ -75,7 +75,7 @@ Gem::Specification.new do |s|
 # YAML 配置信息
   s.add_dependency  "settingslogic", "~> 2.0.6"
 
-
+s.add_dependency "cells", "~>3.8.3"
 
 # 队列
   s.add_dependency  "resque", "~> 1.20.0"#, :require => "resque/server"

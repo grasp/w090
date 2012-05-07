@@ -10,10 +10,12 @@
     <meta content='True' name='HandheldFriendly' />
     <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
   <% end %>
+
   <meta name="keywords" content="<%= @meta_keywords %>" />
   <meta name="description" content="<%= @meta_description %>" />
   <meta charset='utf-8'>
-  <link rel="shortcut icon" href="<%= asset_path("rtheme/big_logo.png") %>" /> 
+  <link rel="shortcut icon" href="<%= asset_path("rtheme/w090-truck.png") %>" /> 
+
   <%= csrf_meta_tag %>
   <%= auto_discovery_link_tag(:rss,rforum.feed_topics_url,:title => '订阅最新帖') %>
   <%= yield :node_feed_link %>

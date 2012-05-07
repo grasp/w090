@@ -10,14 +10,14 @@ require 'application_helper_common' #from bootstrap-rails of xdite of ruby-china
 
 module Rtheme
   class Engine < ::Rails::Engine
-    isolate_namespace Rtheme
+   
 
         #load all helper, otherwise will cover by parent app with same name
     initializer 'Rtheme::ApplicationController' do |app|
-      ActionView::Base.send :include, Bootstrap::Breadcrumb::Helpers
-      ActionView::Base.send :include, Bootstrap::Breadcrumb::InstanceMethods
-      ActionView::Base.send :include, Bootstrap::Helper
-      ActionView::Base.send :include, ApplicationHelperCommon
+       ActionView::Base.send :include, Bootstrap::Breadcrumb::Helpers
+       ActionView::Base.send :include, Bootstrap::Breadcrumb::InstanceMethods
+       ActionView::Base.send :include, Bootstrap::Helper
+       ActionView::Base.send :include, ApplicationHelperCommon
         ActionController::Base .send :include,  Bootstrap::Breadcrumb::Helpers
         ActionController::Base .send :include,  Bootstrap::Helper
         ActionController::Base .send :include,  Bootstrap::Breadcrumb::InstanceMethods
@@ -29,6 +29,9 @@ module Rtheme
     app.config.assets.paths += ["#{config.root}/vendor/assets/javascripts/jquery172"]
     app.config.assets.paths += ["#{config.root}/vendor/assets/images/bootstrap202"]
     end
-    
+
+   #why not work? each time did not load change
+    config.autoload_paths << File.expand_path("#{config.root}/lib", __FILE__) #this could be bug of rails engine?   
+     isolate_namespace Rtheme
   end
 end

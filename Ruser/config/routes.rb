@@ -5,7 +5,7 @@ Ruser::Engine.routes.draw do
       module: :devise,
       :registrations => "ruser/account",
       :sessions=>"ruser/rsessions",
-       :passwords=>"ruser/rpasswords",
+      :passwords=>"ruser/rpasswords",
       :omniauth_callbacks => "ruser/user/omniauth_callbacks",
     } #do
       get "ruser/account/update_private_token" => "account#update_private_token", :as => :update_private_token_account
@@ -15,8 +15,7 @@ Ruser::Engine.routes.draw do
 
     match "users/location/:id", :to => "users#location", :as => :location_users
   
-    resources :users
-       
+    resources :users       
       resources :users do
        member do
         get :topics

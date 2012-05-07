@@ -15,9 +15,18 @@
           <div class="clearfix">
             <%= f.label t("users.edit_on_gravatar") %>
             <div class="input">
+              <%= image_tag(resource.avatar_url) if resource.avatar? %>
+              <%#= f.file_field :avatar %>
+              <%= f.hidden_field :avatar_cache %>
               <%= f.file_field :avatar %>
+              <label>
+                <%= f.check_box :remove_avatar %>
+                Remove avatar
+              </label>
             </div>
           </div>
+
+
           <div class="clearfix">
            <%= f.label t("users.email") %>
             <div class="input">

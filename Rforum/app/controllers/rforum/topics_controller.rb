@@ -3,7 +3,6 @@ class Rforum::TopicsController <Rforum::RforumController
   include Rforum::CellHelper
   include Rforum::NotesHelper
   include Rforum::LikesHelper
-   #  include Rforum::Engine.routes.url_helpers
 
   load_and_authorize_resource  :only => [:new,:edit,:create,:update,:destroy],:class=>"Rforum::Topic"
 
@@ -12,11 +11,12 @@ class Rforum::TopicsController <Rforum::RforumController
   before_filter :init_base_breadcrumb
 
   def index
+    @suggest_topics = Rforum::Topic.suggest.limit(5)
     @topics = Rforum::Topic.last_actived.fields_for_list.limit(15).includes(:user)
     @sections = Rforum::Section.all
     @hot_locations = Ruser::Location.hot.limit(12) #ugly code 
     @suggest_topics = Rforum::Topic.suggest.limit(5)
-    set_seo_meta("","#{Rforum::Setting.app_name}#{t("menu.topics")}")
+    set_seo_meta("#{t("menu.topics")}","#{Rforum::Setting.app_name}#{t("menu.topics")}")
     drop_breadcrumb(t("topics.hot_topic"),:use_route => :rforum)
     #render :stream => true
   end

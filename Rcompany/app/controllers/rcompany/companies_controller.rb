@@ -31,6 +31,7 @@ class CompaniesController < Rcompany::ApplicationController
    drop_breadcrumb(t("companycommon.yellowpage"))
    @companies = Company.desc(:created_at).paginate(:page=>params[:page]||1,:per_page=>25)
   # @companies=@companies.to_a
+    set_seo_meta(t("companycommon.yellowpage"),"#{Setting.app_name}#{t("companycommon.yellowpage")}")
   end
 
    def search_province
@@ -40,10 +41,12 @@ class CompaniesController < Rcompany::ApplicationController
       @province=Rcity::Province.where(:code=>params[:province_id]).first      
       @region_list=@province.regions
       drop_breadcrumb(t("companycommon.yellowpage"))
+      set_seo_meta("#{@province.name}"+t("companycommon.yellowpage"),"#{Setting.app_name}#{t("companycommon.yellowpage")}")
   end
 
   def search_region
       drop_breadcrumb(t("companycommon.yellowpage"))
+
       @province=Rcity::Province.where(:code=>params[:region_id].slice(0,2)+"0000000000").first
       @region=Rcity::Region.where(:code=>params[:region_id].slice(0,4)+"00000000").first
       @city_list=@region.chengs
@@ -51,6 +54,7 @@ class CompaniesController < Rcompany::ApplicationController
       next_region=params[:region_id].to_i+100000000 
       @companies = Company.where(:cityc.gte=>params[:region_id].to_s,:cityc.lt=> next_region.to_s).desc(:created_at)
       .paginate(:page=>params[:page]||1,:per_page=>25)
+      set_seo_meta("#{@province.name}#{@region.name}"+t("companycommon.yellowpage"),"#{Setting.app_name}#{t("companycommon.yellowpage")}")
   end
 
   def search_cheng
@@ -61,13 +65,15 @@ class CompaniesController < Rcompany::ApplicationController
       @region_list=@province.regions  
       @companies = Company.any_of(:cityc=>params[:cheng_id].to_s).desc(:created_at)
       .paginate(:page=>params[:page]||1,:per_page=>25)
-      
+       set_seo_meta("#{@region.name}#{@cheng.name}"+t("companycommon.yellowpage"),"#{Setting.app_name}#{t("companycommon.yellowpage")}")
       drop_breadcrumb(t("companycommon.yellowpage"))
   end
 
   
   def index
-   drop_breadcrumb(t("companies.mycompany"))
+  # drop_breadcrumb(t("companycommon.yellowpage"))
+   set_seo_meta(t("companycommon.yellowpage"),"#{Setting.app_name}#{t("companycommon.yellowpage")}")
+   drop_breadcrumb(t("topics.hot_topic"),:use_route => :rforum)
    @companies=current_user.company
 
     respond_to do |format|
@@ -80,6 +86,7 @@ class CompaniesController < Rcompany::ApplicationController
   # GET /companies/1.xml
   def show
     @company = Company.find(params[:id])
+    set_seo_meta("#{@company.name}","#{Setting.app_name}#{t("companycommon.yellowpage")}")
     drop_breadcrumb(t("companies.mycompany"))
     respond_to do |format|
       format.html # new.html.erb

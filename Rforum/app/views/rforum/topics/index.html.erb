@@ -24,14 +24,14 @@
       <%#= render_cell :topics, :index_sections %>
       <%#= render_cell :topics, :index_locations %>
         <%= render "rforum/topics/cell/index_sections" %>
-       <%= render "rforum/topics/cell/index_locations"%>
+       <%#= render "rforum/topics/cell/index_locations"%>
     <% end %>
 
-    <% if !@node.blank? %>
-      <% content_for :node_feed_link do %>
-        <%= auto_discovery_link_tag(:rss, feed_node_topics_url, :title => "#{@node.name}節點最新話題") %>
-      <% end %>
-    <% end %>
+    <% #if !@node.blank? %>
+      <% #content_for :node_feed_link do %>
+        <%#= auto_discovery_link_tag(:rss, feed_node_topics_url, :title => "#{@node.name}節點最新話題") %>
+      <% #end %>
+    <%# end %>
 
 </div>
 

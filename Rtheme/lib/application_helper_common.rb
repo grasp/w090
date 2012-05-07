@@ -32,7 +32,7 @@ module ApplicationHelperCommon
   end
 
   def render_page_title
-    title = @page_title ? "#{@page_title} | #{SITE_NAME}" : SITE_NAME rescue "SITE_NAME"
+    title = @page_title ? "#{@page_title} | #{Setting.app_name}" : Setting.app_name rescue "#{Setting.app_name}"
     content_tag("title", title, nil, false)
   end
 

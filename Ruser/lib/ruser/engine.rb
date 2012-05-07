@@ -57,17 +57,16 @@ require "omniauth-twitter"#, "~> 0.0.7"
 #require "omniauth-douban"
 
 require 'social-share-button'
-
 require 'rtheme'
-
 
 module Ruser
   class Engine < ::Rails::Engine
-    config.autoload_paths << File.expand_path("#{config.root}/app/helpers/ruser", __FILE__)
+
+   
    
     #load all helper, otherwise will cover by parent app with same name
     initializer 'Ruser::Application.helper,Ruser::User.helper,Ruser::ApplicationController' do |app|
-      ActionView::Base.send :include,Ruser::UsersHelper
+       ActionView::Base.send :include,Ruser::UsersHelper
      # ActionView::Base.send :include, Bootstrap::Breadcrumb::Helpers
         ActionController::Base .send :include,  ApplicationHelper,UsersHelper
     end
@@ -75,12 +74,12 @@ module Ruser
     
     config.autoload_paths += %W(#{config.root}/uploaders)
     config.autoload_paths += %W(#{config.root}/lib)
+    config.autoload_paths << File.expand_path("#{config.root}/app/helpers/ruser", __FILE__) #this could be bug of rails?   
 
     config.time_zone = 'Beijing'
     config.i18n.default_locale = "zh-CN"
-    #   config.i18n.load_path += Dir[config.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.load_path += Dir[config.root.join('locales', '*.{rb,yml}').to_s]
-     config.encoding = "utf-8"
+    config.encoding = "utf-8"
 
     config.generators do |g|
       g.test_framework :rspec
@@ -88,7 +87,8 @@ module Ruser
     end
     
     config.to_prepare {
-      Devise::Mailer.layout "mailer"      
+      Devise::Mailer.layout "mailer"   
+
     }
 
     isolate_namespace Ruser

@@ -28,6 +28,9 @@ require "pygments.rb"
 # YAML 配置信息
 require "settingslogic"
 
+
+require "cell"
+
 # 队列
 require "resque/server"
 require "resque_mailer"

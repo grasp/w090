@@ -1,5 +1,6 @@
 # coding: utf-8
-class Rforum::Topic
+module Rforum
+class Topic
   include Mongoid::Document
   include Mongoid::Timestamps
   include Rforum::Mongoid::BaseModel
@@ -100,4 +101,5 @@ class Rforum::Topic
     self.update_attribute(:who_deleted,user.login)
     self.destroy
   end
+end
 end
