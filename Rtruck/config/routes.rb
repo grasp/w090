@@ -1,6 +1,6 @@
 Rtruck::Engine.routes.draw do
   get "home/root"
-  root :to => "home#root"
+
   match "trucks/shownol/:id"=>"trucks#shownol", :via => :get,:as=>"truckswhownol"
   match "trucks/search" =>'trucks#search', :via => :get,:as=>"truckssearch"
   match "stock_trucks/concern" =>'stock_trucks#concern', :via => :get,:as=>"stock_trucks_concern"
@@ -15,4 +15,5 @@ Rtruck::Engine.routes.draw do
    resources :stock_trucks
    resources :trucks
    resources :truck_groups
+     root :to => "trucks#search"
 end

@@ -1,23 +1,23 @@
 PATH
-  remote: /home/hunter/vob/w090/Rcargo
+  remote: /home/netmon/vob/w090/Rcargo
   specs:
     rcargo (0.0.1)
       rails (~> 3.2.3)
 
 PATH
-  remote: /home/hunter/vob/w090/Rcity
+  remote: /home/netmon/vob/w090/Rcity
   specs:
     rcity (0.0.1)
       rails (~> 3.2.3)
 
 PATH
-  remote: /home/hunter/vob/w090/Rcompany
+  remote: /home/netmon/vob/w090/Rcompany
   specs:
     rcompany (0.0.1)
       rails (~> 3.2.3)
 
 PATH
-  remote: /home/hunter/vob/w090/Rforum
+  remote: /home/netmon/vob/w090/Rforum
   specs:
     rforum (0.0.1)
       aws-ses (~> 0.4.3)
@@ -58,7 +58,7 @@ PATH
       will_paginate_mongoid (~> 1.0.2)
 
 PATH
-  remote: /home/hunter/vob/w090/Rtheme
+  remote: /home/netmon/vob/w090/Rtheme
   specs:
     rtheme (0.0.1)
       bootstrap-will_paginate (~> 0.0.7)
@@ -69,13 +69,13 @@ PATH
       will_paginate_mongoid (~> 1.0.2)
 
 PATH
-  remote: /home/hunter/vob/w090/Rtruck
+  remote: /home/netmon/vob/w090/Rtruck
   specs:
     rtruck (0.0.1)
       rails (~> 3.2.3)
 
 PATH
-  remote: /home/hunter/vob/w090/Ruser
+  remote: /home/netmon/vob/w090/Ruser
   specs:
     ruser (0.0.1)
       bson_ext (~> 1.5.2)
@@ -259,7 +259,7 @@ GEM
     hashie (1.2.0)
     highline (1.6.11)
     hike (1.2.1)
-    hoe (3.0.4)
+    hoe (3.0.5)
       rake (~> 0.8)
     hpricot (0.8.6)
     httpauth (0.1)

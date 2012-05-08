@@ -26,6 +26,7 @@ Rcargo::Engine.routes.draw do
     get "nav"  
   end
 
- root :to => "home#root"
+ #root :to => "home#root"
+ root :to => "cargos#search"
 
 end

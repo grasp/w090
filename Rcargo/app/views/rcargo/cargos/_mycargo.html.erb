@@ -48,5 +48,7 @@
     <% end %>
       </table>
       <%else%>
-<p>没有正在配车的货源,<a class="btn btn-primary" href="/users/stock_cargos"><b>马上创建货源</b></a></p>
-  <% end %>
+<p>没有正在配车的货源,
+  <%=link_to "去库存货源发布",stock_cargos_path,:class=>"btn btn-primary"%>
+</p>
+<%end %>

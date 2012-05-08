@@ -44,6 +44,7 @@ class CompaniesController < Rcompany::ApplicationController
       set_seo_meta("#{@province.name}"+t("companycommon.yellowpage"),"#{Setting.app_name}#{t("companycommon.yellowpage")}")
   end
 
+
   def search_region
       drop_breadcrumb(t("companycommon.yellowpage"))
 

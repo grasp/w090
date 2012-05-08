@@ -1,5 +1,6 @@
 # coding: utf-8
 class AvatarUploader < BaseUploader
+  storage :upyun
   version :normal do
     process :resize_to_fill => [48, 48]
   end
