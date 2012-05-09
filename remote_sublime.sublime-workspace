@@ -7,6 +7,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "Rforum/config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 2023,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -56,9 +64,22 @@
 	},
 	"file_history":
 	[
+		"/Y/w090/Ruser/app/helpers/ruser/users_helper.rb",
+		"/Y/w090/Ruser/config/initializers/carrierwave.rb",
+		"/Y/w090/Ruser/app/uploaders/base_uploader.rb",
+		"/Y/w090/Ruser/app/uploaders/avatar_uploader.rb",
+		"/Y/w090/Rcargo/config/routes.rb",
+		"/Y/w090/Rtruck/config/routes.rb",
+		"/Y/w090/Rcompany/config/routes.rb",
+		"/Y/w090/Rtheme/app/views/rtheme/common/_header_nav.erb",
+		"/Y/w090/Rcargo/app/views/rcargo/cargos/_mycargo.html.erb",
+		"/Y/w090/Rforum/app/views/rforum/topics/_sidebar_for_topic_index.html.erb",
+		"/Y/w090/Rtruck/app/views/rtruck/trucks/_mytruck.html.erb",
+		"/Y/github/ruby-china/db/schema.rb",
+		"/Y/w090/Ruser/Gemfile",
+		"/Y/w090/remote_sublime.sublime-project",
 		"/Y/w090/Rtheme/lib/rtheme/engine.rb",
 		"/Y/w090/Ruser/lib/ruser/engine.rb",
-		"/Y/w090/Ruser/app/helpers/ruser/users_helper.rb",
 		"/Y/w090/Rtheme/lib/application_helper_common.rb",
 		"/Y/w090/Rforum/app/controllers/rforum/topics_controller.rb",
 		"/Y/w090/Rcompany/app/controllers/rcompany/companies_controller.rb",
@@ -170,20 +191,7 @@
 		"/home/hunter/vob/w090/Rcompany/app/controllers/rcompany/home_controller.rb",
 		"/home/hunter/vob/w090/Rcompany/app/controllers/rcompany/application_controller.rb",
 		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rcargo/application.coffee",
-		"/home/hunter/vob/w090/Rforum/app/controllers/rforum/cpanel/application_controller.rb",
-		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/search_cheng.html.erb",
-		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/search_region.html.erb",
-		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/_region_navi.html.erb",
-		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/_cheng_navi.html.erb",
-		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/cargos/_cheng_navi.html.erb",
-		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/edit.html.erb",
-		"/home/hunter/vob/w090/Rtheme/app/views/rtheme/common/_navbar.html.erb",
-		"/home/hunter/vob/w090/Rtheme/app/views/rtheme/common/_user_nav.html.erb",
-		"/home/hunter/vob/w090/Rmain/config/routes.rb",
-		"/home/hunter/vob/w090/Rtheme/app/views/rtheme/common/_header_nav2.html.erb",
-		"/home/hunter/vob/w090/Rtruck/spec/dummy/config/routes.rb",
-		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/home/root.html.erb",
-		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/home/_rtruck_nav.html.erb"
+		"/home/hunter/vob/w090/Rforum/app/controllers/rforum/cpanel/application_controller.rb"
 	],
 	"find":
 	{
@@ -191,9 +199,11 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 108.0,
 		"where_history":
 		[
+			"Y:\\w090",
+			"Y:/vob/w090",
 			"/home/hunter/vob/w090",
 			"/home/hunter/vob/w090/Rforum",
 			"/home/hunter/vob/w090",
@@ -223,6 +233,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"*.yml",
+			"*,yml",
+			"site_config",
+			"avatar",
+			"photos",
 			"SITE_NAME",
 			"def render_page_title",
 			"set_seo_meta",
@@ -345,12 +360,7 @@
 			"simple_form_fo",
 			"quiet_assets.rb",
 			"cpanel_cargo_big_categories",
-			"Cpanel::CargoBigCategory",
-			"notifications",
-			"CitiesHelper",
-			"Cargo::CitiesHelper",
-			"require_user",
-			"social-share-button"
+			"Cpanel::CargoBigCategory"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -406,6 +416,34 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Rforum/config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 2023,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1851,
+								1853
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1742.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -629,6 +667,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 260.0,
+	"side_bar_width": 385.0,
 	"status_bar_visible": true
 }

@@ -1,3 +1,7 @@
+require 'pathname'
+pn = Pathname.new(File.dirname(__FILE__))
+vob_path=pn.parent #do we have one line solution?
+
 source "http://ruby.taobao.org"
 
 # Declare your gem's dependencies in ruser.gemspec.
@@ -47,8 +51,8 @@ gem 'carrierwave-upyun', '0.1.3'
 gem 'mini_magick','3.3'
 
 # Mongoid 辅助插件
-gem "mongoid", "2.4.3"
-gem "bson_ext", "1.5.2"
+gem "mongoid", "~>2.4.8"
+gem "bson_ext", "~>1.6.2"
 gem 'mongo-rails-instrumentation','0.2.4'
 gem 'mongoid_auto_increment_id', "0.4.0"
 gem 'mongoid_rails_migrations', '~> 0.0.14'
@@ -80,13 +84,20 @@ gem "omniauth-twitter", "~> 0.0.7"
 #gem "omniauth-douban", :git => "git://github.com/ballantyne/omniauth-douban.git"
 #gem "omniauth-douban", :git => "http://github.com/ballantyne/omniauth-douban.git"
 
+
+#add Rtheme into Gem file
+group :production do 
+   gem "rtheme" ,:path=>File.join(vob_path,"Rtheme") #need change to gem path
+end
+
 group :development, :test do
+  gem "rtheme" ,:path=>File.join(vob_path,"Rtheme") #development use local path
   gem 'capistrano', '2.9.0'
   gem 'chunky_png', "1.2.5"
   gem "memcache-client", "1.8.5"
   gem 'progress_bar'
   gem 'rspec-rails', '~> 2.8.1'
- gem 'factory_girl_rails'
+  gem 'factory_girl_rails'
   gem 'thin'
   gem "simplecov", :require => false
   gem "rspec-cells"
