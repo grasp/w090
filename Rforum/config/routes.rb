@@ -2,7 +2,6 @@ Rforum::Engine.routes.draw do
   
   root :to => "rforum#nodenav"
   # require 'api'
-
   
   resources :sites
 
@@ -48,6 +47,7 @@ Rforum::Engine.routes.draw do
       get :tiny_new
     end
   end
+
   resources :likes
 
   match "/search" => "search#index", :as => :search

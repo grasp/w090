@@ -34,5 +34,11 @@ Rake::TestTask.new(:test) do |t|
   t.verbose = false
 end
 
+namespace :ruser do
+desc "config for ruser application engine"
+task :config do
+  ruser_site_config
+end
+end
 
 task :default => :test

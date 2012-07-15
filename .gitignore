@@ -54,5 +54,6 @@ Rmain/spec/dummy/db/*.sqlite3
 Rmain/spec/dummy/log/*.log
 Rmain/spec/dummy/tmp/
 Rmain/spec/dummy/.sass-cache
+Rmain/solr/
 
 

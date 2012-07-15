@@ -3,11 +3,14 @@ require 'carrierwave/processing/mini_magick'
 
 class BaseUploader < CarrierWave::Uploader::Base
   include CarrierWave::MiniMagick
-
+  MiniMagick.processor = :gm  #solution from http://ruby-china.org/topics/2369
+  
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
   def store_dir
-    "#{model.class.to_s.underscore}"
+   # "#{model.class.to_s.underscore}"
+   "#{Rails.root}/public"
+
   end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:

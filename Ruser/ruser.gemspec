@@ -36,7 +36,7 @@ s.add_dependency "social-share-button", "~> 0.0.3"
 
 # Mongoid 辅助插件
   s.add_dependency "mongoid", "~>2.4.8"
-  s.add_dependency "bson_ext", "~>1.5.2"
+  s.add_dependency "bson_ext", "~>1.6.2"
   s.add_dependency 'mongo-rails-instrumentation','0.2.4'
   s.add_dependency 'mongoid_auto_increment_id', "0.4.0"
   s.add_dependency 'mongoid_rails_migrations', '~> 0.0.14'
@@ -68,7 +68,7 @@ s.add_dependency "social-share-button", "~> 0.0.3"
 #gem "omniauth-douban", :git => "git://github.com/ballantyne/omniauth-douban.git"
  # s.add_dependency "omniauth-douban"#, :git => "http://github.com/ballantyne/omniauth-douban.git"
 
-  s.add_dependency "watir-webdriver"
+ # s.add_dependency "watir-webdriver"
 
   s.add_dependency "rails-i18n","~>0.1.8"
   s.add_dependency "rails_autolink","~>1.0.4"

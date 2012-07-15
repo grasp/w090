@@ -7,6 +7,7 @@ Rcompany::Engine.routes.draw do
     match "companies/search/region/:region_id"  =>'companies#search_region',:via => :get,:as=>"companies_region_search"
     match "companies/search/city/:cheng_id"  =>'companies#search_cheng',:via => :get,:as=>"companies_cheng_search"
 
-	root :to => "home#root"
+	#root :to => "home#root"
+	root :to => "companies#search"
 	resources :companies
 	end

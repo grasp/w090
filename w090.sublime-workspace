@@ -7,6 +7,7 @@
 	},
 	"buffers":
 	[
+<<<<<<< HEAD
 		{
 			"settings":
 			{
@@ -49,6 +50,8 @@
 				"line_ending": "Unix"
 			}
 		}
+=======
+>>>>>>> 2ec2e4ced972d83f85888d35e8edb5bfb2bc09fc
 	],
 	"build_system": "",
 	"command_palette":
@@ -94,6 +97,7 @@
 	},
 	"file_history":
 	[
+<<<<<<< HEAD
 		"/home/hunter/vob/caiji/app/helpers/caiji_helper.rb",
 		"/home/hunter/vob/w090/Rcargo/bin/cron_init.rb",
 		"/home/hunter/vob/w090/Rcargo/bin/tf56/tf56_cargo_cron.rb",
@@ -110,6 +114,18 @@
 		"/home/hunter/vob/w090/Rcargo/bin/tf56_cargo.log",
 		"/home/hunter/vob/w090/w090.sublime-workspace",
 		"/home/hunter/vob/w090/Ruser/app/views/ruser/account/edit.html.erb",
+=======
+		"/Y/w090/Rtheme/lib/rtheme/engine.rb",
+		"/Y/w090/Ruser/lib/ruser/engine.rb",
+		"/Y/w090/Ruser/app/helpers/ruser/users_helper.rb",
+		"/Y/w090/Rtheme/lib/application_helper_common.rb",
+		"/Y/w090/Rforum/app/controllers/rforum/topics_controller.rb",
+		"/Y/w090/Rcompany/app/controllers/rcompany/companies_controller.rb",
+		"/home/hunter/vob/w090/Rcompany/config/locales/menu.zh-CN.yml",
+		"/home/hunter/vob/w090/Rtheme/lib/application_helper_common.rb",
+		"/home/hunter/vob/w090/Rmain/config/config.yml",
+		"/home/hunter/vob/w090/Rtheme/lib/helper.rb",
+>>>>>>> 2ec2e4ced972d83f85888d35e8edb5bfb2bc09fc
 		"/home/hunter/vob/w090/Ruser/app/helpers/ruser/users_helper.rb",
 		"/home/hunter/vob/w090/Rforum/config/locales/users.zh-CN.yml",
 		"/home/hunter/vob/caiji/bin/cron/cargo_cron.rb",
@@ -209,6 +225,7 @@
 		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/_trucknavi.html.erb",
 		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/search.html.erb",
 		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/_searchlist.html.erb",
+<<<<<<< HEAD
 		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/_trucklist.html.erb",
 		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/home/_rtruck_nav.html.erb",
 		"/home/hunter/vob/github/g00/config/routes.rb",
@@ -222,6 +239,27 @@
 		"/home/hunter/vob/w090/Rtruck/lib/rtruck/engine.rb",
 		"/home/hunter/vob/w090/Rtruck/app/helpers/rtruck/trucks_helper.rb",
 		"/home/hunter/vob/w090/Rtruck/app/controllers/rtruck/truck_groups_controller.rb"
+=======
+		"/home/hunter/vob/w090/Rtruck/config/routes.rb",
+		"/home/hunter/vob/w090/Rtruck/app/controllers/rtruck/trucks_controller.rb",
+		"/home/hunter/vob/w090/Rcompany/app/controllers/rcompany/home_controller.rb",
+		"/home/hunter/vob/w090/Rcompany/app/controllers/rcompany/application_controller.rb",
+		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rcargo/application.coffee",
+		"/home/hunter/vob/w090/Rforum/app/controllers/rforum/cpanel/application_controller.rb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/search_cheng.html.erb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/search_region.html.erb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/_region_navi.html.erb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/_cheng_navi.html.erb",
+		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/cargos/_cheng_navi.html.erb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/edit.html.erb",
+		"/home/hunter/vob/w090/Rtheme/app/views/rtheme/common/_navbar.html.erb",
+		"/home/hunter/vob/w090/Rtheme/app/views/rtheme/common/_user_nav.html.erb",
+		"/home/hunter/vob/w090/Rmain/config/routes.rb",
+		"/home/hunter/vob/w090/Rtheme/app/views/rtheme/common/_header_nav2.html.erb",
+		"/home/hunter/vob/w090/Rtruck/spec/dummy/config/routes.rb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/home/root.html.erb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/home/_rtruck_nav.html.erb"
+>>>>>>> 2ec2e4ced972d83f85888d35e8edb5bfb2bc09fc
 	],
 	"find":
 	{
@@ -229,7 +267,11 @@
 	},
 	"find_in_files":
 	{
+<<<<<<< HEAD
 		"height": 93.0,
+=======
+		"height": 0.0,
+>>>>>>> 2ec2e4ced972d83f85888d35e8edb5bfb2bc09fc
 		"where_history":
 		[
 			"/home/hunter/vob/w090",
@@ -423,6 +465,7 @@
 	"groups":
 	[
 		{
+<<<<<<< HEAD
 			"selected": 4,
 			"sheets":
 			[
@@ -678,6 +721,10 @@
 					},
 					"type": "text"
 				}
+=======
+			"sheets":
+			[
+>>>>>>> 2ec2e4ced972d83f85888d35e8edb5bfb2bc09fc
 			]
 		}
 	],
@@ -865,6 +912,10 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
+<<<<<<< HEAD
 	"side_bar_width": 312.0,
+=======
+	"side_bar_width": 260.0,
+>>>>>>> 2ec2e4ced972d83f85888d35e8edb5bfb2bc09fc
 	"status_bar_visible": true
 }

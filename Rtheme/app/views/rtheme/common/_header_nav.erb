@@ -5,9 +5,9 @@
 
 <%= render_list :class => "nav" do |li|
 li << link_to(t("menu.topics"), rforum.topics_path)
-li << link_to(t("menu.cargos"), rcargo.root_path)
-li << link_to(t("menu.trucks"), rtruck.root_path)
-li << link_to(t("menu.companies"), rcompany.root_path)
+li << link_to(t("menu.cargos"), rcargo.cargossearch_path)
+li << link_to(t("menu.trucks"), rtruck.truckssearch_path)
+li << link_to(t("menu.companies"), rcompany.companiessearch_path)
 li << link_to(t("menu.users"), ruser.users_path)
 
 end %>
