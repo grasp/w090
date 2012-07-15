@@ -1,5 +1,6 @@
 # coding: utf-8
-class  Rcargo::Cargo
+module Rcargo
+class  Cargo
   include Mongoid::Document
   include Mongoid::Timestamps
   include Rcity::ChengsHelper
@@ -34,7 +35,7 @@ class  Rcargo::Cargo
   field :tcityc, :type=>String  
 
   #below is for phone concern, we need add this two field when we create cargo
-  field :mphone, :type=>String
+  field :mphone, :type=>String #we can index this phone for his statistic
   field :fphone, :type=>String
   
   # from site
@@ -51,8 +52,8 @@ class  Rcargo::Cargo
   belongs_to :user,:class_name=>"Ruser::User"
   belongs_to :stock_cargo,:class_name=>"Rcargo::StockCargo"
   
-    #is contact information should be inside Ruser, right?
-  #field :contact, :type=>String
+  #is contact information should be inside Ruser, right?
+  field :contact, :type=>String #this is for raw display of grased data
   #field :user_contact_id
   
  # field :company
@@ -77,21 +78,23 @@ class  Rcargo::Cargo
 
   #field :stock_cargo_id
   
-  validates_presence_of :fcityc,:tcityc   #remove cate_name, could be empty from grasp
+  #validates_presence_of :fcityc,:tcityc   #remove cate_name, could be empty from grasp
+  validates_presence_of :fcityn,:tcityn   #remove cate_name, could be empty from grasp
 
-  index ([[:fite,Mongo::ASCENDING],[:updated_at,Mongo::ASCENDING],[:status,Mongo::ASCENDING],[:fcityc,Mongo::ASCENDING],[:tcityc,Mongo::ASCENDING]])
+  index ([[:fsite,Mongo::ASCENDING],[:updated_at,Mongo::ASCENDING],[:status,Mongo::ASCENDING],[:fcityc,Mongo::ASCENDING],[:tcityc,Mongo::ASCENDING]])
   
  
-  before_create:check_unique
+ before_create:check_unique
 
 #  after_create:notify,:expire
 #after_create :expire
   def check_unique
-     repeated=Rcargo::Cargo.where(:name=>self.name,:fcityc=>self.fcityc,:tcityc=>self.tcityc,:user_id=>self.user_id,:status=>"正在配车",
+     repeated=Rcargo::Cargo.where(:name=>self.name,:fcityc=>self.fcityc,:tcityc=>self.tcityc,:ruser_user_id=>self.ruser_user_id,:status=>"正在配车",
      :fsite=>self.fsite).count 
+  #  repeated=Rcargo::Cargo.where(:name=>self.name,:fcityc=>self.fcityc,:tcityc=>self.tcityc,:status=>"正在配车",:fsite=>self.fsite).count 
      # puts "repeated=#{repeated}"
      repeated > 0 ? (return false):(return true)
-end
+  end
 
   def expie222
     begin
@@ -113,4 +116,5 @@ end
   end
   
      
+end
 end

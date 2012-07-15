@@ -1,0 +1,6372 @@
+# Logfile created on 2012-07-15 14:06:41 +0800 by logger.rb/25413
+quzhou cargo cron start successfully on 2012-07-15 14:06:41 +0800!
+quzhou_cargo_helper
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 衢州
+index4= 40.0
+index5= 吨
+index6= 100.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13857032270
+index12= 07-15 12:11
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 零担
+index2= 衢州
+index3= 苍南
+index4= 18.0
+index5= 立方
+index6= 1000.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 3867339
+index12= 07-15 11:57
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330327000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市苍南县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 零担
+index2= 上海
+index3= 衢州
+index4= 3.5
+index5= 吨
+index6= 700.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 3867339
+index12= 07-15 11:57
+index13= 07-15
+one_cargo[:fcityc]=310000000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=上海
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 古田县
+index4= 43.0
+index5= 吨
+index6= 145.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15869096885
+index12= 07-15 11:53
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350922000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建宁德市　古田县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 福鼎市
+index4= 45.0
+index5= 吨
+index6= 120.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15869096885
+index12= 07-15 11:52
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350982000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建宁德市　福鼎市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 温州
+index4= 50.0
+index5= 吨
+index6= 3700.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15869096885
+index12= 07-15 11:51
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 江山市
+index3= 吉林
+index4= 25.0
+index5= 吨
+index6= 15500.0
+index7= 元
+index8= 13.0
+index9= 车
+index10= 
+index11= 15869097418
+index12= 07-15 11:46
+index13= 07-15
+one_cargo[:fcityc]=330881000000
+one_cargo[:tcityc]=220000000000
+one_cargo[:fcityn]=浙江衢州市江山市
+one_cargo[:tcityn]=吉林
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材
+index2= 杭州
+index3= 龙游
+index4= 100.0
+index5= 吨
+index6= 50.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 13705703493
+index12= 07-15 11:46
+index13= 07-15
+one_cargo[:fcityc]=330100000000
+one_cargo[:tcityc]=330825000000
+one_cargo[:fcityn]=浙江杭州市
+one_cargo[:tcityn]=浙江衢州市龙游县
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共458个记录，每页8个，第 5/58页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 设备
+index2= 衢州
+index3= 屏南
+index4= 18.0
+index5= 吨
+index6= 3500.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15068948728
+index12= 07-15 12:23
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350923000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建宁德市　屏南县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 杭州
+index4= 60.0
+index5= 吨
+index6= 60.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 12:23
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江杭州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 化肥到万年
+index2= 衢州
+index3= 江西
+index4= 40.0
+index5= 吨
+index6= 70.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 12:15
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=360000000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=江西
+index0=  
+                  
+                  货物
+                  
+                
+index1= 钙粉
+index2= 玉山
+index3= 余姚
+index4= 45.0
+index5= 吨
+index6= 85.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 15857024408
+index12= 07-15 12:14
+index13= 07-15
+one_cargo[:fcityc]=361123000000
+one_cargo[:tcityc]=330281000000
+one_cargo[:fcityn]=江西上饶市玉山县
+one_cargo[:tcityn]=浙江宁波市余姚市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 丽水
+index4= 45.0
+index5= 吨
+index6= 55.1
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 12:14
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=331100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江丽水市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 原料
+index2= 温州
+index3= 衢州
+index4= 100.0
+index5= 吨
+index6= 45.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 12:13
+index13= 07-15
+one_cargo[:fcityc]=330300000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江温州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 温州
+index4= 50.0
+index5= 吨
+index6= 3750.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 12:12
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 上海
+index3= 衢州
+index4= 40.0
+index5= 吨
+index6= 95.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13857032270
+index12= 07-15 12:12
+index13= 07-15
+one_cargo[:fcityc]=310000000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=上海
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共458个记录，每页8个，第 4/58页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 食品
+index2= 建德
+index3= 柳市
+index4= 27.0
+index5= 吨
+index6= 125.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 13567008852
+index12= 07-15 12:45
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=柳市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 宁波
+index3= 衢州
+index4= 40.0
+index5= 吨
+index6= 2800.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13575667771
+index12= 07-15 12:39
+index13= 07-15
+one_cargo[:fcityc]=330200000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江宁波市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 饮料
+index2= 建德市
+index3= 乐清市
+index4= 27.0
+index5= 吨
+index6= 3400.0
+index7= 元
+index8= 9.6
+index9= 车
+index10= 马上装货急
+index11= 13957018208
+index12= 07-15 12:33
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=330382000000
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=浙江温州市乐清市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 菜
+index2= 衢州
+index3= 宁波
+index4= 5.0
+index5= 吨
+index6= 1100.0
+index7= 元
+index8= 4.0
+index9= 车
+index10= 15869054040
+index11= 13575662158
+index12= 07-15 12:32
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330200000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江宁波市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 杭州
+index4= 60.0
+index5= 吨
+index6= 55.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 12:29
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江杭州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 江山市
+index3= 温州
+index4= 26.0
+index5= 吨
+index6= 3300.0
+index7= 元
+index8= 0.0
+index9= 平板车
+index10= 
+index11= 13735052892
+index12= 07-15 12:29
+index13= 07-15
+one_cargo[:fcityc]=330881000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市江山市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材 随车装
+index2= 衢州
+index3= 南平
+index4= 35.0
+index5= 吨
+index6= 70.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 金淘物流
+index11= 13575659900
+index12= 07-15 12:29
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350700000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建南平市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材 随车装
+index2= 萍乡
+index3= 衢州
+index4= 55.0
+index5= 吨
+index6= 95.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 金淘物流
+index11= 13575659900
+index12= 07-15 12:27
+index13= 07-15
+one_cargo[:fcityc]=360300000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=江西萍乡市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共458个记录，每页8个，第 3/58页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 原料
+index2= 衢州
+index3= 新昌县
+index4= 11.0
+index5= 吨
+index6= 1000.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 4米
+index11= 13511411036
+index12= 07-15 13:14
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330624000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江绍兴市新昌县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 温州
+index4= 50.0
+index5= 吨
+index6= 3600.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15869096885
+index12= 07-15 13:12
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 衢州
+index3= 武汉
+index4= 7.0
+index5= 吨
+index6= 300.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 15857099319 669319
+index12= 07-15 13:08
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=420100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=湖北武汉市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材
+index2= 义乌
+index3= 龙游
+index4= 40.0
+index5= 吨
+index6= 40.0
+index7= 元/吨
+index8= 13.0
+index9= 高栏
+index10= 
+index11= 3863974
+index12= 07-15 13:07
+index13= 07-15
+one_cargo[:fcityc]=330782000000
+one_cargo[:tcityc]=330825000000
+one_cargo[:fcityn]=浙江金华市义乌市
+one_cargo[:tcityn]=浙江衢州市龙游县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 南京
+index3= 衢州
+index4= 25.0
+index5= 吨
+index6= 800.0
+index7= 元
+index8= 13.0
+index9= 半挂车
+index10= 
+index11= 3863974
+index12= 07-15 13:07
+index13= 07-15
+one_cargo[:fcityc]=320100000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=江苏南京市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  空车
+                  
+                
+index1= 
+index2= 衢州
+index3= 温州
+index4= 0.0
+index5= 吨
+index6= 0.0
+index7= 元
+index8= 6.8
+index9= 高栏
+index10= 
+index11= 3863974
+index12= 07-15 13:07
+index13= 07-15
+index0=  
+                  
+                  货物
+                  
+                
+index1= 原料
+index2= 大同
+index3= 宁海
+index4= 50.0
+index5= 吨
+index6= 85.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15857099319 669319
+index12= 07-15 12:54
+index13= 07-15
+one_cargo[:fcityc]=140200000000
+one_cargo[:tcityc]=330226000000
+one_cargo[:fcityn]=山西大同市
+one_cargo[:tcityn]=浙江宁波市宁海县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 铁粉
+index2= 路桥区
+index3= 衢州
+index4= 50.0
+index5= 吨
+index6= 50.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 7778006
+index12= 07-15 12:49
+index13= 07-15
+one_cargo[:fcityc]=331004000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江台州市路桥区
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共458个记录，每页8个，第 2/58页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  空车
+                  
+                
+index1= 上海苏州昆山常熟无锡嘉兴
+index2= 衢州
+index3= 上海
+index4= 1.0
+index5= 辆
+index6= 0.0
+index7= 元
+index8= 9.6
+index9= 厢车
+index10= 需零担
+index11= 05703088588.660000
+index12= 07-15 13:41
+index13= 07-15
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料，明天装
+index2= 杭州
+index3= 衢州
+index4= 37.0
+index5= 吨
+index6= 2400.0
+index7= 元
+index8= 13.0
+index9= 车
+index10= 鹏宇物流
+index11= 15057000499
+index12= 07-15 13:41
+index13= 07-15
+one_cargo[:fcityc]=330100000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江杭州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 粮食
+index2= 开化
+index3= 龙泉
+index4= 25.0
+index5= 吨
+index6= 3000.0
+index7= 元
+index8= 13.0
+index9= 车
+index10= 
+index11= 13575662682
+index12= 07-15 13:32
+index13= 07-15
+one_cargo[:fcityc]=330824000000
+one_cargo[:tcityc]=331181000000
+one_cargo[:fcityn]=浙江衢州市开化县
+one_cargo[:tcityn]=浙江丽水市龙泉市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 饮料
+index2= 建德市
+index3= 磐安县
+index4= 30.3
+index5= 吨
+index6= 95.0
+index7= 元/吨
+index8= 9.6
+index9= 车
+index10= 马上装货急
+index11= 13957018208
+index12= 07-15 13:23
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=330727000000
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=浙江金华市磐安县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 铁粉
+index2= 路桥区
+index3= 衢州
+index4= 52.0
+index5= 吨
+index6= 50.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 7778006
+index12= 07-15 13:20
+index13= 07-15
+one_cargo[:fcityc]=331004000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江台州市路桥区
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 衢州
+index3= 湖北
+index4= 32.0
+index5= 吨
+index6= 210.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 18606707166
+index12= 07-15 13:19
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=420000000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=湖北
+index0=  
+                  
+                  货物
+                  
+                
+index1= 变压器
+index2= 衢州
+index3= 文成
+index4= 10.0
+index5= 吨
+index6= 2000.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13867022084
+index12= 07-15 13:17
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330328000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市文成县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 衢州
+index3= 揭阳
+index4= 40.0
+index5= 吨
+index6= 310.0
+index7= 元/吨
+index8= 17.0
+index9= 平板车
+index10= 马上装货急
+index11= 0570----2357237
+index12= 07-15 13:14
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=445200000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=广东揭阳市
+index0=  
+                    
+                    首页  第一页 下一页 尾 页 共458个记录，每页8个，第 1/58页 
+                    
+fail=4/38 
+one cycle finished on 2012-07-15 14:06:43 +0800,cost=!
+quzhou_cargo_helper
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 上海
+index3= 衢州
+index4= 40.0
+index5= 吨
+index6= 95.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13857032270
+index12= 07-15 12:12
+index13= 07-15
+one_cargo[:fcityc]=310000000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=上海
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 衢州
+index4= 40.0
+index5= 吨
+index6= 100.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13857032270
+index12= 07-15 12:11
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 零担
+index2= 衢州
+index3= 苍南
+index4= 18.0
+index5= 立方
+index6= 1000.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 3867339
+index12= 07-15 11:57
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330327000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市苍南县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 零担
+index2= 上海
+index3= 衢州
+index4= 3.5
+index5= 吨
+index6= 700.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 3867339
+index12= 07-15 11:57
+index13= 07-15
+one_cargo[:fcityc]=310000000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=上海
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 古田县
+index4= 43.0
+index5= 吨
+index6= 145.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15869096885
+index12= 07-15 11:53
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350922000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建宁德市　古田县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 福鼎市
+index4= 45.0
+index5= 吨
+index6= 120.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15869096885
+index12= 07-15 11:52
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350982000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建宁德市　福鼎市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 温州
+index4= 50.0
+index5= 吨
+index6= 3700.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15869096885
+index12= 07-15 11:51
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 江山市
+index3= 吉林
+index4= 25.0
+index5= 吨
+index6= 15500.0
+index7= 元
+index8= 13.0
+index9= 车
+index10= 
+index11= 15869097418
+index12= 07-15 11:46
+index13= 07-15
+one_cargo[:fcityc]=330881000000
+one_cargo[:tcityc]=220000000000
+one_cargo[:fcityn]=浙江衢州市江山市
+one_cargo[:tcityn]=吉林
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共459个记录，每页8个，第 5/58页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材 随车装
+index2= 萍乡
+index3= 衢州
+index4= 55.0
+index5= 吨
+index6= 95.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 金淘物流
+index11= 13575659900
+index12= 07-15 12:27
+index13= 07-15
+one_cargo[:fcityc]=360300000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=江西萍乡市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 设备
+index2= 衢州
+index3= 屏南
+index4= 18.0
+index5= 吨
+index6= 3500.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15068948728
+index12= 07-15 12:23
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350923000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建宁德市　屏南县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 杭州
+index4= 60.0
+index5= 吨
+index6= 60.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 12:23
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江杭州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 化肥到万年
+index2= 衢州
+index3= 江西
+index4= 40.0
+index5= 吨
+index6= 70.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 12:15
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=360000000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=江西
+index0=  
+                  
+                  货物
+                  
+                
+index1= 钙粉
+index2= 玉山
+index3= 余姚
+index4= 45.0
+index5= 吨
+index6= 85.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 15857024408
+index12= 07-15 12:14
+index13= 07-15
+one_cargo[:fcityc]=361123000000
+one_cargo[:tcityc]=330281000000
+one_cargo[:fcityn]=江西上饶市玉山县
+one_cargo[:tcityn]=浙江宁波市余姚市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 丽水
+index4= 45.0
+index5= 吨
+index6= 55.1
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 12:14
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=331100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江丽水市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 原料
+index2= 温州
+index3= 衢州
+index4= 100.0
+index5= 吨
+index6= 45.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 12:13
+index13= 07-15
+one_cargo[:fcityc]=330300000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江温州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 温州
+index4= 50.0
+index5= 吨
+index6= 3750.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 12:12
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共459个记录，每页8个，第 4/58页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 铁粉
+index2= 路桥区
+index3= 衢州
+index4= 50.0
+index5= 吨
+index6= 50.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 7778006
+index12= 07-15 12:49
+index13= 07-15
+one_cargo[:fcityc]=331004000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江台州市路桥区
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 食品
+index2= 建德
+index3= 柳市
+index4= 27.0
+index5= 吨
+index6= 125.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 13567008852
+index12= 07-15 12:45
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=柳市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 宁波
+index3= 衢州
+index4= 40.0
+index5= 吨
+index6= 2800.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13575667771
+index12= 07-15 12:39
+index13= 07-15
+one_cargo[:fcityc]=330200000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江宁波市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 饮料
+index2= 建德市
+index3= 乐清市
+index4= 27.0
+index5= 吨
+index6= 3400.0
+index7= 元
+index8= 9.6
+index9= 车
+index10= 马上装货急
+index11= 13957018208
+index12= 07-15 12:33
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=330382000000
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=浙江温州市乐清市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 菜
+index2= 衢州
+index3= 宁波
+index4= 5.0
+index5= 吨
+index6= 1100.0
+index7= 元
+index8= 4.0
+index9= 车
+index10= 15869054040
+index11= 13575662158
+index12= 07-15 12:32
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330200000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江宁波市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 杭州
+index4= 60.0
+index5= 吨
+index6= 55.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 12:29
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江杭州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 江山市
+index3= 温州
+index4= 26.0
+index5= 吨
+index6= 3300.0
+index7= 元
+index8= 0.0
+index9= 平板车
+index10= 
+index11= 13735052892
+index12= 07-15 12:29
+index13= 07-15
+one_cargo[:fcityc]=330881000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市江山市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材 随车装
+index2= 衢州
+index3= 南平
+index4= 35.0
+index5= 吨
+index6= 70.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 金淘物流
+index11= 13575659900
+index12= 07-15 12:29
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350700000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建南平市
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共459个记录，每页8个，第 3/58页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 衢州
+index3= 揭阳
+index4= 40.0
+index5= 吨
+index6= 310.0
+index7= 元/吨
+index8= 17.0
+index9= 平板车
+index10= 马上装货急
+index11= 0570----2357237
+index12= 07-15 13:14
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=445200000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=广东揭阳市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 原料
+index2= 衢州
+index3= 新昌县
+index4= 11.0
+index5= 吨
+index6= 1000.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 4米
+index11= 13511411036
+index12= 07-15 13:14
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330624000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江绍兴市新昌县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 温州
+index4= 50.0
+index5= 吨
+index6= 3600.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15869096885
+index12= 07-15 13:12
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 衢州
+index3= 武汉
+index4= 7.0
+index5= 吨
+index6= 300.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 15857099319 669319
+index12= 07-15 13:08
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=420100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=湖北武汉市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材
+index2= 义乌
+index3= 龙游
+index4= 40.0
+index5= 吨
+index6= 40.0
+index7= 元/吨
+index8= 13.0
+index9= 高栏
+index10= 
+index11= 3863974
+index12= 07-15 13:07
+index13= 07-15
+one_cargo[:fcityc]=330782000000
+one_cargo[:tcityc]=330825000000
+one_cargo[:fcityn]=浙江金华市义乌市
+one_cargo[:tcityn]=浙江衢州市龙游县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 南京
+index3= 衢州
+index4= 25.0
+index5= 吨
+index6= 800.0
+index7= 元
+index8= 13.0
+index9= 半挂车
+index10= 
+index11= 3863974
+index12= 07-15 13:07
+index13= 07-15
+one_cargo[:fcityc]=320100000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=江苏南京市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  空车
+                  
+                
+index1= 
+index2= 衢州
+index3= 温州
+index4= 0.0
+index5= 吨
+index6= 0.0
+index7= 元
+index8= 6.8
+index9= 高栏
+index10= 
+index11= 3863974
+index12= 07-15 13:07
+index13= 07-15
+index0=  
+                  
+                  货物
+                  
+                
+index1= 原料
+index2= 大同
+index3= 宁海
+index4= 50.0
+index5= 吨
+index6= 85.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15857099319 669319
+index12= 07-15 12:54
+index13= 07-15
+one_cargo[:fcityc]=140200000000
+one_cargo[:tcityc]=330226000000
+one_cargo[:fcityn]=山西大同市
+one_cargo[:tcityn]=浙江宁波市宁海县
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共459个记录，每页8个，第 2/58页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 莆田
+index4= 46.0
+index5= 吨
+index6= 145.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15869096885
+index12= 07-15 14:11
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建莆田市
+index0=  
+                  
+                  空车
+                  
+                
+index1= 上海苏州昆山常熟无锡嘉兴
+index2= 衢州
+index3= 上海
+index4= 1.0
+index5= 辆
+index6= 0.0
+index7= 元
+index8= 9.6
+index9= 厢车
+index10= 需零担
+index11= 05703088588.660000
+index12= 07-15 13:41
+index13= 07-15
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料，明天装
+index2= 杭州
+index3= 衢州
+index4= 37.0
+index5= 吨
+index6= 2400.0
+index7= 元
+index8= 13.0
+index9= 车
+index10= 鹏宇物流
+index11= 15057000499
+index12= 07-15 13:41
+index13= 07-15
+one_cargo[:fcityc]=330100000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江杭州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 粮食
+index2= 开化
+index3= 龙泉
+index4= 25.0
+index5= 吨
+index6= 3000.0
+index7= 元
+index8= 13.0
+index9= 车
+index10= 
+index11= 13575662682
+index12= 07-15 13:32
+index13= 07-15
+one_cargo[:fcityc]=330824000000
+one_cargo[:tcityc]=331181000000
+one_cargo[:fcityn]=浙江衢州市开化县
+one_cargo[:tcityn]=浙江丽水市龙泉市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 饮料
+index2= 建德市
+index3= 磐安县
+index4= 30.3
+index5= 吨
+index6= 95.0
+index7= 元/吨
+index8= 9.6
+index9= 车
+index10= 马上装货急
+index11= 13957018208
+index12= 07-15 13:23
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=330727000000
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=浙江金华市磐安县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 铁粉
+index2= 路桥区
+index3= 衢州
+index4= 52.0
+index5= 吨
+index6= 50.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 7778006
+index12= 07-15 13:20
+index13= 07-15
+one_cargo[:fcityc]=331004000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江台州市路桥区
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 衢州
+index3= 湖北
+index4= 32.0
+index5= 吨
+index6= 210.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 18606707166
+index12= 07-15 13:19
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=420000000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=湖北
+index0=  
+                  
+                  货物
+                  
+                
+index1= 变压器
+index2= 衢州
+index3= 文成
+index4= 10.0
+index5= 吨
+index6= 2000.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13867022084
+index12= 07-15 13:17
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330328000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市文成县
+index0=  
+                    
+                    首页  第一页 下一页 尾 页 共459个记录，每页8个，第 1/58页 
+                    
+fail=4/38 
+one cycle finished on 2012-07-15 14:11:49 +0800,cost=!
+quzhou_cargo_helper
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 钙粉
+index2= 玉山
+index3= 余姚
+index4= 45.0
+index5= 吨
+index6= 85.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 15857024408
+index12= 07-15 12:14
+index13= 07-15
+one_cargo[:fcityc]=361123000000
+one_cargo[:tcityc]=330281000000
+one_cargo[:fcityn]=江西上饶市玉山县
+one_cargo[:tcityn]=浙江宁波市余姚市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 丽水
+index4= 45.0
+index5= 吨
+index6= 55.1
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 12:14
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=331100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江丽水市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 原料
+index2= 温州
+index3= 衢州
+index4= 100.0
+index5= 吨
+index6= 45.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 12:13
+index13= 07-15
+one_cargo[:fcityc]=330300000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江温州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 温州
+index4= 50.0
+index5= 吨
+index6= 3750.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 12:12
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 上海
+index3= 衢州
+index4= 40.0
+index5= 吨
+index6= 95.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13857032270
+index12= 07-15 12:12
+index13= 07-15
+one_cargo[:fcityc]=310000000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=上海
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 衢州
+index4= 40.0
+index5= 吨
+index6= 100.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13857032270
+index12= 07-15 12:11
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 零担
+index2= 衢州
+index3= 苍南
+index4= 18.0
+index5= 立方
+index6= 1000.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 3867339
+index12= 07-15 11:57
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330327000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市苍南县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 零担
+index2= 上海
+index3= 衢州
+index4= 3.5
+index5= 吨
+index6= 700.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 3867339
+index12= 07-15 11:57
+index13= 07-15
+one_cargo[:fcityc]=310000000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=上海
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共463个记录，每页8个，第 5/58页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 菜
+index2= 衢州
+index3= 宁波
+index4= 5.0
+index5= 吨
+index6= 1100.0
+index7= 元
+index8= 4.0
+index9= 车
+index10= 15869054040
+index11= 13575662158
+index12= 07-15 12:32
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330200000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江宁波市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 杭州
+index4= 60.0
+index5= 吨
+index6= 55.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 12:29
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江杭州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 江山市
+index3= 温州
+index4= 26.0
+index5= 吨
+index6= 3300.0
+index7= 元
+index8= 0.0
+index9= 平板车
+index10= 
+index11= 13735052892
+index12= 07-15 12:29
+index13= 07-15
+one_cargo[:fcityc]=330881000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市江山市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材 随车装
+index2= 衢州
+index3= 南平
+index4= 35.0
+index5= 吨
+index6= 70.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 金淘物流
+index11= 13575659900
+index12= 07-15 12:29
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350700000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建南平市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材 随车装
+index2= 萍乡
+index3= 衢州
+index4= 55.0
+index5= 吨
+index6= 95.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 金淘物流
+index11= 13575659900
+index12= 07-15 12:27
+index13= 07-15
+one_cargo[:fcityc]=360300000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=江西萍乡市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 设备
+index2= 衢州
+index3= 屏南
+index4= 18.0
+index5= 吨
+index6= 3500.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15068948728
+index12= 07-15 12:23
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350923000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建宁德市　屏南县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 杭州
+index4= 60.0
+index5= 吨
+index6= 60.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 12:23
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江杭州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 化肥到万年
+index2= 衢州
+index3= 江西
+index4= 40.0
+index5= 吨
+index6= 70.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 12:15
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=360000000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=江西
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共463个记录，每页8个，第 4/58页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 衢州
+index3= 武汉
+index4= 7.0
+index5= 吨
+index6= 300.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 15857099319 669319
+index12= 07-15 13:08
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=420100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=湖北武汉市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材
+index2= 义乌
+index3= 龙游
+index4= 40.0
+index5= 吨
+index6= 40.0
+index7= 元/吨
+index8= 13.0
+index9= 高栏
+index10= 
+index11= 3863974
+index12= 07-15 13:07
+index13= 07-15
+one_cargo[:fcityc]=330782000000
+one_cargo[:tcityc]=330825000000
+one_cargo[:fcityn]=浙江金华市义乌市
+one_cargo[:tcityn]=浙江衢州市龙游县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 南京
+index3= 衢州
+index4= 25.0
+index5= 吨
+index6= 800.0
+index7= 元
+index8= 13.0
+index9= 半挂车
+index10= 
+index11= 3863974
+index12= 07-15 13:07
+index13= 07-15
+one_cargo[:fcityc]=320100000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=江苏南京市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  空车
+                  
+                
+index1= 
+index2= 衢州
+index3= 温州
+index4= 0.0
+index5= 吨
+index6= 0.0
+index7= 元
+index8= 6.8
+index9= 高栏
+index10= 
+index11= 3863974
+index12= 07-15 13:07
+index13= 07-15
+index0=  
+                  
+                  货物
+                  
+                
+index1= 铁粉
+index2= 路桥区
+index3= 衢州
+index4= 50.0
+index5= 吨
+index6= 50.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 7778006
+index12= 07-15 12:49
+index13= 07-15
+one_cargo[:fcityc]=331004000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江台州市路桥区
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 食品
+index2= 建德
+index3= 柳市
+index4= 27.0
+index5= 吨
+index6= 125.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 13567008852
+index12= 07-15 12:45
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=柳市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 宁波
+index3= 衢州
+index4= 40.0
+index5= 吨
+index6= 2800.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13575667771
+index12= 07-15 12:39
+index13= 07-15
+one_cargo[:fcityc]=330200000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江宁波市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 饮料
+index2= 建德市
+index3= 乐清市
+index4= 27.0
+index5= 吨
+index6= 3400.0
+index7= 元
+index8= 9.6
+index9= 车
+index10= 马上装货急
+index11= 13957018208
+index12= 07-15 12:33
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=330382000000
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=浙江温州市乐清市
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共463个记录，每页8个，第 3/58页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 粮食
+index2= 开化
+index3= 龙泉
+index4= 25.0
+index5= 吨
+index6= 3000.0
+index7= 元
+index8= 13.0
+index9= 车
+index10= 
+index11= 13575662682
+index12= 07-15 13:32
+index13= 07-15
+one_cargo[:fcityc]=330824000000
+one_cargo[:tcityc]=331181000000
+one_cargo[:fcityn]=浙江衢州市开化县
+one_cargo[:tcityn]=浙江丽水市龙泉市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 饮料
+index2= 建德市
+index3= 磐安县
+index4= 30.3
+index5= 吨
+index6= 95.0
+index7= 元/吨
+index8= 9.6
+index9= 车
+index10= 马上装货急
+index11= 13957018208
+index12= 07-15 13:23
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=330727000000
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=浙江金华市磐安县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 铁粉
+index2= 路桥区
+index3= 衢州
+index4= 52.0
+index5= 吨
+index6= 50.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 7778006
+index12= 07-15 13:20
+index13= 07-15
+one_cargo[:fcityc]=331004000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江台州市路桥区
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 衢州
+index3= 湖北
+index4= 32.0
+index5= 吨
+index6= 210.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 18606707166
+index12= 07-15 13:19
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=420000000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=湖北
+index0=  
+                  
+                  货物
+                  
+                
+index1= 变压器
+index2= 衢州
+index3= 文成
+index4= 10.0
+index5= 吨
+index6= 2000.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13867022084
+index12= 07-15 13:17
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330328000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市文成县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 衢州
+index3= 揭阳
+index4= 40.0
+index5= 吨
+index6= 310.0
+index7= 元/吨
+index8= 17.0
+index9= 平板车
+index10= 马上装货急
+index11= 0570----2357237
+index12= 07-15 13:14
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=445200000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=广东揭阳市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 原料
+index2= 衢州
+index3= 新昌县
+index4= 11.0
+index5= 吨
+index6= 1000.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 4米
+index11= 13511411036
+index12= 07-15 13:14
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330624000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江绍兴市新昌县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 温州
+index4= 50.0
+index5= 吨
+index6= 3600.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15869096885
+index12= 07-15 13:12
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共463个记录，每页8个，第 2/58页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料马上装
+index2= 衢州
+index3= 温州
+index4= 60.0
+index5= 吨
+index6= 75.2
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 14:15
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 铁粉天天发
+index2= 衢州
+index3= 新余
+index4= 0.0
+index5= 吨
+index6= 100.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15057009181
+index12= 07-15 14:15
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=360500000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=江西新余市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材
+index2= 湖州
+index3= 衢州
+index4= 15.0
+index5= 吨
+index6= 90.0
+index7= 元/吨
+index8= 6.0
+index9= 车
+index10= 
+index11= 13957001925
+index12= 07-15 14:14
+index13= 07-15
+one_cargo[:fcityc]=330500000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江湖州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 木浆天天发
+index2= 宁波
+index3= 衢州
+index4= 0.0
+index5= 吨
+index6= 0.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15057009181
+index12= 07-15 14:13
+index13= 07-15
+one_cargo[:fcityc]=330200000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江宁波市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 饮料
+index2= 建德市
+index3= 温州
+index4= 27.0
+index5= 吨
+index6= 3500.0
+index7= 元
+index8= 9.6
+index9= 车
+index10= 马上装货急
+index11= 0570----2357237
+index12= 07-15 14:12
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 莆田
+index4= 46.0
+index5= 吨
+index6= 145.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15869096885
+index12= 07-15 14:11
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建莆田市
+index0=  
+                  
+                  空车
+                  
+                
+index1= 上海苏州昆山常熟无锡嘉兴
+index2= 衢州
+index3= 上海
+index4= 1.0
+index5= 辆
+index6= 0.0
+index7= 元
+index8= 9.6
+index9= 厢车
+index10= 需零担
+index11= 05703088588.660000
+index12= 07-15 13:41
+index13= 07-15
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料，明天装
+index2= 杭州
+index3= 衢州
+index4= 37.0
+index5= 吨
+index6= 2400.0
+index7= 元
+index8= 13.0
+index9= 车
+index10= 鹏宇物流
+index11= 15057000499
+index12= 07-15 13:41
+index13= 07-15
+one_cargo[:fcityc]=330100000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江杭州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                    
+                    首页  第一页 下一页 尾 页 共463个记录，每页8个，第 1/58页 
+                    
+fail=3/38 
+one cycle finished on 2012-07-15 14:16:52 +0800,cost=!
+quzhou_cargo_helper
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 杭州
+index4= 60.0
+index5= 吨
+index6= 60.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 12:23
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江杭州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 化肥到万年
+index2= 衢州
+index3= 江西
+index4= 40.0
+index5= 吨
+index6= 70.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 12:15
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=360000000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=江西
+index0=  
+                  
+                  货物
+                  
+                
+index1= 钙粉
+index2= 玉山
+index3= 余姚
+index4= 45.0
+index5= 吨
+index6= 85.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 15857024408
+index12= 07-15 12:14
+index13= 07-15
+one_cargo[:fcityc]=361123000000
+one_cargo[:tcityc]=330281000000
+one_cargo[:fcityn]=江西上饶市玉山县
+one_cargo[:tcityn]=浙江宁波市余姚市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 丽水
+index4= 45.0
+index5= 吨
+index6= 55.1
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 12:14
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=331100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江丽水市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 原料
+index2= 温州
+index3= 衢州
+index4= 100.0
+index5= 吨
+index6= 45.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 12:13
+index13= 07-15
+one_cargo[:fcityc]=330300000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江温州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 温州
+index4= 50.0
+index5= 吨
+index6= 3750.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 12:12
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 上海
+index3= 衢州
+index4= 40.0
+index5= 吨
+index6= 95.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13857032270
+index12= 07-15 12:12
+index13= 07-15
+one_cargo[:fcityc]=310000000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=上海
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 衢州
+index4= 40.0
+index5= 吨
+index6= 100.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13857032270
+index12= 07-15 12:11
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共465个记录，每页8个，第 5/59页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 宁波
+index3= 衢州
+index4= 40.0
+index5= 吨
+index6= 2800.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13575667771
+index12= 07-15 12:39
+index13= 07-15
+one_cargo[:fcityc]=330200000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江宁波市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 饮料
+index2= 建德市
+index3= 乐清市
+index4= 27.0
+index5= 吨
+index6= 3400.0
+index7= 元
+index8= 9.6
+index9= 车
+index10= 马上装货急
+index11= 13957018208
+index12= 07-15 12:33
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=330382000000
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=浙江温州市乐清市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 菜
+index2= 衢州
+index3= 宁波
+index4= 5.0
+index5= 吨
+index6= 1100.0
+index7= 元
+index8= 4.0
+index9= 车
+index10= 15869054040
+index11= 13575662158
+index12= 07-15 12:32
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330200000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江宁波市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 杭州
+index4= 60.0
+index5= 吨
+index6= 55.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 12:29
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江杭州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 江山市
+index3= 温州
+index4= 26.0
+index5= 吨
+index6= 3300.0
+index7= 元
+index8= 0.0
+index9= 平板车
+index10= 
+index11= 13735052892
+index12= 07-15 12:29
+index13= 07-15
+one_cargo[:fcityc]=330881000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市江山市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材 随车装
+index2= 衢州
+index3= 南平
+index4= 35.0
+index5= 吨
+index6= 70.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 金淘物流
+index11= 13575659900
+index12= 07-15 12:29
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350700000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建南平市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材 随车装
+index2= 萍乡
+index3= 衢州
+index4= 55.0
+index5= 吨
+index6= 95.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 金淘物流
+index11= 13575659900
+index12= 07-15 12:27
+index13= 07-15
+one_cargo[:fcityc]=360300000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=江西萍乡市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 设备
+index2= 衢州
+index3= 屏南
+index4= 18.0
+index5= 吨
+index6= 3500.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15068948728
+index12= 07-15 12:23
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350923000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建宁德市　屏南县
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共465个记录，每页8个，第 4/59页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 原料
+index2= 衢州
+index3= 新昌县
+index4= 11.0
+index5= 吨
+index6= 1000.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 4米
+index11= 13511411036
+index12= 07-15 13:14
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330624000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江绍兴市新昌县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 温州
+index4= 50.0
+index5= 吨
+index6= 3600.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15869096885
+index12= 07-15 13:12
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 衢州
+index3= 武汉
+index4= 7.0
+index5= 吨
+index6= 300.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 15857099319 669319
+index12= 07-15 13:08
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=420100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=湖北武汉市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材
+index2= 义乌
+index3= 龙游
+index4= 40.0
+index5= 吨
+index6= 40.0
+index7= 元/吨
+index8= 13.0
+index9= 高栏
+index10= 
+index11= 3863974
+index12= 07-15 13:07
+index13= 07-15
+one_cargo[:fcityc]=330782000000
+one_cargo[:tcityc]=330825000000
+one_cargo[:fcityn]=浙江金华市义乌市
+one_cargo[:tcityn]=浙江衢州市龙游县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 南京
+index3= 衢州
+index4= 25.0
+index5= 吨
+index6= 800.0
+index7= 元
+index8= 13.0
+index9= 半挂车
+index10= 
+index11= 3863974
+index12= 07-15 13:07
+index13= 07-15
+one_cargo[:fcityc]=320100000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=江苏南京市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  空车
+                  
+                
+index1= 
+index2= 衢州
+index3= 温州
+index4= 0.0
+index5= 吨
+index6= 0.0
+index7= 元
+index8= 6.8
+index9= 高栏
+index10= 
+index11= 3863974
+index12= 07-15 13:07
+index13= 07-15
+index0=  
+                  
+                  货物
+                  
+                
+index1= 铁粉
+index2= 路桥区
+index3= 衢州
+index4= 50.0
+index5= 吨
+index6= 50.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 7778006
+index12= 07-15 12:49
+index13= 07-15
+one_cargo[:fcityc]=331004000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江台州市路桥区
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 食品
+index2= 建德
+index3= 柳市
+index4= 27.0
+index5= 吨
+index6= 125.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 13567008852
+index12= 07-15 12:45
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=柳市
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共465个记录，每页8个，第 3/59页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  空车
+                  
+                
+index1= 上海苏州昆山常熟无锡嘉兴
+index2= 衢州
+index3= 上海
+index4= 1.0
+index5= 辆
+index6= 0.0
+index7= 元
+index8= 9.6
+index9= 厢车
+index10= 需零担
+index11= 05703088588.660000
+index12= 07-15 13:41
+index13= 07-15
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料，明天装
+index2= 杭州
+index3= 衢州
+index4= 37.0
+index5= 吨
+index6= 2400.0
+index7= 元
+index8= 13.0
+index9= 车
+index10= 鹏宇物流
+index11= 15057000499
+index12= 07-15 13:41
+index13= 07-15
+one_cargo[:fcityc]=330100000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江杭州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 粮食
+index2= 开化
+index3= 龙泉
+index4= 25.0
+index5= 吨
+index6= 3000.0
+index7= 元
+index8= 13.0
+index9= 车
+index10= 
+index11= 13575662682
+index12= 07-15 13:32
+index13= 07-15
+one_cargo[:fcityc]=330824000000
+one_cargo[:tcityc]=331181000000
+one_cargo[:fcityn]=浙江衢州市开化县
+one_cargo[:tcityn]=浙江丽水市龙泉市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 饮料
+index2= 建德市
+index3= 磐安县
+index4= 30.3
+index5= 吨
+index6= 95.0
+index7= 元/吨
+index8= 9.6
+index9= 车
+index10= 马上装货急
+index11= 13957018208
+index12= 07-15 13:23
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=330727000000
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=浙江金华市磐安县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 铁粉
+index2= 路桥区
+index3= 衢州
+index4= 52.0
+index5= 吨
+index6= 50.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 7778006
+index12= 07-15 13:20
+index13= 07-15
+one_cargo[:fcityc]=331004000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江台州市路桥区
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 衢州
+index3= 湖北
+index4= 32.0
+index5= 吨
+index6= 210.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 18606707166
+index12= 07-15 13:19
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=420000000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=湖北
+index0=  
+                  
+                  货物
+                  
+                
+index1= 变压器
+index2= 衢州
+index3= 文成
+index4= 10.0
+index5= 吨
+index6= 2000.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13867022084
+index12= 07-15 13:17
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330328000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市文成县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 衢州
+index3= 揭阳
+index4= 40.0
+index5= 吨
+index6= 310.0
+index7= 元/吨
+index8= 17.0
+index9= 平板车
+index10= 马上装货急
+index11= 0570----2357237
+index12= 07-15 13:14
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=445200000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=广东揭阳市
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共465个记录，每页8个，第 2/59页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 九江
+index4= 60.0
+index5= 吨
+index6= 85.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 14:22
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=360400000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=江西九江市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 台州
+index4= 3.0
+index5= 吨
+index6= 600.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13587100087
+index12= 07-15 14:19
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=331000000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江台州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料马上装
+index2= 衢州
+index3= 温州
+index4= 60.0
+index5= 吨
+index6= 75.2
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 14:15
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 铁粉天天发
+index2= 衢州
+index3= 新余
+index4= 0.0
+index5= 吨
+index6= 100.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15057009181
+index12= 07-15 14:15
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=360500000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=江西新余市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材
+index2= 湖州
+index3= 衢州
+index4= 15.0
+index5= 吨
+index6= 90.0
+index7= 元/吨
+index8= 6.0
+index9= 车
+index10= 
+index11= 13957001925
+index12= 07-15 14:14
+index13= 07-15
+one_cargo[:fcityc]=330500000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江湖州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 木浆天天发
+index2= 宁波
+index3= 衢州
+index4= 0.0
+index5= 吨
+index6= 0.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15057009181
+index12= 07-15 14:13
+index13= 07-15
+one_cargo[:fcityc]=330200000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江宁波市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 饮料
+index2= 建德市
+index3= 温州
+index4= 27.0
+index5= 吨
+index6= 3500.0
+index7= 元
+index8= 9.6
+index9= 车
+index10= 马上装货急
+index11= 0570----2357237
+index12= 07-15 14:12
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 莆田
+index4= 46.0
+index5= 吨
+index6= 145.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15869096885
+index12= 07-15 14:11
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建莆田市
+index0=  
+                    
+                    首页  第一页 下一页 尾 页 共465个记录，每页8个，第 1/59页 
+                    
+fail=3/38 
+one cycle finished on 2012-07-15 14:21:54 +0800,cost=!
+quzhou_cargo_helper
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 杭州
+index4= 60.0
+index5= 吨
+index6= 60.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 12:23
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江杭州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 化肥到万年
+index2= 衢州
+index3= 江西
+index4= 40.0
+index5= 吨
+index6= 70.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 12:15
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=360000000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=江西
+index0=  
+                  
+                  货物
+                  
+                
+index1= 钙粉
+index2= 玉山
+index3= 余姚
+index4= 45.0
+index5= 吨
+index6= 85.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 15857024408
+index12= 07-15 12:14
+index13= 07-15
+one_cargo[:fcityc]=361123000000
+one_cargo[:tcityc]=330281000000
+one_cargo[:fcityn]=江西上饶市玉山县
+one_cargo[:tcityn]=浙江宁波市余姚市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 丽水
+index4= 45.0
+index5= 吨
+index6= 55.1
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 12:14
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=331100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江丽水市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 原料
+index2= 温州
+index3= 衢州
+index4= 100.0
+index5= 吨
+index6= 45.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 12:13
+index13= 07-15
+one_cargo[:fcityc]=330300000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江温州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 温州
+index4= 50.0
+index5= 吨
+index6= 3750.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 12:12
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 上海
+index3= 衢州
+index4= 40.0
+index5= 吨
+index6= 95.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13857032270
+index12= 07-15 12:12
+index13= 07-15
+one_cargo[:fcityc]=310000000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=上海
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 衢州
+index4= 40.0
+index5= 吨
+index6= 100.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13857032270
+index12= 07-15 12:11
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共465个记录，每页8个，第 5/59页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 宁波
+index3= 衢州
+index4= 40.0
+index5= 吨
+index6= 2800.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13575667771
+index12= 07-15 12:39
+index13= 07-15
+one_cargo[:fcityc]=330200000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江宁波市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 饮料
+index2= 建德市
+index3= 乐清市
+index4= 27.0
+index5= 吨
+index6= 3400.0
+index7= 元
+index8= 9.6
+index9= 车
+index10= 马上装货急
+index11= 13957018208
+index12= 07-15 12:33
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=330382000000
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=浙江温州市乐清市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 菜
+index2= 衢州
+index3= 宁波
+index4= 5.0
+index5= 吨
+index6= 1100.0
+index7= 元
+index8= 4.0
+index9= 车
+index10= 15869054040
+index11= 13575662158
+index12= 07-15 12:32
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330200000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江宁波市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 杭州
+index4= 60.0
+index5= 吨
+index6= 55.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 12:29
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江杭州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 江山市
+index3= 温州
+index4= 26.0
+index5= 吨
+index6= 3300.0
+index7= 元
+index8= 0.0
+index9= 平板车
+index10= 
+index11= 13735052892
+index12= 07-15 12:29
+index13= 07-15
+one_cargo[:fcityc]=330881000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市江山市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材 随车装
+index2= 衢州
+index3= 南平
+index4= 35.0
+index5= 吨
+index6= 70.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 金淘物流
+index11= 13575659900
+index12= 07-15 12:29
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350700000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建南平市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材 随车装
+index2= 萍乡
+index3= 衢州
+index4= 55.0
+index5= 吨
+index6= 95.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 金淘物流
+index11= 13575659900
+index12= 07-15 12:27
+index13= 07-15
+one_cargo[:fcityc]=360300000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=江西萍乡市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 设备
+index2= 衢州
+index3= 屏南
+index4= 18.0
+index5= 吨
+index6= 3500.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15068948728
+index12= 07-15 12:23
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350923000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建宁德市　屏南县
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共465个记录，每页8个，第 4/59页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 原料
+index2= 衢州
+index3= 新昌县
+index4= 11.0
+index5= 吨
+index6= 1000.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 4米
+index11= 13511411036
+index12= 07-15 13:14
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330624000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江绍兴市新昌县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 温州
+index4= 50.0
+index5= 吨
+index6= 3600.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15869096885
+index12= 07-15 13:12
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 衢州
+index3= 武汉
+index4= 7.0
+index5= 吨
+index6= 300.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 15857099319 669319
+index12= 07-15 13:08
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=420100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=湖北武汉市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材
+index2= 义乌
+index3= 龙游
+index4= 40.0
+index5= 吨
+index6= 40.0
+index7= 元/吨
+index8= 13.0
+index9= 高栏
+index10= 
+index11= 3863974
+index12= 07-15 13:07
+index13= 07-15
+one_cargo[:fcityc]=330782000000
+one_cargo[:tcityc]=330825000000
+one_cargo[:fcityn]=浙江金华市义乌市
+one_cargo[:tcityn]=浙江衢州市龙游县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 南京
+index3= 衢州
+index4= 25.0
+index5= 吨
+index6= 800.0
+index7= 元
+index8= 13.0
+index9= 半挂车
+index10= 
+index11= 3863974
+index12= 07-15 13:07
+index13= 07-15
+one_cargo[:fcityc]=320100000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=江苏南京市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  空车
+                  
+                
+index1= 
+index2= 衢州
+index3= 温州
+index4= 0.0
+index5= 吨
+index6= 0.0
+index7= 元
+index8= 6.8
+index9= 高栏
+index10= 
+index11= 3863974
+index12= 07-15 13:07
+index13= 07-15
+index0=  
+                  
+                  货物
+                  
+                
+index1= 铁粉
+index2= 路桥区
+index3= 衢州
+index4= 50.0
+index5= 吨
+index6= 50.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 7778006
+index12= 07-15 12:49
+index13= 07-15
+one_cargo[:fcityc]=331004000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江台州市路桥区
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 食品
+index2= 建德
+index3= 柳市
+index4= 27.0
+index5= 吨
+index6= 125.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 13567008852
+index12= 07-15 12:45
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=柳市
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共465个记录，每页8个，第 3/59页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  空车
+                  
+                
+index1= 上海苏州昆山常熟无锡嘉兴
+index2= 衢州
+index3= 上海
+index4= 1.0
+index5= 辆
+index6= 0.0
+index7= 元
+index8= 9.6
+index9= 厢车
+index10= 需零担
+index11= 05703088588.660000
+index12= 07-15 13:41
+index13= 07-15
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料，明天装
+index2= 杭州
+index3= 衢州
+index4= 37.0
+index5= 吨
+index6= 2400.0
+index7= 元
+index8= 13.0
+index9= 车
+index10= 鹏宇物流
+index11= 15057000499
+index12= 07-15 13:41
+index13= 07-15
+one_cargo[:fcityc]=330100000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江杭州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 粮食
+index2= 开化
+index3= 龙泉
+index4= 25.0
+index5= 吨
+index6= 3000.0
+index7= 元
+index8= 13.0
+index9= 车
+index10= 
+index11= 13575662682
+index12= 07-15 13:32
+index13= 07-15
+one_cargo[:fcityc]=330824000000
+one_cargo[:tcityc]=331181000000
+one_cargo[:fcityn]=浙江衢州市开化县
+one_cargo[:tcityn]=浙江丽水市龙泉市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 饮料
+index2= 建德市
+index3= 磐安县
+index4= 30.3
+index5= 吨
+index6= 95.0
+index7= 元/吨
+index8= 9.6
+index9= 车
+index10= 马上装货急
+index11= 13957018208
+index12= 07-15 13:23
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=330727000000
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=浙江金华市磐安县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 铁粉
+index2= 路桥区
+index3= 衢州
+index4= 52.0
+index5= 吨
+index6= 50.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 7778006
+index12= 07-15 13:20
+index13= 07-15
+one_cargo[:fcityc]=331004000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江台州市路桥区
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 衢州
+index3= 湖北
+index4= 32.0
+index5= 吨
+index6= 210.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 18606707166
+index12= 07-15 13:19
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=420000000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=湖北
+index0=  
+                  
+                  货物
+                  
+                
+index1= 变压器
+index2= 衢州
+index3= 文成
+index4= 10.0
+index5= 吨
+index6= 2000.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13867022084
+index12= 07-15 13:17
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330328000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市文成县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 衢州
+index3= 揭阳
+index4= 40.0
+index5= 吨
+index6= 310.0
+index7= 元/吨
+index8= 17.0
+index9= 平板车
+index10= 马上装货急
+index11= 0570----2357237
+index12= 07-15 13:14
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=445200000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=广东揭阳市
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共465个记录，每页8个，第 2/59页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 九江
+index4= 60.0
+index5= 吨
+index6= 85.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 14:22
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=360400000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=江西九江市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 台州
+index4= 3.0
+index5= 吨
+index6= 600.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13587100087
+index12= 07-15 14:19
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=331000000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江台州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料马上装
+index2= 衢州
+index3= 温州
+index4= 60.0
+index5= 吨
+index6= 75.2
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 14:15
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 铁粉天天发
+index2= 衢州
+index3= 新余
+index4= 0.0
+index5= 吨
+index6= 100.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15057009181
+index12= 07-15 14:15
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=360500000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=江西新余市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材
+index2= 湖州
+index3= 衢州
+index4= 15.0
+index5= 吨
+index6= 90.0
+index7= 元/吨
+index8= 6.0
+index9= 车
+index10= 
+index11= 13957001925
+index12= 07-15 14:14
+index13= 07-15
+one_cargo[:fcityc]=330500000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江湖州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 木浆天天发
+index2= 宁波
+index3= 衢州
+index4= 0.0
+index5= 吨
+index6= 0.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15057009181
+index12= 07-15 14:13
+index13= 07-15
+one_cargo[:fcityc]=330200000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江宁波市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 饮料
+index2= 建德市
+index3= 温州
+index4= 27.0
+index5= 吨
+index6= 3500.0
+index7= 元
+index8= 9.6
+index9= 车
+index10= 马上装货急
+index11= 0570----2357237
+index12= 07-15 14:12
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 莆田
+index4= 46.0
+index5= 吨
+index6= 145.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15869096885
+index12= 07-15 14:11
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建莆田市
+index0=  
+                    
+                    首页  第一页 下一页 尾 页 共465个记录，每页8个，第 1/59页 
+                    
+fail=3/38 
+one cycle finished on 2012-07-15 14:26:55 +0800,cost=!
+quzhou_cargo_helper
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材 随车装
+index2= 衢州
+index3= 南平
+index4= 35.0
+index5= 吨
+index6= 70.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 金淘物流
+index11= 13575659900
+index12= 07-15 12:29
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350700000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建南平市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材 随车装
+index2= 萍乡
+index3= 衢州
+index4= 55.0
+index5= 吨
+index6= 95.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 金淘物流
+index11= 13575659900
+index12= 07-15 12:27
+index13= 07-15
+one_cargo[:fcityc]=360300000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=江西萍乡市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 设备
+index2= 衢州
+index3= 屏南
+index4= 18.0
+index5= 吨
+index6= 3500.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15068948728
+index12= 07-15 12:23
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350923000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建宁德市　屏南县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 杭州
+index4= 60.0
+index5= 吨
+index6= 60.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 12:23
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江杭州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 化肥到万年
+index2= 衢州
+index3= 江西
+index4= 40.0
+index5= 吨
+index6= 70.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 12:15
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=360000000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=江西
+index0=  
+                  
+                  货物
+                  
+                
+index1= 钙粉
+index2= 玉山
+index3= 余姚
+index4= 45.0
+index5= 吨
+index6= 85.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 15857024408
+index12= 07-15 12:14
+index13= 07-15
+one_cargo[:fcityc]=361123000000
+one_cargo[:tcityc]=330281000000
+one_cargo[:fcityn]=江西上饶市玉山县
+one_cargo[:tcityn]=浙江宁波市余姚市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 丽水
+index4= 45.0
+index5= 吨
+index6= 55.1
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 12:14
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=331100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江丽水市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 原料
+index2= 温州
+index3= 衢州
+index4= 100.0
+index5= 吨
+index6= 45.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 12:13
+index13= 07-15
+one_cargo[:fcityc]=330300000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江温州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共468个记录，每页8个，第 5/59页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  空车
+                  
+                
+index1= 
+index2= 衢州
+index3= 温州
+index4= 0.0
+index5= 吨
+index6= 0.0
+index7= 元
+index8= 6.8
+index9= 高栏
+index10= 
+index11= 3863974
+index12= 07-15 13:07
+index13= 07-15
+index0=  
+                  
+                  货物
+                  
+                
+index1= 铁粉
+index2= 路桥区
+index3= 衢州
+index4= 50.0
+index5= 吨
+index6= 50.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 7778006
+index12= 07-15 12:49
+index13= 07-15
+one_cargo[:fcityc]=331004000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江台州市路桥区
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 食品
+index2= 建德
+index3= 柳市
+index4= 27.0
+index5= 吨
+index6= 125.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 13567008852
+index12= 07-15 12:45
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=柳市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 宁波
+index3= 衢州
+index4= 40.0
+index5= 吨
+index6= 2800.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13575667771
+index12= 07-15 12:39
+index13= 07-15
+one_cargo[:fcityc]=330200000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江宁波市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 饮料
+index2= 建德市
+index3= 乐清市
+index4= 27.0
+index5= 吨
+index6= 3400.0
+index7= 元
+index8= 9.6
+index9= 车
+index10= 马上装货急
+index11= 13957018208
+index12= 07-15 12:33
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=330382000000
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=浙江温州市乐清市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 菜
+index2= 衢州
+index3= 宁波
+index4= 5.0
+index5= 吨
+index6= 1100.0
+index7= 元
+index8= 4.0
+index9= 车
+index10= 15869054040
+index11= 13575662158
+index12= 07-15 12:32
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330200000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江宁波市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 杭州
+index4= 60.0
+index5= 吨
+index6= 55.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 12:29
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江杭州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 江山市
+index3= 温州
+index4= 26.0
+index5= 吨
+index6= 3300.0
+index7= 元
+index8= 0.0
+index9= 平板车
+index10= 
+index11= 13735052892
+index12= 07-15 12:29
+index13= 07-15
+one_cargo[:fcityc]=330881000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市江山市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共468个记录，每页8个，第 4/59页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 衢州
+index3= 湖北
+index4= 32.0
+index5= 吨
+index6= 210.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 18606707166
+index12= 07-15 13:19
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=420000000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=湖北
+index0=  
+                  
+                  货物
+                  
+                
+index1= 变压器
+index2= 衢州
+index3= 文成
+index4= 10.0
+index5= 吨
+index6= 2000.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13867022084
+index12= 07-15 13:17
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330328000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市文成县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 衢州
+index3= 揭阳
+index4= 40.0
+index5= 吨
+index6= 310.0
+index7= 元/吨
+index8= 17.0
+index9= 平板车
+index10= 马上装货急
+index11= 0570----2357237
+index12= 07-15 13:14
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=445200000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=广东揭阳市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 原料
+index2= 衢州
+index3= 新昌县
+index4= 11.0
+index5= 吨
+index6= 1000.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 4米
+index11= 13511411036
+index12= 07-15 13:14
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330624000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江绍兴市新昌县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 温州
+index4= 50.0
+index5= 吨
+index6= 3600.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15869096885
+index12= 07-15 13:12
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 衢州
+index3= 武汉
+index4= 7.0
+index5= 吨
+index6= 300.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 15857099319 669319
+index12= 07-15 13:08
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=420100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=湖北武汉市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材
+index2= 义乌
+index3= 龙游
+index4= 40.0
+index5= 吨
+index6= 40.0
+index7= 元/吨
+index8= 13.0
+index9= 高栏
+index10= 
+index11= 3863974
+index12= 07-15 13:07
+index13= 07-15
+one_cargo[:fcityc]=330782000000
+one_cargo[:tcityc]=330825000000
+one_cargo[:fcityn]=浙江金华市义乌市
+one_cargo[:tcityn]=浙江衢州市龙游县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 南京
+index3= 衢州
+index4= 25.0
+index5= 吨
+index6= 800.0
+index7= 元
+index8= 13.0
+index9= 半挂车
+index10= 
+index11= 3863974
+index12= 07-15 13:07
+index13= 07-15
+one_cargo[:fcityc]=320100000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=江苏南京市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共468个记录，每页8个，第 3/59页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 木浆天天发
+index2= 宁波
+index3= 衢州
+index4= 0.0
+index5= 吨
+index6= 0.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15057009181
+index12= 07-15 14:13
+index13= 07-15
+one_cargo[:fcityc]=330200000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江宁波市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 饮料
+index2= 建德市
+index3= 温州
+index4= 27.0
+index5= 吨
+index6= 3500.0
+index7= 元
+index8= 9.6
+index9= 车
+index10= 马上装货急
+index11= 0570----2357237
+index12= 07-15 14:12
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 莆田
+index4= 46.0
+index5= 吨
+index6= 145.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15869096885
+index12= 07-15 14:11
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建莆田市
+index0=  
+                  
+                  空车
+                  
+                
+index1= 上海苏州昆山常熟无锡嘉兴
+index2= 衢州
+index3= 上海
+index4= 1.0
+index5= 辆
+index6= 0.0
+index7= 元
+index8= 9.6
+index9= 厢车
+index10= 需零担
+index11= 05703088588.660000
+index12= 07-15 13:41
+index13= 07-15
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料，明天装
+index2= 杭州
+index3= 衢州
+index4= 37.0
+index5= 吨
+index6= 2400.0
+index7= 元
+index8= 13.0
+index9= 车
+index10= 鹏宇物流
+index11= 15057000499
+index12= 07-15 13:41
+index13= 07-15
+one_cargo[:fcityc]=330100000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江杭州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 粮食
+index2= 开化
+index3= 龙泉
+index4= 25.0
+index5= 吨
+index6= 3000.0
+index7= 元
+index8= 13.0
+index9= 车
+index10= 
+index11= 13575662682
+index12= 07-15 13:32
+index13= 07-15
+one_cargo[:fcityc]=330824000000
+one_cargo[:tcityc]=331181000000
+one_cargo[:fcityn]=浙江衢州市开化县
+one_cargo[:tcityn]=浙江丽水市龙泉市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 饮料
+index2= 建德市
+index3= 磐安县
+index4= 30.3
+index5= 吨
+index6= 95.0
+index7= 元/吨
+index8= 9.6
+index9= 车
+index10= 马上装货急
+index11= 13957018208
+index12= 07-15 13:23
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=330727000000
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=浙江金华市磐安县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 铁粉
+index2= 路桥区
+index3= 衢州
+index4= 52.0
+index5= 吨
+index6= 50.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 7778006
+index12= 07-15 13:20
+index13= 07-15
+one_cargo[:fcityc]=331004000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江台州市路桥区
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共468个记录，每页8个，第 2/59页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 钙粉
+index2= 龙游县
+index3= 福州
+index4= 28.0
+index5= 吨
+index6= 170.0
+index7= 元
+index8= 9.6
+index9= 车
+index10= 
+index11= 15869097418
+index12= 07-15 14:31
+index13= 07-15
+one_cargo[:fcityc]=330825000000
+one_cargo[:tcityc]=350100000000
+one_cargo[:fcityn]=浙江衢州市龙游县
+one_cargo[:tcityn]=福建福州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 浦江
+index3= 邵武
+index4= 28.0
+index5= 吨
+index6= 3800.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 8789798
+index12= 07-15 14:29
+index13= 07-15
+one_cargo[:fcityc]=330726000000
+one_cargo[:tcityc]=350781000000
+one_cargo[:fcityn]=浙江金华市浦江县
+one_cargo[:tcityn]=福建南平市邵武市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 黄岩区
+index4= 45.0
+index5= 吨
+index6= 80.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15869096885
+index12= 07-15 14:29
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=331003000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江台州市黄岩区
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 九江
+index4= 60.0
+index5= 吨
+index6= 85.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 14:22
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=360400000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=江西九江市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 台州
+index4= 3.0
+index5= 吨
+index6= 600.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13587100087
+index12= 07-15 14:19
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=331000000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江台州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料马上装
+index2= 衢州
+index3= 温州
+index4= 60.0
+index5= 吨
+index6= 75.2
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 14:15
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 铁粉天天发
+index2= 衢州
+index3= 新余
+index4= 0.0
+index5= 吨
+index6= 100.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15057009181
+index12= 07-15 14:15
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=360500000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=江西新余市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材
+index2= 湖州
+index3= 衢州
+index4= 15.0
+index5= 吨
+index6= 90.0
+index7= 元/吨
+index8= 6.0
+index9= 车
+index10= 
+index11= 13957001925
+index12= 07-15 14:14
+index13= 07-15
+one_cargo[:fcityc]=330500000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江湖州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                    
+                    首页  第一页 下一页 尾 页 共468个记录，每页8个，第 1/59页 
+                    
+fail=2/38 
+one cycle finished on 2012-07-15 14:32:07 +0800,cost=!
+quzhou_cargo_helper
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 江山市
+index3= 温州
+index4= 26.0
+index5= 吨
+index6= 3300.0
+index7= 元
+index8= 0.0
+index9= 平板车
+index10= 
+index11= 13735052892
+index12= 07-15 12:29
+index13= 07-15
+one_cargo[:fcityc]=330881000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市江山市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材 随车装
+index2= 衢州
+index3= 南平
+index4= 35.0
+index5= 吨
+index6= 70.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 金淘物流
+index11= 13575659900
+index12= 07-15 12:29
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350700000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建南平市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材 随车装
+index2= 萍乡
+index3= 衢州
+index4= 55.0
+index5= 吨
+index6= 95.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 金淘物流
+index11= 13575659900
+index12= 07-15 12:27
+index13= 07-15
+one_cargo[:fcityc]=360300000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=江西萍乡市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 设备
+index2= 衢州
+index3= 屏南
+index4= 18.0
+index5= 吨
+index6= 3500.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15068948728
+index12= 07-15 12:23
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350923000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建宁德市　屏南县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 杭州
+index4= 60.0
+index5= 吨
+index6= 60.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 12:23
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江杭州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 化肥到万年
+index2= 衢州
+index3= 江西
+index4= 40.0
+index5= 吨
+index6= 70.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 12:15
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=360000000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=江西
+index0=  
+                  
+                  货物
+                  
+                
+index1= 钙粉
+index2= 玉山
+index3= 余姚
+index4= 45.0
+index5= 吨
+index6= 85.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 15857024408
+index12= 07-15 12:14
+index13= 07-15
+one_cargo[:fcityc]=361123000000
+one_cargo[:tcityc]=330281000000
+one_cargo[:fcityn]=江西上饶市玉山县
+one_cargo[:tcityn]=浙江宁波市余姚市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 丽水
+index4= 45.0
+index5= 吨
+index6= 55.1
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 12:14
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=331100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江丽水市
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共469个记录，每页8个，第 5/59页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 南京
+index3= 衢州
+index4= 25.0
+index5= 吨
+index6= 800.0
+index7= 元
+index8= 13.0
+index9= 半挂车
+index10= 
+index11= 3863974
+index12= 07-15 13:07
+index13= 07-15
+one_cargo[:fcityc]=320100000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=江苏南京市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  空车
+                  
+                
+index1= 
+index2= 衢州
+index3= 温州
+index4= 0.0
+index5= 吨
+index6= 0.0
+index7= 元
+index8= 6.8
+index9= 高栏
+index10= 
+index11= 3863974
+index12= 07-15 13:07
+index13= 07-15
+index0=  
+                  
+                  货物
+                  
+                
+index1= 铁粉
+index2= 路桥区
+index3= 衢州
+index4= 50.0
+index5= 吨
+index6= 50.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 7778006
+index12= 07-15 12:49
+index13= 07-15
+one_cargo[:fcityc]=331004000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江台州市路桥区
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 食品
+index2= 建德
+index3= 柳市
+index4= 27.0
+index5= 吨
+index6= 125.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 13567008852
+index12= 07-15 12:45
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=柳市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 宁波
+index3= 衢州
+index4= 40.0
+index5= 吨
+index6= 2800.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13575667771
+index12= 07-15 12:39
+index13= 07-15
+one_cargo[:fcityc]=330200000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江宁波市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 饮料
+index2= 建德市
+index3= 乐清市
+index4= 27.0
+index5= 吨
+index6= 3400.0
+index7= 元
+index8= 9.6
+index9= 车
+index10= 马上装货急
+index11= 13957018208
+index12= 07-15 12:33
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=330382000000
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=浙江温州市乐清市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 菜
+index2= 衢州
+index3= 宁波
+index4= 5.0
+index5= 吨
+index6= 1100.0
+index7= 元
+index8= 4.0
+index9= 车
+index10= 15869054040
+index11= 13575662158
+index12= 07-15 12:32
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330200000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江宁波市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 杭州
+index4= 60.0
+index5= 吨
+index6= 55.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 12:29
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江杭州市
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共469个记录，每页8个，第 4/59页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 铁粉
+index2= 路桥区
+index3= 衢州
+index4= 52.0
+index5= 吨
+index6= 50.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 7778006
+index12= 07-15 13:20
+index13= 07-15
+one_cargo[:fcityc]=331004000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江台州市路桥区
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 衢州
+index3= 湖北
+index4= 32.0
+index5= 吨
+index6= 210.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 18606707166
+index12= 07-15 13:19
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=420000000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=湖北
+index0=  
+                  
+                  货物
+                  
+                
+index1= 变压器
+index2= 衢州
+index3= 文成
+index4= 10.0
+index5= 吨
+index6= 2000.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13867022084
+index12= 07-15 13:17
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330328000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市文成县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 衢州
+index3= 揭阳
+index4= 40.0
+index5= 吨
+index6= 310.0
+index7= 元/吨
+index8= 17.0
+index9= 平板车
+index10= 马上装货急
+index11= 0570----2357237
+index12= 07-15 13:14
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=445200000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=广东揭阳市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 原料
+index2= 衢州
+index3= 新昌县
+index4= 11.0
+index5= 吨
+index6= 1000.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 4米
+index11= 13511411036
+index12= 07-15 13:14
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330624000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江绍兴市新昌县
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 温州
+index4= 50.0
+index5= 吨
+index6= 3600.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15869096885
+index12= 07-15 13:12
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 衢州
+index3= 武汉
+index4= 7.0
+index5= 吨
+index6= 300.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 15857099319 669319
+index12= 07-15 13:08
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=420100000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=湖北武汉市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材
+index2= 义乌
+index3= 龙游
+index4= 40.0
+index5= 吨
+index6= 40.0
+index7= 元/吨
+index8= 13.0
+index9= 高栏
+index10= 
+index11= 3863974
+index12= 07-15 13:07
+index13= 07-15
+one_cargo[:fcityc]=330782000000
+one_cargo[:tcityc]=330825000000
+one_cargo[:fcityn]=浙江金华市义乌市
+one_cargo[:tcityn]=浙江衢州市龙游县
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共469个记录，每页8个，第 3/59页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 建材
+index2= 湖州
+index3= 衢州
+index4= 15.0
+index5= 吨
+index6= 90.0
+index7= 元/吨
+index8= 6.0
+index9= 车
+index10= 
+index11= 13957001925
+index12= 07-15 14:14
+index13= 07-15
+one_cargo[:fcityc]=330500000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江湖州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 木浆天天发
+index2= 宁波
+index3= 衢州
+index4= 0.0
+index5= 吨
+index6= 0.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15057009181
+index12= 07-15 14:13
+index13= 07-15
+one_cargo[:fcityc]=330200000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江宁波市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 饮料
+index2= 建德市
+index3= 温州
+index4= 27.0
+index5= 吨
+index6= 3500.0
+index7= 元
+index8= 9.6
+index9= 车
+index10= 马上装货急
+index11= 0570----2357237
+index12= 07-15 14:12
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 莆田
+index4= 46.0
+index5= 吨
+index6= 145.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15869096885
+index12= 07-15 14:11
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=350300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=福建莆田市
+index0=  
+                  
+                  空车
+                  
+                
+index1= 上海苏州昆山常熟无锡嘉兴
+index2= 衢州
+index3= 上海
+index4= 1.0
+index5= 辆
+index6= 0.0
+index7= 元
+index8= 9.6
+index9= 厢车
+index10= 需零担
+index11= 05703088588.660000
+index12= 07-15 13:41
+index13= 07-15
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料，明天装
+index2= 杭州
+index3= 衢州
+index4= 37.0
+index5= 吨
+index6= 2400.0
+index7= 元
+index8= 13.0
+index9= 车
+index10= 鹏宇物流
+index11= 15057000499
+index12= 07-15 13:41
+index13= 07-15
+one_cargo[:fcityc]=330100000000
+one_cargo[:tcityc]=330800000000
+one_cargo[:fcityn]=浙江杭州市
+one_cargo[:tcityn]=浙江衢州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 粮食
+index2= 开化
+index3= 龙泉
+index4= 25.0
+index5= 吨
+index6= 3000.0
+index7= 元
+index8= 13.0
+index9= 车
+index10= 
+index11= 13575662682
+index12= 07-15 13:32
+index13= 07-15
+one_cargo[:fcityc]=330824000000
+one_cargo[:tcityc]=331181000000
+one_cargo[:fcityn]=浙江衢州市开化县
+one_cargo[:tcityn]=浙江丽水市龙泉市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 饮料
+index2= 建德市
+index3= 磐安县
+index4= 30.3
+index5= 吨
+index6= 95.0
+index7= 元/吨
+index8= 9.6
+index9= 车
+index10= 马上装货急
+index11= 13957018208
+index12= 07-15 13:23
+index13= 07-15
+one_cargo[:fcityc]=330182000000
+one_cargo[:tcityc]=330727000000
+one_cargo[:fcityn]=浙江杭州市建德市
+one_cargo[:tcityn]=浙江金华市磐安县
+index0=  
+                    
+                    首 页  上一页  下一页  尾 页 共469个记录，每页8个，第 2/59页 
+                    
+index0=   用户查寻信息：
+                  
+                    
+index0=  
+                  
+                  货物
+                  
+                
+index1= 配件
+index2= 龙游
+index3= 湘潭
+index4= 20.0
+index5= 吨
+index6= 5000.0
+index7= 元
+index8= 8.6
+index9= 车
+index10= 
+index11= 13575662158
+index12= 07-15 14:34
+index13= 07-15
+one_cargo[:fcityc]=330825000000
+one_cargo[:tcityc]=430300000000
+one_cargo[:fcityn]=浙江衢州市龙游县
+one_cargo[:tcityn]=湖南湘潭市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 钙粉
+index2= 龙游县
+index3= 福州
+index4= 28.0
+index5= 吨
+index6= 170.0
+index7= 元
+index8= 9.6
+index9= 车
+index10= 
+index11= 15869097418
+index12= 07-15 14:31
+index13= 07-15
+one_cargo[:fcityc]=330825000000
+one_cargo[:tcityc]=350100000000
+one_cargo[:fcityn]=浙江衢州市龙游县
+one_cargo[:tcityn]=福建福州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 浦江
+index3= 邵武
+index4= 28.0
+index5= 吨
+index6= 3800.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 8789798
+index12= 07-15 14:29
+index13= 07-15
+one_cargo[:fcityc]=330726000000
+one_cargo[:tcityc]=350781000000
+one_cargo[:fcityn]=浙江金华市浦江县
+one_cargo[:tcityn]=福建南平市邵武市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 黄岩区
+index4= 45.0
+index5= 吨
+index6= 80.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15869096885
+index12= 07-15 14:29
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=331003000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江台州市黄岩区
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 九江
+index4= 60.0
+index5= 吨
+index6= 85.0
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 13282082222
+index12= 07-15 14:22
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=360400000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=江西九江市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料
+index2= 衢州
+index3= 台州
+index4= 3.0
+index5= 吨
+index6= 600.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 13587100087
+index12= 07-15 14:19
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=331000000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江台州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 材料马上装
+index2= 衢州
+index3= 温州
+index4= 60.0
+index5= 吨
+index6= 75.2
+index7= 元/吨
+index8= 0.0
+index9= 车
+index10= 
+index11= 15215718668
+index12= 07-15 14:15
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=330300000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=浙江温州市
+index0=  
+                  
+                  货物
+                  
+                
+index1= 铁粉天天发
+index2= 衢州
+index3= 新余
+index4= 0.0
+index5= 吨
+index6= 100.0
+index7= 元
+index8= 0.0
+index9= 车
+index10= 
+index11= 15057009181
+index12= 07-15 14:15
+index13= 07-15
+one_cargo[:fcityc]=330800000000
+one_cargo[:tcityc]=360500000000
+one_cargo[:fcityn]=浙江衢州市
+one_cargo[:tcityn]=江西新余市
+index0=  
+                    
+                    首页  第一页 下一页 尾 页 共469个记录，每页8个，第 1/59页 
+                    
+fail=2/38 
+one cycle finished on 2012-07-15 14:37:09 +0800,cost=!

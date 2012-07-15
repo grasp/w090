@@ -22,12 +22,12 @@
       <% @cargos.each do |cargo| %>     
         <%unless cargo.nil? %>
           <tr>
-               <td>    <a class="show_float" href="/cities/modal/show/<%=cargo.fcityc%>/line/<%=cargo.fcityc%>/<%=cargo.tcityc%>">            
+               <td>  <!--  <a class="show_float" href="/cities/modal/show/<%=cargo.fcityc%>/line/<%=cargo.fcityc%>/<%=cargo.tcityc%>"> -->           
               <%= cargo.fcityn %>
               </a>
             </td>
             <td>   
-               <a class="show_float" href="/cities/modal/show/<%=cargo.tcityc%>/line/<%=cargo.fcityc%>/<%=cargo.tcityc%>">
+             <!--  <a class="show_float" href="/cities/modal/show/<%=cargo.tcityc%>/line/<%=cargo.fcityc%>/<%=cargo.tcityc%>">-->
              
              <%= cargo.tcityn %>
               </a>

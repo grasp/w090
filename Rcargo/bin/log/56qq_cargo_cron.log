@@ -1,0 +1,21 @@
+[03/07 07:20:42] 
+
+404 => Net::HTTPNotFound for http://www.5qqq.cn/logistics/message/query?pid=11&t=C&fs=30 -- unhandled response
+  /usr/local/lib/ruby/gems/1.9.1/gems/mechanize-2.5.1/lib/mechanize/http/agent.rb:304:in `fetch'
+  /usr/local/lib/ruby/gems/1.9.1/gems/mechanize-2.5.1/lib/mechanize.rb:407:in `get'
+  /home/hunter/vob/w090/Rcargo/bin/56qq/56qq_cron_helper.rb:49:in `block in qq56_cargo_cron'
+  /home/hunter/vob/w090/Rcargo/bin/56qq/56qq_cron_helper.rb:21:in `each'
+  /home/hunter/vob/w090/Rcargo/bin/56qq/56qq_cron_helper.rb:21:in `qq56_cargo_cron'
+  56qq_cargo_cron.rb:35:in `block (2 levels) in <main>'
+  /usr/local/lib/ruby/gems/1.9.1/gems/foreverb-0.3.0/lib/forever/job.rb:12:in `call'
+  /usr/local/lib/ruby/gems/1.9.1/gems/foreverb-0.3.0/lib/forever/job.rb:12:in `call'
+  /usr/local/lib/ruby/gems/1.9.1/gems/foreverb-0.3.0/lib/forever/base.rb:366:in `safe_call'
+  /usr/local/lib/ruby/gems/1.9.1/gems/foreverb-0.3.0/lib/forever/base.rb:358:in `job_call'
+  /usr/local/lib/ruby/gems/1.9.1/gems/foreverb-0.3.0/lib/forever/base.rb:113:in `block (3 levels) in initialize'
+
+56qq_cargo_cron.rb:50:in `block (2 levels) in <main>': undefined method `ERROR' for #<Logger:0xa152b10> (NoMethodError)
+	from /usr/local/lib/ruby/gems/1.9.1/gems/foreverb-0.3.0/lib/forever/base.rb:369:in `[]'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/foreverb-0.3.0/lib/forever/base.rb:369:in `rescue in safe_call'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/foreverb-0.3.0/lib/forever/base.rb:365:in `safe_call'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/foreverb-0.3.0/lib/forever/base.rb:358:in `job_call'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/foreverb-0.3.0/lib/forever/base.rb:113:in `block (3 levels) in initialize'

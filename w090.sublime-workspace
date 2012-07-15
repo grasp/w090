@@ -8,64 +8,45 @@
 	"buffers":
 	[
 		{
-			"file": "Rforum/app/controllers/rforum/topics_controller.rb",
 			"settings":
 			{
-				"buffer_size": 5227,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "Searching 1928 files for \"set_seo_meta\"\n\n/home/hunter/vob/w090/Rforum/app/controllers/rforum/notes_controller.rb:\n   14:     set_seo_meta t(\"menu.notes\")\n   20:     set_seo_meta(\"查看 &raquo; #{t(\"menu.notes\")}\")\n   26:     set_seo_meta(\"新建 &raquo; #{t(\"menu.notes\")}\")\n   32:     set_seo_meta(\"修改 &raquo; #{t(\"menu.notes\")}\")\n\n/home/hunter/vob/w090/Rforum/app/controllers/rforum/posts_controller.rb:\n   13:     set_seo_meta(\"文章\")\n   26:     set_seo_meta(\"#{@post.title}\")\n\n/home/hunter/vob/w090/Rforum/app/controllers/rforum/rforum_controller.rb:\n   54:   def set_seo_meta(title = '',meta_keywords = '', meta_description = '')\n\n/home/hunter/vob/w090/Rforum/app/controllers/rforum/search_controller.rb:\n   11:     set_seo_meta(\"#{t(\"common.search\")}: #{params[:q]}\")\n   22:     set_seo_meta(\"WIKI#{t(\"common.search\")}: #{params[:q]}\")\n\n/home/hunter/vob/w090/Rforum/app/controllers/rforum/sites_controller.rb:\n    8:     set_seo_meta(\"Ruby #{t(\"menu.sites\")}\")\n\n/home/hunter/vob/w090/Rforum/app/controllers/rforum/topics_controller.rb:\n   18:     set_seo_meta(\"#{Rforum::Setting.app_name}#{t(\"menu.topics\")}\",\"#{Rforum::Setting.app_name}#{t(\"menu.topics\")}\")\n   32:     set_seo_meta(\"#{@node.name} &raquo; #{t(\"menu.topics\")}\",\"#{Rforum::Setting.app_name}#{t(\"menu.topics\")}#{@node.name}\",@node.summary)\n   55:     set_seo_meta(\"#{t(\"common.search\")}#{params[:s]} &raquo; #{t(\"menu.topics\")}\")\n   70:     set_seo_meta(\"#{@topic.title} &raquo; #{t(\"menu.topics\")}\")\n   87:     set_seo_meta(\"#{t(\"topics.post_topic\")} &raquo; #{t(\"menu.topics\")}\")\n   95:     set_seo_meta(\"#{t(\"topics.edit_topic\")} &raquo; #{t(\"menu.topics\")}\")\n  155:     set_seo_meta(t(\"menu.topics\"))\n\n/home/hunter/vob/w090/Rtheme/lib/application_controller_common.rb:\n   35:   def set_seo_meta(title = '',meta_keywords = '', meta_description = '')\n\n/home/hunter/vob/w090/Ruser/app/controllers/ruser/notifications_controller.rb:\n    9:     set_seo_meta(\"提醒\")\n\n/home/hunter/vob/w090/Ruser/app/controllers/ruser/users_controller.rb:\n   20:     set_seo_meta(\"#{@user.login}\")\n\n/home/hunter/vob/w090/Ruser/app/helpers/ruser/users_helper.rb:\n  135:   def set_seo_meta(title = '',meta_keywords = '', meta_description = '')\n\n/home/hunter/vob/w090/Rwiki/app/controllers/rwiki/pages_controller.rb:\n   10:     set_seo_meta(\"Wiki\")\n   16:     set_seo_meta t(\"pages.wiki_index\")\n   29:       set_seo_meta(\"#{@page.title} - Wiki\")\n   37:     set_seo_meta t(\"pages.new_wiki_page\")\n   47:     set_seo_meta t(\"pages.edit_wiki_page\")\n\n26 matches across 11 files\n\n\nSearching 1928 files for \"def render_page_title\"\n\n/home/hunter/vob/w090/Rtheme/lib/application_helper_common.rb:\n   34:   def render_page_title\n\n/home/hunter/vob/w090/Rtheme/lib/helper.rb:\n   10:     def render_page_title\n\n2 matches across 2 files\n\n\nSearching 1928 files for \"SITE_NAME\"\n\n/home/hunter/vob/w090/Rtheme/lib/application_helper_common.rb:\n   37:     title = @page_title ? \"#{@page_title} | #{SITE_NAME}\" : SITE_NAME rescue \"SITE_NAME\"\n\n/home/hunter/vob/w090/Rtheme/lib/helper.rb:\n   12:       title = @page_title ? \"#{SITE_NAME} | #{@page_title}\" : SITE_NAME rescue \"SITE_NAME\"\n\n6 matches across 2 files\n",
+			"file": "Rcargo/bin/cron_common.rb",
 			"settings":
 			{
-				"buffer_size": 3128,
+				"buffer_size": 372,
+				"line_ending": "Unix",
+				"name": "cron_common.rb"
+			}
+		},
+		{
+			"contents": "Searching 2097 files for \"city_parse\"\n\n/home/hunter/vob/w090/Rcargo/bin/cargo_cron_helper.rb:\n   73:   def city_parse(from_city,to_city)\n\n/home/hunter/vob/w090/Rcargo/bin/tf56/tf56_cron_helper.rb:\n   70:         #  city_array=city_parse(one_cargo[:fcity_name],one_cargo[:tcity_name])\n\n2 matches across 2 files\n\n\nSearching 2100 files for \"get_city_full_name\"\n\n/home/hunter/vob/w090/Rcargo/bin/cargo_cron_helper.rb:\n   80:     city_array[3]=get_city_full_name(city_array[0]) unless city_array[0].blank?\n   81:     city_array[4]=get_city_full_name(city_array[1]) unless city_array[1].blank?\n\n/home/hunter/vob/w090/Rcargo/bin/log/tf56_cargo_cron.log:\n    3: undefined method `get_city_full_name' for CityTree:Class\n\n/home/hunter/vob/w090/Rcargo/bin/tf56/tf56_cargo.log:\n 1141: I, [2012-07-01T19:07:21.781780 #2835]  INFO -- : tf56 cargo cron Boom raised: undefined method `get_city_full_name' for #<Forever::Base:0xa0a6eb4> 2012-07-01 19:07:21 +0800!\n 1155: I, [2012-07-01T19:08:29.521549 #2849]  INFO -- : tf56 cargo cron Boom raised: undefined method `get_city_full_name' for CityTree:Class 2012-07-01 19:08:29 +0800!\n\n/home/hunter/vob/w090/Rcargo/bin/tf56/tf56_cron_helper.rb:\n   10:     city_array[3]=CityTree.get_city_full_name(city_array[0]) unless city_array[0].nil?\n   11:     city_array[4]=CityTree.get_city_full_name(city_array[1]) unless city_array[1].nil?\n   60:            one_cargo[:fcity_name]=get_city_full_name(one_cargo[:fcity_code]) unless one_cargo[:fcity_code].nil?\n   61:            one_cargo[:tcity_name]=get_city_full_name(one_cargo[:tcity_code]) unless one_cargo[:tcity_code].nil?\n\n/home/hunter/vob/w090/Rcity/app/helpers/rcity/chengs_helper.rb:\n   26:   def get_city_full_name(code)\n   52:     def get_city_full_name_for_location_search(code)\n\n11 matches across 5 files\n\n\nSearching 2100 files for \"get_city_full_name\"\n\n/home/hunter/vob/w090/Rcargo/bin/cargo_cron_helper.rb:\n   80:     city_array[3]=get_city_full_name(city_array[0]) unless city_array[0].blank?\n   81:     city_array[4]=get_city_full_name(city_array[1]) unless city_array[1].blank?\n\n/home/hunter/vob/w090/Rcargo/bin/log/tf56_cargo_cron.log:\n    3: undefined method `get_city_full_name' for CityTree:Class\n   24: undefined method `get_city_full_name' for CityTree:Class\n\n/home/hunter/vob/w090/Rcargo/bin/tf56/tf56_cargo.log:\n 1141: I, [2012-07-01T19:07:21.781780 #2835]  INFO -- : tf56 cargo cron Boom raised: undefined method `get_city_full_name' for #<Forever::Base:0xa0a6eb4> 2012-07-01 19:07:21 +0800!\n 1155: I, [2012-07-01T19:08:29.521549 #2849]  INFO -- : tf56 cargo cron Boom raised: undefined method `get_city_full_name' for CityTree:Class 2012-07-01 19:08:29 +0800!\n 1167: I, [2012-07-01T19:13:30.188858 #2849]  INFO -- : tf56 cargo cron Boom raised: undefined method `get_city_full_name' for CityTree:Class 2012-07-01 19:13:30 +0800!\n\n/home/hunter/vob/w090/Rcargo/bin/tf56/tf56_cron_helper.rb:\n   10:     city_array[3]=CityTree.get_city_full_name(city_array[0]) unless city_array[0].nil?\n   11:     city_array[4]=CityTree.get_city_full_name(city_array[1]) unless city_array[1].nil?\n   60:            one_cargo[:fcity_name]=get_city_full_name(one_cargo[:fcity_code]) unless one_cargo[:fcity_code].nil?\n   61:            one_cargo[:tcity_name]=get_city_full_name(one_cargo[:tcity_code]) unless one_cargo[:tcity_code].nil?\n\n/home/hunter/vob/w090/Rcity/app/helpers/rcity/chengs_helper.rb:\n   26:   def get_city_full_name(code)\n   52:     def get_city_full_name_for_location_search(code)\n\n13 matches across 5 files\n",
+			"settings":
+			{
+				"buffer_size": 3507,
 				"line_ending": "Unix",
 				"name": "Find Results",
 				"scratch": true
 			}
 		},
 		{
-			"file": "Rtheme/lib/application_helper_common.rb",
+			"file": "Rcity/config/initializers/city_load.rb",
 			"settings":
 			{
-				"buffer_size": 1927,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Ruser/app/helpers/ruser/users_helper.rb",
-			"settings":
-			{
-				"buffer_size": 4547,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Ruser/lib/ruser/engine.rb",
-			"settings":
-			{
-				"buffer_size": 2870,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "require 'rubygems'\n#require 'bootstrap-rails'\nrequire 'will_paginate'\nrequire  'will_paginate_mongoid'\nrequire  'bootstrap-will_paginate'\nrequire \"breadcrumb\"  #as Rtheme is common , so put breadcrumb into rtheme lib ,so all app can use\nrequire 'helper' #from bootstrap-rails of xdite of ruby-china\nrequire 'application_controller_common' #from bootstrap-rails of xdite of ruby-china\nrequire 'application_helper_common' #from bootstrap-rails of xdite of ruby-china\n\nmodule Rtheme\n  class Engine < ::Rails::Engine\n   \n\n        #load all helper, otherwise will cover by parent app with same name\n    initializer 'Rtheme::ApplicationController' do |app|\n       ActionView::Base.send :include, Bootstrap::Breadcrumb::Helpers\n       ActionView::Base.send :include, Bootstrap::Breadcrumb::InstanceMethods\n       ActionView::Base.send :include, Bootstrap::Helper\n       ActionView::Base.send :include, ApplicationHelperCommon\n        ActionController::Base .send :include,  Bootstrap::Breadcrumb::Helpers\n        ActionController::Base .send :include,  Bootstrap::Helper\n        ActionController::Base .send :include,  Bootstrap::Breadcrumb::InstanceMethods\n         ActionController::Base .send :include,  ApplicationHelperCommon\n         ActionController::Base .send :before_filter,  :set_breadcrumbs\n    \n    app.config.assets.paths += [\"#{config.root}/vendor/assets/stylesheets/bootstrap202\"]\n    app.config.assets.paths += [\"#{config.root}/vendor/assets/javascripts/bootstrap202\"]\n    app.config.assets.paths += [\"#{config.root}/vendor/assets/javascripts/jquery172\"]\n    app.config.assets.paths += [\"#{config.root}/vendor/assets/images/bootstrap202\"]\n    end\n\n   #why not work? each time did not load change2\n    config.autoload_paths << File.expand_path(\"#{config.root}/lib\", __FILE__) #this could be bug of rails engine?   \n     isolate_namespace Rtheme\n  end\nend\n",
-			"file": "Rtheme/lib/rtheme/engine.rb",
-			"file_size": 1863,
-			"file_write_time": 1336379864000000,
-			"settings":
-			{
-				"buffer_size": 1864,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Rcompany/app/controllers/rcompany/companies_controller.rb",
-			"settings":
-			{
-				"buffer_size": 6678,
+				"buffer_size": 8025,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Rcargo/bin/tf56_cargo_cron.rb",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -77,11 +58,7 @@
 		[
 			[
 				"Package Control: ",
-				"Package Control: Enable Package"
-			],
-			[
-				"Package Control: i",
-				"Package Control: Install Package"
+				"Package Control: Remove Package"
 			],
 			[
 				"Package Control: inst",
@@ -117,155 +94,152 @@
 	},
 	"file_history":
 	[
-		"/home/hunter/vob/w090/Rcompany/config/locales/menu.zh-CN.yml",
-		"/home/hunter/vob/w090/Rtheme/lib/application_helper_common.rb",
-		"/home/hunter/vob/w090/Rmain/config/config.yml",
-		"/home/hunter/vob/w090/Rtheme/lib/helper.rb",
+		"/home/hunter/vob/caiji/app/helpers/caiji_helper.rb",
+		"/home/hunter/vob/w090/Rcargo/bin/cron_init.rb",
+		"/home/hunter/vob/w090/Rcargo/bin/tf56/tf56_cargo_cron.rb",
+		"/home/hunter/vob/w090/Rcargo/bin/tf56/tf56_cron_helper.rb",
+		"/home/hunter/vob/w090/Rcity/app/helpers/rcity/chengs_helper.rb",
+		"/home/hunter/vob/w090/Rcargo/bin/cargo_cron_helper.rb",
+		"/home/hunter/vob/w090/Rcargo/bin/tf56_cargo_cron.rb",
+		"/home/hunter/vob/caiji/bin/cron/cron_init.rb",
+		"/home/hunter/vob/caiji/app/helpers/cargo_rules_helper.rb",
+		"/home/hunter/vob/w090/Rcity/config/initializers/city_load.rb",
+		"/home/hunter/vob/caiji/config/initializers/init/city_load.rb",
+		"/home/hunter/vob/w090/Rcargo/bin/tf56/tf56_cargo.log",
+		"/home/hunter/vob/w090/Ruser/app/uploaders/avatar_uploader.rb",
+		"/home/hunter/vob/w090/Rcargo/bin/tf56_cargo.log",
+		"/home/hunter/vob/w090/w090.sublime-workspace",
+		"/home/hunter/vob/w090/Ruser/app/views/ruser/account/edit.html.erb",
 		"/home/hunter/vob/w090/Ruser/app/helpers/ruser/users_helper.rb",
-		"/home/hunter/vob/w090/Rforum/config/rforum.yml",
-		"/home/hunter/vob/w090/Ruser/config/routes.rb",
-		"/home/hunter/vob/w090/Ruser/config/initializers/carrierwave.rb",
-		"/home/hunter/vob/w090/Rforum/app/models/rforum/site_config.rb",
-		"/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/rforum.html.erb",
+		"/home/hunter/vob/w090/Rforum/config/locales/users.zh-CN.yml",
+		"/home/hunter/vob/caiji/bin/cron/cargo_cron.rb",
+		"/home/hunter/vob/w090/Ruser/app/uploaders/base_uploader.rb",
+		"/home/hunter/vob/w090/Ruser/app/uploaders/photo_uploader.rb",
+		"/home/hunter/桌面/resume v0.2",
+		"/home/hunter/vob/w090/Ruser/app/models/ruser/user.rb",
 		"/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/rmain.html.erb",
-		"/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/rtruck.html.erb",
-		"/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/ruser.html.erb",
-		"/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/cpanel.html.erb",
+		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/rforum/application.scss",
+		"/home/hunter/vob/w090/Rforum/app/cells/topics/sidebar_hot_nodes.html.erb",
+		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/rforum/front.scss",
+		"/home/hunter/vob/w090/Ruser/lib/ruser/engine.rb",
+		"/home/hunter/vob/w090/Ruser/app/views/ruser/users/_menu.html.erb",
+		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/home/root.html.erb",
+		"/home/hunter/vob/w090/Rcargo/config/locales/menu.zh-CN.yml",
+		"/home/hunter/vob/w090/Rforum/app/views/rforum/topics/cell/_index_sections.html.erb",
+		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/rforum/topics.scss",
+		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/cargos/_form.html.erb",
+		"/home/hunter/vob/w090/Rforum/app/views/rforum/topics/cell/_index_locations.html.erb",
+		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/ruser/application.scss",
+		"/home/hunter/vob/w090/Ruser/app/views/ruser/users/_base.html.erb",
+		"/home/hunter/vob/w090/Rmain/Gemfile",
+		"/home/hunter/vob/w090/Rtruck/Gemfile",
+		"/home/hunter/vob/w090/Rforum/app/views/rforum/topics/_editor_toolbar.html.erb",
+		"/home/hunter/vob/w090/Rforum/app/views/rforum/topics/_form.html.erb",
+		"/home/hunter/vob/w090/Rforum/lib/rforum/engine.rb",
+		"/home/hunter/vob/w090/Rforum/app/helpers/rforum/topics_helper.rb",
+		"/home/hunter/vob/w090/Rforum/app/views/rforum/topics/show.html.erb",
+		"/home/hunter/vob/w090/Ruser/config/locales/menu.zh-CN.yml",
+		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rforum/sites.coffee",
+		"/home/hunter/vob/w090/Rtheme/app/views/rtheme/common/_navbar.html.erb",
+		"/home/hunter/vob/w090/Rmain/config/config.yml",
+		"/home/hunter/vob/w090/Rforum/Gemfile",
+		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rforum/topics.coffee",
+		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rforum/app.coffee",
+		"/home/hunter/vob/w090/Rforum/rforum.gemspec",
+		"/home/hunter/vob/w090/Ruser/config/initializers/devise.rb",
+		"/home/hunter/vob/w090/Rforum/app/views/rforum/topics/cell/_sidebar_for_new_topic_node.html.erb",
+		"/home/hunter/vob/w090/Rmain/Gemfile.lock",
+		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/sprites/icons.scss",
+		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/sprites/small.scss",
+		"/home/hunter/vob/w090/Rforum/config/locales/topics.zh-CN.yml",
+		"/home/hunter/vob/w090/Rforum/config/locales/zh-CN.yml",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/_mytruck.html.erb",
+		"/home/hunter/vob/w090/Rtruck/app/models/rtruck/truck.rb",
+		"/home/hunter/vob/w090/Rtruck/app/controllers/rtruck/stock_trucks_controller.rb",
+		"/home/hunter/vob/w090/Rtruck/app/controllers/rtruck/trucks_controller.rb",
+		"/home/hunter/vob/w090/Rtheme/app/views/rtheme/common/_feeds.html.erb",
+		"/home/hunter/vob/w090/Rforum/app/views/rforum/topics/_sidebar_new_topic_box.html.erb",
+		"/home/hunter/vob/w090/Rforum/app/views/rforum/topics/_sidebar_for_topic_node.html.erb",
+		"/home/hunter/vob/w090/Rforum/app/controllers/rforum/topics_controller.rb",
+		"/home/hunter/vob/w090/Rforum/app/helpers/rforum/likes_helper.rb",
+		"/home/hunter/vob/w090/Rforum/app/views/rforum/topics/_base.html.erb",
+		"/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/rforum.html.erb",
+		"/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/rcargo.html.erb",
 		"/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/rcity.html.erb",
 		"/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/rcompany.html.erb",
-		"/home/hunter/vob/w090/Rforum/app/controllers/rforum/rforum_controller.rb",
-		"/home/hunter/vob/w090/Rforum/app/controllers/rforum/topics_controller.rb",
-		"/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/rcargo.html.erb",
-		"/home/hunter/vob/w090/Ruser/app/views/ruser/account/edit.html.erb",
-		"/home/hunter/vob/w090/Ruser/app/controllers/ruser/users_controller.rb",
-		"/home/hunter/vob/w090/Ruser/lib/ruser/engine.rb",
-		"/home/hunter/vob/w090/Ruser/config/ruser.yml",
-		"/home/hunter/vob/w090/Rtheme/app/views/rtheme/common/_google_analytics.html.erb",
-		"/home/hunter/vob/w090/Rforum/app/helpers/rforum/topics_helper.rb",
-		"/home/hunter/vob/w090/Rcompany/config/routes.rb",
-		"/home/hunter/vob/w090/Rforum/app/views/rforum/common/_feeds.html_1.erb",
-		"/home/hunter/vob/w090/Rforum/app/views/rforum/common/_feeds.html.erb",
-		"/home/hunter/vob/w090/Rforum/app/models/rforum/setting.rb",
-		"/home/hunter/vob/w090/Rforum/lib/rforum/engine.rb",
-		"/home/hunter/vob/w090/Rforum/app/models/rforum/reply.rb",
-		"/home/hunter/vob/w090/Rforum/app/models/rforum/section.rb",
-		"/home/hunter/vob/w090/Rforum/app/models/rforum/site.rb",
-		"/home/hunter/vob/w090/Rcompany/app/views/rcompany/companies/search_province.html.erb",
-		"/home/hunter/vob/w090/Rcompany/app/views/rcompany/companies/search_region.html.erb",
-		"/home/hunter/vob/w090/Rcompany/app/views/rcompany/companies/show.html.erb",
-		"/home/hunter/vob/w090/Rcompany/app/views/rcompany/companies/search_cheng.html.erb",
-		"/home/hunter/vob/w090/Rcompany/app/views/rcompany/companies/_form.html.erb",
-		"/home/hunter/vob/w090/Rcompany/app/views/rcompany/companies/_searchlist.html.erb",
-		"/home/hunter/vob/w090/Rcompany/app/views/rcompany/companies/index.html.erb",
-		"/home/hunter/vob/w090/Rcompany/app/views/rcompany/home/_companynavi.html.erb",
-		"/home/hunter/vob/w090/Rcompany/app/controllers/rcompany/companies_controller.rb",
-		"/home/hunter/vob/w090/Rcompany/app/views/rcompany/companies/_region_navi.html.erb",
-		"/home/hunter/vob/w090/Rcompany/app/helpers/rcompany/companies_helper.rb",
-		"/home/hunter/vob/w090/Rcompany/app/views/rcompany/companies/_province_navi.html.erb",
-		"/home/hunter/vob/w090/Rcompany/app/views/rcompany/companies/_cheng_navi.html.erb",
-		"/home/hunter/vob/w090/Rforum/config/routes.rb",
-		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme.css",
-		"/home/hunter/vob/w090/Ruser/app/cells/users/recent_join_users.html.erb",
-		"/home/hunter/vob/w090/Rcompany/app/views/rcompany/companies/search.html.erb",
-		"/home/hunter/vob/w090/Rcompany/app/views/rcompany/home/root.html.erb",
-		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/cargos/_searchlist.html.erb",
-		"/home/hunter/vob/w090/Rcargo/app/helpers/rcargo/cargos_helper.rb",
-		"/home/hunter/vob/w090/Rcargo/config/routes.rb",
-		"/home/hunter/vob/w090/Rcompany/app/views/rcompany/companies/edit.html.erb",
-		"/home/hunter/vob/w090/Rtheme/vendor/assets/stylesheets/bootstrap202/bootstrap.css",
-		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/rcargo/application.css",
-		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/ruser/application.scss",
-		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/rcity/application.css",
-		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/rtruck/application.css",
-		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/rforum/application.scss",
-		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/rcompany/application.css",
-		"/home/hunter/vob/w090/Rcompany/app/views/rcompany/companies/_companynavi.html.erb",
-		"/home/hunter/vob/w090/Rcompany/app/views/rcompany/companies/yellowpage.html.erb",
-		"/home/hunter/vob/w090/Rcompany/app/views/rcompany/companies/_show.html.erb",
-		"/home/hunter/vob/w090/Rcompany/app/views/rcompany/companies/new.html.erb",
-		"/home/hunter/vob/w090/Rcargo/config/locales/menu.zh-CN.yml",
-		"/home/hunter/vob/w090/Rcargo/app/controllers/rcargo/cargos_controller.rb",
-		"/home/hunter/vob/w090/Rcity/app/views/rcity/chengs/_line_modal.html.erb",
-		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/cargos/_cargo_line.html.erb",
-		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/home/_rcargo_nav.html.erb",
-		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rcity/chengs.js",
-		"/home/hunter/vob/w090/Rcompany/lib/rcompany/engine.rb",
-		"/home/hunter/vob/w090/Rcompany/app/views/rcompany/home/_rcompany_nav.html.erb",
-		"/home/hunter/vob/w090/Rcity/config/locales/rcity.zh-CN.yml",
-		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/cargos/_form.html.erb",
-		"/home/hunter/vob/w090/Rcity/app/views/rcity/chengs/_cheng_modal.html.erb",
-		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rcompany/rcompany_main.js",
-		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rcompany/rcompany.js",
-		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rcompany/application.coffee",
-		"/home/hunter/vob/w090/Rcity/app/views/rcity/chengs/lineselect.html.erb",
-		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/stock_trucks/_form.html.erb",
-		"/home/hunter/vob/github/g00/app/views/stock_trucks/_form.html.erb",
-		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/cargo_categories/_form.html.erb",
-		"/home/hunter/vob/w090/Rforum/app/views/rforum/cpanel/nodes/_form.html.erb",
-		"/home/hunter/vob/github/g00/app/views/cargo_categories/_form.html.erb",
-		"/home/hunter/vob/w090/Rcargo/lib/rcargo/engine.rb",
-		"/home/hunter/vob/w090/Rcompany/app/models/rcompanies/company.rb",
-		"/home/hunter/vob/smartlog/config/routes.rb",
-		"/home/hunter/vob/smartlog/README.rdoc",
-		"/home/hunter/vob/w090/Rcompany/app/models/company.rb",
-		"/home/hunter/vob/w090/Rtheme/app/views/rtheme/common/_header_nav.erb",
-		"/home/hunter/vob/github/g00/config/routes.rb",
-		"/home/hunter/vob/w090/Rtruck/app/helpers/rtruck/trucks_helper.rb",
-		"/home/hunter/vob/w090/Rtruck/config/locales/menu.zh-CN.yml",
-		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/_province_navi.html.erb",
-		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/search_province.html.erb",
-		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rcargo/rcargo.js",
-		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rcargo/rcargo_main.js",
-		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rtruck/rtruck_main.js",
-		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rtruck/rtruck.js",
-		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rtruck/application.coffee",
-		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/_searchlist.html.erb",
-		"/home/hunter/vob/w090/Rtruck/config/routes.rb",
-		"/home/hunter/vob/w090/Rtruck/app/controllers/rtruck/trucks_controller.rb",
-		"/home/hunter/vob/w090/Rcompany/app/controllers/rcompany/home_controller.rb",
-		"/home/hunter/vob/w090/Rcompany/app/controllers/rcompany/application_controller.rb",
-		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rcargo/application.coffee",
-		"/home/hunter/vob/w090/Rforum/app/controllers/rforum/cpanel/application_controller.rb",
-		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/search_cheng.html.erb",
-		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/search_region.html.erb",
-		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/_region_navi.html.erb",
-		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/_cheng_navi.html.erb",
-		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/cargos/_cheng_navi.html.erb",
-		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/edit.html.erb",
-		"/home/hunter/vob/w090/Rtheme/app/views/rtheme/common/_navbar.html.erb",
+		"/home/hunter/vob/w090/Ruser/app/views/layouts/ruser.html.erb",
+		"/home/hunter/vob/w090/Rforum/app/views/rforum/common/_user_nav.html.erb",
+		"/home/hunter/vob/w090/Ruser/app/views/ruser/common/_feeds.html.erb",
 		"/home/hunter/vob/w090/Rtheme/app/views/rtheme/common/_user_nav.html.erb",
-		"/home/hunter/vob/w090/Rmain/config/routes.rb",
-		"/home/hunter/vob/w090/Rtheme/app/views/rtheme/common/_header_nav2.html.erb",
-		"/home/hunter/vob/w090/Rtruck/spec/dummy/config/routes.rb",
-		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/home/root.html.erb",
+		"/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/cpanel.html.erb",
+		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/cpanel/application.css",
+		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/cpanel/cpanel.scss",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/index.html.erb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/_form.html.erb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/edit.html.erb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/show.html.erb",
+		"/home/hunter/vob/w090/Rtruck/config/locales/menu.zh-CN.yml",
+		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/cargos/_mycargo.html.erb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/stock_trucks/show.html.erb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/stock_trucks/_show.html.erb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/_truck_line.html.erb",
+		"/home/hunter/vob/w090/Rcity/app/views/rcity/chengs/_line_modal.html.erb",
+		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rtruck/application.coffee",
+		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rcity/chengs.js",
+		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rtruck/rtruck_main.js",
+		"/home/hunter/vob/w090/Rcargo/app/controllers/rcargo/cargos_controller.rb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/stock_trucks/_my_stock_trucks.html.erb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/stock_trucks/_trucklist.html.erb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/stock_trucks/index.html.erb",
+		"/home/hunter/vob/w090/Rtruck/config/routes.rb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/new.html.erb",
+		"/home/hunter/vob/github/g00/app/views/stock_cargos/_form.html.erb",
+		"/home/hunter/vob/github/g00/app/controllers/cargos_controller.rb",
+		"/home/hunter/vob/w090/Rtruck/app/models/rtruck/stock_truck.rb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/stock_trucks/_editform.html.erb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/stock_trucks/_form.html.erb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/stock_trucks/_stock_truck_nav.html.erb",
+		"/home/hunter/vob/w090/Rtheme/app/views/layouts/rtheme/rtruck.html.erb",
+		"/home/hunter/vob/w090/Rcity/app/assets/javascripts/rcity/chengs.js",
+		"/home/hunter/vob/w090/Rtheme/app/assets/javascripts/rtheme/rcargo/rcargo.js",
+		"/home/hunter/vob/github/g00/app/views/cargos/_mycargo.html.erb",
+		"/home/hunter/vob/w090/Rcity/app/models/rcity/region.rb",
+		"/home/hunter/vob/w090/Rtruck/config/initializers/year_hash.rb",
+		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/stock_cargos/_form.html.erb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/_trucknavi.html.erb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/search.html.erb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/_searchlist.html.erb",
+		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/trucks/_trucklist.html.erb",
 		"/home/hunter/vob/w090/Rtruck/app/views/rtruck/home/_rtruck_nav.html.erb",
-		"/home/hunter/vob/w090/Rtruck/app/controllers/rtruck/application_controller.rb",
-		"/home/hunter/vob/w090/Rtruck/app/controllers/rtruck/home_controller.rb",
-		"/home/hunter/vob/w090/Rtheme/app/assets/stylesheets/rtheme/rtruck/rtruck.css",
-		"/home/hunter/emsshare/case_log/46068-ap-bootstrap-fail/20120502-med/opt/EMS/bin/log/SNMPMgr0.log",
-		"/home/hunter/vob/w090/Rcargo/app/views/rcargo/cargos/show.html.erb",
-		"/home/hunter/vob/w090/Rmain/Gemfile"
+		"/home/hunter/vob/github/g00/config/routes.rb",
+		"/home/hunter/vob/w090/Rtruck/app/models/truck_location.rb",
+		"/home/hunter/vob/w090/Rtruck/app/models/truck_group.rb",
+		"/home/hunter/vob/w090/Rtruck/app/models/truck.rb",
+		"/home/hunter/vob/w090/Rtruck/app/models/stock_truck.rb",
+		"/home/hunter/vob/w090/Rtruck/app/helpers/rtruck/stock_trucks_helper.rb",
+		"/home/hunter/vob/w090/Rcargo/config/routes.rb",
+		"/home/hunter/vob/w090/Rcargo/lib/rcargo/engine.rb",
+		"/home/hunter/vob/w090/Rtruck/lib/rtruck/engine.rb",
+		"/home/hunter/vob/w090/Rtruck/app/helpers/rtruck/trucks_helper.rb",
+		"/home/hunter/vob/w090/Rtruck/app/controllers/rtruck/truck_groups_controller.rb"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
-		"height": 102.0,
+		"height": 93.0,
 		"where_history":
 		[
 			"/home/hunter/vob/w090",
-			"/home/hunter/vob/w090/Rforum",
-			"/home/hunter/vob/w090",
 			"/home/hunter/vob/w090/Rtheme",
-			"/home/hunter/vob/Rtheme",
-			"/home/hunter/vob",
+			"/home/hunter/vob/w090/Ruser",
+			"/home/hunter/vob/w090/Rtheme",
+			"/home/hunter/vob/w090/Ruser",
 			"/home/hunter/vob/w090",
-			"/home/hunter/vob/w090/Rforum",
-			"/home/hunter/vob/w090/Rforum/config/locales",
 			"/home/hunter/vob",
-			"/home/hunter/vob/w090",
+			"/home/hunter/vob/w090/Rforum/config",
 			"/home/hunter/vob",
 			"/home/hunter/vob/w090/Ruser",
 			"/home/hunter/vob/w090",
@@ -284,122 +258,87 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"SITE_NAME",
-			"def render_page_title",
-			"set_seo_meta",
-			"root",
-			"set_seo_meta",
-			"@page_title",
-			"render_page_title",
-			"@meta_description",
-			"ruser.yml",
+			"get_city_full_name",
+			"city_parse",
+			"save",
+			".blank?",
+			"@mechanize",
+			"edit_on_gravatar",
+			"如需修改头像",
+			"class=\"user_avatar\"",
+			"user_avatar",
+			"big.jpg",
+			"mount",
+			"carrierwave_processing_error",
+			"require 'carrierwave",
+			"require 'carrierwave/orm",
+			"#sections",
+			"hot_nodes",
+			".hot_nodes",
+			"hot_locations",
+			"profile",
+			"Profile",
+			"bg.png",
+			"\"bg.png\"",
+			"/bg.png",
+			"nodes.en.yml",
 			"Setting",
-			"CarrierWave.configure",
-			"avatar.url",
-			"AvatarUploader",
-			"pages",
-			"recent_join_users",
-			"Cargo.",
-			"@cargos",
-			"rcargo/cargos",
-			"Cargo",
-			"/rcargo/cargos",
-			"rcargo.cargos",
-			"/rcargo/cargos",
-			"cargos",
-			"btn-warning",
-			"</fieldset>",
-			"<fieldset",
-			"companies",
-			"cargos",
-			"rcargo",
-			"cargos",
-			"rcargo",
-			"cargos_province_search_path",
-			"rcargo",
-			"cargos",
-			"rcargo",
-			"tcity_code",
-			"fcity_code",
-			"/home/ems",
-			"/home",
-			"/home/ems_to_ne",
-			"/home/ne_to_ems/800000a1030025f128fa70",
-			"800000a1030025f128fa70",
-			"Failed",
-			"upload",
-			"bootstrap",
-			"admin",
-			"a:visited",
-			"background-color",
-			"dd>",
-			"dt>",
-			"float_load",
-			"will_paginate/",
-			"will_paginate",
-			"next_region",
-			"get_province_count",
-			"count",
-			"get_province_cargo_to_count",
-			"sequnced_province",
-			"cate_name",
-			"tcity_name",
-			"fcity_name",
-			" }",
-			"search",
-			":;\"){",
-			"def render_list",
-			"create",
-			"set_breadcrumbs",
-			"set_bread",
+			"this.options[flag][key]",
+			"twipsy",
+			"twi",
+			"twipsy",
+			"render_topic_created_at",
+			".tools",
+			"\"aa\"",
+			"aa",
+			"正文",
+			"grouped_collection_select",
+			"render_topic_node_select_tag",
+			"editor_toolbar",
+			"edit_tools input",
+			"render_topic_node_select_tag",
+			"render_node_summary",
+			"big_logo.png",
+			"assets/big_logo.png",
+			"gfdynamicfeedcontrol",
+			"likeable_tag",
+			"render_node_name",
+			"sidebar_hot_nodes",
+			"cpanel",
+			"后台",
+			"start_a_new_topic_button",
+			"发布新帖",
+			"我要发贴",
+			"@truck",
 			"show",
-			"17",
-			"jquery.atwho",
-			"home#root",
-			"homt#root",
-			"sign_out",
-			"out",
-			"$('.dropdown-toggle",
-			"$('.dropdown-toggle').dropdown",
-			"$('.dropdown-toggle').dropdown()",
-			"navbarSearchBackground",
-			"navbar-search",
-			"@nav",
-			"start",
-			"navbarBackgroundstart",
-			"navbar",
-			"nav",
-			"def require_user",
-			"will_paginate",
-			"navbar-search",
-			"topbar-inner",
-			"topbar-innner",
-			"topbar",
-			"@navbarHeight",
-			"navbar-inner",
-			"render_list",
-			"def render_list",
-			"wikistyle",
-			"def drop_breadcrumb",
-			"drop_breadcrumb",
-			"bootstrap",
-			"bootstrap-rails",
-			"execjs",
-			"timeago",
-			"天",
-			"一天",
-			".ago",
-			"一天前",
+			"@stock_truck",
+			"cargo",
+			"class=\"input\"",
+			"clearfix",
+			"#tab",
+			".tab",
+			"$(\".tab\")",
+			"tab",
+			"cargos",
+			"trucks",
+			"def timeago",
 			"timeago",
 			"def timeago",
 			"timeago",
-			"flash[:error]",
-			"def notice_message",
-			"notice_success",
-			"def notice_message",
-			"notice_message",
-			"init_base_breadcrumb",
-			"inverse_of",
+			"match",
+			"())",
+			"cargos/repeat_error",
+			"repeate_error",
+			"<div class=\"field\">",
+			"title",
+			"simle_form",
+			"simle_form.en",
+			"Bootstrap::Breadcrumb",
+			"go back",
+			"goback",
+			"back",
+			"<script>",
+			":class=>",
 			"simple_form_for",
 			"link_to 'New ",
 			"simple_form",
@@ -411,7 +350,41 @@
 			"CitiesHelper",
 			"Cargo::CitiesHelper",
 			"require_user",
-			"social-share-button"
+			"social-share-button",
+			"({",
+			"Rforum",
+			"Breadcrumb",
+			"render_body_tag",
+			"CitiesHelper",
+			"Breadcrumb",
+			".root",
+			"root_url",
+			"/test/dummy",
+			"@import \"bootstrap/",
+			"@import \"./",
+			"@import \"rtheme/bootstrap202/",
+			"202//",
+			"@import \"bootstrap202",
+			"@import \"",
+			"bootstrap-rails",
+			"url_helpers",
+			"= Cheng",
+			"rcity",
+			"cheng_url",
+			"path",
+			" = Cheng",
+			"region",
+			"Rcity::City",
+			"province",
+			"indent",
+			"valid_session",
+			"stub_model(Rcity::Country))",
+			"stub",
+			":following",
+			"following",
+			"ctrl+space",
+			"$/)",
+			"__file__"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -419,30 +392,15 @@
 		"regex": false,
 		"replace_history":
 		[
-			"Company.",
-			"@companies",
-			"rcompany/companies",
-			"Company",
-			"/rcompany/companies",
-			"rcompany.companies",
-			"/rcompany/companies",
-			"companies",
-			"</div>",
-			"<div",
+			".nil?",
+			"mechanize",
+			"@stock_truck",
+			"@truck",
+			"truck",
+			"class=\"controls\"",
+			"control-group",
 			"trucks",
-			"rtruck",
-			"trucks",
-			"rtruck",
-			"trucks_province_search_path",
-			"rtruck",
-			"trucks",
-			"rtruck",
-			"tcityc",
-			"fcityc",
-			"td>",
-			"big_cate",
-			"tcityn",
-			"fcityn",
+			"<div class=\"control-group\">",
 			"Rcargo::CargoBigCategory",
 			"/spec/dummy",
 			"@import \"",
@@ -465,27 +423,54 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Rforum/app/controllers/rforum/topics_controller.rb",
 					"settings":
 					{
-						"buffer_size": 5227,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								729,
-								729
+								0,
+								0
 							]
 						],
 						"settings":
 						{
+							"default_dir": "/home/hunter/vob/w090/Rcargo/bin",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Rcargo/bin/cron_common.rb",
+					"settings":
+					{
+						"buffer_size": 372,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								372,
+								372
+							]
+						],
+						"settings":
+						{
+							"auto_name": "cron_common.rb",
 							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -497,10 +482,10 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"settings":
 					{
-						"buffer_size": 3128,
+						"buffer_size": 3507,
 						"regions":
 						{
 							"match":
@@ -509,140 +494,108 @@
 								"regions":
 								[
 									[
-										125,
-										137
+										107,
+										117
 									],
 									[
-										165,
-										177
+										226,
+										236
 									],
 									[
-										222,
-										234
+										439,
+										457
 									],
 									[
-										279,
-										291
+										526,
+										544
 									],
 									[
-										410,
-										422
+										672,
+										690
 									],
 									[
-										440,
-										452
+										869,
+										887
 									],
 									[
-										559,
-										571
+										1050,
+										1068
 									],
 									[
-										712,
-										724
+										1210,
+										1228
 									],
 									[
-										776,
-										788
+										1304,
+										1322
 									],
 									[
-										918,
-										930
+										1405,
+										1423
 									],
 									[
-										1044,
-										1056
+										1524,
+										1542
 									],
 									[
-										1167,
-										1179
+										1680,
+										1698
 									],
 									[
-										1312,
-										1324
+										1720,
+										1738
 									],
 									[
-										1402,
-										1414
+										1921,
+										1939
 									],
 									[
-										1473,
-										1485
+										2008,
+										2026
 									],
 									[
-										1554,
-										1566
+										2154,
+										2172
 									],
 									[
-										1635,
-										1647
+										2218,
+										2236
 									],
 									[
-										1747,
-										1759
+										2415,
+										2433
 									],
 									[
-										1905,
-										1917
+										2596,
+										2614
 									],
 									[
-										2007,
-										2019
+										2765,
+										2783
 									],
 									[
-										2115,
-										2127
+										2925,
+										2943
 									],
 									[
-										2265,
-										2277
+										3019,
+										3037
 									],
 									[
-										2297,
-										2309
+										3120,
+										3138
 									],
 									[
-										2345,
-										2357
+										3239,
+										3257
 									],
 									[
-										2394,
-										2406
+										3395,
+										3413
 									],
 									[
-										2443,
-										2455
-									],
-									[
-										2634,
-										2655
-									],
-									[
-										2712,
-										2733
-									],
-									[
-										2916,
-										2925
-									],
-									[
-										2930,
-										2939
-									],
-									[
-										2948,
-										2957
-									],
-									[
-										3042,
-										3051
-									],
-									[
-										3073,
-										3082
-									],
-									[
-										3091,
-										3100
+										3435,
+										3453
 									]
 								],
 								"scope": ""
@@ -651,8 +604,8 @@
 						"selection":
 						[
 							[
-								2893,
-								2893
+								3411,
+								3411
 							]
 						],
 						"settings":
@@ -666,53 +619,25 @@
 							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1408.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Rtheme/lib/application_helper_common.rb",
-					"settings":
-					{
-						"buffer_size": 1927,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								892,
-								892
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 646.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "Ruser/app/helpers/ruser/users_helper.rb",
+					"file": "Rcity/config/initializers/city_load.rb",
 					"settings":
 					{
-						"buffer_size": 4547,
+						"buffer_size": 8025,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1591,
-								1591
+								1472,
+								1472
 							]
 						],
 						"settings":
@@ -722,91 +647,33 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 264.0,
+						"translation.y": 126.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "Ruser/lib/ruser/engine.rb",
+					"file": "Rcargo/bin/tf56_cargo_cron.rb",
 					"settings":
 					{
-						"buffer_size": 2870,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2759,
-								2759
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1320.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Rtheme/lib/rtheme/engine.rb",
-					"settings":
-					{
-						"buffer_size": 1864,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1706,
-								1706
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "Rcompany/app/controllers/rcompany/companies_controller.rb",
-					"settings":
-					{
-						"buffer_size": 6678,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1882,
-								1882
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 528.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -856,132 +723,92 @@
 		"selected_items":
 		[
 			[
-				"rforum.html",
-				"w090/Rtheme/app/views/layouts/rtheme/rforum.html.erb"
-			],
-			[
-				"rcity.html",
-				"w090/Rtheme/app/views/layouts/rtheme/rcity.html.erb"
-			],
-			[
-				"rtruck.html",
-				"w090/Rtheme/app/views/layouts/rtheme/rtruck.html.erb"
-			],
-			[
-				"rcargo.html",
-				"w090/Rtheme/app/views/layouts/rtheme/rcargo.html.erb"
-			],
-			[
-				"linemodal",
-				"w090/Rcity/app/views/rcity/chengs/_line_modal.html.erb"
-			],
-			[
-				"cargonav",
-				"w090/Rcargo/app/views/rcargo/home/_rcargo_nav.html.erb"
-			],
-			[
-				"cargos",
-				"w090/Rcargo/app/controllers/rcargo/cargos_controller.rb"
-			],
-			[
-				"cargosform",
+				"rcargo/_for",
 				"w090/Rcargo/app/views/rcargo/cargos/_form.html.erb"
 			],
 			[
-				"stocktruckform",
-				"w090/Rtruck/app/views/rtruck/stock_trucks/_form.html.erb"
+				"rcargo/_form",
+				"w090/Rcargo/app/views/rcargo/cargos/_form.html.erb"
 			],
 			[
-				"rcargo/form.",
-				"w090/Rcargo/app/views/rcargo/cargo_categories/_form.html.erb"
-			],
-			[
-				"form.html",
-				"w090/Rforum/app/views/rforum/cpanel/nodes/_form.html.erb"
-			],
-			[
-				"cargos_con",
-				"w090/Rcargo/app/controllers/rcargo/cargos_controller.rb"
-			],
-			[
-				"header",
-				"w090/Rtheme/app/views/rtheme/common/_header_nav.erb"
-			],
-			[
-				"application_con.rb",
-				"w090/Rforum/app/controllers/rforum/cpanel/application_controller.rb"
-			],
-			[
-				"_search",
-				"w090/Rcargo/app/views/rcargo/cargos/_searchlist.html.erb"
-			],
-			[
-				"cargos_contro",
-				"w090/Rcargo/app/controllers/rcargo/cargos_controller.rb"
-			],
-			[
-				"user_nav",
-				"w090/Rtheme/app/views/rtheme/common/_user_nav.html.erb"
-			],
-			[
-				"_nav",
-				"w090/Rtheme/app/views/rtheme/common/_navbar.html.erb"
-			],
-			[
-				"trucks_con",
-				"w090/Rtruck/app/controllers/rtruck/trucks_controller.rb"
-			],
-			[
-				"rtruck.h",
-				"w090/Rtheme/app/views/layouts/rtheme/rtruck.html.erb"
-			],
-			[
-				"routes",
-				"w090/Rcompany/config/routes.rb"
-			],
-			[
-				"route",
-				"w090/Rtruck/config/routes.rb"
-			],
-			[
-				"routes.rb",
-				"w090/Rcargo/config/routes.rb"
-			],
-			[
-				"modal",
-				"g00/app/views/cities/modal.html.erb"
-			],
-			[
-				"",
-				"w090/Rtheme/app/assets/javascripts/rtheme/rcargo/rcargo.js"
-			],
-			[
-				"zzjs",
-				"g00/app/assets/javascripts/zz-g1.js"
-			],
-			[
-				"zz",
-				"g00/app/assets/javascripts/zz-g1.js"
-			],
-			[
-				"rcargo.js",
-				"w090/Rtheme/app/assets/javascripts/rtheme/rcargo/rcargo.js"
-			],
-			[
-				"chengs_c",
-				"w090/Rcity/app/controllers/rcity/chengs_controller.rb"
-			],
-			[
-				"zjs",
-				"g00/app/assets/javascripts/zz-g1.js"
+				"mycargo",
+				"w090/Rcargo/app/views/rcargo/cargos/_mycargo.html.erb"
 			],
 			[
 				"chengs.js",
 				"w090/Rtheme/app/assets/javascripts/rtheme/rcity/chengs.js"
 			],
 			[
-				"ruser.html",
-				"w090/Ruser/app/views/layouts/ruser.html.erb"
+				"line_mod",
+				"w090/Rcity/app/views/rcity/chengs/_line_modal.html.erb"
+			],
+			[
+				"_form",
+				"g00/app/views/stock_cargos/_form.html.erb"
+			],
+			[
+				"cargos_con",
+				"w090/Rcargo/app/controllers/rcargo/cargos_controller.rb"
+			],
+			[
+				"rtruck.h",
+				"w090/Rtheme/app/views/layouts/rtheme/rtruck.html.erb"
+			],
+			[
+				"rcity.js",
+				"w090/Rcity/app/assets/javascripts/rcity/chengs.js"
+			],
+			[
+				"rcargojs",
+				"w090/Rtheme/app/assets/javascripts/rtheme/rcargo/rcargo.js"
+			],
+			[
+				"line_mo",
+				"w090/Rcity/app/views/rcity/chengs/_line_modal.html.erb"
+			],
+			[
+				"_mycarg",
+				"g00/app/views/cargos/_mycargo.html.erb"
+			],
+			[
+				"region.rb",
+				"w090/Rcity/app/models/rcity/region.rb"
+			],
+			[
+				"stock_cargos/_fo",
+				"w090/Rcargo/app/views/rcargo/stock_cargos/_form.html.erb"
+			],
+			[
+				"route",
+				"w090/Rtruck/config/routes.rb"
+			],
+			[
+				"routes",
+				"w090/Rcargo/config/routes.rb"
+			],
+			[
+				"menu",
+				"w090/Ruser/config/locales/menu.zh-CN.yml"
+			],
+			[
+				"rcargo_n",
+				"w090/Rcargo/app/views/rcargo/home/_rcargo_nav.html.erb"
+			],
+			[
+				"cargona",
+				"g00/app/views/cargos/_cargonavi.html.erb"
+			],
+			[
+				"rcargo.ht",
+				"w090/Rcargo/app/views/layouts/rcargo.html.erb"
+			],
+			[
+				"cargo.",
+				"w090/Rcargo/app/models/rcargo/cargo.rb"
+			],
+			[
+				"user.rb",
+				"w090/Ruser/app/models/ruser/user.rb"
 			],
 			[
 				"ruser.htm",
@@ -1018,6 +845,10 @@
 			[
 				"contry",
 				"Rcity/app/controllers/rcity/rcity_controller.rb"
+			],
+			[
+				"",
+				"Rcity/config/initializers/load_city_to_db.rb"
 			]
 		],
 		"width": 0.0
@@ -1034,6 +865,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 341.0,
+	"side_bar_width": 312.0,
 	"status_bar_visible": true
 }

@@ -1,0 +1,26 @@
+[15/07 15:43:57] 
+
+undefined local variable or method `from_name' for #<Forever::Base:0xa783a70>
+  /home/hunter/vob/w090/Rcargo/bin/56135/56135_cron_helper.rb:40:in `block (3 levels) in run_56135_cargo_cron'
+  /usr/local/lib/ruby/gems/1.9.1/gems/nokogiri-1.5.2/lib/nokogiri/xml/node_set.rb:239:in `block in each'
+  /usr/local/lib/ruby/gems/1.9.1/gems/nokogiri-1.5.2/lib/nokogiri/xml/node_set.rb:238:in `upto'
+  /usr/local/lib/ruby/gems/1.9.1/gems/nokogiri-1.5.2/lib/nokogiri/xml/node_set.rb:238:in `each'
+  /home/hunter/vob/w090/Rcargo/bin/56135/56135_cron_helper.rb:14:in `block (2 levels) in run_56135_cargo_cron'
+  /usr/local/lib/ruby/gems/1.9.1/gems/mechanize-2.5.1/lib/mechanize.rb:409:in `get'
+  /home/hunter/vob/w090/Rcargo/bin/56135/56135_cron_helper.rb:12:in `block in run_56135_cargo_cron'
+  /home/hunter/vob/w090/Rcargo/bin/56135/56135_cron_helper.rb:11:in `downto'
+  /home/hunter/vob/w090/Rcargo/bin/56135/56135_cron_helper.rb:11:in `each'
+  /home/hunter/vob/w090/Rcargo/bin/56135/56135_cron_helper.rb:11:in `run_56135_cargo_cron'
+  56135_cargo_cron.rb:34:in `block (2 levels) in <main>'
+  /usr/local/lib/ruby/gems/1.9.1/gems/foreverb-0.3.0/lib/forever/job.rb:12:in `call'
+  /usr/local/lib/ruby/gems/1.9.1/gems/foreverb-0.3.0/lib/forever/job.rb:12:in `call'
+  /usr/local/lib/ruby/gems/1.9.1/gems/foreverb-0.3.0/lib/forever/base.rb:366:in `safe_call'
+  /usr/local/lib/ruby/gems/1.9.1/gems/foreverb-0.3.0/lib/forever/base.rb:358:in `job_call'
+  /usr/local/lib/ruby/gems/1.9.1/gems/foreverb-0.3.0/lib/forever/base.rb:113:in `block (3 levels) in initialize'
+
+56135_cargo_cron.rb:48:in `block (2 levels) in <main>': undefined method `ERROR' for #<Logger:0xa783e08> (NoMethodError)
+	from /usr/local/lib/ruby/gems/1.9.1/gems/foreverb-0.3.0/lib/forever/base.rb:369:in `[]'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/foreverb-0.3.0/lib/forever/base.rb:369:in `rescue in safe_call'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/foreverb-0.3.0/lib/forever/base.rb:365:in `safe_call'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/foreverb-0.3.0/lib/forever/base.rb:358:in `job_call'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/foreverb-0.3.0/lib/forever/base.rb:113:in `block (3 levels) in initialize'

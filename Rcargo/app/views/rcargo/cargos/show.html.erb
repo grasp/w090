@@ -1,16 +1,17 @@
 <div id="cargo_show" >
-    <%cache "cargoshow"+params[:id] do%>
+    <%#cache "cargoshow"+params[:id] do%>
      <table class="table table-stripped">
       <tr>  <td>货物名称</td>  <td><%=@cargo.name%></td> </tr>
       <tr>  <td>出发城市</td> <td><%=@cargo.fcityn%></td></tr>
       <tr>  <td>到达城市</td>         <td><%=@cargo.tcityn%></td></tr>
-      <tr>   <td>货物大类</td>        <td><%=@cargo.big_cate%></td></tr>
+      <tr>   <td>货物大类</td>        <td><%=@cargo.big_cate||"未知"%></td></tr>
       <tr>  <td>货物重量</td>        <td><%=@cargo.weight%></td></tr>
-      <tr>  <td>有效期</td>        <td><%=@cargo.expire%></td></tr>
+      <tr>  <td>有效期</td>        <td><%=@cargo.expire%>天</td></tr>
       <tr>  <td>备注</td>        <td><%=@cargo.comments%></td></tr>
       <tr>  <td>创建于</td>        <td><%=timeago(@cargo.created_at)%></td></tr>
+      <tr>  <td>联系方式</td>        <td><%=@cargo.contact||("#{@cargo.mphone}+#{@cargo.mfphone}")%></td></tr>
       </table>
-    <%end%>
+    <%#end%>
 
       <%#=render "jubaos/jubaoform"%>
 </div>

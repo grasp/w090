@@ -1,7 +1,8 @@
 # coding: utf-8
 require "ruby-github"
 require "securerandom"
-class Ruser::User
+module Ruser
+class User
   include Mongoid::Document
   include Mongoid::Timestamps
   include Mongoid::BaseModel
@@ -239,4 +240,5 @@ class Ruser::User
     self.update_attribute(:private_token, random_key)
   end
 
+end
 end

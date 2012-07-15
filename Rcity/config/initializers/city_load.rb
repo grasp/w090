@@ -183,6 +183,7 @@ class CityTree
       return code
     end
   end
+  
     #still not guess out? then we guess from first
     guess2=Array.new
     if name.size>1

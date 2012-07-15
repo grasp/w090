@@ -188,9 +188,10 @@ class CargosController < Rcargo::ApplicationController
   def show
     @error=false
     begin
-      @cargo=Cargo.find(params[:id])
+      @cargo=Rcargo::Cargo.find( BSON::ObjectId(params[:id])) #WHY need add BSON::Object, I 
+    #  raise if @cargo.nil?
     rescue
-      @error=true
+     puts $@
     end
    # if not @error
       #for jubao purpose

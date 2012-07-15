@@ -1,5 +1,6 @@
 # encoding: utf-8
 require 'carrierwave/processing/mini_magick'
+
 class BaseUploader < CarrierWave::Uploader::Base
   include CarrierWave::MiniMagick
 
@@ -30,3 +31,4 @@ class BaseUploader < CarrierWave::Uploader::Base
   end
 
 end
+
