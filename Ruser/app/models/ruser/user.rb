@@ -1,8 +1,8 @@
 # coding: utf-8
 require "ruby-github"
 require "securerandom"
-module Ruser
-class User
+#module Ruser
+class Ruser::User
   include Mongoid::Document
   include Mongoid::Timestamps
   include Mongoid::BaseModel
@@ -241,4 +241,4 @@ class User
   end
 
 end
-end
+#end

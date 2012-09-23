@@ -20,15 +20,15 @@ Gem::Specification.new do |s|
   
   # s.add_dependency "jquery-rails"
   
-s.add_dependency "social-share-button", "~> 0.0.3"
+  s.add_dependency "social-share-button", "~> 0.0.3"
     
-    s.add_dependency "settingslogic", "~> 2.0.6"
+  s.add_dependency "settingslogic", "~> 2.0.6"
 
   s.add_dependency "cells", "3.8.3"
 
   s.add_dependency 'mail_view'#, :git => 'http://github.com/37signals/mail_view.git'
 
-# 上传组件
+  # 上传组件
   s.add_dependency 'carrierwave', '0.5.7'
   s.add_dependency 'carrierwave-mongoid', '0.1.2'#, :require => 'carrierwave/mongoid'
   s.add_dependency 'carrierwave-upyun', '0.1.3'

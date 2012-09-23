@@ -24,7 +24,7 @@ require "mongoid"#, "2.4.3"
 require "bson_ext/cbson"
 require 'mongo-rails-instrumentation'#,'0.2.4'
 require 'mongoid_auto_increment_id'#, "0.4.0"
-require 'mongoid_rails_migrations'#, '~> 0.0.14'
+#require 'mongoid_rails_migrations'#, '~> 0.0.14'
 
 # Redis 命名空间
 require 'redis-namespace'#,'~> 1.0.2'
@@ -57,12 +57,17 @@ require "omniauth-twitter"#, "~> 0.0.7"
 #require "omniauth-douban"
 
 require 'social-share-button'
-require 'rtheme'
+require 'pathname'
+pn = Pathname.new(File.dirname(__FILE__))
+w090_path=pn.parent #do we have one line solution?
+vob_path=pn.parent.parent.parent#do we have one line solution?
+#require "rtheme" ,:path=>File.join(w090_path,"Rtheme")
+require File.join(vob_path,"Rtheme","lib","rtheme","engine.rb")
+
+#require 'rtheme'
 
 module Ruser
-  class Engine < ::Rails::Engine
-
-   
+  class Engine < ::Rails::Engine   
    
     #load all helper, otherwise will cover by parent app with same name
     initializer 'Ruser::Application.helper,Ruser::User.helper,Ruser::ApplicationController' do |app|
@@ -71,7 +76,10 @@ module Ruser
         ActionController::Base .send :include,  ApplicationHelper,UsersHelper
     end
 
-    
+  # if load rtheme , will get quite slow
+   # config.autoload_paths +=%W(File.join(Pathname.new(File.dirname(__FILE__)).parent.parent.parent,
+    #                         "Rtheme","lib"))
+
     config.autoload_paths += %W(#{config.root}/uploaders)
     config.autoload_paths += %W(#{config.root}/lib)
     config.autoload_paths << File.expand_path("#{config.root}/app/helpers/ruser", __FILE__) #this could be bug of rails?   

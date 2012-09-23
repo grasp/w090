@@ -19,9 +19,9 @@
       li << link_to(t("menu.my_home_page"), ruser.user_path(current_user.login) )
       unless params[:controller].match(/cpanel/)
         li << link_to(t("menu.edit_account_path"),ruser.edit_user_registration_path)
-        li << link_to(t("menu.notes"), rforum.notes_path )
-        li << link_to(t("menu.likes"),ruser.likes_user_path(current_user.login))
-        li << link_to(t("menu.cpanel"), "/rforum/cpanel") if admin?
+       # li << link_to(t("menu.notes"), rforum.notes_path )
+       # li << link_to(t("menu.likes"),ruser.likes_user_path(current_user.login))
+       # li << link_to(t("menu.cpanel"), "/rforum/cpanel") if admin?
       end
       li << link_to(t("common.logout"), ruser.destroy_user_session_path )
     end %>

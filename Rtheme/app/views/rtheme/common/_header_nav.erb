@@ -4,6 +4,7 @@
 %>
 
 <%= render_list :class => "nav" do |li|
+	
 li << link_to(t("menu.topics"), rforum.topics_path)
 li << link_to(t("menu.cargos"), rcargo.cargossearch_path)
 li << link_to(t("menu.trucks"), rtruck.truckssearch_path)

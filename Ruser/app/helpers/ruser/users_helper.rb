@@ -46,12 +46,12 @@ module Ruser::UsersHelper
     else
        #TOBE chagned!!!!!  
 
-<<<<<<< HEAD
+#<<<<<<< HEAD
       # img_src = "http://gravatar.com/avatar/#{hash}.png?s=#{width}"
       #img = image_tag(img_src, :style => "width:#{width}px;height:#{width}px;")
        #img = image_tag(img_src, :style => "width:#{width}px;height:#{width}px;")
-       img = image_tag(user.avatar.url(size), :style => "width:#{width}px;height:#{width}px;",:prefix=>"/rtheme") #TOBE chagned
-=======
+ #      img = image_tag(user.avatar.url(size), :style => "width:#{width}px;height:#{width}px;",:prefix=>"/rtheme") #TOBE chagned
+#=======
      #  img_src = "http://gravatar.com/avatar/#{hash}.png?s=#{width}"
      #  img = image_tag(img_src, :style => "width:#{width}px;height:#{width}px;")
      #  img = image_tag(img_src, :style => "width:#{width}px;height:#{width}px;")
@@ -59,7 +59,7 @@ module Ruser::UsersHelper
      img = image_tag("/#{File.basename(user.avatar.url(size).to_s)}", :style => "width:#{width}px;height:#{width}px;") #TOBE chagned
 
 
->>>>>>> 2ec2e4ced972d83f85888d35e8edb5bfb2bc09fc
+#>>>>>>> 2ec2e4ced972d83f85888d35e8edb5bfb2bc09fc
     end
 
     if link
@@ -123,9 +123,11 @@ module Ruser::UsersHelper
   def render_optional_error_file(status_code)
     status = status_code.to_s
     if ["404","403", "422", "500"].include?(status)
-      render :template => "ruser/errors/#{status}", :format => [:html], :handler => [:erb], :status => status, :layout => "application"
+     # render :template => "ruser/errors/#{status}", :format => [:html], :handler => [:erb], :status => status, :layout => "application"
+     render :template => "ruser/errors/#{status}", :format => [:html], :handler => [:erb], :status => status, :layout => "rtheme/ruser"
     else
-      render :template => "ruser/errors/unknown", :format => [:html], :handler => [:erb], :status => status, :layout => "application"
+     # render :template => "ruser/errors/unknown", :format => [:html], :handler => [:erb], :status => status, :layout => "application"
+     render :template => "ruser/errors/unknown", :format => [:html], :handler => [:erb], :status => status, :layout => "rtheme/ruser"
     end
   end
 
@@ -174,6 +176,12 @@ module Ruser::UsersHelper
         }
       end
     end
+  end
+
+    def location_name_tag(location,options = {})
+    return "" if location.blank?
+    name = location.is_a?(String) == true ? location : location.name
+    result = link_to(name, location_users_path(name))
   end
 end
 

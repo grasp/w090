@@ -80,15 +80,17 @@ gem "omniauth-twitter", "~> 0.0.7"
 #gem "omniauth-douban", :git => "http://github.com/ballantyne/omniauth-douban.git"
 
 group :development, :test do
+  gem "rtheme" ,:path=>File.join(vob_path,"Rtheme") #development use local path
   gem 'capistrano', '2.9.0'
   gem 'chunky_png', "1.2.5"
   gem "memcache-client", "1.8.5"
   gem 'progress_bar'
   gem 'rspec-rails', '~> 2.8.1'
- gem 'factory_girl_rails'
+  gem 'factory_girl_rails'
   gem 'thin'
   gem "simplecov", :require => false
   gem "rspec-cells"
   gem "capybara"
   gem "sunspot-rails-tester"
+  gem 'quiet_assets', :git => 'http://github.com/AgilionApps/quiet_assets'
 end

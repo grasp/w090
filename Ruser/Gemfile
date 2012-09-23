@@ -40,7 +40,7 @@ end
 # YAML 配置信息
 gem "settingslogic", "~> 2.0.6"
 
-gem "cells", "3.8.3"
+gem "cells", "~>3.8.3"
 
 #gem 'mail_view', :git => 'http://github.com/37signals/mail_view.git'
 gem 'mail_view', :path=>"~/vob/github/mail_view"
@@ -61,7 +61,7 @@ gem 'mongoid_rails_migrations', '~> 0.0.14'
 gem 'redis-namespace','~> 1.0.2'
 
 # 将一些数据存放入 Redis
-gem "redis-objects", "0.5.2"
+gem "redis-objects", "~>0.5.2"
 
 # 队列
 gem "resque", "~> 1.20.0", :require => "resque/server"
@@ -72,6 +72,8 @@ gem 'ruby-github'
 
 # 用户系统
 gem 'devise', '~>2.0.4'
+
+gem 'simple_form'
 
 # permission
 gem "cancan", "~> 1.6.7"
@@ -103,4 +105,5 @@ group :development, :test do
   gem "rspec-cells"
   gem "capybara"
   gem "sunspot-rails-tester"
+  gem 'quiet_assets', :git => 'http://github.com/AgilionApps/quiet_assets'
 end

@@ -1,0 +1,50 @@
+<h1>Admin#index</h1>
+<% content_for :sitemap do %>
+  <span class="current">用户</span>
+<% end %>
+<h1>Listing users</h1>
+
+<table class="grid">
+  <tr class="head">
+    <td class="first">Id</td>
+        <td>Login</td>
+        <td>Email</td>
+    <td>Location</td>
+    <td>State</td>
+    <td>Verified</td>
+    <td>操作</td>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td class="first"><%= user.id %></td>
+    <td><%= user.login %></td>
+    <td><%= user.email %></td>
+    <td><%= user.location %></td>
+    <td><%= user.state %></td>
+    <td><%= user.verified %></td>
+
+    <td>
+      <%= link_to "Edit", ruser.edit_user_path(user), :class => "icon small_edit" %>
+    </td>
+
+    <td>
+        <div class="actions">
+    <% if user.state != Ruser::User::STATE[:deleted] %>
+      <div class="pull-right">
+        <%= button_to '删除此用户', ruser.user_path(user), :confirm => '警告！此动作无法撤销，确定要删除么?', :method => :delete, :class => "btn danger"  %>
+      </div>
+    <% end %>   
+    或者
+    <%= link_to 'Back', ruser.users_path %>
+  </div>
+
+    </td>
+
+  </tr>
+<% end %>
+</table>
+  <%= will_paginate @users %>
+<br />
+
+<%= link_to 'New User', ruser.new_user_path %>

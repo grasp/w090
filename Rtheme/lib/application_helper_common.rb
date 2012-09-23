@@ -32,7 +32,8 @@ module ApplicationHelperCommon
   end
 
   def render_page_title
-    title = @page_title ? "#{@page_title} | #{Setting.app_name}" : Setting.app_name rescue "#{Setting.app_name}"
+    #Here is a bug, as we debug Ruser, so use Ruser as first
+    title = @page_title ? "#{@page_title} | #{Ruser::Setting.app_name}" : Ruser::Setting.app_name rescue "#{Ruser::Setting.app_name}"
     content_tag("title", title, nil, false)
   end
 

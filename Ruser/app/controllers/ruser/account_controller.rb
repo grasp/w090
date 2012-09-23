@@ -2,7 +2,7 @@
 module Ruser
 class AccountController < Devise::RegistrationsController
  
-   layout "rtheme/ruser"
+  layout "rtheme/ruser"
   before_filter :set_locale
 
 def set_locale

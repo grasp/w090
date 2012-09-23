@@ -1,5 +1,5 @@
-<%= simple_form_for([:cpanel,@user], :html => { :enctype =>  "multipart/form-data" }, :wrapper => :inline) do |f| %>
-  <%= render 'rforum/shared/error_messages', :target => @user %>
+<%= simple_form_for(@user, :html => { :enctype =>  "multipart/form-data" }, :wrapper => :inline) do |f| %>
+  <%= render 'ruser/shared/error_messages', :target => @user %>
   <%= f.input :login %>
   <%= f.input :name %>
   <%= f.input :email, :as => :email, :input_html => { :class => "xxlarge" } %>
@@ -35,14 +35,13 @@
     </table>
     <% end %>
   </div>
+  
   <div class="actions">
     <% if @user.state != Ruser::User::STATE[:deleted] %>
-      <div class="pull-right">
-        <%= link_to '删除此用户', cpanel_user_path(@user), :confirm => '警告！此动作无法撤销，确定要删除么?', :method => :delete, :class => "btn danger"  %>
-      </div>
+
     <% end %>
     <%= f.submit t("common.save"), :class => "btn primary", :disable_with => t("common.saving") %>
     或者
-    <%= link_to 'Back', cpanel_users_path %>
+    <%= link_to 'Back', ruser.users_path %>
   </div>
 <% end %>

@@ -1,0 +1,8 @@
+<% content_for :sitemap do %>
+  <a href="<%= ruser.users_path %>"><%= t("cpanel.menu.users")%></a> &gt; <span class="current"><%= t("common.edit")%></span>
+<% end %>
+
+<h1>Editing user<%="#{@total_user_count}"%> </h1>
+
+
+<%= render 'form' %>
